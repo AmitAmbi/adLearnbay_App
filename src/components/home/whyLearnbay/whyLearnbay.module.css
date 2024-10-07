@@ -1,0 +1,96 @@
+.keyContainer{
+  color: black;
+  display: grid;
+  grid-template-columns: 6% 94%;
+  width: 1200px;
+  margin: auto;
+  height: 669px;
+  position: relative;
+  margin-top: -673px;
+
+ 
+}
+
+.imgWrap img {
+  width: 100%;
+  height: 670px;
+}
+
+.keyHeading{
+  font-size: 45px;
+  color: #A4A4A4;
+  font-weight: 800;
+  padding-top: 120px;
+}
+.keyBoxes{
+  display: grid;
+  grid-template-columns: 74% 21%;
+  gap: 50px;
+  
+}
+.boxOne{
+  display: flex;
+  justify-content: space-between;
+  background: #E9F5FD;
+  margin-top: 3.4rem;
+  padding: 50px 70px;
+  border-radius: 40px;
+  border: 0px solid #E7F5FE;
+  height: fit-content;
+  align-items: center;
+}
+.keyContent{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.keyIcon{
+  font-size: 40px;
+}
+.keyTitle{
+  font-size: 25px;
+  color: #5C5C5C;
+  font-weight: 700;
+}
+.keyDesc{
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: 400;
+}
+.boxTwo{
+  color: white;
+  margin-top: 3.4rem;
+  background-image: linear-gradient(to bottom, #DB696D, #9973CB, #3A94DC, #F49C46);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+  
+  .emptyBox {
+      background-color:#252525;
+      z-index: 999;
+      border-radius: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 34px 17px;
+  
+  }
+.starIcon{
+  font-size: 40px;
+}
+.starHeading{
+  font-size: 24px;
+  padding-bottom: 8px;
+}
+.boxLine{
+  height: 100px;
+  width: 1px;
+  background: linear-gradient(90deg, rgba(92, 92, 92, 0.00) 0%, #666 30.58%, #666 67%, rgba(102, 102, 102, 0.00) 100%);
+}
