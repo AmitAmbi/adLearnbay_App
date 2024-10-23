@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './infinity.module.css';
+import styles from './Infiniti.module.css';
 import Image from 'next/image';
 import { topSliderData, bottomSliderData } from './Sliderdata';  // Import the data
 
