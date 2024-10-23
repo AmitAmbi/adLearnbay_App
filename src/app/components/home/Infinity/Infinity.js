@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Infinity.module.css";
+import styles from "./Infiniti.module.css";
 import Slider from "./Slider";
 
 const InfinityLogo = () => {
