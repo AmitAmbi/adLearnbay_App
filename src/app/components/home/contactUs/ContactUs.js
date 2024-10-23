@@ -33,16 +33,16 @@ function ContactUs({
       {isMobile ? (
         <Image
           src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/mbl_shadows.webp"
-          layout="fill"
-          objectFit="cover"
+         fill
+          styles={{objectFit:"cover"}}
           alt="Mobile Background"
           priority={false}
         />
       ) : (
         <Image
           src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/shades.webp"
-          layout="fill"
-          objectFit="cover"
+          fill
+          styles={{objectFit:"cover"}}
           alt="Desktop Background"
           priority={false}
         />

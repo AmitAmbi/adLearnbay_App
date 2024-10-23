@@ -35,8 +35,8 @@
   }
   
   .playPauseButton {
-    background-color: #72bc00;
-    color: #fff;
+    background-color: var(--tertiary-color);
+    color: var(--whtie);
     border: none;
     padding: 10px 10px;
     cursor: pointer;

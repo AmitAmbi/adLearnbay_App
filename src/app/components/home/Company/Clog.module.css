@@ -2,8 +2,8 @@
     width: 1000px;
     margin: 80px auto;
     border-radius: 10px;
-    border: 0.6px solid #0072bc;
-    background: #f4f4f4;
+    border: 0.6px solid var(--primary-color);
+    background: var(--whiteee);
     box-shadow: 0px 5px 29.3px 0px rgba(0, 0, 0, 0.25);
     padding: 20px 40px;
     display: flex;
@@ -12,9 +12,9 @@
   }
   
   .container p {
-    color: #787878;
+    color: var(--greyyy);
     text-align: center;
-    font-size: 20px;
+    font-size: var( --desktop_p-font-size);
     font-style: normal;
     font-weight: 400;
   }
@@ -41,7 +41,7 @@
   .hrLeft, .hrRight {
     border: 0;
     height: 1px;
-    background: #787878;
+    background: var(--greyyy);
   }
   
   .hrLeft {
@@ -79,7 +79,7 @@
       }
   
       .container p {
-          font-size: 14px;
+          font-size:  var(--desktop_p-font-size);
       }
       .container{
         max-width: 800px;

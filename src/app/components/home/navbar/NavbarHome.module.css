@@ -9,7 +9,7 @@
     left: 0;
     height: 80px;
     padding: 0px 140px 0px 125px;
-    background: #fff;
+    background: var(--white);
     /* box-shadow: 0px 1px 3px 0px #e8f1f5; */
   }
   
@@ -23,7 +23,7 @@
   .right button,
   .righta button {
     border-radius: 2.67px;
-    color: #fff;
+    color: var(--white);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -44,7 +44,7 @@
   .ham {
     display: inline;
     justify-self: flex-start;
-    color: #0072bc;
+    color: var(--primary-color);
     cursor: pointer;
     font-size: 28px;
     margin-right: 10px;
@@ -65,7 +65,7 @@
   }
   
   .right span:hover {
-    color: #0072bc;
+    color: var(--primary-color);
     transform: scale(1) translate(-0%, -20%);
     transition: all 0.5s ease-in-out;
     scroll-behavior: smooth;
@@ -81,12 +81,12 @@
   
   /* Dropdown Button */
   .dropbtn {
-    background-color: #ff9562;
-    color: #fff;
+    background-color: var(--orange);
+    color: var(--white);
     font-size: 18px;
     margin-right: 10px;
-    border: 1px solid #ff9562;
-    box-shadow: #ff9562 0px 0px 4px 0px !important;
+    border: 1px solid var(--orange);
+    box-shadow:var(--orange) 0px 0px 4px 0px !important;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -99,7 +99,7 @@
   .dropdownContent {
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: var(--white);
     max-width: fit-content;
     z-index: 1;
     margin-top: 3px;
@@ -108,7 +108,7 @@
   
   /* Links inside the dropdown */
   .dropdownContent a {
-    color: black;
+    color: var(--black);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -117,8 +117,8 @@
   
   /* Change color of dropdown links on hover */
   .dropdownContent a:hover {
-    background-color: #ff9562;
-    color: #fff;
+    background-color:var(--orange);
+    color: var(--white);
   }
   
   /* Show the dropdown menu on hover */
@@ -128,9 +128,9 @@
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
-    background-color: #fff;
-    color: #ff9562;
-    border: 1px solid #ff9562;
+    background-color: var(--white);
+    color: var(--orange);
+    border: 1px solid var(--orange);
   }
   
   .megaMenu {
@@ -150,7 +150,7 @@
   
   .requestBtn button {
     background: linear-gradient(90deg, #e95407 0%, #d74900 100%);
-    color: #fff;
+    color: var(--white);
     border: none;
     border-radius: 37px;
     padding: 0.5rem 1rem;
@@ -163,10 +163,10 @@
   
   /* Add hover effect */
   .requestBtn button:hover {
-    background: #fff;
+    background: var(--white);
     transform: scale(1.01); /* Slight scaling for effect */
-    border: 1px solid #e95407;
-    color: #e95407;
+    border: 1px solid var(--deep-orange);
+    color: var(--deep-orange);
   }
   
   .dropdownContainer {
@@ -177,7 +177,7 @@
     position: absolute;
     top: 30px;
     left: -30px;
-    background: white;
+    background:var(--white);
     z-index: 1000;
     border-radius: 20px;
     width: 200px;
@@ -192,7 +192,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    color: #000; /* Customize your text color */
+    color: var(--black); /* Customize your text color */
     font-size: 16px;
     font-weight: 800;
   }
@@ -213,7 +213,7 @@
     display: block;
     padding: 10px 15px;
     text-decoration: none;
-    color: #333; /* Text color for links */
+    color: var(--deep-grey); /* Text color for links */
     font-size: 14px;
     font-weight: 400;
     transition: background-color 0.2s ease, color 0.2s ease;
@@ -222,8 +222,8 @@
   
   /* Hover effect for dropdown items */
   .dropdown a:hover {
-    background-color: #f5f5f5; /* Background color on hover */
-    color: #0070f3; /* Link text color on hover */
+    background-color: var(--whitee); /* Background color on hover */
+    color: var(--sky-blue); /* Link text color on hover */
   }
   
   /* Adjust the dropdown arrow icon */
@@ -258,12 +258,12 @@
       padding: 0px 20px;
       width: 100%;
       height: 60px;
-      background: #fff;
+      background: var(--white);
       /* box-shadow: 0px 2px 4px 0px rgba(0, 114, 188, 0.15); */
     }
     .left button {
       padding: 8px 15px;
-      color: #fff;
+      color: var(--white);
       font-size: 14px;
       font-style: normal;
       font-weight: 700;
@@ -275,9 +275,9 @@
     .right button {
       padding: 12px 15px;
       font-size: 14px;
-      color: #0072bc;
+      color: var(--primary-color);
       background-color: transparent;
-      border: 2px solid #0072bc;
+      border: 2px solid var(--primary-color);
       font-weight: 500;
     }
   }
@@ -330,7 +330,7 @@
       width: 99vw;
       height: max-content;
       border-radius: 0 5px 5px 0;
-      background-color: white;
+      background-color: var(--white);
       flex-flow: column;
       position: absolute;
       z-index: 999;
@@ -347,8 +347,8 @@
       text-align: left;
     }
     .mobileWrapper .mobileMenu span:hover {
-      color: #fff;
-      background-color: #2d9cd7;
+      color: var(--white);
+      background-color: var(--light-blue);
     }
     .left img {
       height: auto;

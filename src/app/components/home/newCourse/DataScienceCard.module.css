@@ -21,7 +21,7 @@
 
   
   .sectionTitle{
-    color: #666;
+    color:var(--deeep-grey);
     margin-top: 50px;
     font-size: 30px;
     font-weight: 600;
@@ -36,7 +36,7 @@
   }
   
   .cardTitle {
-    color: #212121;
+    color:var(--light-black);
     font-size: 17px;
     font-weight: 600;
     line-height: 126.5%;
@@ -57,7 +57,7 @@
   }
   
   .lists span {
-    color: #666;
+    color: var(--deeep-grey);
     font-size: 14px;
     font-weight: 400;
     line-height: 155%;
@@ -71,7 +71,7 @@
   
   .cardDescription {
     font-size: 1rem;
-    color: #666;
+    color:var(--deeep-grey);
     margin-bottom: 16px;
   }
   
@@ -81,14 +81,14 @@
     display: block;
     margin: 8px 0;
     text-decoration: none;
-    color: #007bff;
+    color: var(--bluee);
     transition: color 0.3s ease;
   }
   
   .brochureLink:hover,
   .downloadLink:hover,
   .courseLink:hover {
-    color: #0056b3;
+    color:var(--light-blueee);
   }
   
   .desktopContainer {
@@ -107,7 +107,7 @@
   .card {
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
-    background: #fff;
+    background: var(--white);
     padding:16px 12px 21px 12px;
   }
   
@@ -126,8 +126,8 @@
   
   .brochurebtn {
     border-radius: 26px;
-    background: #212121;
-    color: #fff;
+    background: var(--light-black);
+    color: var(--white);
     font-size: 16px;
     font-weight: 400;
     line-height: 155%;
@@ -142,13 +142,13 @@
   .viewDetailsButton {
     border-radius: 26px;
     background: transparent;
-    color: #000;
+    color: var(--black);
     font-size: 16px;
     font-weight: 400;
     line-height: 155%;
     padding: 10px 20px;
     cursor: pointer;
-    border: 1px solid #000;
+    border: 1px solid var(--black);
   }
   @media screen and (max-width:1381px) {
     .desktopContainer{
