@@ -1,0 +1,715 @@
+
+
+.container{
+}
+.newSection{
+display: grid;
+grid-template-columns: 16% 70%;
+justify-content: center;
+gap: 20px;
+width: 100%;
+max-width: 1400px;
+margin: 10px auto 60px auto;
+}
+
+.section {
+  background: linear-gradient(
+    180deg,
+    #fff 1.26%,
+    #eff3f6 17.6%,
+    #eff3f6 90.85%,
+    #fff 100%
+  );
+  padding: 20px;
+}
+
+.tabdiv.active {
+  border-radius:8.984px;
+  background: #022646;
+
+}
+.tabdiv.active p {
+  color:#fff;
+
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: 126.5%; /* 25.3px */
+}
+/* Updated styles for sticky tab section */
+.tabMain {
+
+}
+
+.svgActive{
+  color: red;
+  fill: #000;
+}
+/* Additional styling for container */
+.section {
+  background: linear-gradient(
+    180deg,
+    #fff 1.26%,
+    #eff3f6 17.6%,
+    #eff3f6 90.85%,
+    #fff 100%
+  );
+  padding: 20px;
+  margin-top: 0; /* Add some margin to avoid overlap */
+  padding-top: 0;
+}
+
+.conteiner {
+  max-width: 1350px; /* Ensure max-width for responsiveness */
+  width: auto;
+  margin: 0 auto; /* Center content */
+}
+
+.tabMain p {
+  margin-top: 0;
+  color: #212121;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126.5%; /* 25.3px */
+}
+
+.tabdiv {
+  border-radius: 10px;
+  cursor: pointer;
+background-color: #fff;
+  padding: 10px;
+  margin: 4px;
+}
+
+.sliders {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.imgText{
+display: flex;
+gap: 6px;
+align-items: center;
+}
+
+.CourseCardHead {
+  display: flex;
+  grid-template-columns: 30% 30% 30%;
+  margin: 50px 0;
+  gap:30px;
+  flex-wrap: wrap;
+}
+
+.courseCard {
+  width: 100%;
+  max-width: 300px;
+}
+.cardContent {
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #fff;
+  padding: 16px 12px 21px 12px;
+}
+
+.cardContent h3 {
+  color: #212121;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 126.5%; /* 40.48px */
+  letter-spacing: -0.32px;
+  text-wrap: balance;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0;
+  gap: 5px;
+}
+
+.lists span {
+  color: #666;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 31px */
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 18px;
+  align-items: center;
+  position: relative;
+    z-index: 2;
+}
+.brochurebtn {
+  border-radius: 25px;
+  background: #000;
+  color: #fff;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 34.1px */
+  padding: 9px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.brochurebtnMaster{
+  border-radius: 25px;
+  background: #FE7A36;
+  color: #fff;
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 34.1px */
+  padding: 9px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.viewDetailsButton {
+  border-radius: 26px;
+  background: transparent;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 34.1px */
+  padding: 9px 20px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.viewDetailsButtonmaster{
+  border-radius: 26px;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 34.1px */
+  padding: 9px 28px;
+  cursor: pointer;
+  border: 1px solid #fff
+}
+.mainImage {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 10px;
+}
+
+.viewMoreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  margin-top: -100px;
+}
+
+.viewMoreButton {
+  border-radius: 12px;
+  background: #0072bc;
+  color: #fff;
+  padding: 10px 50px;
+  border: none;
+  color: #fff;
+  text-align: center;
+
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126.5%; /* 31.625px */
+  cursor: pointer;
+}
+
+
+.tabMain {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 50px;
+    position: sticky;
+    top: 80px; /* This will make the tabMain sticky with a top margin of 20px */
+  }
+
+.tabdiv {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+  transition: color 0.3s ease;
+  justify-content: space-between;
+}
+
+.active {
+  color: white;
+}
+
+.svgIcon {
+  fill: black;
+  transition: fill 0.3s ease;
+}
+
+
+
+.listicondiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.masterConteiner {
+  margin-top: 80px;
+}
+
+.MasterCard {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+.contentConteiner {
+  position: absolute;
+  top: 30px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contentConteiner h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 126.5%;
+  color: #FFF;
+letter-spacing: -0.4px;
+}
+.contentConteiner p {
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+
+  color: #FFC436;
+font-style: normal;
+font-weight: 400;
+line-height: 155%; /* 34.1px */
+}
+
+.mastericon {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+
+}
+.gridConteiner {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 50% 45%;
+}
+.absloute {
+  float: right;
+  position: absolute;
+  right: 90px;
+  bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.absloute h4 {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+}
+.absloute span {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 155%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1381px) {
+  .courseCard {
+    max-width: 274px;
+  }
+  .mainImage {
+    width: 100%;
+  }
+  .CourseCardHead {
+    width: 100%;
+    justify-content: center;
+  }
+  .cardContent h3 {
+    font-size: 18px;
+  }
+  .brochurebtn svg {
+    width: 12px;
+  }
+  .brochurebtn {
+    font-size: 12px;
+  }
+  .MasterCard {
+    width: 1280px;
+  }
+  .bgImageMaster{
+    width: 100%;
+    height: auto;
+  }
+
+}
+@media screen and (max-width: 1281px) {
+  .CourseCardHead {
+    user-select: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+  }
+  .MasterCard {
+    max-width: 100%;
+  
+  }
+  .bgImageMaster {
+    width: 100%;
+  }
+  .viewDetailsButton{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1181px) {
+  .CourseCardHead {
+    /* grid-template-columns: 28% 28% 28%; */
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+
+  }
+
+  .courseCard {
+    width: 250px;
+  }
+
+  .cardContent h3 {
+    font-size: 16px;
+  }
+  .lists span {
+    font-size: 12px;
+  }
+  .viewDetailsButton {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  .contentConteiner {
+    top: 30px;
+  }
+  .brochurebtn {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1081px) {
+
+    .MasterCard {
+        width: 980px;
+        height: autonew;
+    }
+    .bgImageMaster{
+        width: 100%;
+    }
+  .courseCard {
+    width: 220px;
+  }
+  .cardContent h3 {
+    font-size: 16px;
+  }
+  .lists span {
+    font-size: 11px;
+  }
+  .viewDetailsButton {
+    font-size: 8px;
+    padding: 10px 16px;
+  }
+  .brochurebtn{
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 951px) {
+
+.MasterCard{
+    width: 100%;
+}
+
+}
+
+@media screen and (max-width: 641px) {
+
+  .newSection {
+
+    display: flex;
+    flex-direction: column;
+}
+  .CourseCardHead {
+    width: 100%;
+    gap: 50px;
+    display: flex;
+    padding:0;
+    margin-bottom:0;
+    margin-top: 0;
+
+  }
+
+/* Custom scrollbar styles for .tabMain */
+.tabMain {
+  width: 100%; /* Full width */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 10px; /* Space between tabs */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  -webkit-overflow-scrolling: touch; /* For iOS devices */
+  padding: 10px 0; /* Optional padding for aesthetics */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #0072bc black; /* For Firefox (thumb, track) */
+}
+
+/* WebKit browsers */
+.tabMain::-webkit-scrollbar {
+  height: 1px; /* Height of horizontal scrollbar */
+}
+
+.tabMain::-webkit-scrollbar-track {
+  background: black; /* Track color */
+  border-radius: 10px; /* Round track */
+}
+
+.tabMain::-webkit-scrollbar-thumb {
+  background: #0072bc; /* Scrollbar thumb color */
+  border-radius: 10px; /* Round scrollbar thumb */
+  border: 10px solid black; /* Add border around the thumb */
+}
+
+.tabMain::-webkit-scrollbar-thumb:hover {
+  background: #005f8a; /* Thumb color on hover (optional) */
+}
+
+.tabdiv {
+  flex: 0 0 auto; /* Ensure each tab does not shrink */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  min-width: 150px; /* Minimum width to prevent small tabs */
+  padding: 10px 20px; /* Optional padding for tabs */
+  background-color: white; /* Tab background color for visibility */
+}
+
+
+
+  .tabMain p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  .tabMain p :nth-child(2) {
+    background-color: red;
+    color: #0072bc;
+  }
+
+  .courseCard {
+    width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+  }
+  .courseCard img {
+    width: 100%;
+  }
+
+  .cardContent h3 {
+    font-size: 24px;
+  }
+  .cardContent {
+    padding: 20px 30px;
+    margin-bottom: 40px;
+  }
+
+  .buttons button {
+    font-size: 17px;
+    padding: 7px 19px;
+  }
+  .buttons {
+    gap: 10px;
+  }
+
+  .viewMoreContainer {
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: -50px;
+  }
+
+  .section {
+    padding: 0;
+  }
+
+  .listicondiv img {
+    width: 30px;
+    height: auto;
+  }
+  .tabHead {
+    background: linear-gradient(
+      180deg,
+      #fff 1.26%,
+      #eff3f6 17.6%,
+      #eff3f6 90.85%,
+      #fff 100%
+    );
+
+    padding: 0 20px;
+  }
+  .container {
+    padding-bottom: 0;
+  }
+  .MasterCard {
+    width: 100%;
+    padding: 20px;
+  }
+  .contentConteiner h2 {
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 126.5%;
+    letter-spacing: -0.22px;
+    text-wrap: balance;
+  }
+  .contentConteiner {
+    top: 70px;
+    padding: 10px 20px;
+  }
+  .contentConteiner img {
+    width: 30px;
+    height: auto;
+  }
+  .absloute {
+    top: 148px;
+    left: 30px;
+  }
+  .absloute h4 {
+    color: #7a7a7a;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 155%;
+    text-wrap: balance;
+  }
+  .absloute span {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 155%;
+  }
+  .mastericon {
+    margin-top: 120px;
+    align-items: center;
+
+  }
+  .contentConteiner p {
+    font-size: 14px;
+  }
+  .swiperContainer{
+    padding-bottom: 30px;
+   }
+
+   .accordionContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .accordionItem {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .accordionHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .accordionContent {
+    padding: 15px;
+    display: none;
+    background-color: #fff;
+  }
+  
+  .expanded .accordionContent {
+    display: block;
+  }
+  .lists span{
+font-size: 16px;
+  }
+  
+}
+
+@media screen and (max-width: 412px) {
+
+  .contentConteiner{
+    font-size: 20px;
+    padding: 0 20px;
+  }
+  .absloute h4 {
+    font-size: 27px;
+  }
+  .absloute span {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .cardContent h3 {
+    font-size: 20px;
+  }
+  .buttons button {
+    font-size: 12px;
+  }
+  .absloute{
+    top: 130px;
+    width: fit-content;
+    height: fit-content;
+  }
+  .contentConteiner h2 {
+    font-size: 18px;
+  }
+  .buttonsMaster{
+    top: -20px;
+  }
+}

@@ -1,38 +1,42 @@
-import Image from "next/image";
+
+import MobileTestimonial from "./components/global/mobiletestimonal/MobileTestimonal";
+import NewSevenSection from "./components/global/newSevenSection/NewSevenSection";
+import ReviewSlider from "./components/global/reviewSlider/ReviewSlider";
+import CLogo from "./components/home/Company/Clogo";
+import ContactUs from "./components/home/contactUs/ContactUs";
+import HeroSection from "./components/home/heroSection/HeroSection";
+import InfinityLogo from "./components/home/Infinity/Infinity";
+import KickStart from "./components/home/kickStart/KickStart";
+import NavbarHome from "./components/home/navbar/NavbarHome";
+import NewCourse from "./components/home/newCourse/NewCourse";
+import Other from "./components/home/other/Other";
+import Animation from "./components/home/whyChoose/Animation";
 import styles from "./page.module.css";
-import HeroSection from "@/components/home/heroSection/HeroSection";
-import CompanySection from "@/components/home/companySection/CompanySection";
-import WhyLearnbay from "@/components/home/whyLearnbay/WhyLearnbay";
-import Course from "@/components/home/courseSection/Course";
-import ProjectSection from "@/components/home/projectSection/ProjectSection";
-import DomainSection from "@/components/home/domainSection/DomainSection";
-import CallSection from "@/components/home/callSection/CallSection";
-import Footer from "@/components/global/Footer/Footer";
-import Navbar from "@/components/global/navbar/Navbar";
-import GenAi from "@/components/home/genAi/GenAi";
-import ReviewSlider from "@/components/home/reviewSlider/reviewSlider";
-import CareerHome from "@/components/home/careerHome/careerHome";
-import MobileTestimonial from "@/components/home/mobileTestimonial/MobileTestimonial";
+
+
+
+
+
 
 
 export default function Home() {
+
+ 
   return (
     <main className={styles.main}>
-      <Navbar dataScienceCounselling={true} radio={true} />
-      <HeroSection dataScienceCounselling={true} radio={true}/>
-      <CompanySection />
-      <Course dataScienceCounselling={true} radio={true}/>
-      <WhyLearnbay />
-      {/* <ReelSection /> */}
-      <ReviewSlider />
-      <CareerHome />
-      <GenAi />
-            {/* <ProjectSection /> */}
-      <DomainSection dataScienceCounselling={true} radio={true} />
-      <MobileTestimonial />
-      <Media />
-      <CallSection />
-      <Footer />
+
+<NavbarHome/>
+<HeroSection/>
+<InfinityLogo/>
+<KickStart/>
+<NewCourse/>
+<Animation/>
+<ReviewSlider/>
+<ContactUs/>
+<CLogo/>
+<Other/>
+<MobileTestimonial/>
+<NewSevenSection/>
     </main>
   );
 }

@@ -1,0 +1,180 @@
+.section {
+    display: grid;
+    grid-template-columns: 66% 32%;
+    border-radius: 30px;
+    margin: 50px 130px;
+    padding: 50px 50px 0px 50px;
+    align-items: center;
+    border-radius: 50px;
+  background: #E5F1F8;
+  max-width: 1200px;
+  margin: auto;
+  }
+  
+  .FirstDiv h4 {
+    color: #000;
+    font-size: 38px;
+    font-weight: 600;
+  }
+  
+  .FirstDiv span {
+  
+    background-clip: text;
+    color: #000;
+  }
+  
+  
+  .btnWrapper {
+      margin-top: 80px;
+  }
+  
+  .btnWrapper button {
+    border-radius: 10px;
+    background: #0072BC;
+    border:none;
+  }
+  
+  .MobileReviewImageContainer {
+      margin-bottom: -5px;
+      position: relative;
+  }
+  
+  .leftSlide {
+    display: flex;
+    grid-template-columns: 10% 80% 10%;
+    gap: 20px;
+    margin-top: 60px;
+    align-items: center;
+  }
+  
+  .sliderUser {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 84%;
+  }
+  
+  .FirstDiv {
+      padding-right: 30px;
+  }
+  
+  .icons {
+      padding: 5px;
+      background: #FE7A3629;
+      color: #747272;
+      font-size: 50px;
+      border-radius: 50px;
+  }
+  
+  .active {
+    opacity: 1;
+  }
+  
+  .faded {
+    opacity: 0.3;
+  }
+  
+  .ShowInMobile {
+      display: none;
+  }
+  @media (max-width: 1181px) {
+  
+    .section{
+      max-width: 900px;
+    }
+  }
+  @media (max-width: 1024px) {
+  .section {
+    margin: 30px;
+  }
+  .section{
+   max-width : 900px;
+  }
+  
+  
+  }
+  
+  @media (max-width: 961px) {
+  
+    .FirstDiv h4 {
+      font-size: 24px;
+    }
+  
+    .btnWrapper{
+      margin-top: 10px;
+    }
+    .MobileReviewImageContainer img {
+      width: 250px;
+      height: auto;
+    }
+    
+  
+  }
+  @media (max-width: 961px) {
+  
+  .MobileReviewImageContainer{
+    max-width: 700px;
+  }
+  
+  }
+  
+  
+  @media (max-width: 641px) {
+  .section {
+      margin: 0px;
+      padding: 10px 10px 0px 10px;
+      display: block;
+      border-radius: 0px;
+      width: 100%;
+  }
+  .FirstDiv span {
+      font-size: 28px;
+      font-weight: 700;
+    }
+  
+    .FirstDiv span::after {
+      content: '\A';
+          white-space: pre;
+    }
+    .FirstDiv h4 {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  .leftSlide {
+      margin-top:30px;
+      margin-bottom:30px;
+  }
+  .FirstDiv {
+      padding: 0;
+  }
+  .icons {
+  font-size: 30px;
+  }
+  .imgBorder {
+  width: 50px;
+  height: 50px;
+  }
+  .sliderUser {
+      gap: 10px;
+  }
+  .btnWrapper {
+      margin: 20px 0px;
+      display: flex;
+      justify-content: center;
+  }
+  .MobileReviewImageContainer {
+      margin-bottom: 0px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+  }
+  .HideInMobile {
+      display: none;
+  }
+  .ShowInMobile {
+      display: block;
+  }
+  
+  }
+  

@@ -1,6 +1,9 @@
 /* Add this import statement at the beginning of your globals.css file */
 /* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"); */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+
 html,
 body,
 #__next {
@@ -9,6 +12,7 @@ body,
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  width: 200px;
 }
 :root {
   /* Define your color variables */
@@ -21,7 +25,7 @@ body,
   --septenary-color: #252525;
 
   /* Define font sizes for desktop */
-  --desktop_h1-font-size: 48px;
+  --desktop_h1-font-size: 42px;
   --desktop_h2-font-size: 30px;
   --desktop_h3-font-size: 26px;
   --desktop_h4-font-size: 22px;

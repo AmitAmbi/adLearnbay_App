@@ -1,25 +1,26 @@
 import "./globals.css";
-import { Raleway } from "next/font/google";
+import { Poppins } from 'next/font/google';
 import { GoogleTagManager } from "@next/third-parties/google";
 
-const raleway = Raleway({
-  weight: ["300", "400", "500", "600", "700", "800"],
-  subsets: ["latin"],
-  display: "swap",
-  fallback: ["Arial", "sans-serif"],
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'], // You can adjust the weights as per your needs
 });
 
 export const metadata = {
-  title: "Learnbay V4",
-  description: "New Vesrion Website",
-
-  };
+  title: "AD Learnbay V4",
+  description: "New Version Website", // Fixed the typo here
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>{children}</body>
-      <GoogleTagManager gtmId="GTM-NN8XWH8" />
+      <head>
+        <GoogleTagManager gtmId="GTM-NN8XWH8" />
+      </head>
+      <body className={poppins.className}>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
