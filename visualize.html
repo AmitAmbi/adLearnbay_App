@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Metrics Visualization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .chart-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        #filterButtons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .filter-button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .filter-button:hover {
+            background: #45a049;
+        }
+        canvas {
+            max-width: 100%;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Performance Metrics</h1>
+    </header>
+
+    <div class="chart-container">
+        <div id="filterButtons">
+            <button class="filter-button" onclick="updateChart('all')">All Metrics</button>
+            <button class="filter-button" onclick="updateChart('core')">Core Web Vitals</button>
+        </div>
+        <canvas id="myChart" width="400" height="200"></canvas>
+    </div>
+
+    <script>
+        let chart;
+        let metricsData;
+
+        // Function to fetch the metrics
+        function fetchMetrics() {
+            return fetch('performance-metrics.json')
+                .then(response => response.json());
+        }
+
+        // Function to initialize the chart
+        function initializeChart(data) {
+            const ctx = document.getElementById('myChart').getContext('2d');
+            chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['TTFB (ms)', 'FCP (ms)', 'LCP (ms)', 'CLS', 'FID (ms)', 'TBT (ms)'],
+                    datasets: [{
+                        label: 'Performance Metrics',
+                        data: data,
+                        backgroundColor: [
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)',
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 205, 86, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)',
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 205, 86, 1)',
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        // Function to update the chart based on filter
+        function updateChart(filter) {
+            let filteredData;
+
+            if (filter === 'core') {
+                // Show only Core Web Vitals: FCP, LCP, FID, CLS
+                filteredData = [metricsData.FCP, metricsData.LCP, metricsData.CLS, metricsData.FID];
+                chart.data.labels = ['FCP (ms)', 'LCP (ms)', 'CLS', 'FID (ms)'];
+            } else {
+                // Show all metrics
+                filteredData = [metricsData.TTFB, metricsData.FCP, metricsData.LCP, metricsData.CLS, metricsData.FID, metricsData.TBT];
+                chart.data.labels = ['TTFB (ms)', 'FCP (ms)', 'LCP (ms)', 'CLS', 'FID (ms)', 'TBT (ms)'];
+            }
+
+            chart.data.datasets[0].data = filteredData;
+            chart.update();
+        }
+
+        // Fetch and initialize the chart
+        fetchMetrics()
+            .then(data => {
+                metricsData = data;
+                initializeChart(data);
+            })
+            .catch(error => console.error('Error loading metrics:', error));
+    </script>
+</body>
+</html>
