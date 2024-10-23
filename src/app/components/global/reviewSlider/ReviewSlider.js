@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./reviewSlider.module.css";
+import styles from "./ReviewSlider.module.css";
 import Image from "next/image";
 
 

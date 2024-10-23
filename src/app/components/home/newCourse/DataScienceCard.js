@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import { courses } from './NewCourseData'; // Import the course data
+import { courses } from './NewcourseData'; // Import the course data
 import styles from './DataScienceCard.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css'; // Import Swiper styles

@@ -9,7 +9,7 @@ import {
   getFormFields,
   getValidation,
   redirectionThankYou,
-} from "./formFunction";
+} from "./FormFunction";
 
 const Form = ({
   popup,
