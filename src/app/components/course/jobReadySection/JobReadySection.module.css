@@ -1,0 +1,252 @@
+.container {
+    margin-top: 100px;
+    background: linear-gradient(180deg, #fff 0%, #eff3f6 49.89%, #fff 100%);
+  }
+  
+  .headH4 {
+    color: #000;
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .innerdiv {
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    gap: 34px 60px;
+    margin-top: 30px;
+    padding: 0px 50px;
+    border-radius: 33px;
+    margin-bottom: 3rem;
+    /* background: #F8FCFF; */
+  }
+  
+  .innerdiv div h4 {
+    color: #0072bc;
+    font-weight: 600;
+    font-size: 26px;
+  }
+  
+  .innerdiv div p {
+    color: #121212;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-right: 150px;
+  }
+  
+  .innerdiv div:nth-child(1),
+  .innerdiv div:nth-child(2),
+  .innerdiv div:nth-child(3),
+  .innerdiv div:nth-child(4) {
+    border-radius: 28.284px; /* Border radius */
+    padding: 26px 0px 0px 42px;
+  }
+  
+  .innerdiv div:nth-child(1),
+  .innerdiv div:nth-child(4) {
+    background: #fff;
+  }
+  
+  .innerdiv div:nth-child(2),
+  .innerdiv div:nth-child(3) {
+    background: #fff;
+  }
+  
+  .innerdiv div:nth-child(2) h4,
+  .innerdiv div:nth-child(3) h4 {
+    color: #0072bc;
+  }
+  
+  .innerdiv img {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  
+  .img1 {
+    margin-bottom: -2px;
+  }
+  
+  .img2 {
+    margin-bottom: -13px;
+  }
+  
+  @media only screen and (max-width: 641px) {
+    .container {
+      margin-top: 0px;
+    }
+    .innerdiv {
+      flex-direction: column;
+      display: flex;
+      position: relative;
+      gap: 24px;
+      overflow: scroll;
+      width: 100%;
+      margin-top: 24px;
+      padding-left: 20px;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      grid-template-columns: 90% 90% 90% 90%;
+      border-radius: 0px;
+      padding-right: 20px;
+    }
+    .innerdiv div:nth-child(1),
+    .innerdiv div:nth-child(2),
+    .innerdiv div:nth-child(3),
+    .innerdiv div:nth-child(4) {
+      border: 0.961px solid transparent;
+      border-radius: 21.628px; /* Border radius */
+      padding: 24px 0px 0px 24px;
+    }
+    .innerdiv h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .innerdiv img {
+      width: 50px;
+      height: auto;
+      margin-top: -80px;
+      margin-right: 4px;
+      position: relative;
+      top: -130px;
+      bottom: 10px;
+      right: 20px;
+    }
+    .innerdiv div h4 {
+      font-size: 20px;
+    }
+    .innerdiv div p {
+      color: #121212;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 148%; /* 23.68px */
+    }
+  
+    .headH4 {
+      text-align: left;
+      margin: 0px 24px;
+      font-size: 26px;
+    }
+  
+    .innerdiv div P {
+      margin: 0 46px 30px 0px;
+      font-size: 17px;
+    }
+  
+  
+  
+  }
+  
+  /* #Achive */
+  
+  .section {
+    background: #eff3f6;
+    padding: 50px;
+  }
+  .section h2 {
+    text-align: center;
+    text-wrap: pretty;
+    margin: auto;
+  width: 600px;
+  color: #212121;
+  text-align: center;
+  font-size:35px;
+  font-weight: 600;
+  line-height: 126.5%; /* 69.575px */
+  }
+  
+  
+  .Container {
+    display: flex;
+    width: 1200px;
+    margin:100px auto;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  
+  
+  }
+  
+  .ContentBox {
+    border-radius: 30px;
+    background: #022646;
+    box-shadow: 0px -160px 45px 0px rgba(0, 0, 0, 0),
+      0px -102px 41px 0px rgba(0, 0, 0, 0.01),
+      0px -58px 35px 0px rgba(0, 0, 0, 0.02),
+      0px -26px 26px 0px rgba(0, 0, 0, 0.03),
+      0px -6px 14px 0px rgba(0, 0, 0, 0.03);
+      padding: 20px 20px 40px 20px;
+      width: 400px;
+  
+      
+  }
+  .box{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+  }
+  .RoundBox{
+    position: absolute;
+    width: -moz-fit-content;
+    width: fit-content;
+    left: 36%;
+    top: 76%;
+  }
+  
+  .ContentBox h5{
+    color: #FFF;
+  text-align: center;
+  
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 126.5%; /* 44.275px */
+  }
+  .ContentBox p {
+    color: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148%; /* 29.6px */
+  }
+  
+  .RoundBox{
+  
+     border-radius: 50%;
+     padding: 10px;
+  }
+  
+  
+  @media screen and (max-width:641px) {
+      /* @achive */
+  
+      .Container{
+        gap: 80px;
+        width: 100%;
+        
+      }
+      .ContentBox {
+        width: 100%;
+  
+      }
+      .section h2 {
+        width: 100%;
+        font-size: 24px;
+      }
+  
+      .section{
+        padding:20px;
+      }
+  
+  
+      .RoundBox {
+        left: 35%;
+      top: 70%;
+      }
+  }

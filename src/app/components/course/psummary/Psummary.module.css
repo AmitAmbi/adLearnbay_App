@@ -1,0 +1,287 @@
+.Container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .Container h2 {
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .hrline{
+    background: #FE7A36;
+    border: none;
+    width: 140px;
+    height: 2px;
+    position: relative;
+    left: 50%;
+    margin: 6px 0;
+  }
+  
+  
+  .contentConteiner {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    margin: 80px 0;
+  }
+  
+  
+  .contentConteiner h4 {
+    color: #484848;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 160%;
+  }
+  
+  .contentConteiner p {
+    color: #414141;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 146.5%;
+    width: 100%;
+    max-width: 195px;
+  }
+  
+  .Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 240px;
+  }
+  
+  .ibmLogo {
+    margin: 13px 0;
+  }
+  
+  /* Adjustments for the Form container */
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align form items */
+    padding: 20px; /* Add some padding around the form */
+  
+    border-radius: 24.338px;
+    background: #383838;
+  }
+  
+  .gridDiv {
+    display: grid;
+    grid-template-columns:50% 28%;
+    gap: 20px; /* Add some gap between columns */
+    align-items: baseline;
+  
+    justify-content: space-around;
+  }
+  
+  .contentContainerGrid {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(200px, 1fr)
+    ); /* Responsive grid */
+    gap: 60px; /* Space between grid items */
+    margin: 20px 0 80px 0;
+  }
+  .contentContainerGrid h4 {
+    color: #484848;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 160%;
+  }
+  
+  .contentContainerGrid p {
+    color: #414141;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 146.5%;
+    width: 100%;
+    max-width: 195px;
+  }
+  
+  .formdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24.338px;
+    border-radius: 24.338px;
+    background: #383838;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 30px 1px 0px 0px;
+    margin-top: 40px;
+  
+  }
+  .formdiv h3 {
+    color: #212121;
+    text-align: center;
+    font-size: 24.042px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .span {
+    background: linear-gradient(90deg, #fe7a36 24.09%, #ffc436 88.26%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }.formdiv form input {
+    border-radius: 8.743px;
+    border: none; /* Remove border for consistency */
+    background: #212121; /* Set background color */
+    color: white; /* Change text color to white */
+    font-weight: 400;
+    height: 42px;
+  }
+  
+  .formdiv form input::placeholder {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.5); /* Placeholder color (light white) */
+    font-weight: 300;
+  }
+  
+  .formdiv form label {
+    display: none; /* Hide labels */
+  }
+  
+  .formdiv form input[type="tel"] {
+    height: 38px; /* Maintain height for tel input */
+  }
+  
+  /* Assuming you have a select element for country */
+  .formdiv form select {
+    border-radius: 8.743px; /* Consistent border-radius */
+    border: none; /* Remove border */
+    background: #212121; /* Set background color */
+    color: white; /* Change text color to white */
+    font-weight: 400; /* Font weight */
+    height: 42px; /* Consistent height */
+    padding: 10px; /* Add padding */
+    appearance: none; /* Remove default dropdown arrow (optional) */
+    -webkit-appearance: none; /* Remove default dropdown arrow in Safari */
+  }
+  
+  /* Customize dropdown options */
+  .formdiv form select option {
+    background-color: #212121; /* Set background color for dropdown options */
+    color: #969494; /* Set text color for dropdown options */
+  }
+  
+  /* Keep the styling consistent after input */
+  .formdiv form input:focus,
+  .formdiv form select:focus {
+    background: #212121; /* Maintain background color on focus */
+    color: white; /* Maintain text color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Optional: Add styles for filled input */
+  .formdiv form input:valid {
+    background: #212121; /* Maintain background color */
+    color: white; /* Maintain text color */
+  }
+  
+  .formdiv form select:focus-visible {
+    background: #212121; /* Maintain background color */
+    color: white; /* Maintain text color */
+  }
+  
+  .formdiv h4 {
+    color: #FFF;
+  text-align: center;
+  font-size: 20.042px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 191.682%; /* 51.835px */
+  }
+  
+  .formdiv span {
+    color: #FE7A36;
+  font-weight: 600;
+  
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Container {
+      margin: 60px 0;
+      padding: 0 20px;
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .contentConteiner {
+      gap: 16px;
+      justify-content: flex-start;
+      overflow-x: auto;
+      padding: 0 16px;
+      margin: 40px 0;
+    }
+  
+    .Container h2 {
+      color: #212121;
+      font-size: 28px;
+      font-weight: 600;
+      text-align: left;
+    }
+  
+  
+  
+    .contentConteiner h4 {
+      margin-bottom: 0;
+    }
+  
+    .Box {
+      min-width: 220px;
+    }
+  
+    .contentConteiner::-webkit-scrollbar {
+      display: none; /* Hide scrollbar in WebKit browsers */
+    }
+  
+    .customScrollbar {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .dotContainer {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .dot {
+      width: 12px;
+      height: 12px;
+      background-color: #ccc;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .dot.active {
+      background-color: #484848;
+      width: 40px;
+      border-radius: 20px;
+    }
+  
+    .dot:hover {
+      background-color: #000;
+    }
+  
+    .ContainerForm {
+      display: none;
+    }
+  
+    .hrline {
+      left: 115px;
+      width: 114px;
+    }
+  }
+  

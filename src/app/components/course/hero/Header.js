@@ -1,12 +1,14 @@
+"use client"
+
 import { lazy, Suspense, memo, useCallback } from "react";
 import Image from "next/image"; // Import Next.js Image component
-import styles from "./HeroSection.module.css";
-import Button from "@/components/Global/Button/Button";
+import styles from "./Header.module.css";
+import Button from "@/app/components/global/button/Button";
 
 // Lazy-load heavy components to improve FID and LCP
-const Form = lazy(() => import("@/components/Global/Form/Form"));
+const Form = lazy(() => import("../../global/form/Form"));
 
-const HeroSectionContent = memo(({
+const Header = memo(({
   setPopups,
   setApplyCounselingPopup,
   spanTag,
@@ -76,8 +78,7 @@ const HeroSectionContent = memo(({
                 <div onClick={applyCounselingShow}>
                   <Button
                     text="Apply for Counseling"
-                    OrangeButton={OrangeButton}
-                    purpleButton={purpleButton}
+          
                   />
                 </div>
               </div>
@@ -173,4 +174,4 @@ const HeroSectionContent = memo(({
   );
 });
 
-export default HeroSectionContent;
+export default Header;

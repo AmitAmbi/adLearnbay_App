@@ -1,0 +1,218 @@
+/* MyComponent.module.css */
+
+.container {
+    background: linear-gradient(180deg, #FFF 1.29%, #EFF3F6 98.18%);
+    color: #000;
+    padding: 100px 0 70px;
+  }
+  
+  .innerDiv {
+    margin: 0 20px;
+  }
+  .innerDiv h2 {
+   text-align: center;
+  }
+  
+  .h2 {
+    color: #022646;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+  
+  }
+  
+  .hrline {
+    width: 150px;
+    align-items: center;
+    position: relative;
+    left: 35%;
+    background: #FE7A36;
+    height: 2px;
+    border: none;
+  }
+  
+  .pHead {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150.5%;
+    margin-bottom: 50px;
+  }
+  
+  .green {
+    color: green;
+    font-weight: 600;
+  }
+  
+  .pTop {
+    color: #212121;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 146.5%;
+  }
+  
+  .innerBoxDiv {
+    display: flex;
+    gap: 130px;
+    margin: 30px 0;
+  }
+  
+  .innerBox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .innerBox h3 {
+    color: #2E2E2E;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .secondSection img { 
+    width: 100%;
+    height: auto;
+  }
+  
+  .orangeSpan {
+    color: #FE7A36;
+    font-weight: 700;
+  }
+  
+  .blueSpan {
+    color: #0072BC;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .blueSpan:hover {
+    color: #FE7A36;
+  }
+  
+  .firstSection {
+    border-radius: 40px;
+    padding: 30px 60px 30px 35px;
+    background: #FFF;
+  }
+  
+  .pBot {
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 60px;
+  }
+  
+  .twoSection {
+    display: grid;
+    grid-template-columns: 62% 28%;
+    gap: 48px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .blackSpan {
+    color: #212121;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 114%;
+  }
+  
+  .H3 {
+    color: #212121;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 114%;
+  }
+  
+  .colors {
+    background: linear-gradient(91deg, #0072BC 19.08%, #FE7A36 93.87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 114%;
+  }
+  
+  @media only screen and (max-width: 641px) {
+    .container {
+      padding: 40px 0;
+      background: linear-gradient(180deg, #FFF 0.4%, #EFF3F6 14%, #FFF 44.68%, #EFF3F6 66.17%);
+    }
+    
+    .innerDiv {
+      margin: 0 24px;
+    }
+  
+    .h2 {
+      font-size: 28px;
+    }
+  
+    .twoSection {
+      grid-template-columns: 100%;
+      margin-top: 30px;
+    }
+  
+    .firstSection {
+      border-radius: 17px;
+      padding: 20px 14px;
+    }
+  
+    .innerBoxDiv {
+      gap: 20px;
+      margin: 20px 0;
+    }
+  
+  
+    .innerBox img {
+      width: 42px;
+      height: auto;
+    }
+  
+    .pTop {
+      margin-top: 12px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  
+    .pBot {
+      font-size: 12px;
+      line-height: 16px;
+      margin: 0;
+    }
+  
+    .secondSection {
+      padding: 0 30px;
+    }
+  
+    .blackSpan {
+      font-size: 30px;
+    }
+    .H3{
+      font-size: 26px;
+    }
+    .colors{
+      font-size: 36px;
+      text-wrap: pretty;
+    }
+    .pHead{
+      margin-bottom: 0;
+    }
+    .hrline{
+      left:140px;
+      width: 180px;
+    }
+    .innerDiv h2 {
+      color: #022646;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 144.5%; /* 40.46px */
+    }
+    .innerBox h3 {
+      font-size: 14px;
+    }
+  }
+  

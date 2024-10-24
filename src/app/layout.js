@@ -3,11 +3,11 @@
 
 import { useEffect } from 'react';
 import "./globals.css";
-import { Poppins } from 'next/font/google';
+import { Nunito, Nunito_Sans } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
-const poppins = Poppins({
+const nunito = Nunito({
   subsets: ['latin'],
   weight: ['400', '500', '700'], // Adjust weights as needed
 });
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* Add any additional head elements here */}
       </head>
-      <body className={poppins.className}>
+      <body className={nunito.className}>
         <main>
           {children}
           <SpeedInsights />
