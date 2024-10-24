@@ -1,5 +1,7 @@
+"use client"; // This ensures the component runs on the client-side
+
 import jsCookie from "js-cookie";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation"; // Use the App Router version of useRouter
 import { useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
@@ -32,14 +34,13 @@ const Form = ({
   DomainInput,
   brochurePdf,
 }) => {
-  const router = useRouter();
+  const router = useRouter(); // Correct import for useRouter
   const [formFields, setFormFields] = useState(
     getFormFields(radio, google, referrals, Domain, interstedInHide)
   );
   const [formField, setFormField] = useState(
     getFormFields(radio, google, referrals, interstedInHide)
   );
-  
 
   const [value, setValue] = useState();
   const [error, setError] = useState();
@@ -183,8 +184,6 @@ const Form = ({
       console.error("Error submitting form:", error.message);
     }
   };
-
-
 
   const downloadFileAtUrl = (url) => {
     const aTag = document.createElement('a');
@@ -335,77 +334,17 @@ const Form = ({
                     </div>
                   )
               )}
-        </>
-
-        <input name="country" value={query.country} type="hidden" />
-        <input name="region" value={query.region} type="hidden" />
-        <input name="city" value={query.city} type="hidden" />
-        {error && (
-          <p className={styles.errorMsg}>
-            Please fill all the fields marked with *
-          </p>
-        )}        {popup && (
-          <input type="hidden" id="url" name="url" value={router.asPath} />
-        )}
-        <div>{toggle ? "" : <p className={styles.alert}>{alertMSG}</p>}</div>
-        {syllabus ? (
-          <div className={styles.bottomWrap}>
-            <p className={styles.FormText}>
-              By submitting the form, you agree to our Terms and Conditions and
-              our Privacy Policy.
-            </p>
-            <button
-              type="submit"
-              className={styles.button}
-              disabled={submitting}
-              onClick={() => setToggle(true)}
-            >
-              {submitting
-                ? "Submitting..."
-                : downloadBrochure
-                ? "Download Now"
-                : btnText}
+          {error && (
+            <div className={styles.errorContainer}>
+              <p>{error}</p>
+            </div>
+          )}
+          <div className={styles.submitContainer}>
+            <button type="submit" disabled={submitting} className={styles.submitButton}>
+              {submitting ? "Submitting..." : btnText}
             </button>
           </div>
-        ) : (
-          <>
-            <p className={styles.FormText}>
-              By submitting the form, you agree to our Terms and Conditions and
-              our Privacy Policy.
-            </p>
-            <button
-              type="submit"
-              className={styles.button}
-              onClick={() => setToggle(true)}
-              disabled={submitting}
-            >
-              {submitting
-                ? "Submitting..."
-                : downloadBrochure
-                ? "Download Now"
-                : btnText}
-            </button>
-          </>
-        )}
-        <input type="hidden" id="zc_gad" name="zc_gad" value="" />
-        {alertMSG === "" ? (
-          ""
-        ) : (
-          <p
-            style={{
-              fontSize: "12px",
-              color: "red",
-              marginTop: "-10px",
-              marginBottom: "10px",
-            }}
-          >
-            {alertMSG}
-          </p>
-        )}
-        <p className={styles.formWrapper} style={{ color: "red" }}>
-          {error}
-        </p>
-        
+        </>
       </form>
     </div>
   );

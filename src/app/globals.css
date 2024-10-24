@@ -12,7 +12,6 @@ body,
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  width: 200px;
 }
 :root {
   /* Define your color variables */
