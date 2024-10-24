@@ -21,8 +21,8 @@
     margin: 130px 0px 200px 0px;
   }
   .headingContainer h2 {
-    color: #022646;
-    font-size: 42px;
+    color:var(--deep-blueee);
+    font-size: var( --desktop_h2-font-size);
     font-weight: 300;
   }
   
@@ -35,7 +35,7 @@
     height: auto;
   }
   .learnHeading {
-    color: #616161;
+    color: var(--medium-greey);
     font-size: 30px;
     font-weight: 700;
     line-height: 1.6;
@@ -43,29 +43,29 @@
   .Leftrotate180,
   .Rightrotate180 {
     transform: rotate(180deg);
-    background: #d9d9d9;
+    background: var(--light-whitee);
   }
   .Leftrotate180 {
     width: 80px;
     height: 26px;
     flex-shrink: 0;
-    color: black;
+    color: var(--black);
     border-radius: 100px;
   }
   .Rightrotate180 {
     width: 26px;
     height: 26px;
     flex-shrink: 0;
-    color: gray;
+    color: var(--gray);
     border-radius: 100px;
   }
   .leftbtn {
     width: 80px;
     height: 26px;
-    border: 0.1px solid black;
+    border: 0.1px solid var(--black);;
     flex-shrink: 0;
-    color: black;
-    background: #d9d9d9;
+    color:var(--black);;
+    background: var(--light-whitee);
     border-radius: 100px;
     cursor: pointer;
   }
@@ -73,8 +73,8 @@
     width: 26px;
     height: 26px;
     flex-shrink: 0;
-    color: gray;
-    background: #d9d9d9;
+    color: var(--gray);
+    background:  var(--light-whitee);
     border-radius: 100px;
     cursor: pointer;
   }
@@ -96,7 +96,7 @@
     font-size: 12px;
   }
   .contentSlide {
-    color: #141414;
+    color: var(--daark-black);
     font-size: 12px;
     font-weight: 400;
     padding: 10px 15px;
@@ -120,21 +120,21 @@
     padding-top: 100px;
   }
   .mainHeading {
-    color: #022646;
+    color: var(--deep-blueee);
     font-size: 34px;
     font-weight: 700;
   }
   .subHeading {
-    color: #727272;
+    color: var(--deeep-grey);
     font-size: 20px;
     margin: 10px 0px 50px 0px;
     font-weight: 500;
   }
   
   .prevBtn {
-    color: white;
+    color:var(--white);
     cursor: pointer;
-    background: #848484;
+    background: var(--daark-grey);
     border-radius: 50%;
     font-size: 40px;
     text-align: center;
@@ -143,9 +143,9 @@
     justify-content: center;
   }
   .nextBtn {
-    color: white;
+    color:var(--white);
     cursor: pointer;
-    background: #848484;
+    background: var(--daark-grey);
     font-size: 40px;
     border-radius: 50%;
     display: flex;
@@ -178,8 +178,8 @@
   }
   
   .firstBotReview p {
-    font-size: 18px;
-    color: #6C6C6C;
+    font-size: var( --desktop_p-font-size);
+    color: var(--medium-greyy);
   font-style: normal;
   font-weight: 400;
   line-height: 153%; /* 38.25px */
@@ -261,7 +261,7 @@
       display: none;
     }
     .headingContainer h2 {
-      font-size: 28px;
+      font-size: var( --desktop_h2-font-size);
       text-wrap: balance;
     }
     .mainHeading {

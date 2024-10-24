@@ -1,11 +1,9 @@
 .NewSevenSection{
-    border-radius: 50px;
-background: #212121;
+border-radius: 50px;
+background: var(--light-black);
 width: 1200px;
 margin: 100px auto;
-
 padding: 50px 80px;
-
 }
 
 .griContiner{
@@ -14,22 +12,22 @@ padding: 50px 80px;
     justify-content: center;
 }
 .fontDiv h4 {
-    color: #FFC436;
-font-size: 22px;
+    color: var(--secondary-color);
+font-size: var(--desktop_h4-font-size);
 font-style: normal;
 font-weight: 400;
 line-height: 153%; /* 45.9px */
 }
 .fontDiv h3 {
-    color: #FFF;
-    font-size: 30px;
+    color: var(--white);
+    font-size:var(--desktop_h3-font-size);
     font-style: normal;
     font-weight: 500;
     line-height: 153%;
 }
 .fontDiv p {
-    color: #FFF;
-font-size: 17px;
+    color: var(--white);
+font-size:var(--desktop_p-font-size);
 font-style: normal;
 font-weight: 300;
 line-height: 153%; /* 33.66px */
@@ -54,8 +52,8 @@ display: flex;
 
 .green {
     border-radius: 5px;
-    background: var(--p3, #04C988);
-    color: #fff;
+    background: var(--p3, var(--parrot-green));
+    color: var(--white);
     border: none;
     padding: 6px 40px;
     font-size: 14px;
@@ -68,21 +66,21 @@ display: flex;
 }
 
 .green:hover {
-    background: #03b877;
+    background: var(--mint-green);
     box-shadow: 0 0 15px rgba(4, 201, 136, 0.6);
 }
 
 .blue {
     display: flex;
     gap: 10px;
-    color: #0072BC;
+    color: var(--primary-color);
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     text-transform: uppercase;
     padding: 10px 22px;
     border-radius: 5px;
-    background: #FFF;
+    background: var(--white);
     border: none;
     align-items: center;
     cursor: pointer;
@@ -90,7 +88,7 @@ display: flex;
 }
 
 .blue:hover {
-    color: #005a9b;
+    color: var(--royale-blue);
     box-shadow: 0 0 15px rgba(104, 114, 121, 0.6);
 }
 
@@ -143,7 +141,7 @@ display: flex;
     .NewSevenSectionM{
         display: block;
         border-radius: 30px;
-        background: #212121;
+        background: var(--light-black);
         padding: 20px;
         margin: 20px;
     }
@@ -153,15 +151,15 @@ display: flex;
     }
 
     .NewSevenSectionM h4 {
-        font-size: 20px;
+        font-size:var(--desktop_h4-font-size);
 
     }
     .NewSevenSectionM h3{
-font-size: 26px;
+font-size:var(--desktop_h3-font-size);
     }
     .NewSevenSectionM p {
-        color: #FFF;
-        font-size: 16px;
+        color: var(--white);
+        font-size: var(--desktop_p-font-size);
         font-style: normal;
         font-weight: 400;
         line-height: 153%;

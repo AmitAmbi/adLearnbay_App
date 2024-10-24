@@ -1,7 +1,7 @@
 .h2 {
     text-align: center;
-    color: #000;
-    font-size: 40px;
+    color: var(--black);
+    font-size: var(--desktop_h2-font-size);
     font-style: normal;
     font-weight: 600;
     line-height: 50px; /* 90.909% */
@@ -47,8 +47,8 @@
   }
   
   .left p {
-    color: #747474;
-    font-size: 20px;
+    color: var(--greeyy);
+    font-size:var( --desktop_p-font-size);
     font-style: normal;
     font-weight: 400;
     margin: 0;
@@ -56,7 +56,7 @@
   
   .middle {
     border-radius: 25px;
-    background: #212121;
+    background: var(--light-black);
     box-shadow: 3px 3px 13.5px 0px rgba(0, 0, 0, 0.25);
     padding: 20px 20px 72px 25px;
     display: flex;
@@ -78,7 +78,7 @@
   }
   
   .middle p {
-    color: #fff;
+    color: var(--white);
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -92,7 +92,7 @@
   
   .right {
     border-radius: 25px;
-    background: #e5f1f8;
+    background: var(--cyan);
     display: flex;
     flex-direction: column;
     padding: 29px 20px 40px 20px;
@@ -101,8 +101,8 @@
   }
   
   .right h4 {
-    color: #000;
-    font-size: 24px;
+    color: var(--black);
+    font-size:  var(--desktop_h4-font-size);
     font-style: normal;
     font-weight: 600;
     line-height: 30px; /* 100% */
@@ -123,8 +123,8 @@
   }
   
   .rytInside p {
-    color: #000;
-    font-size: 14px;
+    color: var(--black);
+    font-size: var( --desktop_p-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -142,7 +142,7 @@
   /* Mobile responsiveness */
   @media screen and (max-width: 641px) {
     .h2{
-      font-size: 36px;
+      font-size:  var(--desktop_h2-font-size);
     }
   
   /* Custom scrollbar styling for the first component */
@@ -161,13 +161,13 @@
   .dotOne {
     width: 10px;
     height: 10px;
-    background-color: #ccc;
+    background-color: var(--medium-grey);
     border-radius: 20px;
     transition: background-color 0.3s;
   }
   
   .dotOne.active {
-    background-color: #525050;
+    background-color:var(--light-ggrey);
     width: 80px;
     height: 10px;
     border-radius: 20px;
@@ -176,13 +176,13 @@
   .dot {
     width: 10px;
     height: 10px;
-    background-color: #ccc;
+    background-color:  var(--medium-grey);
     border-radius: 50%;
     transition: background-color 0.3s;
   }
   
   .dot.active {
-    background-color: #5f5d5d;
+    background-color: var(--ggrrey);
     width: 80px;
     height: 10px;
     border-radius: 20px;
@@ -204,13 +204,13 @@
   .dotSecond {
     width: 10px;
     height: 10px;
-    background-color: #ccc;
+    background-color:  var(--medium-grey);
     border-radius: 50%;
     transition: background-color 0.3s;
   }
   
   .dotSecond.active {
-    background-color: #000; /* Change the color for the active dot */
+    background-color: var(--black); /* Change the color for the active dot */
   }
   
     .HeadDiv {

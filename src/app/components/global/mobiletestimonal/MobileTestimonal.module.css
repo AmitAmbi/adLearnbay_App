@@ -6,21 +6,21 @@
     padding: 50px 50px 0px 50px;
     align-items: center;
     border-radius: 50px;
-  background: #E5F1F8;
+  background: var(--cyan);
   max-width: 1200px;
   margin: auto;
   }
   
   .FirstDiv h4 {
-    color: #000;
-    font-size: 38px;
+    color: var(--black);
+    font-size: var(--desktop_h4-font-size);
     font-weight: 600;
   }
   
   .FirstDiv span {
   
     background-clip: text;
-    color: #000;
+    color:var(--black);
   }
   
   
@@ -30,7 +30,7 @@
   
   .btnWrapper button {
     border-radius: 10px;
-    background: #0072BC;
+    background: var(--primary-color);
     border:none;
   }
   
@@ -61,8 +61,8 @@
   
   .icons {
       padding: 5px;
-      background: #FE7A3629;
-      color: #747272;
+      background: var(--brown);
+      color: var(--grey);
       font-size: 50px;
       border-radius: 50px;
   }
@@ -98,7 +98,7 @@
   @media (max-width: 961px) {
   
     .FirstDiv h4 {
-      font-size: 24px;
+      font-size: var(--desktop_h4-font-size);
     }
   
     .btnWrapper{
@@ -138,7 +138,7 @@
           white-space: pre;
     }
     .FirstDiv h4 {
-      font-size: 16px;
+      font-size: var(--desktop_h4-font-size);
       font-weight: 400;
     }
   .leftSlide {

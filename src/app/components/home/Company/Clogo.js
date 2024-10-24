@@ -22,7 +22,7 @@ const CLogo = () => {
                             <Image 
                                 src={item.image} 
                                 alt={`${item.alt}`} 
-                                layout='responsive'
+                                
                                 width={100} 
                                 height={30} 
                             />
