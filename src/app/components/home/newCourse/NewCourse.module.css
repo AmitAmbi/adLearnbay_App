@@ -25,13 +25,13 @@ margin: 10px auto 60px auto;
 
 .tabdiv.active {
   border-radius:8.984px;
-  background: #022646;
+  background: var(--deep-blue);
 
 }
 .tabdiv.active p {
-  color:#fff;
+  color:var(--white);
 
-font-size: 13px;
+font-size:var(--desktop_p-font-size);
 font-style: normal;
 font-weight: 300;
 line-height: 126.5%; /* 25.3px */
@@ -42,8 +42,8 @@ line-height: 126.5%; /* 25.3px */
 }
 
 .svgActive{
-  color: red;
-  fill: #000;
+  color: var(--red-official);
+  fill: var(--black);
 }
 /* Additional styling for container */
 .section {
@@ -67,8 +67,8 @@ line-height: 126.5%; /* 25.3px */
 
 .tabMain p {
   margin-top: 0;
-  color: #212121;
-  font-size: 13px;
+  color: var(--light-black);
+  font-size: var(--desktop_p-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: 126.5%; /* 25.3px */
@@ -77,7 +77,7 @@ line-height: 126.5%; /* 25.3px */
 .tabdiv {
   border-radius: 10px;
   cursor: pointer;
-background-color: #fff;
+background-color: var(--white);
   padding: 10px;
   margin: 4px;
 }
@@ -108,13 +108,13 @@ align-items: center;
 .cardContent {
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
-  background: #fff;
+  background:var(--white);
   padding: 16px 12px 21px 12px;
 }
 
 .cardContent h3 {
-  color: #212121;
-  font-size: 17px;
+  color: var(--light-black);
+  font-size: var(--desktop_h3-font-size);
   font-style: normal;
   font-weight: 600;
   line-height: 126.5%; /* 40.48px */
@@ -130,7 +130,7 @@ align-items: center;
 }
 
 .lists span {
-  color: #666;
+  color: var(--deeep-grey);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -147,9 +147,9 @@ align-items: center;
 }
 .brochurebtn {
   border-radius: 25px;
-  background: #000;
-  color: #fff;
-  color: #fff;
+  background: var(--black);
+  color: var(--white);
+  color:var(--white);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -164,9 +164,9 @@ align-items: center;
 
 .brochurebtnMaster{
   border-radius: 25px;
-  background: #FE7A36;
-  color: #fff;
-  color: #fff;
+  background: var(--light-orange);
+  color:var(--white);
+  color:var(--white);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -182,27 +182,27 @@ align-items: center;
 .viewDetailsButton {
   border-radius: 26px;
   background: transparent;
-  color: #000;
+  color: var(--black);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 155%; /* 34.1px */
   padding: 9px 20px;
   cursor: pointer;
-  border: 1px solid #000;
+  border: 1px solid var(--black);
 }
 
 .viewDetailsButtonmaster{
   border-radius: 26px;
   background: transparent;
-  color: #fff;
+  color:var(--white);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 155%; /* 34.1px */
   padding: 9px 28px;
   cursor: pointer;
-  border: 1px solid #fff
+  border: 1px solid var(--white);
 }
 .mainImage {
   width: 100%;
@@ -221,11 +221,11 @@ align-items: center;
 
 .viewMoreButton {
   border-radius: 12px;
-  background: #0072bc;
-  color: #fff;
+  background:var(--primary-color);
+  color: var(--white);
   padding: 10px 50px;
   border: none;
-  color: #fff;
+  color: var(--white);
   text-align: center;
 
   font-size: 22px;
@@ -252,17 +252,17 @@ align-items: center;
   align-items: center;
   padding: 10px;
   cursor: pointer;
-  color: black;
+  color: var(--black);
   transition: color 0.3s ease;
   justify-content: space-between;
 }
 
 .active {
-  color: white;
+  color: var(--white);
 }
 
 .svgIcon {
-  fill: black;
+  fill: var(--black);
   transition: fill 0.3s ease;
 }
 
@@ -293,18 +293,17 @@ align-items: center;
   gap: 10px;
 }
 .contentConteiner h2 {
-  font-size: 28px;
+  font-size: var(--desktop_h2-font-size);
   font-weight: 600;
   line-height: 126.5%;
-  color: #FFF;
+  color: var(--white);
 letter-spacing: -0.4px;
 }
 .contentConteiner p {
-  font-size: 16px;
+  font-size: var(--desktop_p-font-size);
   font-style: normal;
   margin-top: 0;
-
-  color: #FFC436;
+ color: var(--secondary-color);
 font-style: normal;
 font-weight: 400;
 line-height: 155%; /* 34.1px */
@@ -318,7 +317,7 @@ line-height: 155%; /* 34.1px */
 
 }
 .gridConteiner {
-  background-color: red;
+  background-color: var(--red-official);;
   display: grid;
   grid-template-columns: 50% 45%;
 }
@@ -332,16 +331,16 @@ line-height: 155%; /* 34.1px */
 }
 
 .absloute h4 {
-  color: #fff;
+  color: var(--white);
   text-align: center;
-  font-size: 36px;
+  font-size:var(--desktop_h4-font-size);;
   font-style: normal;
   font-weight: 800;
   display: flex;
   flex-direction: column;
 }
 .absloute span {
-  color: #fff;
+  color:var(--white);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -364,7 +363,7 @@ line-height: 155%; /* 34.1px */
     justify-content: center;
   }
   .cardContent h3 {
-    font-size: 18px;
+    font-size: var(--desktop_h3-font-size);;
   }
   .brochurebtn svg {
     width: 12px;
@@ -414,7 +413,7 @@ line-height: 155%; /* 34.1px */
   }
 
   .cardContent h3 {
-    font-size: 16px;
+    font-size: var(--desktop_h3-font-size);;
   }
   .lists span {
     font-size: 12px;
@@ -445,7 +444,7 @@ line-height: 155%; /* 34.1px */
     width: 220px;
   }
   .cardContent h3 {
-    font-size: 16px;
+    font-size: var(--desktop_h3-font-size);;
   }
   .lists span {
     font-size: 11px;
@@ -504,18 +503,18 @@ line-height: 155%; /* 34.1px */
 }
 
 .tabMain::-webkit-scrollbar-track {
-  background: black; /* Track color */
+  background: var(--black); /* Track color */
   border-radius: 10px; /* Round track */
 }
 
 .tabMain::-webkit-scrollbar-thumb {
-  background: #0072bc; /* Scrollbar thumb color */
+  background: var(--primary-color); /* Scrollbar thumb color */
   border-radius: 10px; /* Round scrollbar thumb */
-  border: 10px solid black; /* Add border around the thumb */
+  border: 10px solidvar(--black); /* Add border around the thumb */
 }
 
 .tabMain::-webkit-scrollbar-thumb:hover {
-  background: #005f8a; /* Thumb color on hover (optional) */
+  background:var(--dark-blue) /* Thumb color on hover (optional) */
 }
 
 .tabdiv {
@@ -524,19 +523,19 @@ line-height: 155%; /* 34.1px */
   cursor: pointer; /* Pointer on hover */
   min-width: 150px; /* Minimum width to prevent small tabs */
   padding: 10px 20px; /* Optional padding for tabs */
-  background-color: white; /* Tab background color for visibility */
+  background-color: var(--white); /* Tab background color for visibility */
 }
 
 
 
   .tabMain p {
-    font-size: 14px;
+    font-size:var(--desktop_p-font-size);
     font-weight: 600;
     margin-right: 10px;
   }
   .tabMain p :nth-child(2) {
-    background-color: red;
-    color: #0072bc;
+    background-color:var(--red-official);
+    color: var(--primary-color);
   }
 
   .courseCard {
@@ -549,7 +548,7 @@ line-height: 155%; /* 34.1px */
   }
 
   .cardContent h3 {
-    font-size: 24px;
+    font-size:var(--desktop_h3-font-size);;
   }
   .cardContent {
     padding: 20px 30px;
@@ -597,8 +596,8 @@ line-height: 155%; /* 34.1px */
     padding: 20px;
   }
   .contentConteiner h2 {
-    color: #fff;
-    font-size: 22px;
+    color:var(--white);
+    font-size:  var(--desktop_h2-font-size);
     font-style: normal;
     font-weight: 600;
     line-height: 126.5%;
@@ -618,16 +617,16 @@ line-height: 155%; /* 34.1px */
     left: 30px;
   }
   .absloute h4 {
-    color: #7a7a7a;
+    color: var(--dark-grey);
     text-align: center;
-    font-size: 30px;
+    font-size: var(--desktop_h4-font-size);;
     font-style: normal;
     font-weight: 700;
     line-height: 155%;
     text-wrap: balance;
   }
   .absloute span {
-    color: #fff;
+    color:var(--white);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -639,7 +638,7 @@ line-height: 155%; /* 34.1px */
 
   }
   .contentConteiner p {
-    font-size: 14px;
+    font-size: var(--desktop_p-font-size);
   }
   .swiperContainer{
     padding-bottom: 30px;
@@ -652,7 +651,7 @@ line-height: 155%; /* 34.1px */
   
   .accordionItem {
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--medium-grey);
     border-radius: 5px;
   }
   
@@ -660,7 +659,7 @@ line-height: 155%; /* 34.1px */
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: #f7f7f7;
+    background-color: var(--light-white);
     cursor: pointer;
     font-weight: bold;
   }
@@ -668,7 +667,7 @@ line-height: 155%; /* 34.1px */
   .accordionContent {
     padding: 15px;
     display: none;
-    background-color: #fff;
+    background-color: var(--white);
   }
   
   .expanded .accordionContent {
@@ -687,7 +686,7 @@ font-size: 16px;
     padding: 0 20px;
   }
   .absloute h4 {
-    font-size: 27px;
+    font-size: var(--desktop_h4-font-size);;
   }
   .absloute span {
     font-size: 13px;
@@ -696,7 +695,7 @@ font-size: 16px;
 
 @media screen and (max-width: 360px) {
   .cardContent h3 {
-    font-size: 20px;
+    font-size: var(--desktop_h3-font-size);;
   }
   .buttons button {
     font-size: 12px;
@@ -707,7 +706,7 @@ font-size: 16px;
     height: fit-content;
   }
   .contentConteiner h2 {
-    font-size: 18px;
+    font-size: var(--desktop_h2-font-size);
   }
   .buttonsMaster{
     top: -20px;

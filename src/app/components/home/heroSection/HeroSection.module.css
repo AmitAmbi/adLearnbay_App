@@ -28,11 +28,11 @@
     padding-bottom: 16px;
   }
   .gridConteiner h1 {
-    font-size: 42px;
+    font-size: var(--desktop_h1-font-size);
     font-style: normal;
     line-height: 126.5%; /* 75.9px */
     letter-spacing: 0.6px;
-    color: #fff;
+    color: var(--white);
     font-weight: 600 ;
     margin-top: -8px;
     font-family: "Open Sans", sans-serif;
@@ -55,7 +55,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    color: #fff;
+    color: var(--white);
     font-size: 16px;
     cursor: pointer;
     box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 24px;
@@ -104,8 +104,8 @@
     padding-top: 40px;
   }
   .rytConteiner h2 {
-    color: #4f4b4b;
-    font-size: 27px;
+    color: var(--light-grey);
+    font-size: var(--desktop_h2-font-size);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -128,7 +128,7 @@
     gap: 8px;
   }
   .listryt span {
-    color: #212121;
+    color: var(--light-black);
     font-size: 14.377px;
     font-style: normal;
     font-weight: 500;
@@ -147,13 +147,13 @@
     gap: 6px;
   }
   .bookFreebtn button {
-    color: #fff;
+    color: var(--white);
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     border-radius: 6px;
-    background: #022646;
+    background: var(--deep-blue);
     border: none;
     padding: 15px 20px;
     align-items: center;
@@ -182,9 +182,9 @@
   }
   
   .bookFreebtn button:hover {
-    background: #022646; /* Keep the same background color */
+    background: var(--deep-blue); /* Keep the same background color */
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Glowing effect */
-    color: #35d028;
+    color: var(--light-green);
   }
   
   .bookFreebtn button span {
@@ -193,7 +193,7 @@
   }
   
   .bookFreebtn p {
-    color: #000;
+    color: var(--black);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -222,7 +222,7 @@
     margin-top: 35px;
   }
   .listleft p {
-    color: #fff;
+    color: var(--white);
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
@@ -278,11 +278,11 @@
     }
   
     .gridConteiner h1 {
-      font-size: 36px;
+      font-size:  var(--desktop_h1-font-size);
     }
   
     .rytConteiner h2 {
-      font-size: 30px;
+      font-size:var(--desktop_h2-font-size);
     }
     .listDown {
       padding: 24px 24px;
@@ -315,11 +315,11 @@
     }
   
     .gridConteiner h1 {
-      font-size: 30px;
+      font-size: var(--desktop_h1-font-size);
     }
   
     .rytConteiner h2 {
-      font-size: 32px;
+      font-size:var(--desktop_h2-font-size);
     }
     .listleft p {
       font-size: 20px;
@@ -365,7 +365,7 @@
       max-width: 860px;
     }
     .gridConteiner h1 {
-      font-size: 32px;
+      font-size: var(--desktop_h1-font-size);
     }
     .listleft {
       margin: 40px 0;
@@ -401,7 +401,7 @@
     }
   
     .gridConteiner h1 {
-      font-size: 30px;
+      font-size:  var(--desktop_h1-font-size);
     }
     .listleft p {
       font-size: 15px;
@@ -411,7 +411,7 @@
       gap: 20px;
     }
     .rytConteiner h2 {
-      font-size: 30px;
+      font-size:  var(--desktop_h2-font-size);
     }
     .rytConteiner {
       width: 100%;
@@ -447,7 +447,7 @@
       padding: 14px 20px;
       align-items: center;
       gap: 10px;
-      color: #fff;
+      color: var(--white);
       font-size: 16px;
       cursor: pointer;
       box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 24px;
@@ -479,14 +479,14 @@
   
   @media screen and (max-width: 412px) {
     .gridConteiner h1 {
-      font-size: 28px;
+      font-size:  var(--desktop_h1-font-size);
       line-height: 44px;
     }
   }
   
   @media screen and (max-width: 360px) {
     .gridConteiner h1 {
-      font-size: 24px;
+      font-size:  var(--desktop_h1-font-size);
     }
     .bookFreebtn button {
       font-size: 10px;
@@ -498,7 +498,7 @@
       width: 260px;
     }
     .rytConteiner h2 {
-      font-size: 24px;
+      font-size: var(--desktop_h2-font-size);
     }
     .listryt span {
       font-size: 14px;

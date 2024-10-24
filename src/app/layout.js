@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 import "./globals.css";
 import { Poppins } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { reportWebVitals } from './../../src/reportWebVitals'; // if it's in the src directory
 
 
 const poppins = Poppins({
@@ -15,15 +14,7 @@ const poppins = Poppins({
 
 export default function RootLayout({ children }) {
 
-  const sendToAnalytics = (metric) => {
-    fetch('/api/analytics', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(metric),
-    });
-};
+
 
   return (
     <html lang="en">

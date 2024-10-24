@@ -1,14 +1,14 @@
 .conteiner {
     width: 1200px;
     border-radius: 40px;
-    background: #e5f1f8;
+    background: var(--cyan);
     margin: 60px auto;
     padding: 36px 0;
   }
   .conteiner h2 {
-    color: #606060;
+    color: var(--stone-color);
     text-align: center;
-    font-size: 36px;
+    font-size:var(--desktop_h2-font-size);
     font-style: normal;
     font-weight: 600;
     line-height: 126.5%; /* 56.925px */
@@ -47,7 +47,7 @@
   .cards {
     display: flex;
     border-radius: 16px;
-    background: #fff;
+    background: var(--white);
     padding:0 10px;
     align-items: center;
     justify-content: center;
@@ -60,8 +60,8 @@
   
   .cards p {
     margin-top: 0;
-    color: #212121;
-    font-size: 14px;
+    color: var(--light-black);
+    font-size: var(--desktop_p-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 126.5%; /* 31.625px */
@@ -98,7 +98,7 @@
   .cardsDown {
     display: flex;
     border-radius: 16px;
-    background: #fff;
+    background: var(--white);
     padding:0 10px;
     align-items: center;
     justify-content: center;
@@ -111,8 +111,8 @@
   
   .cardsDown p {
     margin-top: 0;
-    color: #212121;
-    font-size: 14px;
+    color: var(--light-black);
+    font-size:  var(--desktop_p-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 126.5%; /* 31.625px */
@@ -138,7 +138,7 @@
     padding-right: 22px;
   }
   .Desktoponly span{
-    color: #0383ff;
+    color: var(--light-bluee);
   }
   @media screen and (max-width: 1381px) {
     .conteiner {
@@ -157,7 +157,7 @@
       padding-right: 22px;
     }
     .Desktoponly span{
-      color: #0383ff;
+      color: var(--light-bluee);
     }
   }
   
@@ -184,13 +184,13 @@
       max-width: 750px;
     }
     .conteiner h2 {
-      font-size: 27px;
+      font-size: var(--desktop_h2-font-size);
     }
    .cardsDown p {
-      font-size: 14px;
+      font-size:  var(--desktop_p-font-size);
     }
     .cards p{
-      font-size: 14px;
+      font-size: var(--desktop_p-font-size);
     }
   
   
@@ -223,17 +223,17 @@
     }
   
     .mblonly h2 {
-      color: #606060;
+      color: var(--stone-color);
       text-align: center;
-      font-size: 24px;
+      font-size: var(--desktop_h2-font-size);
       font-style: normal;
       font-weight: 600;
       line-height: 126.5%; /* 56.925px */
       text-wrap: pretty;
     }
     .mblonly p {
-      color: #000;
-      font-size: 14px;
+      color: var(--black);
+      font-size:  var(--desktop_p-font-size);
       font-style: normal;
       font-weight: 500;
       line-height: 126.5%; /* 20.24px */
@@ -245,7 +245,7 @@
   
   
     .cards p {
-      font-size: 10px;
+      font-size:  var(--desktop_p-font-size);
     }
     .cards {
       padding: 0 10px;
@@ -257,7 +257,7 @@
     }
   
     .cardsDown p {
-      font-size: 10px;
+      font-size:  var(--desktop_p-font-size);
     }
     .cardsDown {
       padding: 0 10px;
