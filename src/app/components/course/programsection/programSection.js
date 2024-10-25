@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "./ProgramSection.module.css"; // Adjust the path if necessary
 import Popup from "../../global/popup/Popup"; // Adjust the path if necessary
-import Form from "../../Global/form/Form"; // Adjust the path if necessary
+import Form from "../../global/form/Form"; // Adjust the path if necessary
 import { useState, memo, useEffect } from "react";
 
 const ProgramSection = memo(({ designOverrides, popupProps, programSectionData }) => {
