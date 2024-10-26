@@ -1,59 +1,22 @@
-import React from "react";
-import dynamic from "next/dynamic";
-const Popup = dynamic(() => import("../popup/Popup"));
-const Form = dynamic(() => import("../form/Form"));
+import React from 'react';
+import styles from './Popup.module.css'; // Adjust the path if necessary
+import { usePopup } from '../../../context/PopupContext'; // Adjust the path if necessary
 
-const PopupContent = ({
-  dataScience,
-  radio,
-  dataScienceCounselling,
-  popups,
-  setPopups,
-  heading,
-  downloadBrochure,
-  fullStack,
-  upSkillingHide,
-  titleCourse,
-  brochureLink,
-  brochurePdf,
-  dataScienceGeneric,
-  interstedInHide,
-  Domain,
-  DomainInput,
-}) => {
+const PopupContent = ({ dataScience, radio, dataScienceCounselling, dataScienceGeneric, heading }) => {
+  const { popups, setPopups } = usePopup(); // Access popup state from context
+
+  if (!popups) return null; // Return null if the popup is not active
+
   return (
-    <Popup
-      trigger={popups}
-      setTrigger={setPopups}
-      className="popupModal"
-      popup={true}
-    >
-      <div className="leftPopup">
-        <div
-          className="whiteP"
-          style={{ width: "340px", height: "400px" }}
-        ></div>
+    <div className={styles.popup}>
+      <div className={styles.popupContent}>
+        <button onClick={() => setPopups(false)}>Close</button>
+        {/* Render your form or any content you want inside the popup */}
+        <h2>{heading}</h2>
+        {/* Add your form or content here */}
       </div>
-      <div className="RightPopup">
-        <h5>{heading}</h5>
-        <Form
-          dataScience={dataScience}
-          dataScienceCounselling={dataScienceCounselling}
-          radio={radio}
-          downloadBrochure={downloadBrochure}
-          fullStack={fullStack}
-          titleCourse={titleCourse}
-          brochureLink={brochureLink}
-          brochurePdf={brochurePdf}
-          dataScienceGeneric={dataScienceGeneric}
-          upSkillingHide={upSkillingHide}
-          interstedInHide={interstedInHide}
-          Domain={Domain}
-          DomainInput={DomainInput}
-        />
-      </div>
-    </Popup>
+    </div>
   );
 };
 
-export default React.memo(PopupContent);
+export default PopupContent;
