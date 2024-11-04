@@ -48,7 +48,6 @@
     background: #fff;
     border-radius: 30px;
     padding: 20px 26px 30px 26px;
-    width: 100%;
     max-width: 1200px;
     margin: 40px auto 80px auto;
     gap: 20px;
@@ -138,7 +137,30 @@
       line-height: 30px;
     }
   }
-  
+  @media only screen and (max-width: 1024px) {
+    .innerBoxDiv{
+      margin: 0 60px;
+      grid-template-columns: 29% 30% 28%;
+      gap: 10px;
+    }
+    .hrline{
+      width: 234px;}
+    .innerDiv h2 {
+      font-size: 34px;
+    }
+    .headContBlue, .headContGreen, .headContOrange{
+      width: 100%;
+    }
+    .headCont h3{
+      margin: 0;
+      width: 100%;
+    }
+    .pTop{
+      text-wrap:stable;
+      font-size: 15px;
+    }
+
+  }
   @media only screen and (max-width: 641px) {
   
     .innerBoxDiv {

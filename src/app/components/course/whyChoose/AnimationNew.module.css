@@ -10,13 +10,16 @@
         /* Orange circle positioned at the bottom right */ rgba(142, 54, 7, 0.3) 2%,
         /* Glowing orange circle */ transparent 30% /* Smoother transition */
       ),
-      #212121;
+      var(--light-black);
+      position: relative;
+      overflow: hidden;
+      padding: 60px 0;
   }
   
   .header p {
-    color: #36ddfe;
+    color:var(--deep-cyann);
     text-align: center;
-    font-size: 1.5rem; /* Use rem for responsive font size */
+    font-size: var(--desktop_p-font-size); /* Use rem for responsive font size */
     font-style: normal;
     font-weight: 500;
   }
@@ -24,14 +27,14 @@
   .header h2 {
   color: rgba(255, 241, 234, 1);
     text-align: center;
-    font-size: clamp(2.5rem, 5vw, 4rem); /* Responsive typography with clamp */
+    font-size: var(--desktop_h2-font-size); /* Responsive typography with clamp */
     font-style: normal;
     font-weight: 400;
     line-height: 1.5; /* Flexible line height */
   }
   
   .header span {
-    font-size: clamp(2.5rem, 5vw, 4rem); /* Responsive typography with clamp */
+    font-size: var(--desktop_span-font-size); /* Responsive typography with clamp */
     font-weight: bold;
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 241, 234, 1); /* Stroke width and color */
@@ -57,8 +60,8 @@
   }
   
   .divContainer h4 {
-    color: #fff;
-    font-size: 2.5rem; /* Use rem for responsiveness */
+    color: var(--white);
+    font-size: var(--desktop_h4-font-size); /* Use rem for responsiveness */
     font-style: normal;
     font-weight: 500;
     line-height: 1.2;
@@ -66,7 +69,7 @@
   
   .divContainer p {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 1.5rem; /* Responsive font size */
+    font-size: var(--desktop_p-font-size); /* Responsive font size */
     font-style: normal;
     font-weight: 300;
     line-height: 1.875rem;
@@ -76,21 +79,13 @@
     opacity: 1; /* Highlight the div */
     transform: scale(1.05); /* Scale effect */
   }
-  
-  .whyChooseSection {
-    position: relative;
-    overflow: hidden;
-    padding: 60px 0;
-    /* margin-top: 100px; */
-  }
-  
   .domains {
     display: none;
   }
   
   .Head {
     text-align: center;
-    color: #fff1ea;
+    color: var(--white-deep);
     font-size: 2.5rem;
     font-weight: 500;
   }
@@ -106,7 +101,7 @@
     width: 100%;
     margin: auto;
     margin-top: 70px;
-    color: #000;
+    color: var(--black);
     padding: 4.375rem 0 0;
     overflow: hidden;
   }
@@ -135,15 +130,15 @@
   }
   
   .Contents h5 {
-    color: #fff;
-    font-size: 1.875rem; /* Responsive font size */
+    color: var(--white);
+    font-size: var(--desktop_h5-font-size); /* Responsive font size */
     font-style: normal;
     font-weight: 600;
   }
   
   .pTag {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 1.25rem;
+    font-size: var(--desktop_p-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 1.45;
@@ -156,8 +151,8 @@
   }
   
   .insideBox p {
-    color: #fff;
-    font-size: 15px;
+    color: var(--white);
+    font-size: var(--desktop_p-font-size);
     font-style: normal;
     font-weight: 600;
     line-height: 1.3;
@@ -165,15 +160,15 @@
   }
   
   .noteP {
-    color: #fff;
-    font-size: 0.75rem;
+    color: var(--white);
+    font-size: var(--desktop_p-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: 1.45;
   }
   
   .orgText {
-    color: #fe7a36;
+    color: var(--light-orange);
     font-weight: 700;
     line-height: 1.45;
   }
@@ -194,9 +189,9 @@
   }
   
   .smalDiv span {
-    color: #fff;
+    color: var(--white);
     text-align: center;
-    font-size: 0.75rem;
+    font-size: var(--desktop_span-font-size);
     font-weight: 500;
   }
   
@@ -211,8 +206,8 @@
   }
   
   .IBMDiv span {
-    color: #fff;
-    font-size: 1rem;
+    color: var(--white);
+    font-size: var(--desktop_span-font-size);
     font-weight: 500;
   }
   
@@ -244,12 +239,12 @@
     gap: 4px;
   }
   .insideBoxDesign2 p {
-    font-size: 16px;
+    font-size: var(--desktop_p-font-size);
     margin: 0;
   }
   
   .insideBoxDefault {
-    background-color: lightgray; /* Default style for other insideBox elements */
+    background-color: var(--cementtt); /* Default style for other insideBox elements */
     padding: 5px;
   }
   .customSection {
@@ -268,8 +263,8 @@
   .customSection p {
     width: 200px;
     margin: 0;
-    color: #fff;
-    font-size: 20px;
+    color: var(--white);
+    font-size: var(--desktop_p-font-size);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -285,7 +280,7 @@
   }
   
   .leftText p {
-    font-size: 1.2rem; /* Adjust text size */
+    font-size: var(--desktop_p-font-size); /* Adjust text size */
     line-height: 1.5;
     margin-right: 20px;
   }
@@ -304,20 +299,20 @@
           rgba(254, 122, 54, 0.2) 1%,
           transparent 40%
         ),
-        #212121;
+        var(--light-black);
       margin-bottom: 60px;
     }
   
     .header p {
-      font-size: 1rem; /* Adjusted for smaller screens */
+      font-size: var(--desktop_p-font-size); /* Adjusted for smaller screens */
     }
   
     .header h2 {
-      font-size: 2.0rem;
+      font-size: var(--desktop_h2-font-size);
     }
   
     .header span {
-      font-size: 2.0rem;
+      font-size: var(--desktop_span-font-size);
     }
   
     .divContainer {
@@ -326,14 +321,14 @@
     }
   
     .divContainer h4 {
-      font-size: 1.375rem;
+      font-size: var(--desktop_h4-font-size);
     }
   .Contents h5 {
-    font-size: 1.375rem;
+    font-size: var(--desktop_h5-font-size);
   }
   
     .divContainer p {
-      font-size:14px;
+      font-size:var(--desktop_p-font-size);
       line-height: 1.5;
     }
   
@@ -361,7 +356,7 @@
   
     }
     .downBoxDesign2 p {
-      font-size: 12px;
+      font-size: var(--desktop_p-font-size);
     }
     .downBoxDesign1 img {
   
@@ -371,7 +366,7 @@
       gap: 4px;
     }
     .insideBoxDesign1 p {
-      font-size: 10px;
+      font-size: var(--desktop_p-font-size);
     }
     .insideBoxDesign2{
   gap: 4px;

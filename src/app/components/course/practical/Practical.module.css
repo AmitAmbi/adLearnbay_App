@@ -1,17 +1,17 @@
 .container h2 {
     text-align: center;
-    color: #b3b3b3;
+    color: var(--cementt);
     text-align: center;
-    font-size: 40px;
+    font-size: var(--desktop_h2-font-size);
     font-style: normal;
     font-weight: 600;
     line-height: 126.5%; /* 69.575px */
   }
   .pTag {
     text-align: center;
-    color: #fff;
+    color: var(--white);
     text-align: center;
-    font-size: 20px;
+    font-size: var(--desktop_p-font-size);
     font-style: normal;
     font-weight: 300;
     line-height: 126.5%; /* 35.42px */
@@ -25,8 +25,8 @@
     gap: 20px;
   }
   .spanDiv span {
-      color: #FFF;
-  font-size: 14px;
+      color: var(--white);
+  font-size: var(--desktop_span-font-size);
   font-style: normal;
   font-weight: 600;
   line-height: 243%; /* 53.46px */
@@ -37,7 +37,7 @@
     max-width: 1200px;
     margin: auto;
     border-radius: 50px;
-    background: #212121;
+    background: var(--light-black);
     padding: 50px 20px 30px 20px;
   }
   
@@ -51,15 +51,11 @@
   
   
   .box {
-  
     border-radius: 20px;
-      background: #000;
+      background: var(--black);
       display: flex;
       flex-direction: column;
       padding:30px;
-      
-  
-  
       background: radial-gradient(
           circle at 100% 20%,
           /* Blue circle positioned at the top left */ rgb(8 54 83 / 90%) 1%,
@@ -70,9 +66,9 @@
             rgba(254, 122, 54, 000.3) 1%, transparent 60%
      
         ),
-        #212121;
+        var(--light-black);
       background-color: rgba(15, 14, 14, 0.954);
-      color: #000;
+      color: var(--black);
   }
   
   /* 
@@ -84,41 +80,87 @@
       padding: 5px;
   } */
   .box h5 {
-      color: #FFF;
-  font-size: 23px;
+      color: var(--white);
+  font-size:var(--desktop_h5-font-size);
   font-style: normal;
   font-weight: 600;
   line-height: 144.5%; /* 43.35px */
   }
   .box p {
-      color: #FFF;
-  font-size:14px;
+      color: var(--white);
+  font-size:var(--desktop_p-font-size);
   font-style: normal;
   font-weight: 300;
   line-height: 144.5%; /* 28.9px */
-  width: 255px;
+  width: 255px; 
   }
-  
-  
-  
-  
+  @media only screen and (max-width: 1024px){
+    .innerContainer {
+      width: 100%;
+      max-width: 940px;    
+    }
+.box{
+  padding: 20px 10px;
+  max-width:92%;
+  max-height: 215px;  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.box h5{
+  font-size: 18px;
+}
+.box p{
+  font-size: 15px;
+}
+.boxMain{display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 0;
+  place-items: center;
+}
+
+
+  }
+  @media only screen and (max-width: 841px){
+    .box {
+      border-radius: 20px;
+        background: var(--black);
+        display: flex;
+        flex-direction: column;
+        padding:30px;
+        background: radial-gradient(
+            circle at 100% 20%,
+            /* Blue circle positioned at the top left */ rgb(8 54 83 / 90%) 1%,
+            /* Smaller blue circle */ transparent 100% /* Smooth transition to black */
+          ),
+          radial-gradient(
+            circle at 1% 80%,
+              rgba(254, 122, 54, 000.3) 1%, transparent 60%
+       
+          ),
+          var(--light-black);
+        background-color: rgba(15, 14, 14, 0.954);
+        color: var(--black);
+        width: 32%;
+    }
+  }
   @media only screen and (max-width: 641px) {
   
   .container{
       padding: 20px;
   }
   .container h2 {
-      color: #B3B3B3;
+      color: var(--cementt);
   text-align: center;
-  font-size: 24px;
+  font-size: var(--desktop_h2-font-size);
   font-style: normal;
   font-weight: 600;
   line-height: 126.5%; /* 31.625px */
   }
   .pTag{
-      color: #FFF;
+      color: var(--white);
   text-align: center;
-  font-size: 17px;
+  font-size: var(--desktop_p-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: 126.5%; /* 20.24px */
@@ -126,8 +168,8 @@
   }
   
   .spanDiv span {
-      color: #FFF;
-  font-size: 12px;
+      color: var(--white);
+  font-size: var(--desktop_span-font-size);
   font-style: normal;
   font-weight: 600;
   line-height: 125%; /* 20px */
@@ -145,7 +187,7 @@
       
   }
   .box h5 {
-      font-size: 20px;
+      font-size: var(--desktop_h5-font-size);
   }
   .spanDiv{
     display: grid;
@@ -153,9 +195,5 @@
     grid-template-columns: 44% 50%;
     justify-content: normal;
     gap: 20px 1px;
-  }
-  
-  
-  
-      
+  }   
   }

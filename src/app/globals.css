@@ -76,6 +76,19 @@ body,
 --mint-green:#03b877;
 --parrot-green:#04C988;
 --royale-blue:#005a9b;
+--light-greyy:#aeaeae;
+--lightt-grey:#dedede;
+--light-blackk:#909090;
+--blue-grey:#767676;
+--smokey:#afafaf;
+--dark-smoke:#a8a8a8;
+--darkest-smoke:#484848;
+--carbon:#414141;
+--cementt:#b3b3b3;
+--green:#008000;
+--carbon-black:#2E2E2E;
+--deep-cyann: #36ddfe;
+--cementtt:	#D3D3D3;
 
   /* Define font sizes for desktop */
   --desktop_h1-font-size: 42px;
@@ -84,6 +97,7 @@ body,
   --desktop_h4-font-size: 26px;
   --desktop_h5-font-size: 20px;
   --desktop_p-font-size: 16px;
+  --desktop_span-font-size: 14px;
 
   /* Define font colour for desktop */
   --desktop_h1-font-colour: #fff;
@@ -351,6 +365,12 @@ cursor: pointer;
     top: 0px;
     flex-flow: row-reverse;
   }
+}
+@media (max-width: 1024){
+  h2{
+    font-size: 32px;
+  }
+ 
 }
 
 @media (max-width: 481px) {

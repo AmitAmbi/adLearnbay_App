@@ -36,17 +36,18 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => { // Default 
       <div className={styles.contentConteiner} ref={contentContainerRef}>
         {summaryData.map((item) => (
           <div key={item.id} className={styles.Box}>
-            <div>
+            <div className={styles.imgWrapper}>
               <Image
                 src={item.imageSrc}
-                width={60}
-                height={60}
+                fill
                 loading="lazy"
                 alt={item.imageAlt}
               />
-              <h4>{item.title}</h4>
+              
             </div>
+
             <div>
+            <h4>{item.title}</h4>
               <p>{item.description}</p>
               {item.extraImageSrc && (
                 <Image

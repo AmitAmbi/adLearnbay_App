@@ -10,7 +10,7 @@
   }
   
   .hrline{
-    background: #FE7A36;
+    background: var(--light-orange);
     border: none;
     width: 140px;
     height: 2px;
@@ -29,17 +29,17 @@
   
   
   .contentConteiner h4 {
-    color: #484848;
+    color: var(--darkest-smoke);
     text-align: center;
-    font-size: 20px;
+    font-size: var(--desktop_h4-font-size);
     font-weight: 600;
     line-height: 160%;
   }
   
   .contentConteiner p {
-    color: #414141;
+    color: var(--carbon);
     text-align: center;
-    font-size: 16px;
+    font-size: var(--desktop_p-font-size);
     font-weight: 300;
     line-height: 146.5%;
     width: 100%;
@@ -67,7 +67,7 @@
     padding: 20px; /* Add some padding around the form */
   
     border-radius: 24.338px;
-    background: #383838;
+    background: var(--black-diamond);
   }
   
   .gridDiv {
@@ -89,17 +89,17 @@
     margin: 20px 0 80px 0;
   }
   .contentContainerGrid h4 {
-    color: #484848;
+    color: var(--darkest-smoke);
     text-align: center;
-    font-size: 20px;
+    font-size: var(--desktop_h4-font-size);
     font-weight: 600;
     line-height: 160%;
   }
   
   .contentContainerGrid p {
-    color: #414141;
+    color: var(--carbon);
     text-align: center;
-    font-size: 16px;
+    font-size: var(--desktop_p-font-size);
     font-weight: 300;
     line-height: 146.5%;
     width: 100%;
@@ -113,7 +113,7 @@
     gap: 10px;
     border-radius: 24.338px;
     border-radius: 24.338px;
-    background: #383838;
+    background: var(--black-diamond);
     height: -moz-fit-content;
     height: fit-content;
     padding: 30px 1px 0px 0px;
@@ -121,29 +121,30 @@
   
   }
   .formdiv h3 {
-    color: #212121;
+    color: var(--light-black);
     text-align: center;
-    font-size: 24.042px;
+    font-size: var(--desktop_h3-font-size);
     font-style: normal;
     font-weight: 400;
   }
   .span {
-    background: linear-gradient(90deg, #fe7a36 24.09%, #ffc436 88.26%);
+    background: linear-gradient(90deg, var(--light-orange) 24.09%, var(--secondary-color)88.26%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }.formdiv form input {
+  }
+  .formdiv form input {
     border-radius: 8.743px;
     border: none; /* Remove border for consistency */
-    background: #212121; /* Set background color */
-    color: white; /* Change text color to white */
+    background: var(--light-black); /* Set background color */
+    color: var(--white); /* Change text color to white */
     font-weight: 400;
     height: 42px;
   }
   
   .formdiv form input::placeholder {
     opacity: 1;
-    color: rgba(255, 255, 255, 0.5); /* Placeholder color (light white) */
+    color: rgba(255, 255, 255, 0.5); /* holder color (light white) */
     font-weight: 300;
   }
   
@@ -159,8 +160,8 @@
   .formdiv form select {
     border-radius: 8.743px; /* Consistent border-radius */
     border: none; /* Remove border */
-    background: #212121; /* Set background color */
-    color: white; /* Change text color to white */
+    background: var(--light-black); /* Set background color */
+    color: var(--white); /* Change text color to white */
     font-weight: 400; /* Font weight */
     height: 42px; /* Consistent height */
     padding: 10px; /* Add padding */
@@ -170,44 +171,74 @@
   
   /* Customize dropdown options */
   .formdiv form select option {
-    background-color: #212121; /* Set background color for dropdown options */
-    color: #969494; /* Set text color for dropdown options */
+    background-color: var(--light-black); /* Set background color for dropdown options */
+    color: var(--grayy); /* Set text color for dropdown options */
   }
   
   /* Keep the styling consistent after input */
   .formdiv form input:focus,
   .formdiv form select:focus {
-    background: #212121; /* Maintain background color on focus */
-    color: white; /* Maintain text color on focus */
+    background: var(--light-black); /* Maintain background color on focus */
+    color: var(--white); /* Maintain text color on focus */
     outline: none; /* Remove default outline */
   }
   
   /* Optional: Add styles for filled input */
   .formdiv form input:valid {
-    background: #212121; /* Maintain background color */
-    color: white; /* Maintain text color */
+    background: var(--light-black); /* Maintain background color */
+    color: var(--white); /* Maintain text color */
   }
   
   .formdiv form select:focus-visible {
-    background: #212121; /* Maintain background color */
-    color: white; /* Maintain text color */
+    background: var(--light-black); /* Maintain background color */
+    color: var(--white); /* Maintain text color */
   }
   
   .formdiv h4 {
-    color: #FFF;
+    color: var(--white);
   text-align: center;
-  font-size: 20.042px;
+  font-size: var(--desktop_h4-font-size);
   font-style: normal;
   font-weight: 500;
   line-height: 191.682%; /* 51.835px */
   }
   
   .formdiv span {
-    color: #FE7A36;
+    color: var(--light-orange);
   font-weight: 600;
   
   }
-  
+  .imgWrapper{
+    position: relative;
+    width: 60px;
+    height: 60px;
+  }
+  @media only screen and (max-width: 1024px) {
+    .contentConteiner {
+      padding: 40px 60px;
+      margin: 0;
+      gap: 20px;
+    }
+    .imgWrapper{
+      position: relative;
+      width: 40px;
+      height: 40px;
+    }
+    .contentConteiner h4 {
+          font-size: 20px;
+    }
+    .Container h2 {
+      font-size: 32px;
+    }
+    .contentConteiner p {
+      font-size: 14px;
+    }
+    .Box.img{
+      width: 40px;
+      height: 40px;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     .Container {
       margin: 60px 0;
@@ -225,8 +256,8 @@
     }
   
     .Container h2 {
-      color: #212121;
-      font-size: 28px;
+      color: var(--light-black);
+      font-size: var(--desktop_h2-font-size);
       font-weight: 600;
       text-align: left;
     }
@@ -259,20 +290,20 @@
     .dot {
       width: 12px;
       height: 12px;
-      background-color: #ccc;
+      background-color: var(--medium-grey);
       border-radius: 50%;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
   
     .dot.active {
-      background-color: #484848;
+      background-color: var(--darkest-smoke);
       width: 40px;
       border-radius: 20px;
     }
   
     .dot:hover {
-      background-color: #000;
+      background-color: var(--black);
     }
   
     .ContainerForm {
