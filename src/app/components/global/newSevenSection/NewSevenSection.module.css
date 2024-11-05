@@ -1,51 +1,61 @@
-.NewSevenSection{
-border-radius: 50px;
-background: var(--light-black);
-width: 1200px;
-margin: 100px auto;
-padding: 50px 80px;
+.NewSevenSection {
+    border-radius: 50px;
+    background: var(--light-black);
+    width: 1200px;
+    margin: 100px auto;
+    padding: 50px 80px;
 }
 
-.griContiner{
+.griContiner {
     display: grid;
-    grid-template-columns:62% 25%;
+    grid-template-columns: 62% 25%;
     justify-content: center;
 }
+
 .fontDiv h4 {
     color: var(--secondary-color);
-font-size: var(--desktop_h4-font-size);
-font-style: normal;
-font-weight: 400;
-line-height: 153%; /* 45.9px */
+    font-size: var(--desktop_h4-font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 153%;
+    /* 45.9px */
 }
+
 .fontDiv h3 {
     color: var(--white);
-    font-size:var(--desktop_h3-font-size);
+    font-size: var(--desktop_h3-font-size);
     font-style: normal;
     font-weight: 500;
     line-height: 153%;
 }
+
 .fontDiv p {
     color: var(--white);
-font-size:var(--desktop_p-font-size);
-font-style: normal;
-font-weight: 300;
-line-height: 153%; /* 33.66px */
+    font-size: var(--desktop_p-font-size);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 153%;
+    /* 33.66px */
 }
+
 .ryt {
     display: flex;
     align-items: center;
     justify-content: center;
-position: relative;
+    position: relative;
+
 }
 
-.ryt  img {
+.rytImgWrapper {
     position: absolute;
+    width: 220px;
+    height: 335px;
     bottom: -50px;
 }
 
-.buttonDiv{
-display: flex;
+
+.buttonDiv {
+    display: flex;
     margin-top: 50px;
     gap: 30px;
 }
@@ -59,7 +69,8 @@ display: flex;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 153%; /* 30.6px */
+    line-height: 153%;
+    /* 30.6px */
     text-transform: uppercase;
     cursor: pointer;
     transition: background 0.3s ease, box-shadow 0.3s ease;
@@ -97,8 +108,8 @@ display: flex;
 }
 
 @media screen and (max-width:1381px) {
-    .NewSevenSection{
-        width:100%;
+    .NewSevenSection {
+        width: 100%;
         max-width: 1180px;
     }
 
@@ -106,32 +117,41 @@ display: flex;
 }
 
 @media screen and (max-width:1281px) {
-    .NewSevenSection{
+    .NewSevenSection {
         max-width: 1100px;
     }
 
     @media screen and (max-width:1024px) {
-        .NewSevenSection{
-        width: 100%;
-        max-width: 940px;
-    }}
-    
-    @media screen and (max-width:951px) {
-        .NewSevenSection{
+        .NewSevenSection {
             width: 100%;
-            max-width: 860px;
-            padding: 50px ;
+            max-width: 940px;
         }
-.ryt img {
-    bottom: -50px;
+    }
+
+    @media screen and (max-width:968px) {
+        .NewSevenSection {
+            max-width: 860px;
+            padding: 40px;
+
+        }
+
+        .rytImgWrapper {
+            width: 210px;
+            height: 325px;
+            bottom: -40px;
+        }
+
+        .griContiner {
+            grid-gap: 20px;
+        }
+
+    }
+
+
 }
 
-    }    
-
-
-}
 @media screen and (max-width:1281px) {
-    .NewSevenSection{
+    .NewSevenSection {
         width: 100%;
     }
 
@@ -141,29 +161,32 @@ display: flex;
 
 
 @media screen and (max-width:641px) {
-    .NewSevenSection{
+    .NewSevenSection {
         display: none;
     }
 
-    .NewSevenSectionM{
+    .NewSevenSectionM {
         display: block;
         border-radius: 30px;
         background: var(--light-black);
         padding: 20px;
         margin: 20px;
     }
-    .griContiner{
+
+    .griContiner {
         display: flex;
-    flex-direction: column;
+        flex-direction: column;
     }
 
     .NewSevenSectionM h4 {
-        font-size:var(--desktop_h4-font-size);
+        font-size: var(--desktop_h4-font-size);
 
     }
-    .NewSevenSectionM h3{
-font-size:var(--desktop_h3-font-size);
+
+    .NewSevenSectionM h3 {
+        font-size: var(--desktop_h3-font-size);
     }
+
     .NewSevenSectionM p {
         color: var(--white);
         font-size: var(--desktop_p-font-size);
@@ -182,24 +205,27 @@ font-size:var(--desktop_h3-font-size);
 
     }
 
-    .ryt{
-gap: 0;
-position: relative;
-display: block;
+    .ryt {
+        gap: 0;
+        position: relative;
+        display: block;
 
     }
+
     .buttonDiv {
         flex-direction: column;
         gap: 16px;
 
     }
-    .green{
+
+    .green {
         padding: 9px;
-    font-size: 18px;
-    width: fit-content;
+        font-size: 18px;
+        width: fit-content;
     }
-    .blue{
-       gap: 8px;
+
+    .blue {
+        gap: 8px;
         font-size: 18px;
         padding: 10px;
         width: 200px;
@@ -209,7 +235,8 @@ display: block;
 
 @media screen and (max-width:360px) {
 
-    .blue, .green{
+    .blue,
+    .green {
         font-size: 14px;
     }
 

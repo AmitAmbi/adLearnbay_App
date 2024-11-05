@@ -1,77 +1,79 @@
 .container h2 {
-    text-align: center;
-    color: var(--cementt);
-    text-align: center;
-    font-size: var(--desktop_h2-font-size);
-    font-style: normal;
-    font-weight: 600;
-    line-height: 126.5%; /* 69.575px */
-  }
-  .pTag {
-    text-align: center;
-    color: var(--white);
-    text-align: center;
-    font-size: var(--desktop_p-font-size);
-    font-style: normal;
-    font-weight: 300;
-    line-height: 126.5%; /* 35.42px */
-  }
-  
-  .spanDiv {
-    margin:40px 0 20px 0;
-    text-align: center;
-    display: flex;
-    justify-content:space-evenly;
-    gap: 20px;
-  }
-  .spanDiv span {
-      color: var(--white);
+  text-align: center;
+  color: var(--cementt);
+  text-align: center;
+  font-size: var(--desktop_h2-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 126.5%;
+  /* 69.575px */
+}
+
+.pTag {
+  text-align: center;
+  color: var(--white);
+  text-align: center;
+  font-size: var(--desktop_p-font-size);
+  line-height: 126.5%;
+  /* 35.42px */
+}
+
+.spanDiv {
+  margin: 40px 0 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.spanDiv span {
+  color: var(--white);
   font-size: var(--desktop_span-font-size);
   font-style: normal;
   font-weight: 600;
-  line-height: 243%; /* 53.46px */
-  }
-  
-  .innerContainer {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    border-radius: 50px;
-    background: var(--light-black);
-    padding: 50px 20px 30px 20px;
-  }
-  
-  .boxMain {
-      display: flex;
-      margin: 6px 20px 30px 20px;
-      gap: 40px;
-      justify-content: center;
-  
-  }
-  
-  
-  .box {
-    border-radius: 20px;
-      background: var(--black);
-      display: flex;
-      flex-direction: column;
-      padding:30px;
-      background: radial-gradient(
-          circle at 100% 20%,
-          /* Blue circle positioned at the top left */ rgb(8 54 83 / 90%) 1%,
-          /* Smaller blue circle */ transparent 100% /* Smooth transition to black */
-        ),
-        radial-gradient(
-          circle at 1% 80%,
-            rgba(254, 122, 54, 000.3) 1%, transparent 60%
-     
-        ),
-        var(--light-black);
-      background-color: rgba(15, 14, 14, 0.954);
-      color: var(--black);
-  }
-  
-  /* 
+  line-height: 243%;
+  /* 53.46px */
+}
+
+.innerContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 50px;
+  background: var(--light-black);
+  padding: 50px 20px 30px 20px;
+}
+
+.boxMain {
+  display: flex;
+  margin: 6px 20px 30px 20px;
+  gap: 40px;
+  justify-content: center;
+
+}
+
+
+.box {
+  border-radius: 20px;
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: radial-gradient(circle at 100% 20%,
+      /* Blue circle positioned at the top left */
+      rgb(8 54 83 / 90%) 1%,
+      /* Smaller blue circle */
+      transparent 100%
+      /* Smooth transition to black */
+    ),
+    radial-gradient(circle at 1% 80%,
+      rgba(254, 122, 54, 000.3) 1%, transparent 60%),
+    var(--light-black);
+  background-color: rgba(15, 14, 14, 0.954);
+  color: var(--black);
+}
+
+/* 
   .imgDiv{
   background: rgba(3, 131, 255, 0.15);
       width: fit-content;
@@ -79,121 +81,152 @@
       border-radius: 50%;
       padding: 5px;
   } */
-  .box h5 {
-      color: var(--white);
-  font-size:var(--desktop_h5-font-size);
+.box h5 {
+  color: var(--white);
+  font-size: var(--desktop_h5-font-size);
   font-style: normal;
   font-weight: 600;
-  line-height: 144.5%; /* 43.35px */
-  }
-  .box p {
-      color: var(--white);
-  font-size:var(--desktop_p-font-size);
-  font-style: normal;
-  font-weight: 300;
-  line-height: 144.5%; /* 28.9px */
-  width: 255px; 
-  }
-  @media only screen and (max-width: 1024px){
-    .innerContainer {
-      width: 100%;
-      max-width: 940px;    
-    }
-.box{
-  padding: 20px 10px;
-  max-width:92%;
-  max-height: 215px;  
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.box h5{
-  font-size: 18px;
-}
-.box p{
-  font-size: 15px;
-}
-.boxMain{display: grid;
-  grid-template-columns: 33% 33% 33%;
-  gap: 0;
-  place-items: center;
+  line-height: 144.5%;
+  /* 43.35px */
 }
 
-
-  }
-  @media only screen and (max-width: 841px){
-    .box {
-      border-radius: 20px;
-        background: var(--black);
-        display: flex;
-        flex-direction: column;
-        padding:30px;
-        background: radial-gradient(
-            circle at 100% 20%,
-            /* Blue circle positioned at the top left */ rgb(8 54 83 / 90%) 1%,
-            /* Smaller blue circle */ transparent 100% /* Smooth transition to black */
-          ),
-          radial-gradient(
-            circle at 1% 80%,
-              rgba(254, 122, 54, 000.3) 1%, transparent 60%
-       
-          ),
-          var(--light-black);
-        background-color: rgba(15, 14, 14, 0.954);
-        color: var(--black);
-        width: 32%;
-    }
-  }
-  @media only screen and (max-width: 641px) {
-  
-  .container{
-      padding: 20px;
-  }
-  .container h2 {
-      color: var(--cementt);
-  text-align: center;
-  font-size: var(--desktop_h2-font-size);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 126.5%; /* 31.625px */
-  }
-  .pTag{
-      color: var(--white);
-  text-align: center;
+.box p {
+  color: var(--white);
   font-size: var(--desktop_p-font-size);
   font-style: normal;
-  font-weight: 400;
-  line-height: 126.5%; /* 20.24px */
-  text-wrap: pretty;
+  font-weight: 300;
+  line-height: 144.5%;
+  /* 28.9px */
+  width: 255px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .innerContainer {
+    width: 100%;
+    max-width: 940px;
   }
-  
-  .spanDiv span {
-      color: var(--white);
-  font-size: var(--desktop_span-font-size);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 125%; /* 20px */
-  text-align: left;
+
+  .box {
+    padding: 20px 10px;
+    max-width: 92%;
+    max-height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
-  
-  .innerContainer{
-      border-radius: 26px;
-      padding:50px 10px;
-  }
-  .boxMain{
-      flex-direction: column;
-      padding: 10px;
-      margin: 10px 0 0 0 ;
-      
-  }
+
   .box h5 {
-      font-size: var(--desktop_h5-font-size);
+    font-size: 18px;
   }
-  .spanDiv{
+
+  .box p {
+    font-size: 15px;
+  }
+
+  .boxMain {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 0;
+    place-items: center;
+  }
+
+
+}
+
+@media only screen and (max-width: 968px) {
+  .container h2 {
+    font-size: 36px;
+  }
+
+  .innerContainer {
+    padding: 50px 10px 30px 10px;
+    max-width: 900px
+  }
+
+  .box p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 841px) {
+  .box {
+    border-radius: 20px;
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: radial-gradient(circle at 100% 20%,
+        /* Blue circle positioned at the top left */
+        rgb(8 54 83 / 90%) 1%,
+        /* Smaller blue circle */
+        transparent 100%
+        /* Smooth transition to black */
+      ),
+      radial-gradient(circle at 1% 80%,
+        rgba(254, 122, 54, 000.3) 1%, transparent 60%),
+      var(--light-black);
+    background-color: rgba(15, 14, 14, 0.954);
+    color: var(--black);
+    width: 32%;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+
+  .container {
+    padding: 20px;
+  }
+
+  .container h2 {
+    color: var(--cementt);
+    text-align: center;
+    font-size: var(--desktop_h2-font-size);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 126.5%;
+    /* 31.625px */
+  }
+
+  .pTag {
+    color: var(--white);
+    text-align: center;
+    font-size: var(--desktop_p-font-size);
+    line-height: 126.5%;
+    /* 20.24px */
+    text-wrap: pretty;
+  }
+
+  .spanDiv span {
+    color: var(--white);
+    font-size: var(--desktop_span-font-size);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    /* 20px */
+    text-align: left;
+  }
+
+  .innerContainer {
+    border-radius: 26px;
+    padding: 50px 10px;
+  }
+
+  .boxMain {
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 0 0 0;
+
+  }
+
+  .box h5 {
+    font-size: var(--desktop_h5-font-size);
+  }
+
+  .spanDiv {
     display: grid;
     padding: 0;
     grid-template-columns: 44% 50%;
     justify-content: normal;
     gap: 20px 1px;
-  }   
   }
+}
