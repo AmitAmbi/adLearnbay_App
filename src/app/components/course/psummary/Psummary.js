@@ -3,7 +3,7 @@
 
 import React, { useEffect, useState, useRef, memo, useCallback } from "react";
 import Image from "next/image";
-import styles from "./PSummary.module.css"; // Ensure the CSS is correct
+import styles from "./Psummary.module.css"; // Ensure the CSS is correct
 
 const PSummaryAD = ({ summaryData = [], customClassName = "" }) => { // Default to an empty array
   const [activeDot, setActiveDot] = useState(0); // Track the active dot
