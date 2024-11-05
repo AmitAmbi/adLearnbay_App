@@ -1,8 +1,8 @@
 /* MyComponent.module.css */
 
 .container {
-    background: linear-gradient(180deg, #FFF 1.29%, #EFF3F6 98.18%);
-    color: #000;
+    background: linear-gradient(180deg, var(--white) 1.29%, var(--senary-color) 98.18%);
+    color: var(--black);
     padding: 100px 0 70px;
   }
   
@@ -14,8 +14,8 @@
   }
   
   .h2 {
-    color: #022646;
-    font-size: 42px;
+    color: var(--deep-blue);
+    font-size: var(--desktop_h2-font-size);
     font-weight: 600;
     text-align: center;
   
@@ -26,7 +26,7 @@
     align-items: center;
     position: relative;
     left: 35%;
-    background: #FE7A36;
+    background: var(--light-orange);
     height: 2px;
     border: none;
   }
@@ -40,13 +40,13 @@
   }
   
   .green {
-    color: green;
+    color: var(--green);
     font-weight: 600;
   }
   
   .pTop {
-    color: #212121;
-    font-size: 16px;
+    color: var(--light-black);
+    font-size: var(--desktop_p-font-size);
     font-weight: 300;
     line-height: 146.5%;
   }
@@ -64,8 +64,8 @@
   }
   
   .innerBox h3 {
-    color: #2E2E2E;
-    font-size: 16px;
+    color: var(--carbon-black);
+    font-size: var(--desktop_h3-font-size);
     font-weight: 600;
   }
   
@@ -75,12 +75,12 @@
   }
   
   .orangeSpan {
-    color: #FE7A36;
+    color: var(--light-orange);
     font-weight: 700;
   }
   
   .blueSpan {
-    color: #0072BC;
+    color: var(--primary-color);
     font-weight: 600;
     text-decoration: underline;
     cursor: pointer;
@@ -88,13 +88,13 @@
   }
   
   .blueSpan:hover {
-    color: #FE7A36;
+    color: var(--light-orange);
   }
   
   .firstSection {
     border-radius: 40px;
     padding: 30px 60px 30px 35px;
-    background: #FFF;
+    background: var(--white);
   }
   
   .pBot {
@@ -113,21 +113,21 @@
   }
   
   .blackSpan {
-    color: #212121;
-    font-size: 45px;
+    color: var(--light-black);
+    font-size: var(--desktop_span-font-size);
     font-weight: 600;
     line-height: 114%;
   }
   
   .H3 {
-    color: #212121;
-    font-size: 30px;
+    color: var(--light-black);
+    font-size: var(--desktop_h3-font-size);
     font-weight: 300;
     line-height: 114%;
   }
   
   .colors {
-    background: linear-gradient(91deg, #0072BC 19.08%, #FE7A36 93.87%);
+    background: linear-gradient(91deg, var(--primary-color) 19.08%, var(--light-orange) 93.87%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -139,7 +139,7 @@
   @media only screen and (max-width: 641px) {
     .container {
       padding: 40px 0;
-      background: linear-gradient(180deg, #FFF 0.4%, #EFF3F6 14%, #FFF 44.68%, #EFF3F6 66.17%);
+      background: linear-gradient(180deg, var(--white) 0.4%, var(--senary-color) 14%, var(--white) 44.68%, var(--senary-color) 66.17%);
     }
     
     .innerDiv {
@@ -147,7 +147,7 @@
     }
   
     .h2 {
-      font-size: 28px;
+      font-size: var(--desktop_h2-font-size);
     }
   
     .twoSection {
@@ -173,7 +173,7 @@
   
     .pTop {
       margin-top: 12px;
-      font-size: 14px;
+      font-size: var(--desktop_p-font-size);
       line-height: 22px;
     }
   
@@ -188,10 +188,10 @@
     }
   
     .blackSpan {
-      font-size: 30px;
+      font-size: var(--desktop_span-font-size);
     }
     .H3{
-      font-size: 26px;
+      font-size: var(--desktop_h3-font-size);
     }
     .colors{
       font-size: 36px;
@@ -205,14 +205,14 @@
       width: 180px;
     }
     .innerDiv h2 {
-      color: #022646;
+      color: var(--desktop_h2-font-size);
       font-size: 30px;
       font-style: normal;
       font-weight: 600;
       line-height: 144.5%; /* 40.46px */
     }
     .innerBox h3 {
-      font-size: 14px;
+      font-size: var(--desktop_h3-font-size);
     }
   }
   

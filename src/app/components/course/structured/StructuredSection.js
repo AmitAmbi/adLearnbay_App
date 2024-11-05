@@ -7,26 +7,27 @@ import { BsPatchCheckFill } from "react-icons/bs";
 const StructuredSection = React.memo(() => {
   return (
     <section className={styles.container}>
-      <div className="containerWidth">
+      <div className={styles.containerWidth}>
         <h2 className={styles.headH4}>Structured Admission Process</h2>
         <div className={styles.topImg}>
+        <div className={styles.imgWrapper}>
           <Image
             src="https://d32and0ii3b8oy.cloudfront.net/web/V4/Coursepage/line_247.webp"
             alt="Admission Process Decoration"
           loading="lazy"
-          width={420}
-          height={60}
-          />
+         fill
+         
+          />   
+          </div> 
+          <div className={styles.imgWrapper}>
           <Image
             src="https://d32and0ii3b8oy.cloudfront.net/web/V4/Coursepage/line_247.webp"
             alt="Admission Process Decoration"
-            width={420}
-            height={60}
-
+           fill
                     loading="lazy"
           />
         </div>
-
+        </div>
        <div className={styles.gridMbl}>
        <div className={styles.topImgMBL}>
        <svg height="181" width="41" fill="none" viewBox="0 0 41 181" xmlns="http://www.w3.org/2000/svg">

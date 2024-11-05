@@ -31,32 +31,33 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => { // Default 
   return (
     <div className={`${styles.Container} ${customClassName}`}>
       <h2>
-        Program <span className={styles.spans}>Summary <hr className={styles.hrline}/></span>
+        Program <span className={styles.spans}>Summary <hr className={styles.hrline} /></span>
       </h2>
       <div className={styles.contentConteiner} ref={contentContainerRef}>
         {summaryData.map((item) => (
           <div key={item.id} className={styles.Box}>
-            <div>
+            <div className={styles.imgWrapper}>
               <Image
                 src={item.imageSrc}
-                width={60}
-                height={60}
+                fill
                 loading="lazy"
                 alt={item.imageAlt}
               />
-              <h4>{item.title}</h4>
+
             </div>
-            <div>
+
+            <div className={styles.boxContent}>
+              <h4>{item.title}</h4>
               <p>{item.description}</p>
               {item.extraImageSrc && (
-                <Image
-                  src={item.extraImageSrc}
-                  width={200}
-                  height={30}
-                  loading="lazy"
-                  alt={item.extraImageAlt}
-                  className={styles.ibmLogo}
-                />
+                <div className={styles.extraImgWrapper}>
+                  <Image
+                    src={item.extraImageSrc}
+                    fill
+                    loading="lazy"
+                    alt={item.extraImageAlt}
+                    className={styles.ibmLogo}
+                  /></div>
               )}
             </div>
           </div>

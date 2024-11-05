@@ -1,284 +1,355 @@
 .keyContainer {
-    width: 1200px;
-    margin: auto;
-  }
-  
-  .mainContiner {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  .Header{
-    margin-left: 60px;
-  }
-  .reviewContainer {
-    display: grid;
-    grid-template-columns: 25% 70%;
-    gap: 70px 50px;
-    height: fit-content;
-    margin: 130px 0px 200px 0px;
-  }
-  .headingContainer h2 {
-    color:var(--deep-blueee);
-    font-size: var( --desktop_h2-font-size);
-    font-weight: 300;
-  }
-  
-  .topSpan {
-    text-underline-offset: 14px;
-    font-weight: 600;
-  }
-  .learnSlides img {
-    width: 100%;
-    height: auto;
-  }
-  .learnHeading {
-    color: var(--medium-greey);
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1.6;
-  }
-  .Leftrotate180,
-  .Rightrotate180 {
-    transform: rotate(180deg);
-    background: var(--light-whitee);
-  }
-  .Leftrotate180 {
-    width: 80px;
-    height: 26px;
-    flex-shrink: 0;
-    color: var(--black);
-    border-radius: 100px;
-  }
-  .Rightrotate180 {
-    width: 26px;
-    height: 26px;
-    flex-shrink: 0;
-    color: var(--gray);
-    border-radius: 100px;
-  }
-  .leftbtn {
-    width: 80px;
-    height: 26px;
-    border: 0.1px solid var(--black);;
-    flex-shrink: 0;
-    color:var(--black);;
-    background: var(--light-whitee);
-    border-radius: 100px;
-    cursor: pointer;
-  }
-  .Rightbtn {
-    width: 26px;
-    height: 26px;
-    flex-shrink: 0;
-    color: var(--gray);
-    background:  var(--light-whitee);
-    border-radius: 100px;
-    cursor: pointer;
-  }
-  /* .mySwiper{
+  width: 1200px;
+  margin: auto;
+}
+
+.mainContiner {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Header {
+  margin-left: 60px;
+}
+
+.reviewContainer {
+  display: grid;
+  grid-template-columns: 25% 70%;
+  gap: 70px 50px;
+  height: fit-content;
+  margin: 130px 0px 200px 0px;
+}
+
+.headingContainer h2 {
+  color: var(--deep-blueee);
+  font-size: var(--desktop_h2-font-size);
+  font-weight: 300;
+}
+
+.topSpan {
+  text-underline-offset: 14px;
+  font-weight: 600;
+}
+
+.learnSlides img {
+  width: 100%;
+  height: auto;
+}
+
+.learnHeading {
+  color: var(--medium-greey);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.Leftrotate180,
+.Rightrotate180 {
+  transform: rotate(180deg);
+  background: var(--light-whitee);
+}
+
+.Leftrotate180 {
+  width: 80px;
+  height: 26px;
+  flex-shrink: 0;
+  color: var(--black);
+  border-radius: 100px;
+}
+
+.Rightrotate180 {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  color: var(--gray);
+  border-radius: 100px;
+}
+
+.leftbtn {
+  width: 80px;
+  height: 26px;
+  border: 0.1px solid var(--black);
+  ;
+  flex-shrink: 0;
+  color: var(--black);
+  ;
+  background: var(--light-whitee);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.Rightbtn {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  color: var(--gray);
+  background: var(--light-whitee);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+/* .mySwiper{
       padding-top: 2rem;
       padding-left: 30px;
   } */
-  .reviewImage {
-    display: grid;
-    grid-template-columns: 18% 85%;
-    gap: 10px;
-    align-items: center;
-    margin-top: 40px;
-  }
-  .reviewImage img {
-    border-radius: 50px;
-  }
-  .learnerName {
-    font-size: 12px;
-  }
-  .contentSlide {
-    color: var(--daark-black);
-    font-size: 12px;
-    font-weight: 400;
-    padding: 10px 15px;
-    width: 220px;
-    height: 160px;
-  }
-  .reviewCont {
-    position: relative;
-    margin-top: -205px;
-    margin-left: 22px;
-  }
-  .iconsImg {
-    display: flex;
-    gap: 50px;
-  }
-  .iconsImg img {
-    width: auto;
-    height: 70px;
-  }
-  .headingContainer {
-    padding-top: 100px;
-  }
-  .mainHeading {
-    color: var(--deep-blueee);
-    font-size: 34px;
-    font-weight: 700;
-  }
-  .subHeading {
-    color: var(--deeep-grey);
-    font-size: 20px;
-    margin: 10px 0px 50px 0px;
-    font-weight: 500;
-  }
-  
-  .prevBtn {
-    color:var(--white);
-    cursor: pointer;
-    background: var(--daark-grey);
-    border-radius: 50%;
-    font-size: 40px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .nextBtn {
-    color:var(--white);
-    cursor: pointer;
-    background: var(--daark-grey);
-    font-size: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .sliderWrapper {
-    width: 500px;
-  }
-  .mySwiper {
-    width: 1250px;
-    margin: auto;
-  }
-  .videoImage {
-    width: 160px;
-    height: auto;
-  }
-  .btnnextContainer {
-    margin-top: 40px;
-    display: flex;
-    gap: 10px;
-  }
-  .reviewBotSection {
-    display: grid;
-    grid-template-columns:55% 36%;
-    margin-top: 100px;
-    align-items: center;
-    gap: 0px;
-    justify-content: center;
-  }
-  
-  .firstBotReview p {
-    font-size: var( --desktop_p-font-size);
-    color: var(--medium-greyy);
+.reviewImage {
+  display: grid;
+  grid-template-columns: 18% 85%;
+  gap: 10px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.reviewImage img {
+  border-radius: 50px;
+}
+
+.learnerName {
+  font-size: 12px;
+}
+
+.contentSlide {
+  color: var(--daark-black);
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 15px;
+  width: 220px;
+  height: 160px;
+}
+
+.reviewCont {
+  position: relative;
+  margin-top: -205px;
+  margin-left: 22px;
+}
+
+.iconsImg {
+  display: flex;
+  gap: 50px;
+}
+
+.iconsImg img {
+  width: auto;
+  height: 70px;
+}
+
+.headingContainer {
+  padding-top: 100px;
+}
+
+.mainHeading {
+  color: var(--deep-blueee);
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.subHeading {
+  color: var(--deeep-grey);
+  font-size: 20px;
+  margin: 10px 0px 50px 0px;
+  font-weight: 500;
+}
+
+.prevBtn {
+  color: var(--white);
+  cursor: pointer;
+  background: var(--daark-grey);
+  border-radius: 50%;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nextBtn {
+  color: var(--white);
+  cursor: pointer;
+  background: var(--daark-grey);
+  font-size: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderWrapper {
+  width: 500px;
+}
+
+.mySwiper {
+  width: 1250px;
+  margin: auto;
+}
+
+.videoImage {
+  width: 160px;
+  height: auto;
+}
+
+.btnnextContainer {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.reviewBotSection {
+  display: grid;
+  grid-template-columns: 55% 36%;
+  margin-top: 100px;
+  align-items: center;
+  gap: 0px;
+  justify-content: center;
+}
+
+.firstBotReview {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.firstBotReview p {
+  font-size: var(--desktop_p-font-size);
+  color: var(--medium-greyy);
   font-style: normal;
   font-weight: 400;
-  line-height: 153%; /* 38.25px */
+  line-height: 153%;
+  /* 38.25px */
   margin: 0;
-  }
-  
-  .firstBotReview img {
-    margin-top: 50px;
-    width: 500px;
-  }
-  
-  .secondBotReview img {
-    width: 100%;
-    height: auto;
-  }
-  .socailR{
-    width: 100%;
-    height: auto;
-  }
-  
-  @media screen and ( max-width:1281px) {
-    
+}
+
+/* .firstBotReview img {
+  margin-top: 50px;
+  width: 500px;
+} */
+
+.secondBotReview img {
+  width: 100%;
+  height: auto;
+}
+
+/* .socailR {
+  width: 100%;
+  height: auto;
+} */
+
+.firstBotImgWrapper {
+  position: relative;
+  width: 565px;
+  height: 200px;
+}
+
+@media screen and (max-width:1281px) {
+
   .keyContainer {
     width: 1180px;
   }
-  
+
+}
+
+@media screen and (max-width: 1081px) {
+  .keyContainer {
+    width: 1000px;
   }
-  @media screen and (max-width: 1081px) {
-    .keyContainer {
-      width: 1000px;
-    }
-    .mySwiper {
-      width: 1000px;
-    }
-    .btnContainer {
-    }
-    
+
+  .mySwiper {
+    width: 1000px;
   }
-  
-  @media screen and (max-width: 1000px) {
-    .mySwiper {
-      width: 860px;
-    }
-    .keyContainer {
-      width: 100%;
-      max-width: 860px;
-    }
+
+  .btnContainer {}
+
+}
+
+@media screen and (max-width: 1000px) {
+  .mySwiper {
+    width: 860px;
   }
-  
-  
-  @media screen and (max-width: 641px) {
-    .reviewBotSection {
-      display: flex;
-      flex-direction: column;
-      padding: 20px 30px;
-      gap: 40px;
-    }
-    .keyContainer {
-      width: 100%;
-    }
-    .videoImage{
-      width: 100%;
-    }
-  
-    .mySwiper {
-      width: 100%;
-    }
-  
-    .headingContainer {
-      padding: 20px;
-    }
-    .reviewBotSection {
-      margin-top: 20px;
-    }
-    .prevBtn {
-      display: none;
-    }
-    .nextBtn {
-      display: none;
-    }
-    .headingContainer h2 {
-      font-size: var( --desktop_h2-font-size);
-      text-wrap: balance;
-    }
-    .mainHeading {
-      font-size: 28px;
-    }
-    .firstBotReview img {
-      margin-top: 20px;
-      width: 100%;
-    }
-    .firstBotReview p {
-      display: none;
-    }
-    .Header{
-      margin: 0;
-    }
-    .subHeading{
-      text-wrap: pretty;
-    }
+
+  .keyContainer {
+    width: 100%;
+    max-width: 860px;
   }
-  
+}
+
+
+@media screen and (max-width: 968px) {
+  .mainHeading {
+    font-size: 30px;
+  }
+
+  .firstBotReview p {
+    font-size: 15px;
+
+  }
+
+  .firstBotImgWrapper {
+    width: 435px;
+    height: 155px;
+  }
+}
+
+@media screen and (max-width: 641px) {
+  .reviewBotSection {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 40px;
+  }
+
+  .keyContainer {
+    width: 100%;
+  }
+
+  .videoImage {
+    width: 100%;
+  }
+
+  .mySwiper {
+    width: 100%;
+  }
+
+  .headingContainer {
+    padding: 20px;
+  }
+
+  .reviewBotSection {
+    margin-top: 20px;
+  }
+
+  .prevBtn {
+    display: none;
+  }
+
+  .nextBtn {
+    display: none;
+  }
+
+  .headingContainer h2 {
+    font-size: var(--desktop_h2-font-size);
+    text-wrap: balance;
+  }
+
+  .mainHeading {
+    font-size: 28px;
+  }
+
+  .firstBotReview img {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .firstBotReview p {
+    display: none;
+  }
+
+  .Header {
+    margin: 0;
+  }
+
+  .subHeading {
+    text-wrap: pretty;
+  }
+}

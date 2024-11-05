@@ -49,22 +49,23 @@ const NewSevenSection = ({
                 Enquire Now
               </button>
               <Link href="tel:+917795687988" className={styles.callLink}>
-              <button className={styles.blue}>
-                <FaPhoneAlt />   091-77956 87988
+                <button className={styles.blue}>
+                  <FaPhoneAlt />   091-77956 87988
 
-              </button>
+                </button>
               </Link>
             </div>
           </div>
 
           <div className={styles.ryt}>
-            <Image
-              src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/seven_mblss.webp"
-              width={220}
-              height={350}
-              alt="coun"
-              loading="lazy"
-            />
+            <div className={styles.rytImgWrapper}>
+              <Image
+                src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/seven_mblss.webp"
+                fill
+                alt="coun"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -88,10 +89,10 @@ const NewSevenSection = ({
                 Enquire Now
               </button>
               <Link href="tel:+917795687988" className={styles.callLink}>
-              <button className={styles.blue}>
-                <FaPhoneAlt />   091-77956 87988
+                <button className={styles.blue}>
+                  <FaPhoneAlt />   091-77956 87988
 
-              </button>
+                </button>
               </Link>
             </div>
 
