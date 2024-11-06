@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import "./globals.css";
 import { Nunito, Nunito_Sans } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from "@vercel/analytics/react"
 
 
 const nunito = Nunito({
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         <main>
           {children}
           <SpeedInsights />
+          <Analytics/>
         </main>
       </body>
     </html>
