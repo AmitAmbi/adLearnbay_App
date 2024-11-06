@@ -100,7 +100,7 @@
   width: 255px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1080px) {
   .innerContainer {
     width: 100%;
     max-width: 940px;
@@ -132,6 +132,7 @@
 
 
 }
+
 
 @media only screen and (max-width: 968px) {
   .container h2 {

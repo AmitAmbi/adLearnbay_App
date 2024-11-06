@@ -143,7 +143,13 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1080px) {
+  .innerDiv h2 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 1081px) {
   .innerBoxDiv {
     margin: 0 60px;
     grid-template-columns: 29% 30% 28%;

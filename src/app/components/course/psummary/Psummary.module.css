@@ -53,6 +53,13 @@
   text-align: center;
   width: 100%;
   max-width: 240px;
+  gap: ;
+}
+
+.boxContent {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .extraImgWrapper {
@@ -254,11 +261,11 @@
   height: 60px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1081px) {
   .contentConteiner {
     padding: 40px 60px;
     margin: 0;
-    gap: 20px;
+    gap: 22px;
   }
 
   .imgWrapper {
@@ -272,11 +279,11 @@
   }
 
   .Container h2 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .contentConteiner p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .Box.img {
@@ -285,15 +292,23 @@
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .contentConteiner {
+    gap: 20px;
+  }
+
+  .Container h2 {
+    font-size: 32px;
+  }
+
+  .contentConteiner p {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width: 968px) {
   .extraImgWrapper {
     width: 150px;
-  }
-
-  .boxContent {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
   }
 }
 

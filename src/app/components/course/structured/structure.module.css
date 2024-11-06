@@ -114,9 +114,9 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1081px) {
   .imgWrapper {
-    width: 312px;
+    width: 335px;
     height: 49px;
 
   }
@@ -128,6 +128,14 @@
   }
 
 
+}
+
+@media only screen and (max-width: 1024px) {
+  .imgWrapper {
+    width: 312px;
+    height: 49px;
+
+  }
 }
 
 @media only screen and (max-width: 968px) {
