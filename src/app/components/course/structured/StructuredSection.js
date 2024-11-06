@@ -14,14 +14,14 @@ const StructuredSection = React.memo(() => {
             src="https://d32and0ii3b8oy.cloudfront.net/web/V4/Coursepage/line_247.webp"
             alt="Admission Process Decoration"
           loading="lazy"
-          width={420}
-          height={60}
+          width={407}
+          height={55}
           />
           <Image
             src="https://d32and0ii3b8oy.cloudfront.net/web/V4/Coursepage/line_247.webp"
             alt="Admission Process Decoration"
-            width={420}
-            height={60}
+            width={407}
+            height={55}
 
                     loading="lazy"
           />

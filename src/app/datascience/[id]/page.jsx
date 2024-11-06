@@ -19,7 +19,6 @@ const Page = async ({ params }) => {
   if (pageData.error) {
     return <div>{pageData.error}</div>;
   }
-
   return (
     <div>
       <Header title={pageData.header.title}
@@ -38,7 +37,6 @@ const Page = async ({ params }) => {
       DurationBot={pageData.header.DurationBot}
       DurationBotDate={pageData.header.DurationBotDate}
       TrainingBot={pageData.header.TrainingBot}
-
       />
 
       <Psummary summaryData={pageData.summary}/>
