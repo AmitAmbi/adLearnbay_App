@@ -205,12 +205,6 @@
   justify-content: center;
 }
 
-.firstBotReview {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
 .firstBotReview p {
   font-size: var(--desktop_p-font-size);
   color: var(--medium-greyy);
@@ -221,25 +215,19 @@
   margin: 0;
 }
 
-/* .firstBotReview img {
+.firstBotReview img {
   margin-top: 50px;
   width: 500px;
-} */
+}
 
 .secondBotReview img {
   width: 100%;
   height: auto;
 }
 
-/* .socailR {
+.socailR {
   width: 100%;
   height: auto;
-} */
-
-.firstBotImgWrapper {
-  position: relative;
-  width: 565px;
-  height: 200px;
 }
 
 @media screen and (max-width:1281px) {
@@ -259,19 +247,7 @@
     width: 1000px;
   }
 
-  .mainHeading {
-    font-size: 30px;
-  }
-
-  .firstBotReview p {
-    font-size: 15px;
-
-  }
-
-  .firstBotImgWrapper {
-    width: 435px;
-    height: 155px;
-  }
+  .btnContainer {}
 
 }
 
@@ -286,8 +262,6 @@
   }
 }
 
-
-@media screen and (max-width: 968px) {}
 
 @media screen and (max-width: 641px) {
   .reviewBotSection {
