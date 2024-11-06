@@ -8,7 +8,7 @@
     return (
       <section className={styles.container}>
         <div className="containerWidth">
-          <h2 className={styles.headH4}>
+          <h2 className={styles.headH2}>
             <span className={styles.grey}>Achieve your career goals with our </span> 
             <span className={styles.orange}>Placement Support</span>
           </h2>
