@@ -259,21 +259,23 @@
     width: 1000px;
   }
 
-  .btnContainer {}
-
 }
 
-@media screen and (max-width: 1000px) {
-  .mySwiper {
-    width: 860px;
+@media screen and (max-width: 1024px) {
+  .mainHeading {
+    font-size: 30px;
   }
 
-  .keyContainer {
-    width: 100%;
-    max-width: 860px;
+  .firstBotReview p {
+    font-size: 15px;
+
+  }
+
+  .firstBotImgWrapper {
+    width: 435px;
+    height: 155px;
   }
 }
-
 
 @media screen and (max-width: 968px) {
   .mainHeading {
@@ -351,5 +353,31 @@
 
   .subHeading {
     text-wrap: pretty;
+  }
+}
+@media screen and (max-width: 481px) {
+  .mainHeading {
+    font-size: 30px;
+  }
+
+  .firstBotReview p {
+    font-size: 15px;
+  }
+  .firstBotImgWrapper {
+    width: 300px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 361px) {
+  .mainHeading {
+    font-size: 30px;
+  }
+
+  .firstBotReview p {
+    font-size: 15px;
+  }
+  .firstBotImgWrapper {
+    width: 300px;
+    height: 150px;
   }
 }

@@ -128,6 +128,11 @@
 
 }
 
+@media screen and (max-width:1024px) {
+  .trackbarDiv {
+    width: 275px;
+  }
+}
 @media screen and (max-width:968px) {
   .trackbarDiv {
     width: 100%;
