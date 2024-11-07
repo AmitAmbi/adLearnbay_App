@@ -6,7 +6,7 @@
 
 .innerDiv {
   position: relative;
-  /* Keep relative for positioning children */
+  
 }
 
 .innerDiv h2 {
@@ -41,7 +41,7 @@
   margin-bottom: 50px;
 }
 
-/* Enable vertical scrolling */
+
 .innerBoxDiv {
   display: grid;
   grid-template-columns: 28% 29% 28%;
@@ -81,10 +81,10 @@
   text-wrap: balance;
 }
 
-/* Custom scrollbar styles */
+
 .innerBoxDiv::-webkit-scrollbar {
   width: 10px;
-  /* Width of scrollbar */
+  
 }
 
 .innerBoxDiv::-webkit-scrollbar-thumb {
@@ -123,10 +123,10 @@
 
 .dot.active {
   background-color: #0070f3;
-  /* Change color when active */
+  
 }
 
-/* Media queries */
+
 @media only screen and (max-width: 1281px) {
 
   .headContBlue,
@@ -156,9 +156,7 @@
   .innerDiv h2 {
     font-size: 34px;
   }
-/* .innerbox{
-display: flex;
-} */
+
   .headContBlue,
   .headContGreen,
   .headContOrange {
@@ -208,7 +206,6 @@ display: flex;
   
     .hrline {
       width: 180px;
-      margin: 0 auto;
     }
   
     .pHead {
@@ -218,13 +215,13 @@ display: flex;
       text-align: center;
     }
   
-    /* Adjust innerBoxDiv layout for 640px screen */
+    
     .innerBoxDiv {
       display: flex;
       flex-direction: column;
       gap: 20px;
       padding: 20px;
-      max-width: 100%; /* Ensures container fits the screen */
+      max-width: 100%; 
       margin: 0 auto;
       background: #fff;
       border-radius: 20px;
@@ -234,7 +231,7 @@ display: flex;
     .innerBox {
       padding: 20px;
       border-radius: 15px;
-      max-width: 100%; /* Prevents each box from overflowing */
+      max-width: 100%;
       box-sizing: border-box;
       background: #ffff;
       text-align: left;
@@ -257,7 +254,7 @@ display: flex;
       margin: 0 3px;
     }
   
-    /* Additional adjustment for header/logo to fit within smaller screens */
+    
     .customHeaderLogo {
       max-width: 200px;
       display: block;
@@ -290,13 +287,13 @@ display: flex;
     text-align: center;
   }
 
-  /* Adjust innerBoxDiv for 480px width */
+ 
   .innerBoxDiv {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
-    max-width: 100%; /* Prevent overflow */
+    max-width: 100%; 
     margin: 0 20px;
     background: #fff;
     border-radius: 20px;
@@ -306,17 +303,15 @@ display: flex;
   .innerBox {
     padding: 15px;
     border-radius: 15px;
-    max-width: 100%; /* Make sure each box fits within the screen */
+    max-width: 100%; 
     box-sizing: border-box;
-    background: #ffff; /* Optional: Add background for visual separation */
+    background: #ffff; 
     text-align: left;
   }
 
   .headCont h3 {
     font-size: 18px;
     line-height: 24px;
-    /* margin-right: 0;
-    text-align: center; */
   }
 
   .pTop {
@@ -324,16 +319,16 @@ display: flex;
     line-height: 1.4;
   }
 
-  /* Adjust dot indicators */
+
   .dot {
     width: 8px;
     height: 8px;
     margin: 0 3px;
   }
 
-  /* Adjustments for LearnBay header/logo to prevent overlap */
+  
   .customHeaderLogo {
-    max-width: 150px; /* Adjust logo width for smaller screens */
+    max-width: 150px; 
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -361,14 +356,14 @@ display: flex;
     margin-bottom: 15px;
   }
 
-  /* Adjust innerBoxDiv to fit better in narrow screens */
+ 
   .innerBoxDiv {
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding: 10px;
     margin: 0 auto;
-    max-width: 100%; /* Ensure it takes the full width */
+    max-width: 100%; 
     overflow-y: auto;
     border-radius: 15px;
   }
@@ -376,7 +371,7 @@ display: flex;
   .innerBox {
     padding: 15px;
     border-radius: 12px;
-    max-width: 100%; /* Make sure each box does not overflow */
+    max-width: 100%; 
     box-sizing: border-box;
   }
 
