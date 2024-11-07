@@ -1,6 +1,6 @@
 .container {
   margin-top: 100px;
-  background: linear-gradient(180deg, #fff 0%, #eff3f6 49.89%, #fff 100%);
+  background: linear-gradient(180deg, var(--white) 0%, #eff3f6 49.89%, var(--white) 100%);
 }
 
 .headH2 {
@@ -22,13 +22,13 @@
 }
 
 .innerdiv div h4 {
-  color: #0072bc;
+  color: var(--primary-color);
   font-weight: 600;
   font-size: var(--desktop_h4-font-size);
 }
 
 .innerdiv div p {
-  color: #121212;
+  color: var(--deepblack);
   font-size: var(--desktop_p-font-size);
   line-height: 24px;
   font-weight: 300;
@@ -49,23 +49,21 @@
 
 .innerdiv div:nth-child(1),
 .innerdiv div:nth-child(4) {
-  background: #fff;
+  background: var(--white);
 }
 
 .innerdiv div:nth-child(2),
 .innerdiv div:nth-child(3) {
-  background: #fff;
+  background: var(--white);
 }
 
 .innerdiv div:nth-child(2) h4,
 .innerdiv div:nth-child(3) h4 {
-  color: #0072bc;
+  color: var(--primary-color);
 }
 
 .innerdiv img {
   float: right;
-  margin-right: 20px;
-  margin-bottom: 20px;
   height: auto;
 }
 
@@ -123,6 +121,14 @@
     width: 77px;
     bottom: 0px;
   }
+
+  .headH2 {
+    font-size: 35px;
+  }
+
+  .innerdiv {
+    grid-template-columns: 46.5% 46.5%;
+  }
 }
 
 @media only screen and (max-width: 641px) {
@@ -177,7 +183,7 @@
   }
 
   .innerdiv div p {
-    color: #121212;
+    color: var(--deepblack);
     font-size: 14px;
     font-style: normal;
     line-height: 148%;
@@ -202,7 +208,7 @@
 /* #Achive */
 
 .section {
-  background: #eff3f6;
+  background: var(--senary-color);
   padding: 50px;
 }
 
@@ -211,7 +217,7 @@
   text-wrap: pretty;
   margin: auto;
   width: 600px;
-  color: #212121;
+  color: var(--deepblack);
   text-align: center;
   font-size: 35px;
   font-weight: 600;
@@ -234,7 +240,7 @@
 
 .ContentBox {
   border-radius: 30px;
-  background: #022646;
+  background: var(--deep-blueee);
   box-shadow: 0px -160px 45px 0px rgba(0, 0, 0, 0),
     0px -102px 41px 0px rgba(0, 0, 0, 0.01),
     0px -58px 35px 0px rgba(0, 0, 0, 0.02),
@@ -262,7 +268,7 @@
 }
 
 .ContentBox h5 {
-  color: #FFF;
+  color: var(--white);
   text-align: center;
 
   font-size: 24px;
@@ -273,7 +279,7 @@
 }
 
 .ContentBox p {
-  color: #FFF;
+  color: var(--white);
   text-align: center;
   font-size: 12px;
   font-style: normal;
