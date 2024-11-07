@@ -91,6 +91,7 @@ body,
   --carbon-black: #2E2E2E;
   --deep-cyann: #36ddfe;
   --cementtt: #D3D3D3;
+  --deepblack: #121212;
 
   /* Define font sizes for desktop */
   --desktop_h1-font-size: 42px;
@@ -362,8 +363,7 @@ body {
 .bannerButton:hover {
   border: 1px solid var(--primary-color);
   background-color: white;
-  color: var(--primary-color)
-  ;
+  color: var(--primary-color);
 }
 
 @media (max-width: 1281px) {

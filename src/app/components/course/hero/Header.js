@@ -78,7 +78,7 @@ const Header = memo(({
                 <div onClick={applyCounselingShow}>
                   <Button
                     text="Apply for Counseling"
-          
+
                   />
                 </div>
               </div>
