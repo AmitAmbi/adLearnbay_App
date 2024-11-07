@@ -33,7 +33,7 @@
   text-align: center;
   font-size: var(--desktop_h4-font-size);
   font-weight: 600;
-  line-height: 160%;
+  line-height: 110%;
 }
 
 .contentConteiner p {
@@ -53,6 +53,7 @@
   text-align: center;
   width: 100%;
   max-width: 240px;
+  gap: 10px;
 }
 
 .extraImgWrapper {
@@ -62,18 +63,22 @@
   height: 30px;
 }
 
+.boxContent {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 10px;
+}
+
 .ibmLogo {
   position: absolute;
 }
 
-/* Adjustments for the Form container */
 .formContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Center align form items */
   padding: 20px;
-  /* Add some padding around the form */
 
   border-radius: 24.338px;
   background: var(--black-diamond);
@@ -83,7 +88,6 @@
   display: grid;
   grid-template-columns: 50% 28%;
   gap: 20px;
-  /* Add some gap between columns */
   align-items: baseline;
 
   justify-content: space-around;
@@ -93,9 +97,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill,
       minmax(200px, 1fr));
-  /* Responsive grid */
   gap: 60px;
-  /* Space between grid items */
   margin: 20px 0 80px 0;
 }
 
@@ -150,11 +152,8 @@
 .formdiv form input {
   border-radius: 8.743px;
   border: none;
-  /* Remove border for consistency */
   background: var(--light-black);
-  /* Set background color */
   color: var(--white);
-  /* Change text color to white */
   font-weight: 400;
   height: 42px;
 }
@@ -173,63 +172,40 @@
 
 .formdiv form input[type="tel"] {
   height: 38px;
-  /* Maintain height for tel input */
 }
 
-/* Assuming you have a select element for country */
 .formdiv form select {
   border-radius: 8.743px;
-  /* Consistent border-radius */
   border: none;
-  /* Remove border */
   background: var(--light-black);
-  /* Set background color */
   color: var(--white);
-  /* Change text color to white */
   font-weight: 400;
-  /* Font weight */
   height: 42px;
-  /* Consistent height */
   padding: 10px;
-  /* Add padding */
   appearance: none;
-  /* Remove default dropdown arrow (optional) */
   -webkit-appearance: none;
-  /* Remove default dropdown arrow in Safari */
 }
 
-/* Customize dropdown options */
 .formdiv form select option {
   background-color: var(--light-black);
-  /* Set background color for dropdown options */
   color: var(--grayy);
-  /* Set text color for dropdown options */
 }
 
-/* Keep the styling consistent after input */
 .formdiv form input:focus,
 .formdiv form select:focus {
   background: var(--light-black);
-  /* Maintain background color on focus */
   color: var(--white);
-  /* Maintain text color on focus */
   outline: none;
-  /* Remove default outline */
 }
 
-/* Optional: Add styles for filled input */
 .formdiv form input:valid {
   background: var(--light-black);
-  /* Maintain background color */
   color: var(--white);
-  /* Maintain text color */
 }
 
 .formdiv form select:focus-visible {
   background: var(--light-black);
-  /* Maintain background color */
   color: var(--white);
-  /* Maintain text color */
 }
 
 .formdiv h4 {
@@ -239,7 +215,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: 191.682%;
-  /* 51.835px */
 }
 
 .formdiv span {
@@ -254,7 +229,7 @@
   height: 60px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1080px) {
   .contentConteiner {
     padding: 40px 60px;
     margin: 0;
@@ -289,17 +264,10 @@
   .extraImgWrapper {
     width: 150px;
   }
-
-  .boxContent {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-  }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 761px) {
   .Container {
-    margin: 60px 0;
     padding: 0 20px;
     width: 100%;
     max-width: 100%;
@@ -317,7 +285,6 @@
     color: var(--light-black);
     font-size: var(--desktop_h2-font-size);
     font-weight: 600;
-    text-align: left;
   }
 
   .contentConteiner h4 {
@@ -368,7 +335,12 @@
   }
 
   .hrline {
-    left: 115px;
-    width: 114px;
+    width: 145px;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .hrline {
+    left: 90px;
   }
 }
