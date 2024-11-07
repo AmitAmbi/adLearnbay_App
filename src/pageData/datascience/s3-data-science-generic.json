@@ -1,135 +1,124 @@
 {
-    "header": {
-                "spanTag":"Project-based learning",
-                        "spanIcon":"https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ada_AI_icon.webp",
-      "title": "Advanced Data Science & AI Program with",
-      "orgTitle":"Domain Specialization",
-      "descrption": "Unlock the power of data with our comprehensive program, featuring hands-on learning, real-world projects, and domain specialization in fields like BFSI, healthcare, and retail.",
-      "subtitle": "Gen-AI for Business Leaders",
-      "typeLogo":"https://d32and0ii3b8oy.cloudfront.net/web/s3_main/iit_guwati_logo.webp",
-      "bgvideo":"/video/back-video.mp4",
-      "content":" how are you amit jadidifwjiw",
+  "header": {
+    "spanTag": "Project-based learning",
+    "spanIcon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ada_AI_icon.webp",
+    "title": "Advanced Data Science & AI Program with",
+    "orgTitle": "Domain Specialization",
+    "descrption": "Unlock the power of data with our comprehensive program, featuring hands-on learning, real-world projects, and domain specialization in fields like BFSI, healthcare, and retail.",
+    "subtitle": "Gen-AI for Business Leaders",
+    "typeLogo": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/iit_guwati_logo.webp",
+    "bgvideo": "/video/back-video.mp4",
+    "content": " how are you amit jadidifwjiw",
 
-      "applicationIcon":"https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/blue_Bots.webp",
-      "ProgramIcon":"https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/blue_Cal_bots.webp",
-      "trainingIcon":"https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/build_bots.webp",
-      "CloseDes":"Program Eligibility ",
-      "CloseBotDate":"Min 1 year",
-      "DurationBot":"Program Duration",
-      "DurationBotDate":"11 Months",
-      "TrainingBot":"Training Format",
-      "BotWidth":"70",
-      "BotHeight":"56"
+    "applicationIcon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/blue_Bots.webp",
+    "ProgramIcon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/blue_Cal_bots.webp",
+    "trainingIcon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/build_bots.webp",
+    "CloseDes": "Program Eligibility ",
+    "CloseBotDate": "Min 1 year",
+    "DurationBot": "Program Duration",
+    "DurationBotDate": "11 Months",
+    "TrainingBot": "Training Format",
+    "BotWidth": "70",
+    "BotHeight": "56"
+  },
+
+  "summary": [
+    {
+      "id": 1,
+      "title": "Domain Electives",
+      "description": "Work on Live projects from multiple domains like Retail, BFSI, Pharma etc.",
+      "imageSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/work_experience_1+(1).webp",
+      "imageAlt": "DomainElectives"
     },
+    {
+      "id": 2,
+      "title": "Real Project Experience",
+      "description": "Gain experience of managing analytics project from scratch.",
+      "imageSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/experiences_2+(1).webp",
+      "imageAlt": "RealProjectExperience"
+    },
+    {
+      "id": 3,
+      "title": "Certification",
+      "description": "Get certified from renowned industries.",
+      "imageSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/business_concept_1+(1).webp",
+      "imageAlt": "Certification",
+      "extraImageSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/IBM_MICROS.webp",
+      "extraImageAlt": "IBMLOGO"
+    },
+    {
+      "id": 4,
+      "title": "Placement Assistance",
+      "description": "Receive personalized placement assistance from our dedicated team.",
+      "imageSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/research_1+(1).webp",
+      "imageAlt": "PlacementAssistance"
+    }
+  ],
 
+  "practical": [
+    {
+      "title": "Practical Project Experience",
+      "description": "Work on projects based on real-world scenarios",
+      "points": [
+        { "svg": "svgRight", "text": "Live mentorship" },
+        { "svg": "svgRight", "text": "1:1 Doubt Clearing" },
+        { "svg": "svgRight", "text": "Hybrid Learning" },
+        { "svg": "svgRight", "text": "Interactive sessions" }
+      ],
+      "boxes": [
+        {
+          "imgSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/one_Practials.webp",
+          "imgAlt": "Practical",
+          "title": "Work with real data",
+          "description": "Leverage your skills with advanced datasets and industry-relevant scenarios in finance, healthcare, and e-commerce.",
+          "width": "80",
+          "height": "80"
+        },
+        {
+          "imgSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/two%2Bpractiacals.webp",
+          "imgAlt": "Practical",
+          "title": "Learn from top 1% experts",
+          "description": "Learn directly from the top 1% experts for unmatched expertise and guidance.",
+          "width": "80",
+          "height": "80"
+        },
+        {
+          "imgSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/three_practicals.webp",
+          "imgAlt": "Practical",
+          "title": "World-Class Certification",
+          "description": "Upon successful project completion, earn an IBM-endorsed certification recognized across industries.",
+          "width": "80",
+          "height": "80"
+        }
+      ],
+      "svgRight": "<svg height=\"20\" width=\"40\" fill=\"none\" viewBox=\"0 0 40 22\" xmlns=\"http://www.w3.org/2000/svg\"><mask height=\"28\" id=\"mask0_2250_2342\" style=\"maskType: alpha;\" width=\"42\" x=\"0\" y=\"0\" maskUnits=\"userSpaceOnUse\"><rect height=\"28\" width=\"42\" fill=\"url(#pattern0_2250_2342)\"/></mask><g mask=\"url(#mask0_2250_2342)\"><rect height=\"28\" width=\"42\" fill=\"#04C988\" y=\"-2.24023\"/></g><defs><pattern height=\"1\" id=\"pattern0_2250_2342\" width=\"1\" patternContentUnits=\"objectBoundingBox\"><use transform=\"matrix(0.00666667 0 0 0.01 0.166667 0)\" xlink:href=\"#image0_2250_2342\"/></pattern><image height=\"100\" id=\"image0_2250_2342\" width=\"100\" xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHFklEQVR4nO3bb0xT5x4H8MMc4p8gQ8MUGTKFqCB/VlqgQPFAS9sDPaeUyUGgQvlzyl2Wa9ybvVv278X2Yi/c3rgty7JlNzdL3IK6KQMRKOJYwQJtgVpb2lN4sRm8d4szm3JdfW5qMnXEKaV9eHrK80m+70j7/fXHgXMeAkFgGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhUQwQMR083Wb0MV2cj/68w6MpRF1pzXoDvPEUxzNfGH0M+DMcT/s5nnkFdbc1yeijjz+8jL8uhvkgsDDUHdcMzke/9nfLuB+e+crAkxtQd4163Jymxcgzd5+4kHtLofuPuqgtqDtHLeOcVsvxzJ1lLePB7xX7P+Y1Kai7Rx2jlyaNPuZWMMt46Erxtnu1+1DPEDU652tyOJ75eUXLePA75b9GX00J6lkEr21Os4fj6R9DWsb90L9wPmY36pkEq81FJRl9tDM8y7i/lOOo5xKkoy5qC8cz4+Fdxr10oZ5NcI66qLjALSuEZQDOR7+Kej5BYQG7LvBQB2cZjBU/LAYpcOwBYxmBW99OX21ysH3WNI5n3oJyZfDMdfwcEiSOp1+CcmX46F+5OY042D5rWidP64w8/QeEZSxyXo0a9XyC0slXV3A++rbRR4NwhuM1fm6OqUc9n6B0eJhczlv9C8drQLhj9GqOoZ5PUDpdVHq7t+pah7cahDvtnuq3Uc9HtLurdO2equPts+pXO+ZVW4kI1ulTJ7fNVnnbPVUAQj5GOxSxAAQJcIuMj4McdZCvxfLkH//23IQAC44khQkUtKD1g0Ic3Lg0MCDyCBEY1a9nAcEMVNHc3b4qK1YwHlsQKMEQJmlkD1EXI1K2I0CIYXEkkIYNMK2M6e12AKmc8gs7ELyyNGD+9b18hPSWcBLovk+QdT2SM9WrksmAKWkqEuFEATMSrGqGR0AWtLP0LlV4IEU4MABwFzFAIcM8MLH0MNBQdA1zQyxlI1+fwEbc6J3kWTAJovHgwwFPTfxk+RJwfQx2lUVJj0q8ELBBJgUCrV8OaUuCkpA9BFHcFhKZoF0OrsAwSuCVEwDIoHE5ZQU3fgh03i+MNADwPiLPKPBQtAMz+JwFQAGmTkDg0n0ZnH4FQkZ1FfRAkFgF4jkbw8/Ahw5jYAAAAAElFTkSuQmCC\"/></defs></svg>"
+    }
+  ],
 
-    "summary":[
-
-
-            {
-              "id": 1,
-              "title": "Domain Electives",
-              "description": "Work on Live projects from multiple domains like Retail, BFSI, Pharma etc.",
-              "imageSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/work_experience_1+(1).webp",
-              "imageAlt": "DomainElectives"
-            },
-            {
-              "id": 2,
-              "title": "Real Project Experience",
-              "description": "Gain experience of managing analytics project from scratch.",
-              "imageSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/experiences_2+(1).webp",
-              "imageAlt": "RealProjectExperience"
-            },
-            {
-              "id": 3,
-              "title": "Certification",
-              "description": "Get certified from renowned industries.",
-              "imageSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/business_concept_1+(1).webp",
-              "imageAlt": "Certification",
-              "extraImageSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/IBM_MICROS.webp",
-              "extraImageAlt": "IBMLOGO"
-            },
-            {
-              "id": 4,
-              "title": "Placement Assistance",
-              "description": "Receive personalized placement assistance from our dedicated team.",
-              "imageSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/research_1+(1).webp",
-              "imageAlt": "PlacementAssistance"
-            }
-        
-          
-        ],
-
-
-        "practical": [
-            {
-              "title": "Practical Project Experience",
-              "description": "Work on projects based on real-world scenarios",
-              "points": [
-                { "svg": "svgRight", "text": "Live mentorship" },
-                { "svg": "svgRight", "text": "1:1 Doubt Clearing" },
-                { "svg": "svgRight", "text": "Hybrid Learning" },
-                { "svg": "svgRight", "text": "Interactive sessions" }
-              ],
-              "boxes": [
-                {
-                  "imgSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/one_Practials.webp",
-                  "imgAlt": "Practical",
-                  "title": "Work with real data",
-                  "description": "Leverage your skills with advanced datasets and industry-relevant scenarios in finance, healthcare, and e-commerce.",
-                  "width": "80",
-                  "height": "80"
-                },
-                {
-                  "imgSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/two%2Bpractiacals.webp",
-                  "imgAlt": "Practical",
-                  "title": "Learn from top 1% experts",
-                  "description": "Learn directly from the top 1% experts for unmatched expertise and guidance.",
-                  "width": "80",
-                  "height": "80"
-                },
-                {
-                  "imgSrc": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/three_practicals.webp",
-                  "imgAlt": "Practical",
-                  "title": "World-Class Certification",
-                  "description": "Upon successful project completion, earn an IBM-endorsed certification recognized across industries.",
-                  "width": "80",
-                  "height": "80"
-                }
-              ],
-              "svgRight": "<svg height=\"20\" width=\"40\" fill=\"none\" viewBox=\"0 0 40 22\" xmlns=\"http://www.w3.org/2000/svg\"><mask height=\"28\" id=\"mask0_2250_2342\" style=\"maskType: alpha;\" width=\"42\" x=\"0\" y=\"0\" maskUnits=\"userSpaceOnUse\"><rect height=\"28\" width=\"42\" fill=\"url(#pattern0_2250_2342)\"/></mask><g mask=\"url(#mask0_2250_2342)\"><rect height=\"28\" width=\"42\" fill=\"#04C988\" y=\"-2.24023\"/></g><defs><pattern height=\"1\" id=\"pattern0_2250_2342\" width=\"1\" patternContentUnits=\"objectBoundingBox\"><use transform=\"matrix(0.00666667 0 0 0.01 0.166667 0)\" xlink:href=\"#image0_2250_2342\"/></pattern><image height=\"100\" id=\"image0_2250_2342\" width=\"100\" xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHFklEQVR4nO3bb0xT5x4H8MMc4p8gQ8MUGTKFqCB/VlqgQPFAS9sDPaeUyUGgQvlzyl2Wa9ybvVv278X2Yi/c3rgty7JlNzdL3IK6KQMRKOJYwQJtgVpb2lN4sRm8d4szm3JdfW5qMnXEKaV9eHrK80m+70j7/fXHgXMeAkFgGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhUQwQMR083Wb0MV2cj/68w6MpRF1pzXoDvPEUxzNfGH0M+DMcT/s5nnkFdbc1yeijjz+8jL8uhvkgsDDUHdcMzke/9nfLuB+e+crAkxtQd4163Jymxcgzd5+4kHtLofuPuqgtqDtHLeOcVsvxzJ1lLePB7xX7P+Y1Kai7Rx2jlyaNPuZWMMt46Erxtnu1+1DPEDU652tyOJ75eUXLePA75b9GX00J6lkEr21Os4fj6R9DWsb90L9wPmY36pkEq81FJRl9tDM8y7i/lOOo5xKkoy5qC8cz4+Fdxr10oZ5NcI66qLjALSuEZQDOR7+Kej5BYQG7LvBQB2cZjBU/LAYpcOwBYxmBW99OX21ysH3WNI5n3oJyZfDMdfwcEiSOp1+CcmX46F+5OY042D5rWidP64w8/QeEZSxyXo0a9XyC0slXV3A++rbRR4NwhuM1fm6OqUc9n6B0eJhczlv9C8drQLhj9GqOoZ5PUDpdVHq7t+pah7cahDvtnuq3Uc9HtLurdO2equPts+pXO+ZVW4kI1ulTJ7fNVnnbPVUAQj5GOxSxAAQJcIuMj4McdZCvxfLkH//23IQAC44khQkUtKD1g0Ic3Lg0MCDyCBEY1a9nAcEMVNHc3b4qK1YwHlsQKMEQJmlkD1EXI1K2I0CIYXEkkIYNMK2M6e12AKmc8gs7ELyyNGD+9b18hPSWcBLovk+QdT2SM9WrksmAKWkqEuFEATMSrGqGR0AWtLP0LlV4IEU4MABwFzFAIcM8MLH0MNBQdA1zQyxlI1+fwEbc6J3kWTAJovHgwwFPTfxk+RJwfQx2lUVJj0q8ELBBJgUCrV8OaUuCkpA9BFHcFhKZoF0OrsAwSuCVEwDIoHE5ZQU3fgh03i+MNADwPiLPKPBQtAMz+JwFQAGmTkDg0n0ZnH4FQkZ1FfRAkFgF4jkbw8/Ahw5jYAAAAAElFTkSuQmCC\"/></defs></svg>"
-            }
-          
-              
-        ],
-        
-            "ProggramSection": [
-              {
-                "content": {
-                  "BoldText": "Early to Mid",
-                  "nonBold": "Level Professionals with min",
-                  "to": "",
-                  "senior": "",
-                  "yearExp": "1+ Year of Experience",
-                  "description": "Professionals with a minimum of 1 year of experience in any domain. Prior knowledge of Programming is not mandatory as we provide special bootcamp for non programmers with this course.",
-                  "importantNote": "This program is not for fresh graduates. You must have at least 1 year of work experience. To know more check eligibility",
-                  "points": [
-                    {
-                      "title": "Data Analyst",
-                      "icon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/icon_Datas.webp"
-                    },
-                    {
-                      "title": "Non-Techies",
-                      "icon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/icon_ytwos.webp"
-                    }
-                  ]
-                },
-                "rightImg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ryt_programImg+(2).webp",
-                "popupTitle": "Eligibility Check",
-                "formProps": {}
-              }
-            ]
-          
-          
-  }
-  
+  "ProggramSection": [
+    {
+      "content": {
+        "BoldText": "Early to Mid",
+        "nonBold": "Level Professionals with min",
+        "to": "",
+        "senior": "",
+        "yearExp": "1+ Year of Experience",
+        "description": "Professionals with a minimum of 1 year of experience in any domain. Prior knowledge of Programming is not mandatory as we provide special bootcamp for non programmers with this course.",
+        "importantNote": "This program is not for fresh graduates. You must have at least 1 year of work experience. To know more check eligibility",
+        "points": [
+          {
+            "title": "Data Analyst",
+            "icon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/icon_Datas.webp"
+          },
+          {
+            "title": "Non-Techies",
+            "icon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/icon_ytwos.webp"
+          }
+        ]
+      },
+      "rightImg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/ryt_programImg+(2).webp",
+      "popupTitle": "Eligibility Check",
+      "formProps": {}
+    }
+  ]
+}
