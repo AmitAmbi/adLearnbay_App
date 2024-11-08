@@ -54,7 +54,7 @@
 
 .innerDiv {
   display: grid;
-  grid-template-columns: 60% 30%;
+  grid-template-columns: 59% 30%;
   /* grid-gap: 50px; */
   gap: 120px;
   justify-content: center;
@@ -284,6 +284,16 @@
   gap: 10px;
 }
 
+.imgwrapper {
+  position: absolute;
+}
+
+.wrrapper {
+  position: relative;
+  width: 75px;
+  height: 60px;
+}
+
 .content {
   display: grid;
   gap: 4px;
@@ -296,8 +306,13 @@
 }
 
 .imgBot img {
-  width: auto;
-  height: 66px;
+  position: absolute;
+}
+
+.wrapper {
+  position: relative;
+  height: 75px;
+  width: 270px;
 }
 
 .content h3 {
@@ -380,13 +395,9 @@
   color: var(--blue-grey);
   border-radius: 8.775px;
   padding: 10px;
-  /* Add some padding */
   font-weight: 400;
-  /* Set font weight */
   appearance: none;
-  /* Remove default dropdown arrow (optional) */
   -webkit-appearance: none;
-  /* Remove default dropdown arrow in Safari */
   height: 42px;
 }
 
@@ -525,10 +536,8 @@
   }
 }
 
-@media only screen and (max-width: 1180px) {
-  .botDiv {
-    width: 100vw;
-  }
+@media only screen and (max-width: 1181px) {
+
 
   .btnDivM {
     display: none;
@@ -536,8 +545,17 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .botDiv {
+    width: 97vw;
+  }
+
   .content h3 {
     font-size: 28px;
+  }
+
+  .innerDiv {
+    grid-template-columns: 59% 30%;
+    gap: 100px;
   }
 }
 
@@ -545,11 +563,21 @@
   .content h3 {
     font-size: 26px;
   }
+
+  .firstSection h1 {
+    font-size: 36px;
+    line-height: 47px;
+  }
 }
 
 @media only screen and (max-width: 841px) {
-  .firstSection h1 {
-    font-size: 39px;
+  .wrrapper {
+    width: 71px;
+    height: 56px;
+  }
+
+  .content {
+    gap: 1px;
   }
 
   .firstSection {
@@ -572,108 +600,46 @@
   .container {
     margin-top: 0;
   }
+
+  .wrapper {
+    height: 53px;
+    width: 245px;
+  }
+
+  .innerBotDiv {
+    gap: 2px;
+  }
 }
 
 @media only screen and (max-width: 761px) {
   .firstSection h1 {
-    font-size: 36px;
+    font-size: 27px;
+    line-height: 37px;
+  }
+
+  .content p {
+    font-size: 15px;
+  }
+
+  .botDiv {
+    width: 100vw;
+    padding: 20px 32px;
+  }
+
+  .content h3 {
+    font-size: 25px;
   }
 }
 
 @media only screen and (max-width: 641px) {
-  .container {
-    padding: 1dvh 0px;
-    margin-top: 60px;
-  }
-
-  .bottomSection {
-    display: flex;
-  }
-
-  .containerAI {
-    background: radial-gradient(circle at 80% 30%,
-        rgba(127, 89, 239, 0.3) 1%,
-        /* Further reduced opacity */
-        transparent 30%),
-      radial-gradient(circle at 10% 80%,
-        rgba(254, 122, 54, 0.3) 10%,
-        /* Further reduced opacity */
-        transparent 40%),
-      var(--light-black);
-    /* This color remains opaque */
-    background-size: cover;
-    background-position: center;
-  }
-
-  .containerAI::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    background-image:
-      linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 20px 20px;
-    /* Size of the grid squares */
-    opacity: 0.2;
-    /* Adjust opacity for the grid */
-  }
-
-  .containerMaster {
-    background: radial-gradient(circle at 80% 30%,
-        rgba(254, 122, 54, 0.3) 1%,
-        /* Further reduced opacity */
-        transparent 30%),
-      radial-gradient(circle at 10% 80%,
-        rgba(14, 13, 13, 0.3) 10%,
-        /* Further reduced opacity */
-        transparent 40%),
-      var(--light-black);
-    /* This color remains opaque */
-    background-size: cover;
-    background-position: center;
-  }
-
-  .containerMaster::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    background-image:
-      linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 20px 20px;
-    /* Size of the grid squares */
-    opacity: 0.2;
-    /* Adjust opacity for the grid */
-  }
-
-  .content h3 {
-    font-size: 27px;
-  }
-
-  .starDiv {
-    gap: 10px;
+  .innerDiv {
+    grid-template-columns: 100%;
+    margin: 20px 35px;
+    grid-gap: 70px;
   }
 
   .firstSection h5 {
-    color: var(--white);
-    font-size: var(--desktop_h5-font-size);
-    font-weight: 500;
-  }
-
-  .innerDiv {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 24px;
-    gap: 40px;
-    padding: 0;
+    font-size: 15px;
   }
 
   .innerBotDiv img {
@@ -681,94 +647,26 @@
     height: auto;
   }
 
-  .firstSection {
-    padding: 0;
-  }
-
-  .firstSection p {
-    font-size: var(--desktop_p-font-size);
-    line-height: 18px;
-  }
-
-  .btnDiv {
-    display: none;
-  }
-
-  .imgBot img {
-    height: 46px;
-  }
-
-  .btnDivM {
-    display: flex;
-    gap: 20px;
-
-  }
-
-  .btnDivM .outlineButton,
-  .btnDivM .orangeButton {
-    border-radius: 17px;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 14.132px;
-    /* 143.396% */
-    text-transform: uppercase;
-    padding: 8px 16px;
-  }
-
-  .btnDivM .outlineButton {
-    color: var(--black-diamond);
-    background: var(--white);
-  }
-
-  .formdiv h3 {
-    font-size: var(--desktop_h3-font-size);
-  }
-
-  .fill {
-    left: 108px;
-  }
-
   .botDiv {
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    margin: 20px 24px;
-    width: auto;
-    padding: 20px;
-    background: var(--senary-color);
+    width: 100%;
+    gap: 16px;
+    padding: 20px 25px;
   }
 
-  .mainBg {
-    padding-bottom: 0;
+  .content p {
+    font-size: 13px;
   }
 
-  .points {
-    margin: 30px 0;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .item1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-wrap: nowrap;
-  }
-
-  .points span {
-    font-size: var(--desktop_span-font-size);
+  .content h3 {
+    font-size: 23px;
   }
 }
 
 @media only screen and (max-width: 481px) {
-  .firstSection h1 {
-    font-size: 34px;
-    line-height: 40px;
-  }
 
-  .content p {
-    font-size: 15px;
+  .botDiv {
+    padding: 20px 7px;
+    flex-flow: column;
   }
 }
 
@@ -777,5 +675,20 @@
     text-wrap: balance;
   }
 
+  .content p {
+    font-size: 7px;
+  }
 
+  .content h3 {
+    font-size: 11px;
+  }
+
+  .wrrapper {
+    width: 42px;
+    height: 36px;
+  }
+
+  .botDiv {
+    padding: 20px 11px;
+  }
 }

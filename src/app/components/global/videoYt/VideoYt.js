@@ -29,7 +29,7 @@ const VideoYt = () => {
       soundRef.current.play();
       setIsPlaying(true);
       setIsEnded(false);
-      setShowThumbnail(false); 
+      setShowThumbnail(false);
     } else {
       videoRef.current.pause();
       // soundRef.current.src = audioUrl;
@@ -68,7 +68,7 @@ const VideoYt = () => {
       setIsPlaying(true);
       setIsEnded(false);
       setProgress(0);
-      setShowThumbnail(false); 
+      setShowThumbnail(false);
     }
   };
 
@@ -80,7 +80,7 @@ const VideoYt = () => {
             if (videoRef.current && !videoRef.current.paused) {
               videoRef.current.pause();
               setIsPlaying(false);
-              setShowThumbnail(true); 
+              setShowThumbnail(true);
             }
           }
         });
@@ -134,7 +134,7 @@ const VideoYt = () => {
           height="500"
           className={Styles.video}
           onTimeUpdate={handleTimeUpdate}
-          style={{ display: showThumbnail ? "none" : "block" }} 
+          style={{ display: showThumbnail ? "none" : "block" }}
         >
           Your browser does not support the video tag.
         </video>

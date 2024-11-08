@@ -83,15 +83,16 @@ const Header = memo(({
                 </div>
               </div>
               <div className={styles.imgBot}>
-                <Image
-                  src="https://d32and0ii3b8oy.cloudfront.net/web/V4/Coursepage/ibm_microsoft_head.webp"
-                  alt="Video Thumbnail"
-                  width={684}
-                  height={450}
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL="https://d32and0ii3b8oy.cloudfront.net/web/V4/Coursepage/ibm_microsoft_head.webp"
-                />
+                <div className={styles.wrapper}>
+                  <Image
+                    src="https://d32and0ii3b8oy.cloudfront.net/web/V4/Coursepage/ibm_microsoft_head.webp"
+                    alt="Video Thumbnail"
+                    fill
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL="https://d32and0ii3b8oy.cloudfront.net/web/V4/Coursepage/ibm_microsoft_head.webp"
+                  />
+                </div>
               </div>
 
               <div className={styles.btnDivM}>
@@ -124,45 +125,48 @@ const Header = memo(({
       <div className="containerWidth">
         <div className={styles.botDiv}>
           <div className={styles.innerBotDiv}>
-            <Image
-              src={applicationIcon}
-              alt="Application Closes"
-              width={BotWidth}
-              height={BotHeight}
-              loading="lazy"
-              placeholder="blur"
-              blurDataURL="https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/application_b.webp"
-            />
+            <div className={styles.wrrapper}>
+              <Image
+                src={applicationIcon}
+                alt="Application Closes"
+                fill
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/application_b.webp"
+              />
+            </div>
             <div className={styles.content}>
               <p>{CloseDes}</p>
               <h3>{CloseBotDate}</h3>
             </div>
           </div>
           <div className={styles.innerBotDiv}>
-            <Image
-              src={ProgramIcon}
-              alt="Program Duration"
-              width={BotWidth}
-              height={BotHeight}
-              loading="lazy"
-              placeholder="blur"
-              blurDataURL="https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/program_b.webp"
-            />
+            <div className={styles.wrrapper}>
+              <Image
+                src={ProgramIcon}
+                alt="Program Duration"
+                fill
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/program_b.webp"
+              />
+            </div>
             <div className={styles.content}>
               <p>{DurationBot}</p>
               <h3>{DurationBotDate}</h3>
             </div>
           </div>
           <div className={styles.innerBotDiv}>
-            <Image
-              src={trainingIcon}
-              alt="Training Format"
-              width={BotWidth}
-              height={BotHeight}
-              loading="lazy"
-              placeholder="blur"
-              blurDataURL="https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/training_b.webp"
-            />
+            <div className={styles.wrrapper}>
+              <Image
+                src={trainingIcon}
+                alt="Training Format"
+                fill
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/training_b.webp"
+              />
+            </div>
             <div className={styles.content}>
               <p>{TrainingBot}</p>
               <h3>{CloseBotDate}</h3>

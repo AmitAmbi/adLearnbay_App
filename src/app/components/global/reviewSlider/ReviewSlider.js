@@ -27,7 +27,6 @@ const ReviewSlider = () => {
                 priority
                 fill
               // className={styles.socailR}
-
               />
             </div>
           </div>

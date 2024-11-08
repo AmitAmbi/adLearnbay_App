@@ -27,7 +27,6 @@ const Page = async ({ params }) => {
         spanTag={pageData.header.spanTag}
         spanIcon={pageData.header.spanIcon}
         descrption={pageData.header.descrption}
-
         applicationIcon={pageData.header.applicationIcon}
         BotWidth={pageData.header.BotWidth}
         BotHeight={pageData.header.BotHeight}
@@ -48,9 +47,8 @@ const Page = async ({ params }) => {
       < OutComeSection />
       <AnimationNew />
       <ReviewSlider />
-      {/* <StructuredSection/> */}
+      <StructuredSection />
       <JobReadySection />
-
       <NewSevenSection />
     </div>
   );

@@ -100,6 +100,13 @@
   width: 255px;
 }
 
+@media only screen and (max-width: 1280px) {
+
+  .boxMain {
+    gap: 30px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .innerContainer {
     width: 100%;
@@ -126,8 +133,8 @@
   .boxMain {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    gap: 0;
     place-items: center;
+    gap: 0;
   }
 
 
@@ -135,7 +142,7 @@
 
 @media only screen and (max-width: 968px) {
   .container h2 {
-    font-size: 36px;
+    font-size: 33px;
   }
 
   .innerContainer {
@@ -145,16 +152,12 @@
 
   .box p {
     width: 100%;
+    font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 841px) {
   .box {
-    border-radius: 20px;
-    background: var(--black);
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
     background: radial-gradient(circle at 100% 20%,
         /* Blue circle positioned at the top left */
         rgb(8 54 83 / 90%) 1%,
@@ -166,8 +169,55 @@
         rgba(254, 122, 54, 000.3) 1%, transparent 60%),
       var(--light-black);
     background-color: rgba(15, 14, 14, 0.954);
-    color: var(--black);
-    width: 32%;
+
+  }
+
+  .container h2 {
+    font-size: 32px;
+  }
+
+  .box h5 {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .box p {
+    font-size: 13px;
+    margin-top: 4px;
+  }
+
+  .box h5 {
+    margin-top: -16px;
+  }
+
+  .pTag {
+    font-size: 14px;
+  }
+
+  .innerContainer {
+    max-width: 790px
+  }
+
+  .boxMain {
+    grid-template-columns: 33% 35% 34%
+  }
+
+  .box {
+    padding: 0 13px 13px 13px;
+  }
+}
+
+@media only screen and (max-width: 761px) {
+  .innerContainer {
+    max-width: 700px;
+  }
+
+  .container h2 {
+    font-size: 29px;
+  }
+
+  .box p {
+    font-size: 12px;
   }
 }
 

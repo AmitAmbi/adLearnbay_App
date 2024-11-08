@@ -41,7 +41,7 @@
 }
 
 .header span {
-  font-size: var(--desktop_span-font-size);
+  font-size: var(--desktop_h2-font-size);
   /* Responsive typography with clamp */
   font-weight: bold;
   color: transparent;
