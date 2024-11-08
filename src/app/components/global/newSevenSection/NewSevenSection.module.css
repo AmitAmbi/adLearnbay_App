@@ -109,7 +109,6 @@
 
 @media screen and (max-width:1381px) {
     .NewSevenSection {
-        width: 100%;
         max-width: 1180px;
     }
 
@@ -120,45 +119,54 @@
     .NewSevenSection {
         max-width: 1100px;
     }
-
-    @media screen and (max-width:1024px) {
-        .NewSevenSection {
-            width: 100%;
-            max-width: 940px;
-        }
-    }
-
-    @media screen and (max-width:968px) {
-        .NewSevenSection {
-            max-width: 860px;
-            padding: 40px;
-
-        }
-
-        .rytImgWrapper {
-            width: 210px;
-            height: 325px;
-            bottom: -40px;
-        }
-
-        .griContiner {
-            grid-gap: 20px;
-        }
-
-    }
-
-
 }
 
-@media screen and (max-width:1281px) {
+@media screen and (max-width:1081px) {
+    .NewSevenSection {
+        max-width: 980px;
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width:1024px) {
     .NewSevenSection {
         width: 100%;
+        max-width: 940px;
+    }
+}
+
+@media screen and (max-width:968px) {
+    .NewSevenSection {
+        max-width: 860px;
+        padding: 40px;
+
     }
 
+    .rytImgWrapper {
+        width: 210px;
+        height: 325px;
+        bottom: -40px;
+    }
+
+    .griContiner {
+        grid-gap: 20px;
+    }
 
 }
 
+@media screen and (max-width:841px) {
+    .NewSevenSection {
+        max-width: 738px;
+        padding: 30px 10px;
+    }
 
+    .rytImgWrapper {
+        width: 205px;
+        height: 320px;
+        bottom: -30px;
+    }
+
+}
 
 @media screen and (max-width:641px) {
     .NewSevenSection {
@@ -233,7 +241,7 @@
 
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:361px) {
 
     .blue,
     .green {
