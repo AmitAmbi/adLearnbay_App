@@ -147,7 +147,14 @@
     font-size: 20px;
   }
 }
+@media screen and (max-width: 760px) {
+.controlsContainer {
+  gap: 5px;
+  width:85%;
+  left:16px;
+}
 
+}
 @media screen and (max-width: 641px) {
   .videoContainer {
     padding-bottom: 60px;

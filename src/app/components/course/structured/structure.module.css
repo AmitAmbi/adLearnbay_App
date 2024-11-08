@@ -146,10 +146,7 @@
   }
 
   .innerdiv {
-    display: grid;
     grid-template-columns: 31% 29% 23%;
-    text-align: center;
-    justify-content: center;
     gap: 100px;
     margin: 92px 20px 20px 60px;
   }
@@ -162,20 +159,23 @@
     left:30px;
   }
   .imgWrapper {
-    width: 310px;
-    height: 45px;
-
+    width: 283px;
+    height: 45px
   }
 
   .innerdiv {
-    display: grid;
-    grid-template-columns: 31% 29% 23%;
-    text-align: center;
-    justify-content: center;
-    gap: 100px;
-    margin: 92px 20px 20px 60px;
+    gap: 85px;
+  }
+  .gridMbl{
+    width:100%;
   }
   
+}
+@media only screen and (max-width: 760px) {
+  .imgWrapper {
+    width: 260px;
+    height: 45px
+  }
 }
 
 @media only screen and (max-width: 641px) {

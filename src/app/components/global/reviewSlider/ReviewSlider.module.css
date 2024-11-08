@@ -245,7 +245,7 @@
 @media screen and (max-width:1281px) {
 
   .keyContainer {
-    width: 1180px;
+    width: 100%;
   }
 
 }
@@ -292,6 +292,47 @@
     height: 155px;
   }
 }
+@media screen and (max-width: 841px) {
+  .mainHeading {
+    font-size: 30px;
+  }
+
+  .firstBotReview p {
+    font-size: 15px;
+
+  }
+
+  .firstBotImgWrapper {
+    width: 435px;
+    height: 155px;
+  }
+  .reviewBotSection{
+    width:87%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .mainHeading {
+    font-size: 30px;
+  }
+
+  .firstBotReview p {
+    font-size: 15px;
+
+  }
+  
+    
+
+  .firstBotImgWrapper {
+    width: 435px;
+    height: 155px;
+  }
+  .reviewBotSection{
+    width:82%;
+    display: grid;
+    grid-template-columns: 55% 30%;
+  }
+}
+
 
 @media screen and (max-width: 641px) {
   .reviewBotSection {
