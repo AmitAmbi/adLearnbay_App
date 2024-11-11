@@ -42,12 +42,11 @@ const Page = async ({ params }) => {
       <Psummary summaryData={pageData.summary} />
 
       {/* Conditional Rendering for Practical Component */}
+  
       {pageData.practical && (
-        <Practical 
-          practicalData={pageData.practical?.practical}
-          title={pageData.practical?.title}
-        />
+        <Practical practicalData={pageData.practical} />
       )}
+    
 
       <ProgramSection programSectionData={pageData.programSection} />
       <OutComeSection />
