@@ -1,4 +1,3 @@
-
 const outcomeData = [
     {
       id: 1,

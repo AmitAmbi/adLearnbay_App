@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import dynamic from "next/dynamic";
 import { useState } from "react";
@@ -21,7 +21,7 @@ const NewSevenSection = ({
     setPopups(true);
   };
   return (
-    <div>
+    <div className="containerWidth">
       <PopupContent
         dataScience={dataScience}
         radio={radio}
@@ -50,8 +50,7 @@ const NewSevenSection = ({
               </button>
               <Link href="tel:+917795687988" className={styles.callLink}>
                 <button className={styles.blue}>
-                  <FaPhoneAlt />   091-77956 87988
-
+                  <FaPhoneAlt /> 091-77956 87988
                 </button>
               </Link>
             </div>
@@ -90,8 +89,7 @@ const NewSevenSection = ({
               </button>
               <Link href="tel:+917795687988" className={styles.callLink}>
                 <button className={styles.blue}>
-                  <FaPhoneAlt />   091-77956 87988
-
+                  <FaPhoneAlt /> 091-77956 87988
                 </button>
               </Link>
             </div>

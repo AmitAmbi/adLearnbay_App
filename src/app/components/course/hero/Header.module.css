@@ -55,11 +55,10 @@
 .innerDiv {
   display: grid;
   grid-template-columns: 60% 30%;
-  /* grid-gap: 50px; */
   gap: 120px;
   justify-content: center;
   padding: 40px 0;
-  max-width: 1200px;
+  width: 100%;
   margin: auto;
 }
 
@@ -502,9 +501,9 @@
 }
 
 @media only screen and (max-width: 1302px) {
-  .innerDiv {
+  /* .innerDiv {
     margin: 20px 60px;
-  }
+  } */
 
   .innerDivAI {
     padding: 0;
@@ -532,9 +531,16 @@
   }
 }
 
+@media only screen and (max-width: 1281px) {
+  .botDiv {
+      padding: 20px 0px;
+      width: 100%;
+      /* max-width: 1120px; */
+  }
+}
 @media only screen and (max-width: 1180px) {
   .botDiv {
-    width: 100vw;
+    /* width: 100vw; */
   }
 
   .btnDivM {
@@ -542,6 +548,11 @@
   }
 }
 
+@media only screen and (max-width: 1080px) {
+  .botDiv{
+    /* max-width: 960px; */
+  }
+}
 @media only screen and (max-width: 1024px) {
   .content h3 {
     font-size: 28px;
@@ -549,22 +560,26 @@
 }
 
 @media only screen and (max-width: 968px) {
+
+  .innerDiv{
+    gap: 90px;
+  }
   .content h3 {
     font-size: 26px;
   }
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 841px) {
+  .innerDiv{
+    gap: 80px;
+  }
+
   .firstSection h1 {
     font-size: var(--desktop_h1-font-size);
   }
 
   .firstSection h5 {
     font-size: var(--desktop_h5-font-size);
-  }
-
-  .innerDiv {
-    margin: 20px 30px;
   }
 
   .btnDivM {
@@ -663,7 +678,6 @@
   .innerDiv {
     display: flex;
     flex-direction: column;
-    margin: 20px 24px;
     gap: 40px;
     padding: 0;
   }
@@ -764,6 +778,4 @@
   .item1 {
     text-wrap: balance;
   }
-
-
 }

@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import React, { useEffect, useState, useRef, memo, useCallback } from "react";
 import Image from "next/image";
 import styles from "./OutCome.module.css";
@@ -47,7 +46,8 @@ const OutcomeSection = () => {
 
     const handleScroll = () => {
       if (sectionContainer) {
-        const totalHeight = sectionContainer.scrollHeight - sectionContainer.clientHeight;
+        const totalHeight =
+          sectionContainer.scrollHeight - sectionContainer.clientHeight;
         const scrollTop = sectionContainer.scrollTop;
         setScrollPercentage((scrollTop / totalHeight) * 100);
       }
@@ -64,48 +64,59 @@ const OutcomeSection = () => {
 
   return (
     <section className={styles.container} ref={sectionRef}>
-      <div className={styles.innerDiv}>
-        <h2>
-          Program Outcome:
-       
-          <span className={styles.borderBot}> What’s in it for you? <hr className={styles.hrline}/></span>
-    
-        </h2>
+      <div className="containerWidth">
+        <div className={styles.innerDiv}>
+          <h2>
+            Program Outcome:
+            <span className={styles.borderBot}>
+              {" "}
+              What’s in it for you? <hr className={styles.hrline} />
+            </span>
+          </h2>
 
-        <p className={styles.pHead}>Work on projects based on real-world scenarios</p>
-        <div className={styles.innerBoxDiv}>
-          {outcomeData.map((item, index) => {
-            const backgroundClass =
-              index === 0
-                ? styles.headContBlue
-                : index === 1
-                ? styles.headContGreen
-                : styles.headContOrange;
+          <p className={styles.pHead}>
+            Work on projects based on real-world scenarios
+          </p>
+          <div className={styles.innerBoxDiv}>
+            {outcomeData.map((item, index) => {
+              const backgroundClass =
+                index === 0
+                  ? styles.headContBlue
+                  : index === 1
+                  ? styles.headContGreen
+                  : styles.headContOrange;
 
-            return <OutcomeItem key={item.id} item={item} backgroundClass={backgroundClass} />;
-          })}
-        </div>
-
-        {/* Custom Scrollbar with Dots */}
-        <div className={styles.customScrollbar}>
-          <div className={styles.dotContainer}>
-            {outcomeData.map((_, index) => (
-              <span
-                key={index}
-                onClick={() => scrollToSection(index)}
-                className={`${styles.dot} ${
-                  activeDot === index ? styles.active : ""
-                }`}
-              />
-            ))}
+              return (
+                <OutcomeItem
+                  key={item.id}
+                  item={item}
+                  backgroundClass={backgroundClass}
+                />
+              );
+            })}
           </div>
-        </div>
 
-        {/* Horizontal Scroll Indicator */}
-        <div
-          className={styles.scrollIndicator}
-          style={{ width: `${scrollPercentage}%` }}
-        />
+          {/* Custom Scrollbar with Dots */}
+          <div className={styles.customScrollbar}>
+            <div className={styles.dotContainer}>
+              {outcomeData.map((_, index) => (
+                <span
+                  key={index}
+                  onClick={() => scrollToSection(index)}
+                  className={`${styles.dot} ${
+                    activeDot === index ? styles.active : ""
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Horizontal Scroll Indicator */}
+          <div
+            className={styles.scrollIndicator}
+            style={{ width: `${scrollPercentage}%` }}
+          />
+        </div>
       </div>
     </section>
   );

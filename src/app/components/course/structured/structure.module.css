@@ -3,13 +3,13 @@
   position: relative;
 }
 
-.containerWidth {
+.containerWidthDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.headH4 {
+.headH2 {
   color: #000;
   font-size: 38px;
   font-weight: 600;
@@ -42,6 +42,12 @@
   position: relative;
   width: 405px;
   height: 60px;
+}
+
+.imgWrapper svg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -114,7 +120,40 @@
   }
 }
 
+@media only screen and (max-width: 1280px) {
+  .innerdiv {
+    margin: 93px 0px 20px 0px;
+  }
+
+  .topImg {
+    left: -15px;
+  }
+}
+
+@media only screen and (max-width: 1081px) {
+  .topImg {
+    top: 90px;
+    left: -7px;
+  }
+
+  .innerdiv {
+    grid-template-columns: 20% 26% 21%;
+  }
+
+  .imgWrapper {
+    width: 355px;
+    height: 53px;
+
+  }
+}
+
 @media only screen and (max-width: 1024px) {
+
+  .topImg {
+    top: 85px;
+    left: 4px;
+  }
+
   .imgWrapper {
     width: 312px;
     height: 49px;
@@ -122,9 +161,8 @@
   }
 
   .innerdiv {
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 30% 29% 29%;
     gap: 55px;
-    margin: 93px 21px 20px 35px;
   }
 
 
@@ -140,25 +178,42 @@
 
 @media only screen and (max-width: 841px) {
   .topImg {
-    display: flex;
-    gap: 1px;
-    position: absolute;
-    top: 80px;
-    justify-content: flex-start;
-  }
-
-  .topImg img {
-    width: 70%;
-    height: auto;
+    top: 100px;
+    left: 13px;
   }
 
   .innerdiv {
-    display: grid;
-    grid-template-columns: 31% 29% 23%;
-    text-align: center;
-    justify-content: center;
-    gap: 142px;
-    margin: 93px 14px 20px 61px;
+    grid-template-columns: 31% 29% 27%;
+    gap: 50px;
+    /* margin: 93px 14px 20px 61px; */
+  }
+  
+  .imgWrapper {
+    width: 245px;
+  }
+  
+  .icons {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 761px) {
+  .imgWrapper {
+    width: 205px;
+    height: 50px;
+  }
+
+  .svgPathGroup path {
+    stroke-width: 30;
+  }
+  
+  .topImg {
+    top: 105px;
+  }
+  
+  .innerdiv {
+    grid-template-columns: 35% 29% 30%;
+    gap: 22px;
   }
 }
 
@@ -182,7 +237,7 @@
     flex-direction: column;
   }
 
-  .headH4 {
+  .headH2 {
     text-align: left;
     margin: 0px 24px;
     font-size: 26px;

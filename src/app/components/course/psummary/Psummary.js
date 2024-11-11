@@ -5,7 +5,8 @@ import React, { useEffect, useState, useRef, memo, useCallback } from "react";
 import Image from "next/image";
 import styles from "./Psummary.module.css"; // Ensure the CSS is correct
 
-const PSummaryAD = ({ summaryData = [], customClassName = "" }) => { // Default to an empty array
+const PSummaryAD = ({ summaryData = [], customClassName = "" }) => {
+  // Default to an empty array
   const [activeDot, setActiveDot] = useState(0); // Track the active dot
   const contentContainerRef = useRef(null); // Ref for content container
 
@@ -14,7 +15,7 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => { // Default 
     if (summaryData.length === 0) {
       const fetchData = async () => {
         try {
-          const response = await fetch('/summaryData.json'); // Adjust path if necessary
+          const response = await fetch("/summaryData.json"); // Adjust path if necessary
           const data = await response.json();
           // Handle fetched data here if you choose to fetch again
         } catch (error) {
@@ -29,51 +30,58 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => { // Default 
   // Scroll handling and other logic remains the same...
 
   return (
-    <div className={`${styles.Container} ${customClassName}`}>
-      <h2>
-        Program <span className={styles.spans}>Summary <hr className={styles.hrline} /></span>
-      </h2>
-      <div className={styles.contentConteiner} ref={contentContainerRef}>
-        {summaryData.map((item) => (
-          <div key={item.id} className={styles.Box}>
-            <div className={styles.imgWrapper}>
-              <Image
-                src={item.imageSrc}
-                fill
-                loading="lazy"
-                alt={item.imageAlt}
-              />
+    <div className="containerWidth">
+      <div className={`${styles.Container} ${customClassName}`}>
+        <h2>
+          Program{" "}
+          <span className={styles.spans}>
+            Summary <hr className={styles.hrline} />
+          </span>
+        </h2>
+        <div className={styles.contentConteiner} ref={contentContainerRef}>
+          {summaryData.map((item) => (
+            <div key={item.id} className={styles.Box}>
+              <div className={styles.imgWrapper}>
+                <Image
+                  src={item.imageSrc}
+                  fill
+                  loading="lazy"
+                  alt={item.imageAlt}
+                />
+              </div>
 
+              <div className={styles.boxContent}>
+                <h4>{item.title}</h4>
+                <p>{item.description}</p>
+                {item.extraImageSrc && (
+                  <div className={styles.extraImgWrapper}>
+                    <Image
+                      src={item.extraImageSrc}
+                      fill
+                      loading="lazy"
+                      alt={item.extraImageAlt}
+                      className={styles.ibmLogo}
+                    />
+                  </div>
+                )}
+              </div>
             </div>
-
-            <div className={styles.boxContent}>
-              <h4>{item.title}</h4>
-              <p>{item.description}</p>
-              {item.extraImageSrc && (
-                <div className={styles.extraImgWrapper}>
-                  <Image
-                    src={item.extraImageSrc}
-                    fill
-                    loading="lazy"
-                    alt={item.extraImageAlt}
-                    className={styles.ibmLogo}
-                  /></div>
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Custom Scrollbar with Dots */}
-      <div className={styles.customScrollbar}>
-        <div className={styles.dotContainer}>
-          {summaryData.map((_, index) => (
-            <span
-              key={index}
-              onClick={() => scrollToSection(index)}
-              className={`${styles.dot} ${activeDot === index ? styles.active : ""}`}
-            />
           ))}
+        </div>
+
+        {/* Custom Scrollbar with Dots */}
+        <div className={styles.customScrollbar}>
+          <div className={styles.dotContainer}>
+            {summaryData.map((_, index) => (
+              <span
+                key={index}
+                onClick={() => scrollToSection(index)}
+                className={`${styles.dot} ${
+                  activeDot === index ? styles.active : ""
+                }`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

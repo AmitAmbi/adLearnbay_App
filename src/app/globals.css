@@ -372,17 +372,30 @@ body {
   .outLineBtn {
     padding: 10px 20px;
   }
-}
 
-@media (max-width: 1281px) {
   .outLineBtn {
     position: relative;
     top: 0px;
     flex-flow: row-reverse;
   }
+
+  .containerWidth {
+    max-width: 1120px;
+  }
+
 }
 
-@media (max-width: 1024) {
+@media (max-width: 1081px) {
+  .containerWidth {
+    max-width: 960px;
+  }
+}
+@media (max-width: 1024px) {
+
+  .containerWidth {
+    max-width: 904px;
+  }
+
   h2 {
     font-size: 32px;
   }
@@ -390,6 +403,11 @@ body {
 }
 
 @media (max-width: 968px) {
+
+  .containerWidth {
+    max-width: 888px;
+  }
+
   h2 {
     font-size: 32px;
   }
@@ -397,16 +415,45 @@ body {
 
 }
 
+@media (max-width: 841px) {
+  .containerWidth {
+    max-width: 761px;
+  }
+}
+@media (max-width: 760px) {
+  .containerWidth{
+    max-width: 680px;
+  }
+}
+@media (max-width: 641px) {
+  .containerWidth{
+    width: 600px;
+  }
+}
 @media (max-width: 481px) {
+  
+  .containerWidth {
+    max-width: 441px;
+  }
   .bannerButton {
     padding: 14px 50px;
   }
-
+  
   .nobannerButton {
     padding: 14px 50px;
   }
-
+  
   .whiteBgButton {
     padding: 14px 73px;
   }
 }
+    @media (max-width: 400px) {
+      .containerWidth{
+        max-width: 360px;
+      }
+    }
+    @media (max-width: 361px) {
+      .containerWidth{
+        max-width: 320px;
+      }
+    }

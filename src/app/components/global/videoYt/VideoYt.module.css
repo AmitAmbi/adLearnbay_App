@@ -23,17 +23,16 @@
 }
 
 .controlsContainer {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   position: absolute;
   bottom: 10px;
   left: 0;
   width: 100%;
   padding: 0 10px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
 }
 
 .playPauseButton {
@@ -58,7 +57,7 @@
   opacity: 0.7;
   transition: opacity 0.2s;
   cursor: pointer;
-  width: 320px;
+  width: 100%;
 }
 
 .trackbarDiv {
@@ -121,18 +120,7 @@
   background: #EDF6FF;
 }
 
-@media screen and (max-width:1281px) {
-  .trackbarDiv {
-    width: 350px;
-  }
-
-}
-
 @media screen and (max-width:968px) {
-  .trackbarDiv {
-    width: 100%;
-    max-width: 237px;
-  }
 
   .controlsContainer {
     gap: 15px;
