@@ -74,50 +74,6 @@
   position: absolute;
 }
 
-.formContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-
-  border-radius: 24.338px;
-  background: var(--black-diamond);
-}
-
-.gridDiv {
-  display: grid;
-  grid-template-columns: 50% 28%;
-  gap: 20px;
-  align-items: baseline;
-
-  justify-content: space-around;
-}
-
-.contentContainerGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill,
-      minmax(200px, 1fr));
-  gap: 60px;
-  margin: 20px 0 80px 0;
-}
-
-.contentContainerGrid h4 {
-  color: var(--darkest-smoke);
-  text-align: center;
-  font-size: var(--desktop_h4-font-size);
-  font-weight: 600;
-  line-height: 160%;
-}
-
-.contentContainerGrid p {
-  color: var(--carbon);
-  text-align: center;
-  font-size: var(--desktop_p-font-size);
-  font-weight: 300;
-  line-height: 146.5%;
-  width: 100%;
-  max-width: 195px;
-}
 
 .formdiv {
   display: flex;
@@ -134,94 +90,7 @@
 
 }
 
-.formdiv h3 {
-  color: var(--light-black);
-  text-align: center;
-  font-size: var(--desktop_h3-font-size);
-  font-style: normal;
-  font-weight: 400;
-}
 
-.span {
-  background: linear-gradient(90deg, var(--light-orange) 24.09%, var(--secondary-color)88.26%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.formdiv form input {
-  border-radius: 8.743px;
-  border: none;
-  background: var(--light-black);
-  color: var(--white);
-  font-weight: 400;
-  height: 42px;
-}
-
-.formdiv form input::placeholder {
-  opacity: 1;
-  color: rgba(255, 255, 255, 0.5);
-  /* holder color (light white) */
-  font-weight: 300;
-}
-
-.formdiv form label {
-  display: none;
-  /* Hide labels */
-}
-
-.formdiv form input[type="tel"] {
-  height: 38px;
-}
-
-.formdiv form select {
-  border-radius: 8.743px;
-  border: none;
-  background: var(--light-black);
-  color: var(--white);
-  font-weight: 400;
-  height: 42px;
-  padding: 10px;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-.formdiv form select option {
-  background-color: var(--light-black);
-  color: var(--grayy);
-}
-
-.formdiv form input:focus,
-.formdiv form select:focus {
-  background: var(--light-black);
-  color: var(--white);
-  outline: none;
-}
-
-.formdiv form input:valid {
-  background: var(--light-black);
-  color: var(--white);
-}
-
-.formdiv form select:focus-visible {
-  background: var(--light-black);
-  color: var(--white);
-}
-
-.formdiv h4 {
-  color: var(--white);
-  text-align: center;
-  font-size: var(--desktop_h4-font-size);
-  font-style: normal;
-  font-weight: 500;
-  line-height: 191.682%;
-}
-
-.formdiv span {
-  color: var(--light-orange);
-  font-weight: 600;
-
-}
 
 .imgWrapper {
   position: relative;
@@ -301,7 +170,6 @@
 
   .contentConteiner::-webkit-scrollbar {
     display: none;
-    /* Hide scrollbar in WebKit browsers */
   }
 
   .customScrollbar {

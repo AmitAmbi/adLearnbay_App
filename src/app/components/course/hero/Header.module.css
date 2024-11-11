@@ -11,35 +11,9 @@
     var(--light-black);
 }
 
-.containerAI {
-  background-color: var(--black);
-  background-image: url("https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/bg_AI_MLS.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: auto;
-  color: var(--black);
-  padding: 46px 0px;
-  margin-top: 70px;
-}
 
-.containerMaster {
-  background-color: var(--black);
-  background-image: url("https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/CS_master_BG+(1).webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: auto;
-  color: var(--black);
-  padding: 46px 0px;
-  margin-top: 70px;
-}
+
+
 
 .mainBg {
   /* background: linear-gradient(
@@ -135,137 +109,6 @@
   display: flex;
 }
 
-.secondSection img {
-  width: 100%;
-  height: auto;
-}
-
-.outlineButton {
-  background: rgba(255, 255, 255, 0.1);
-  /* Transparent background */
-  border-radius: 10px;
-  padding: 12px 24px 10px 24px;
-  font-weight: 700;
-  border: 1px solid var(--light-black);
-  color: var(--white);
-  position: relative;
-  overflow: hidden;
-  /* Ensures the animated effect stays within the button bounds */
-  cursor: pointer;
-}
-
-.outlineButton::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  /* Start the animation from the left */
-  width: 200%;
-  /* Ensure the gradient covers the button */
-  height: 100%;
-
-  transition: left 0.4s ease-in-out;
-  /* Smooth transition */
-}
-
-.outlineButton:hover::before {
-  left: 100%;
-  /* Move gradient to the right on hover */
-  animation: moveGlass 1s forwards;
-  /* Trigger animation on hover */
-  background: linear-gradient(120deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0.8) 50%,
-      rgba(255, 255, 255, 0.2) 100%);
-  /* Create a glass-like gradient */
-}
-
-@keyframes moveGlass {
-  0% {
-    left: -100%;
-  }
-
-  100% {
-    left: 100%;
-  }
-}
-
-.orangeButton {
-  background: var(--light-orange);
-  /* Original orange background */
-  border-radius: 10px;
-  color: var(--white);
-  padding: 12px 24px 10px 24px;
-  font-weight: 700;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: background 0.3s ease;
-}
-
-.orangeButton::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 200%;
-  height: 100%;
-
-  transition: left 0.4s ease-in-out;
-}
-
-.orangeButton:hover::before {
-  left: 100%;
-  animation: moveGlass 1s forwards;
-  background: linear-gradient(120deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0.8) 50%,
-      rgba(255, 255, 255, 0.2) 100%);
-}
-
-.blueButton {
-  background: var(--light-bluee);
-  /* Original orange background */
-  border-radius: 10px;
-  color: var(--white);
-  padding: 12px 24px 10px 24px;
-  font-weight: 700;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: background 0.3s ease;
-}
-
-.blueButton::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 200%;
-  height: 100%;
-
-  transition: left 0.4s ease-in-out;
-}
-
-.blueButton:hover::before {
-  left: 100%;
-  animation: moveGlass 1s forwards;
-  background: linear-gradient(120deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0.8) 50%,
-      rgba(255, 255, 255, 0.2) 100%);
-}
-
-@keyframes moveGlass {
-  0% {
-    left: -100%;
-  }
-
-  100% {
-    left: 100%;
-  }
-}
-
 .botDiv {
   display: flex;
   align-items: center;
@@ -351,13 +194,7 @@
   color: var(--light-orange);
 }
 
-.spanMaster {
-  background: linear-gradient(88deg, var(--parrot-green) 15.64%, var(--light-bluee) 91.95%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 
-}
 
 .formdiv form input {
   border-radius: 8.75px;
@@ -423,89 +260,7 @@
   width: 90%;
 }
 
-.icon {
-  background-color: var(--light-bluee);
-  font-size: 20px;
-  padding: 4px;
-  border-radius: 50%;
-  color: var(--black);
-}
-
 .btnDivM {
-  display: none;
-}
-
-.fill {
-  float: right;
-  border-radius: 0px 25.742px 0px 19px;
-  background: rgba(3, 131, 255, 0.25);
-  padding: 5px 20px 5px 8px;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
-  color: var(----smokey);
-  font-size: 8px;
-  font-weight: 600;
-  position: relative;
-  left: 132px;
-}
-
-.points {
-  display: flex;
-  justify-content: space-between;
-  width: fit-content;
-  gap: 20px;
-  margin: 40px 0;
-}
-
-.pointsBA {
-  border-radius: 20px;
-  background: rgba(217, 217, 217, 0.20);
-  padding: 10px 20px;
-}
-
-.points span {
-  color: var(--white);
-  font-size: var(--desktop_span-font-size);
-  font-style: normal;
-  font-weight: 500;
-  line-height: 127.182%;
-  /* 25.436px */
-}
-
-.points p {
-  color: var(--dark-smoke);
-  font-size: var(--desktop_p-font-size);
-  font-style: normal;
-  font-weight: 700;
-  line-height: 127.182%;
-  /* 38.154px */
-  margin: 0;
-}
-
-.hrOne {
-  background: var(--light-orange);
-  width: 2px;
-  height: auto;
-  border: none;
-}
-
-.insidBox {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  align-items: center;
-}
-
-.HrTwo {
-  background: var(--light-orange);
-  width: 2px;
-  height: 16.069px;
-  border: none;
-}
-
-.bottomSection {
   display: none;
 }
 
@@ -528,11 +283,6 @@
 
   .botDiv {
     width: 100%;
-  }
-
-  .videoIframe {
-    width: 100%;
-    height: 270px;
   }
 }
 
@@ -648,9 +398,11 @@
   }
 
   .botDiv {
-    width: 100%;
+    align-items: flex-start;
+    width: 85%;
     gap: 16px;
     padding: 20px 25px;
+    background: var(--senary-color);
   }
 
   .content p {
@@ -658,7 +410,7 @@
   }
 
   .content h3 {
-    font-size: 23px;
+    font-size: 21px;
   }
 }
 

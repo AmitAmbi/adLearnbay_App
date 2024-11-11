@@ -69,11 +69,6 @@
   height: auto;
 }
 
-.img1 {
-
-  /* margin-bottom: -2px; */
-}
-
 .img2 {
   margin-bottom: -13px;
 }
@@ -151,87 +146,3 @@
 }
 
 /* #Achive */
-
-.section {
-  background: var(--senary-color);
-  padding: 50px;
-}
-
-.section h2 {
-  text-align: center;
-  text-wrap: pretty;
-  margin: auto;
-  width: 600px;
-  color: var(--deepblack);
-  text-align: center;
-  font-size: 35px;
-  font-weight: 600;
-  line-height: 126.5%;
-  /* 69.575px */
-}
-
-
-.Container {
-  display: flex;
-  width: 1200px;
-  margin: 100px auto;
-  gap: 100px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.ContentBox {
-  border-radius: 30px;
-  background: var(--deep-blueee);
-  box-shadow: 0px -160px 45px 0px rgba(0, 0, 0, 0),
-    0px -102px 41px 0px rgba(0, 0, 0, 0.01),
-    0px -58px 35px 0px rgba(0, 0, 0, 0.02),
-    0px -26px 26px 0px rgba(0, 0, 0, 0.03),
-    0px -6px 14px 0px rgba(0, 0, 0, 0.03);
-  padding: 20px 20px 40px 20px;
-  width: 400px;
-
-
-}
-
-.box {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  flex-direction: column;
-}
-
-.RoundBox {
-  position: absolute;
-  width: -moz-fit-content;
-  width: fit-content;
-  left: 36%;
-  top: 76%;
-}
-
-.ContentBox h5 {
-  color: var(--white);
-  text-align: center;
-
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 126.5%;
-  /* 44.275px */
-}
-
-.ContentBox p {
-  color: var(--white);
-  text-align: center;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 148%;
-  /* 29.6px */
-}
-
-.RoundBox {
-
-  border-radius: 50%;
-  padding: 10px;
-}
