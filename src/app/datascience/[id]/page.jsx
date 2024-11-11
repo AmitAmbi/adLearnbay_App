@@ -38,7 +38,6 @@ const Page = async ({ params }) => {
       DurationBot={pageData.header.DurationBot}
       DurationBotDate={pageData.header.DurationBotDate}
       TrainingBot={pageData.header.TrainingBot}
-
       />
 
       <Psummary summaryData={pageData.summary}/>

@@ -74,10 +74,8 @@
   line-height: 144.5%;
   text-wrap: balance;
 }
-
 .innerBoxDiv::-webkit-scrollbar {
   width: 10px;
-  
 }
 
 .innerBoxDiv::-webkit-scrollbar-thumb {
@@ -144,7 +142,6 @@
   .hrline {
     width: 234px;
   }
-
   .innerDiv h2 {
     font-size: 34px;
   }
@@ -245,8 +242,6 @@
       height: 8px;
       margin: 0 3px;
     }
-  
-    
     .customHeaderLogo {
       max-width: 200px;
       display: block;
@@ -278,8 +273,6 @@
     margin-bottom: 20px;
     text-align: center;
   }
-
- 
   .innerBoxDiv {
     display: flex;
     flex-direction: column;
@@ -291,7 +284,6 @@
     border-radius: 20px;
     overflow-y: auto;
   }
-
   .innerBox {
     padding: 15px;
     border-radius: 15px;
@@ -310,15 +302,11 @@
     font-size: 14px;
     line-height: 1.4;
   }
-
-
   .dot {
     width: 8px;
     height: 8px;
     margin: 0 3px;
   }
-
-  
   .customHeaderLogo {
     max-width: 150px; 
     margin: 0 auto;

@@ -91,10 +91,6 @@
   cursor: pointer;
 }
 
-/* .mySwiper{
-      padding-top: 2rem;
-      padding-left: 30px;
-  } */
 .reviewImage {
   display: grid;
   grid-template-columns: 18% 85%;
@@ -139,13 +135,11 @@
 .headingContainer {
   padding-top: 100px;
 }
-
 .mainHeading {
   color: var(--deep-blueee);
   font-size: 34px;
   font-weight: 700;
 }
-
 .subHeading {
   color: var(--deeep-grey);
   font-size: 20px;
@@ -189,13 +183,11 @@
   width: 160px;
   height: auto;
 }
-
 .btnnextContainer {
   margin-top: 40px;
   display: flex;
   gap: 10px;
 }
-
 .reviewBotSection {
   display: grid;
   grid-template-columns: 55% 36%;
@@ -221,20 +213,13 @@
   margin: 0;
 }
 
-/* .firstBotReview img {
-  margin-top: 50px;
-  width: 500px;
-} */
 
 .secondBotReview img {
   width: 100%;
   height: auto;
 }
 
-/* .socailR {
-  width: 100%;
-  height: auto;
-} */
+
 
 .firstBotImgWrapper {
   position: relative;
@@ -243,50 +228,38 @@
 }
 
 @media screen and (max-width:1281px) {
-
   .keyContainer {
     width: 100%;
   }
-
 }
 
 @media screen and (max-width: 1081px) {
   .keyContainer {
     width: 1000px;
   }
-
   .mySwiper {
     width: 1000px;
   }
-
 }
-
 @media screen and (max-width: 1024px) {
   .mainHeading {
     font-size: 30px;
   }
-
   .firstBotReview p {
     font-size: 15px;
-
   }
-
   .firstBotImgWrapper {
     width: 435px;
     height: 155px;
   }
 }
-
 @media screen and (max-width: 968px) {
   .mainHeading {
     font-size: 30px;
   }
-
   .firstBotReview p {
     font-size: 15px;
-
   }
-
   .firstBotImgWrapper {
     width: 435px;
     height: 155px;
@@ -296,12 +269,9 @@
   .mainHeading {
     font-size: 30px;
   }
-
   .firstBotReview p {
     font-size: 15px;
-
   }
-
   .firstBotImgWrapper {
     width: 435px;
     height: 155px;
@@ -317,11 +287,8 @@
 
   .firstBotReview p {
     font-size: 15px;
-
   }
   
-    
-
   .firstBotImgWrapper {
     width: 435px;
     height: 155px;
@@ -332,66 +299,52 @@
     grid-template-columns: 55% 30%;
   }
 }
-
-
 @media screen and (max-width: 641px) {
   .reviewBotSection {
     display: flex;
     flex-direction: column;
     padding: 20px 30px;
     gap: 40px;
+    width: 100%;
   }
-
   .keyContainer {
     width: 100%;
   }
-
   .videoImage {
     width: 100%;
   }
-
   .mySwiper {
     width: 100%;
   }
-
   .headingContainer {
     padding: 20px;
   }
-
   .reviewBotSection {
     margin-top: 20px;
   }
-
   .prevBtn {
     display: none;
   }
-
   .nextBtn {
     display: none;
   }
-
   .headingContainer h2 {
     font-size: var(--desktop_h2-font-size);
     text-wrap: balance;
   }
-
   .mainHeading {
     font-size: 28px;
   }
-
   .firstBotReview img {
     margin-top: 20px;
     width: 100%;
   }
-
   .firstBotReview p {
     display: none;
   }
-
   .Header {
     margin: 0;
   }
-
   .subHeading {
     text-wrap: pretty;
   }
@@ -407,6 +360,9 @@
   .firstBotImgWrapper {
     width: 300px;
     height: 150px;
+  }
+  .reviewBotSection{
+    width: 100%;
   }
 }
 @media screen and (max-width: 361px) {

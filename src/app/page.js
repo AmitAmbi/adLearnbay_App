@@ -55,7 +55,7 @@ export default function Home() {
 <KickStart/>
 <NewCourse/>
 <Animation/>
-{/* <ReviewSlider/> */}
+<ReviewSlider/>
 <ContactUs/>
 <CLogo/>
 <Other/>
