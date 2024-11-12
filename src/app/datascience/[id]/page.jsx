@@ -1,6 +1,6 @@
 // src/app/datascience/[id]/page.jsx
 import React from "react";
-import { getPageData } from "@/utils/getDSPageData";
+import { getPageData, generateStaticParams } from "@/utils/getDSPageData";
 import Header from "@/app/components/course/hero/Header";
 import Psummary from "@/app/components/course/psummary/Psummary";
 import Practical from "@/app/components/course/practical/Practical";
@@ -22,29 +22,34 @@ const Page = async ({ params }) => {
 
   return (
     <div>
-      <Header title={pageData.header.title}
-        orgTitle={pageData.header.orgTitle}
-        spanTag={pageData.header.spanTag}
-        spanIcon={pageData.header.spanIcon}
-        descrption={pageData.header.descrption}
-        applicationIcon={pageData.header.applicationIcon}
-        BotWidth={pageData.header.BotWidth}
-        BotHeight={pageData.header.BotHeight}
-        ProgramIcon={pageData.header.ProgramIcon}
-        trainingIcon={pageData.header.trainingIcon}
-        CloseDes={pageData.header.CloseDes}
-        CloseBotDate={pageData.header.CloseBotDate}
-        DurationBot={pageData.header.DurationBot}
-        DurationBotDate={pageData.header.DurationBotDate}
-        TrainingBot={pageData.header.TrainingBot}
-
+      <Header
+        title={pageData.header?.title}
+        orgTitle={pageData.header?.orgTitle}
+        spanTag={pageData.header?.spanTag}
+        spanIcon={pageData.header?.spanIcon}
+        descrption={pageData.header?.descrption}
+        applicationIcon={pageData.header?.applicationIcon}
+        BotWidth={pageData.header?.BotWidth}
+        BotHeight={pageData.header?.BotHeight}
+        ProgramIcon={pageData.header?.ProgramIcon}
+        trainingIcon={pageData.header?.trainingIcon}
+        CloseDes={pageData.header?.CloseDes}
+        CloseBotDate={pageData.header?.CloseBotDate}
+        DurationBot={pageData.header?.DurationBot}
+        DurationBotDate={pageData.header?.DurationBotDate}
+        TrainingBot={pageData.header?.TrainingBot}
       />
-
       <Psummary summaryData={pageData.summary} />
-      <Practical practicalData={pageData.practical.practical}
-        title={pageData.practical.title} />
+
+      {/* Conditional Rendering for Practical Component */}
+
+      {pageData.practical && (
+        <Practical practicalData={pageData.practical} />
+      )}
+
+
       <ProgramSection programSectionData={pageData.programSection} />
-      < OutComeSection />
+      <OutComeSection />
       <AnimationNew />
       <ReviewSlider />
       <StructuredSection />
@@ -54,4 +59,5 @@ const Page = async ({ params }) => {
   );
 };
 
+export { generateStaticParams };
 export default Page;
