@@ -426,6 +426,10 @@ body {
   .containerWidth {
     max-width: 680px;
   }
+
+  .button{
+    
+  }
 }
 
 @media (max-width: 641px) {
