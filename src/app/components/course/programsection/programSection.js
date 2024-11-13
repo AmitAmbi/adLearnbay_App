@@ -1,25 +1,23 @@
-"use client"; // Needed for React hooks in Next.js
+"use client";
 import Image from "next/image";
-import styles from "./ProgramSection.module.css"; // Adjust the path if necessary
-import Popup from "../../global/popup/Popup"; // Adjust the path if necessary
-import Form from "../../global/form/Form"; // Adjust the path if necessary
+import styles from "./ProgramSection.module.css"; 
+import Popup from "../../global/popup/Popup"; 
+import Form from "../../global/form/Form"; 
 import { useState, memo, useEffect } from "react";
 
 const ProgramSection = memo(({ designOverrides, popupProps, programSectionData }) => {
   const [popups, setPopups] = useState(false);
   const popupShow = () => setPopups(true);
 
-  // Log the data to check its structure
   useEffect(() => {
     console.log("Program Section Data:", programSectionData);
   }, [programSectionData]);
 
-  // Check if programSectionData and ProggramSection exist
-  if (!programSectionData || !programSectionData.ProggramSection) {
+  if (!programSectionData || !programSectionData.ProgramSection) {
     return <div>Error: Program section data is missing or incorrect</div>;
   }
 
-  const { ProggramSection } = programSectionData;
+  const { ProgramSection } = programSectionData;
 
   return (
     <section
@@ -37,7 +35,7 @@ const ProgramSection = memo(({ designOverrides, popupProps, programSectionData }
           <div className="whiteP" style={{ width: "340px", height: "400px" }}></div>
         </div>
         <div className="RightPopup">
-          <h5>{ProggramSection[0]?.popupTitle || "Apply For Counselling"}</h5>
+          <h5>{ProgramSection[0]?.popupTitle || "Apply For Counselling"}</h5>
           <Form
             popup={true}
             setTrigger={setPopups}
@@ -55,7 +53,7 @@ const ProgramSection = memo(({ designOverrides, popupProps, programSectionData }
             Work on projects based on real-world scenarios
           </p>
           <div className={styles.twoSection}>
-            {ProggramSection.map((section, index) => {
+            {ProgramSection.map((section, index) => {
               const { content } = section;
 
               return (
@@ -110,11 +108,11 @@ const ProgramSection = memo(({ designOverrides, popupProps, programSectionData }
 
             <div className={styles.secondSection}>
               <Image
-                src={ProggramSection[0]?.rightImg}
+                src={ProgramSection[0]?.rightImg}
                 alt="Learnbay"
                 quality={100}
                 layout="responsive"
-                width={611} // Maintain aspect ratio
+                width={611} 
                 height={506}
                 loading="lazy"
               />

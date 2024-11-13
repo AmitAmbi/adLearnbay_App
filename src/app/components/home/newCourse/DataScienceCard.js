@@ -1,14 +1,14 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import { courses } from './NewcourseData'; // Import the course data
+import { courses } from './NewcourseData'; 
 import styles from './DataScienceCard.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css'; // Import Swiper styles
-import { Navigation, Pagination } from 'swiper'; // Import modules for Swiper
+import 'swiper/swiper-bundle.min.css'; 
+import { Navigation, Pagination } from 'swiper'; 
 import Image from 'next/image';
 import Form from '@/app/components/global/form/Form';
 import Popup from '@/app/components/global/popup/Popup';
-import Link from 'next/link'; // Import Link for navigation
+import Link from 'next/link'; 
 import { MdOutlineFileDownloadSvg } from '@/Data/svgData/MDIcons';
 
 const DataScienceCard = ({

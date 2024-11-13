@@ -11,6 +11,10 @@ import ReviewSlider from "@/app/components/global/reviewSlider/ReviewSlider";
 import NewSevenSection from "@/app/components/global/newSevenSection/NewSevenSection";
 import StructuredSection from "@/app/components/course/structured/StructuredSection";
 import JobReadySection from "@/app/components/course/jobReadySection/JobReadySection";
+import MentorsSection from "@/app/components/course/mentor/Mentor";
+import UpskillingSection from "@/app/components/course/upskill/UpskillSection";
+import SyllabusSection from "@/app/components/course/syllabus/Syllabus";
+import ToolsSection from "@/app/components/course/toolsSection/ToolsSection";
 
 const Page = async ({ params }) => {
   const { id } = params;
@@ -43,15 +47,27 @@ const Page = async ({ params }) => {
 
       {/* Conditional Rendering for Practical Component */}
   
-      {pageData.practical && (
-        <Practical practicalData={pageData.practical} />
-      )}
+    
+        <Practical/>
     
 
-      <ProgramSection programSectionData={pageData.programSection} />
+        <ProgramSection programSectionData={pageData} />
+
       <OutComeSection />
       <AnimationNew />
       <ReviewSlider />
+      <MentorsSection/>
+      {/* <UpskillingSection upskillingData={pageData.upskillingData} /> */}
+
+      <SyllabusSection
+        sections={pageData.syllabusSections} // Assuming 'syllabusSections' is part of your page data
+        brochureLink={pageData.brochureLink}   // Assuming this exists
+        brochurePdf={pageData.brochurePdf}     // Assuming this exists
+        interstedInHide={pageData.interstedInHide}  // Assuming this exists
+        radio={pageData.radio} // Assuming this exists
+      />
+
+      <ToolsSection/>
       <StructuredSection />
       <JobReadySection />
       <NewSevenSection />
