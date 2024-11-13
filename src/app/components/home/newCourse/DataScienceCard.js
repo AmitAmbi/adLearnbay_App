@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { courses } from './NewcourseData'; 
 import styles from './DataScienceCard.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css'; 
+import 'swiper/css'; // Correct import for the CSS
 import { Navigation, Pagination } from 'swiper'; 
 import Image from 'next/image';
 import Form from '@/app/components/global/form/Form';
