@@ -41,7 +41,7 @@
 }
 
 .header span {
-  font-size: var(--desktop_span-font-size);
+  /* font-size: var(--desktop_span-font-size); */
   /* Responsive typography with clamp */
   font-weight: bold;
   color: transparent;
@@ -248,9 +248,7 @@
   display: none;
 }
 
-.insideBoxDesign1 {
-  /* padding: 10px; */
-}
+
 
 .insideBoxDesign2 {
   border-radius: 63px;
@@ -312,9 +310,26 @@
   margin-right: 20px;
 }
 
-/* Media Queries for smaller screens */
+/* Media Queries for smaller screens */ 
 
 
+@media screen and (max-width: 841px){
+  .downBox{
+    display: flex;
+    background: none;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 761px){
+  .columnDiv{
+width: 600px;
+margin: 113px auto;
+}
+
+}
 
 @media screen and (max-width: 641px) {
   .whyChooseSection {
@@ -330,16 +345,13 @@
 
   .header p {
     font-size: var(--desktop_p-font-size);
-    /* Adjusted for smaller screens */
   }
 
   .header h2 {
     font-size: var(--desktop_h2-font-size);
   }
 
-  .header span {
-    font-size: var(--desktop_span-font-size);
-  }
+  
 
   .divContainer {
     margin: 30px;
