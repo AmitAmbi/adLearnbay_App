@@ -1,0 +1,246 @@
+.sectionWrapper{
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    margin-top: 120px;
+    flex-direction: column;
+    border-radius: 54px;
+    background: #212121;
+padding: 50px 0px 100px 0px;
+    gap:40px;
+    position: relative;
+}
+.upskillHeading{
+    font-size: 45px;
+    color: #fff;
+    display: flex;
+    font-weight: 400;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.spanHead {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 16px;
+    text-decoration-color: #FE7A36;
+}
+
+.toolBox p {
+    margin: 0;
+    color: #fff;
+}
+.UpperBoxContainer{
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    margin: 2rem 4rem;
+    position: relative;
+    flex-wrap: wrap;
+}
+.boxContainer{
+    color: white;
+    width:250px;
+    height: 250px;
+}
+
+
+
+.upperBox{
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #FE7A36;
+    width: fit-content;
+    border-radius: 5px;
+    align-items: center;
+}
+.upperBox h5{
+    color: #FE7A36;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.upperBox p {
+    margin: 0;
+    color: #fff;
+}
+.boxTitle{
+    margin: 0.7rem 0;
+    line-height: 1.4;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+.textHead{
+    font-weight: 400;
+}
+.boxText{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+.toolBox{
+    display: flex;
+    gap: 0.8rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.6rem 0.8rem;
+    background: rgba(0, 114, 188, 0.15);
+    border-radius: 8px;
+}
+
+.toolIcon{
+    width: auto;
+    height: auto;
+    color: #FFC436;
+}
+
+.toolPyIcon{
+    width: 70px;
+    height: 30px;
+}
+.toolIconsingle{
+width: 200px;
+height: auto;
+}
+
+
+.dashDiv{
+    width: 200px;
+    height: 5px;
+    border-radius: 34px;
+background: rgba(254, 122, 54, 0.25);
+    position: relative;
+    top: -20px;
+    left: 170px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 6px 4px;
+
+}
+
+.Dashline{
+    border: 2px dashed white;
+    width: 200px;
+    height: 1px;
+    border-radius: 10px;
+  
+}
+.boxDown{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 10px;
+    align-items:flex-start;
+}
+
+.bonus{
+    border-radius: 8px;
+border: 1px solid #FFC436;
+background: rgba(255, 196, 54, 0.20);
+
+}
+.bonus h5 {
+    color: #FFC436;
+font-size: 16px;
+font-weight: 600;
+line-height: 158%; /* 31.6px */
+}
+
+.boxdown h4 {
+    color: #CAE5FF;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%; /* 31.25px */
+}
+
+.svgLine {
+  position: relative;
+    left: 140px;
+    text-align: center;
+    top: -27px;
+}
+.svgLinetwo{
+    position: absolute;
+    right: 1px;
+    top: 226px;
+
+}
+
+.svgLinethree{
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    left: -14px;
+    bottom: -130px;
+
+
+
+}
+
+.svgLinetfourth{
+
+  position: absolute;
+  right: 155px;
+  top: 13px;
+
+  }
+  .svgLinetfourth img{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+
+  }
+
+
+  .svgLinefifth{
+
+    position: relative;
+    left: 200px;
+    top: -30px;
+  }
+
+  .svgLinesixth{
+    position: relative;
+    right: 79px;
+    top: -33px;
+    z-index: 2;
+  }
+
+  
+  @media  (max-width:1280px) {
+    
+    .sectionWrapper{
+        width:auto;
+    }
+
+    .boxTitle {
+        font-size: 16px;
+    }
+
+
+  }
+  @media screen  and (max-width:1180px){
+
+    .boxContainer {
+        width: 263px;
+    }
+
+  }
+
+  @media screen  and (max-width:1080px){
+    
+    .boxContainer {
+        width: 263px;
+    }
+  }
+
+  @media screen and (max-width:641px) {
+
+    .sectionWrapper{
+        display: none;
+    }
+    
+  }

@@ -12,6 +12,7 @@ const Page = async ({ params }) => {
     return <div>{pageData.error}</div>;
   }
 
+
   return (
  
       <div>

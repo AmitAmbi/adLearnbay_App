@@ -1,0 +1,45 @@
+.container div {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+  }
+  
+  .container h2 {
+    text-align: center;
+    color: #022646;
+    font-size: 42px;
+    font-weight: 600;
+  }
+  
+  .container img {
+    width: auto;
+    height: auto;
+  }
+  .mobileImage{
+    display: none;
+  }
+  .desktopImg{
+    display: block;
+  }
+  
+  @media only screen and (max-width: 641px) {
+    .container {
+      padding: 0px 24px 50px 24px;
+      margin: 10px;
+    }
+    .container h2 {
+      font-size: 22px;
+    }
+    .container img {
+      width: 100%;
+    }
+  
+    .mobileImage{
+      display: block;
+    }
+    .desktopImg{
+      display: none;
+    }
+  }
+  
