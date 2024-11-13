@@ -131,6 +131,11 @@
   }
 }
 
+@media screen and (max-width: 841px) {
+  .muteButton{
+    right: 25px;
+  }
+}
 @media screen and (max-width: 641px) {
   .videoContainer {
     padding-bottom: 60px;

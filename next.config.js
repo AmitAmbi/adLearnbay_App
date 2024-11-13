@@ -18,7 +18,7 @@ const nextConfig = {
     // nextScriptWorkers: true,
   },
 
-  
+
   reactStrictMode: true,
   images: {
     remotePatterns: [
@@ -34,4 +34,12 @@ const nextConfig = {
 
 };
 
-export default nextConfig;
+// export default nextConfig;
+
+module.exports = nextConfig
+
+// const withBundleAnalyzer = require('@next/bundle-analyzer')({
+//   enabled: process.env.ANALYZE === 'true',
+// })
+
+// module.exports = withBundleAnalyzer(nextConfig)

@@ -129,7 +129,7 @@
 }
 
 /* Media queries */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1281px) {
 
   .headContBlue,
   .headContGreen,
@@ -212,6 +212,7 @@
   }
 }
 
+
 @media only screen and (max-width: 641px) {
 
   .innerBoxDiv {
@@ -229,14 +230,14 @@
   }
 
   .hrline {
-    width: 230px;
+    width: 205px;
     align-items: center;
     position: relative;
-    left: 1%;
+    left: 43%;
     background: #FE7A36;
     height: 2px;
     border: none;
-    top: -40px;
+    top: 0px;
   }
 
 
@@ -255,7 +256,7 @@
   }
 
   .innerDiv {
-    margin: 0px 24px;
+    /* margin: 0px 24px; */
     padding-top: 50px;
   }
 
@@ -295,5 +296,11 @@
   .pHead {
 
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hrline{
+    display: none;
   }
 }

@@ -91,6 +91,7 @@ body,
   --carbon-black: #2E2E2E;
   --deep-cyann: #36ddfe;
   --cementtt: #D3D3D3;
+  --deepblack: #121212;
 
   /* Define font sizes for desktop */
   --desktop_h1-font-size: 42px;
@@ -362,8 +363,7 @@ body {
 .bannerButton:hover {
   border: 1px solid var(--primary-color);
   background-color: white;
-  color: var(--primary-color)
-  ;
+  color: var(--primary-color);
 }
 
 @media (max-width: 1281px) {
@@ -390,6 +390,7 @@ body {
     max-width: 960px;
   }
 }
+
 @media (max-width: 1024px) {
 
   .containerWidth {
@@ -420,40 +421,53 @@ body {
     max-width: 761px;
   }
 }
+
 @media (max-width: 760px) {
-  .containerWidth{
+  .containerWidth {
     max-width: 680px;
   }
 }
+
 @media (max-width: 641px) {
-  .containerWidth{
+  .containerWidth {
     width: 600px;
   }
 }
+
 @media (max-width: 481px) {
-  
+
   .containerWidth {
     max-width: 441px;
   }
+
   .bannerButton {
     padding: 14px 50px;
   }
-  
+
   .nobannerButton {
     padding: 14px 50px;
   }
-  
+
   .whiteBgButton {
     padding: 14px 73px;
   }
 }
-    @media (max-width: 400px) {
-      .containerWidth{
-        max-width: 360px;
-      }
-    }
-    @media (max-width: 361px) {
-      .containerWidth{
-        max-width: 320px;
-      }
-    }
+
+@media (max-width: 431px) {
+
+  .containerWidth {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 400px) {
+  .containerWidth {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 361px) {
+  .containerWidth {
+    max-width: 320px;
+  }
+}

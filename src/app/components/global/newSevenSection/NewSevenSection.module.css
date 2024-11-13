@@ -155,6 +155,17 @@
     }
 }
 
+@media screen and (max-width:761px) {
+    .NewSevenSection {
+        padding: 20px 15px;
+    }
+
+    .rytImgWrapper {
+        width: 195px;
+        height: 303px;
+        bottom: -20px;
+    }
+}
 @media screen and (max-width:641px) {
     .NewSevenSection {
         display: none;
@@ -228,6 +239,13 @@
 
 }
 
+
+
+@media screen and (max-width:481px) {
+    .NewSevenSectionM .ryt img{
+        display: none;
+    }
+}
 @media screen and (max-width:360px) {
 
     .blue,

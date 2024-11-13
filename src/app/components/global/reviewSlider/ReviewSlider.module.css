@@ -234,39 +234,40 @@
 }
 
 @media screen and (max-width:1281px) {
-  
+
   /* .keyContainer {
     width: 1120px;
   } */
-  
+
   .reviewBotSection {
     justify-content: space-between;
   }
-  
+
 }
 
 @media screen and (max-width: 1081px) {
   /* .keyContainer {
     width: 960px;
     } */
-    
-    .mySwiper {
-      width: 1000px;
-    }
-    
-    .firstBotImgWrapper {
-      width: 565px;
-      height: 200px;
-    }
 
+  .mySwiper {
+    width: 1000px;
   }
-  
-  @media screen and (max-width: 1024px) {
-    .firstBotImgWrapper {
-      width: 515px;
-      height: 170px;
-    }
+
+  .firstBotImgWrapper {
+    width: 565px;
+    height: 200px;
   }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .firstBotImgWrapper {
+    width: 515px;
+    height: 170px;
+  }
+}
+
 /* @media screen and (max-width: 1000px) {
   .mySwiper {
     width: 860px;
@@ -277,18 +278,18 @@
       max-width: 860px;
       }
       } */
-      
-      
-      @media screen and (max-width: 968px) {
-        .mainHeading {
-          font-size: 30px;
-        }
-        
-        .firstBotReview p {
-          font-size: 15px;
+
+
+@media screen and (max-width: 968px) {
+  .mainHeading {
+    font-size: 30px;
+  }
+
+  .firstBotReview p {
+    font-size: 15px;
 
   }
-  
+
   .firstBotImgWrapper {
     width: 435px;
     height: 155px;
@@ -298,15 +299,20 @@
 
 
 @media screen and (max-width: 841px) {
-  
+
+  .reviewBotSection {
+    grid-template-columns: 55% 40%;
+
+  }
 }
+
 @media screen and (max-width: 761px) {
   .firstBotImgWrapper {
     width: 370px;
     height: 130px;
   }
-  
-  .reviewBotSection{
+
+  .reviewBotSection {
     grid-template-columns: 55% 43%;
 
   }
@@ -316,8 +322,13 @@
   .reviewBotSection {
     display: flex;
     flex-direction: column;
-    padding: 20px 30px;
+    padding: 20px 0px;
     gap: 40px;
+    margin-top: 20px;
+  }
+
+  .firstBotReview {
+    gap: 10px;
   }
 
   .keyContainer {
@@ -334,10 +345,6 @@
 
   .headingContainer {
     padding: 20px;
-  }
-
-  .reviewBotSection {
-    margin-top: 20px;
   }
 
   .prevBtn {

@@ -33,7 +33,7 @@
   text-align: center;
   font-size: var(--desktop_h4-font-size);
   font-weight: 600;
-  line-height: 160%;
+  line-height: 110%;
 }
 
 .contentConteiner p {
@@ -53,6 +53,7 @@
   text-align: center;
   width: 100%;
   max-width: 240px;
+  gap: 10px;
 }
 
 .extraImgWrapper {
@@ -62,60 +63,17 @@
   height: 30px;
 }
 
+.boxContent {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 10px;
+}
+
 .ibmLogo {
   position: absolute;
 }
 
-/* Adjustments for the Form container */
-.formContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Center align form items */
-  padding: 20px;
-  /* Add some padding around the form */
-
-  border-radius: 24.338px;
-  background: var(--black-diamond);
-}
-
-.gridDiv {
-  display: grid;
-  grid-template-columns: 50% 28%;
-  gap: 20px;
-  /* Add some gap between columns */
-  align-items: baseline;
-
-  justify-content: space-around;
-}
-
-.contentContainerGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill,
-      minmax(200px, 1fr));
-  /* Responsive grid */
-  gap: 60px;
-  /* Space between grid items */
-  margin: 20px 0 80px 0;
-}
-
-.contentContainerGrid h4 {
-  color: var(--darkest-smoke);
-  text-align: center;
-  font-size: var(--desktop_h4-font-size);
-  font-weight: 600;
-  line-height: 160%;
-}
-
-.contentContainerGrid p {
-  color: var(--carbon);
-  text-align: center;
-  font-size: var(--desktop_p-font-size);
-  font-weight: 300;
-  line-height: 146.5%;
-  width: 100%;
-  max-width: 195px;
-}
 
 .formdiv {
   display: flex;
@@ -132,121 +90,7 @@
 
 }
 
-.formdiv h3 {
-  color: var(--light-black);
-  text-align: center;
-  font-size: var(--desktop_h3-font-size);
-  font-style: normal;
-  font-weight: 400;
-}
 
-.span {
-  background: linear-gradient(90deg, var(--light-orange) 24.09%, var(--secondary-color)88.26%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.formdiv form input {
-  border-radius: 8.743px;
-  border: none;
-  /* Remove border for consistency */
-  background: var(--light-black);
-  /* Set background color */
-  color: var(--white);
-  /* Change text color to white */
-  font-weight: 400;
-  height: 42px;
-}
-
-.formdiv form input::placeholder {
-  opacity: 1;
-  color: rgba(255, 255, 255, 0.5);
-  /* holder color (light white) */
-  font-weight: 300;
-}
-
-.formdiv form label {
-  display: none;
-  /* Hide labels */
-}
-
-.formdiv form input[type="tel"] {
-  height: 38px;
-  /* Maintain height for tel input */
-}
-
-/* Assuming you have a select element for country */
-.formdiv form select {
-  border-radius: 8.743px;
-  /* Consistent border-radius */
-  border: none;
-  /* Remove border */
-  background: var(--light-black);
-  /* Set background color */
-  color: var(--white);
-  /* Change text color to white */
-  font-weight: 400;
-  /* Font weight */
-  height: 42px;
-  /* Consistent height */
-  padding: 10px;
-  /* Add padding */
-  appearance: none;
-  /* Remove default dropdown arrow (optional) */
-  -webkit-appearance: none;
-  /* Remove default dropdown arrow in Safari */
-}
-
-/* Customize dropdown options */
-.formdiv form select option {
-  background-color: var(--light-black);
-  /* Set background color for dropdown options */
-  color: var(--grayy);
-  /* Set text color for dropdown options */
-}
-
-/* Keep the styling consistent after input */
-.formdiv form input:focus,
-.formdiv form select:focus {
-  background: var(--light-black);
-  /* Maintain background color on focus */
-  color: var(--white);
-  /* Maintain text color on focus */
-  outline: none;
-  /* Remove default outline */
-}
-
-/* Optional: Add styles for filled input */
-.formdiv form input:valid {
-  background: var(--light-black);
-  /* Maintain background color */
-  color: var(--white);
-  /* Maintain text color */
-}
-
-.formdiv form select:focus-visible {
-  background: var(--light-black);
-  /* Maintain background color */
-  color: var(--white);
-  /* Maintain text color */
-}
-
-.formdiv h4 {
-  color: var(--white);
-  text-align: center;
-  font-size: var(--desktop_h4-font-size);
-  font-style: normal;
-  font-weight: 500;
-  line-height: 191.682%;
-  /* 51.835px */
-}
-
-.formdiv span {
-  color: var(--light-orange);
-  font-weight: 600;
-
-}
 
 .imgWrapper {
   position: relative;
@@ -265,7 +109,7 @@
 }
 @media only screen and (max-width: 1024px) {
   .contentConteiner {
-    padding: 40px 60px;
+    padding: 40px 0px;
     margin: 0;
     gap: 20px;
   }
@@ -298,17 +142,10 @@
   .extraImgWrapper {
     width: 150px;
   }
-
-  .boxContent {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-  }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 761px) {
   .Container {
-    margin: 60px 0;
     padding: 0 20px;
     width: 100%;
     max-width: 100%;
@@ -324,13 +161,16 @@
 
   .Container h2 {
     color: var(--light-black);
-    font-size: var(--desktop_h2-font-size);
+    font-size: 32px;
     font-weight: 600;
-    text-align: left;
   }
 
   .contentConteiner h4 {
     margin-bottom: 0;
+  }
+
+  .contentConteiner p {
+    font-size: 12px;
   }
 
   .Box {
@@ -339,7 +179,6 @@
 
   .contentConteiner::-webkit-scrollbar {
     display: none;
-    /* Hide scrollbar in WebKit browsers */
   }
 
   .customScrollbar {
@@ -377,7 +216,26 @@
   }
 
   .hrline {
-    left: 115px;
-    width: 114px;
+    width: 120px;
   }
 }
+
+@media only screen and (max-width: 481px) {
+  .Container h2 {
+    font-size: 26px;
+  }
+
+  .contentConteiner h4 {
+    font-size: 20px;
+  }
+
+  .Box {
+    min-width: 195px;
+  }
+
+  .hrline {
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 361px) {}
