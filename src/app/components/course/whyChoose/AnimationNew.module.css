@@ -264,7 +264,6 @@
 
 .insideBoxDefault {
   background-color: var(--cementtt);
-  /* Default style for other insideBox elements */
   padding: 5px;
 }
 
@@ -322,13 +321,16 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+  .columnDiv{
+    width: 650px;
+    margin: 113px auto;
+    }
 }
 @media screen and (max-width: 761px){
-  .columnDiv{
-width: 600px;
+.columnDiv{
+width: 650px;
 margin: 113px auto;
 }
-
 }
 
 @media screen and (max-width: 641px) {
@@ -350,8 +352,6 @@ margin: 113px auto;
   .header h2 {
     font-size: var(--desktop_h2-font-size);
   }
-
-  
 
   .divContainer {
     margin: 30px;
