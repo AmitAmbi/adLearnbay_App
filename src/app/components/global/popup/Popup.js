@@ -5,13 +5,13 @@ import { IoCloseSvg } from "@/Data/svgData/Io5";
 
 const Popup = (props) => {
   if (props.price) color = "white";
-  useEffect(() => {
-    if (props.trigger) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-  }, [props.trigger]);
+  // useEffect(() => {
+  //   if (props.trigger) {
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "unset";
+  //   }
+  // }, [props.trigger]);
   return props.trigger ? (
     <div className={styles.popup}>
       <div

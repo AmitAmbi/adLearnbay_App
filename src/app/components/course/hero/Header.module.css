@@ -280,18 +280,20 @@
 
 @media only screen and (max-width: 1281px) {
   .botDiv {
-      padding: 20px 0px;
+    padding: 20px 0px;
   }
 }
-@media only screen and (max-width: 1180px) {
 
+@media only screen and (max-width: 1181px) {
   .btnDivM {
     display: none;
   }
+
+  .innerDiv {
+    gap: 85px;
+  }
 }
 
-@media only screen and (max-width: 1080px) {
-}
 @media only screen and (max-width: 1024px) {
 
   .content h3 {
@@ -306,9 +308,10 @@
 
 @media only screen and (max-width: 968px) {
 
-  .innerDiv{
+  .innerDiv {
     gap: 90px;
   }
+
   .content h3 {
     font-size: 26px;
   }
@@ -367,15 +370,20 @@
   }
 
   .content p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .botDiv {
     padding: 20px 0px;
+    gap: 10px;
   }
 
   .content h3 {
-    font-size: 25px;
+    font-size: 21px;
+  }
+
+  .btnDiv {
+    gap: 45px;
   }
 }
 
@@ -408,7 +416,7 @@
   }
 
   .content h3 {
-    font-size: 21px;
+    font-size: 19px;
   }
 }
 

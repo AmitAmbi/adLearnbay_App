@@ -9,8 +9,8 @@ const StructuredSection = React.memo(() => {
       <div className={styles.container}>
         <div className={styles.containerWidthDiv}>
           <h2 className={styles.headH2}>Structured Admission Process</h2>
-          <div className={styles.topImg}>
-            <div className={styles.imgWrapper}>
+          <div className={styles.topSvg}>
+            <div className={styles.topSvgWrapper}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="298.000000pt"
@@ -67,7 +67,7 @@ const StructuredSection = React.memo(() => {
                 </g>
               </svg>
             </div>
-            <div className={styles.imgWrapper}>
+            <div className={styles.topSvgWrapper}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="298.000000pt"
@@ -126,7 +126,8 @@ const StructuredSection = React.memo(() => {
             </div>
           </div>
           <div className={styles.gridMbl}>
-            <div className={styles.topImgMBL}>
+            <div className={styles.sideSvgMBL}>
+              <div className={styles.sideSvgWrapperMBL}></div>
               <svg
                 height="181"
                 width="41"

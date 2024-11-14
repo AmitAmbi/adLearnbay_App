@@ -54,7 +54,6 @@ body,
   --deep-cyan: #36ddfe;
   --white-deep: #fff1ea;
   --greyy: #D3D3D3;
-  --deep-blueee: #022646;
   --deeep-grey: #727272;
   --medium-greyy: #6C6C6C;
   --medium-greey: #616161;
@@ -385,6 +384,13 @@ body {
 
 }
 
+@media (max-width: 761px) {
+  .button {
+    padding: 10px 14px;
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 1081px) {
   .containerWidth {
     max-width: 960px;
@@ -426,10 +432,6 @@ body {
   .containerWidth {
     max-width: 680px;
   }
-
-  .button{
-    
-  }
 }
 
 @media (max-width: 641px) {
@@ -464,7 +466,10 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 401px) {
+  .button {
+    font-size: 14px;
+  }
   .containerWidth {
     max-width: 360px;
   }

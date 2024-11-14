@@ -312,6 +312,11 @@
     height: 130px;
   }
 
+  .firstBotImgWrapper {
+    width: 370px;
+    height: 130px;
+  }
+
   .reviewBotSection {
     grid-template-columns: 55% 43%;
 
@@ -379,5 +384,12 @@
 
   .subHeading {
     text-wrap: pretty;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .firstBotImgWrapper {
+    width: 310px;
+    height: 115px;
   }
 }

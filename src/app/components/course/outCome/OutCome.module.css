@@ -261,11 +261,8 @@
   }
 
   .innerDiv h2 {
-    margin: 0;
     font-size: 28px;
     line-height: 38px;
-    text-align: left;
-    text-wrap: pretty;
   }
 
   .borderBot {
@@ -300,7 +297,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .hrline{
+  .hrline {
     display: none;
   }
 }

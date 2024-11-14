@@ -15,8 +15,10 @@
   grid-template-columns: 47.5% 47.5%;
   gap: 34px 34px;
   margin-top: 30px;
+  /* padding: 0px 30px; */
   border-radius: 33px;
   margin-bottom: 3rem;
+  /* background: #F8FCFF; */
 }
 
 .innerbox {
@@ -84,6 +86,7 @@
   width: 80px;
   bottom: 0px;
 }
+
 
 @media only screen and (max-width: 1024px) {
   .innerdiv div h4 {

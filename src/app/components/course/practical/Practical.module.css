@@ -212,6 +212,10 @@
 
 @media only screen and (max-width: 761px) {
 
+  .container{
+    margin-top: 70px;
+  }
+
   .boxMain {
     grid-template-columns: 33% 35% 36%
   }
