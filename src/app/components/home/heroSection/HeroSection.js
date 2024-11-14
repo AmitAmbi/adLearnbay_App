@@ -7,12 +7,12 @@ import { useMediaQuery } from "react-responsive";
 import PopupContent from "../../global/popup/PopupContent";
 
 function HeroSection({ dataScience,
-    radio,
-    dataScienceCounselling,
-    interstedInHide,
-    idss,
-    btnHide,
-    dataScienceGeneric, }) {
+  radio,
+  dataScienceCounselling,
+  interstedInHide,
+  idss,
+  btnHide,
+  dataScienceGeneric, }) {
   const popupShow = () => {
     setPopups(true);
   };
@@ -32,7 +32,7 @@ function HeroSection({ dataScience,
   return (
     <section className={styles.conteiner}>
 
-<PopupContent
+      <PopupContent
         dataScience={dataScience}
         radio={radio}
         dataScienceCounselling={dataScienceCounselling}
@@ -45,7 +45,7 @@ function HeroSection({ dataScience,
       <div className={styles.gridConteiner}>
         <div className={styles.leftside}>
           <h1>
-            India’s #1 <span className={styles.spantitle }>Project-based</span> Upskilling Platform for Professionals
+            India’s #1 <span className={styles.spantitle}>Project-based</span> Upskilling Platform for Professionals
           </h1>
 
           <div className={styles.listleft}>

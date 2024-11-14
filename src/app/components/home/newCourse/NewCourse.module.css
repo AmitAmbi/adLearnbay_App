@@ -1,68 +1,40 @@
+.container {}
 
-
-.container{
-}
-.newSection{
-display: grid;
-grid-template-columns: 16% 70%;
-justify-content: center;
-gap: 20px;
-width: 100%;
-max-width: 1400px;
-margin: 10px auto 60px auto;
+.newSection {
+  display: grid;
+  grid-template-columns: 16% 70%;
+  justify-content: center;
+  gap: 20px;
 }
 
-.section {
-  background: linear-gradient(
-    180deg,
-    #fff 1.26%,
-    #eff3f6 17.6%,
-    #eff3f6 90.85%,
-    #fff 100%
-  );
-  padding: 20px;
-}
 
 .tabdiv.active {
-  border-radius:8.984px;
+  border-radius: 8.984px;
   background: var(--deep-blue);
 
 }
+
 .tabdiv.active p {
-  color:var(--white);
+  color: var(--white);
 
-font-size:var(--desktop_p-font-size);
-font-style: normal;
-font-weight: 300;
-line-height: 126.5%; /* 25.3px */
-}
-/* Updated styles for sticky tab section */
-.tabMain {
-
+  font-size: var(--desktop_p-font-size);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 126.5%;
+  /* 25.3px */
 }
 
-.svgActive{
-  color: var(--red-official);
-  fill: var(--black);
-}
 /* Additional styling for container */
 .section {
-  background: linear-gradient(
-    180deg,
-    #fff 1.26%,
-    #eff3f6 17.6%,
-    #eff3f6 90.85%,
-    #fff 100%
-  );
+  background: linear-gradient(180deg,
+      #fff 1.26%,
+      #eff3f6 17.6%,
+      #eff3f6 90.85%,
+      #fff 100%);
   padding: 20px;
-  margin-top: 0; /* Add some margin to avoid overlap */
+  margin-top: 0;
+  /* Add some margin to avoid overlap */
   padding-top: 0;
-}
-
-.conteiner {
-  max-width: 1350px; /* Ensure max-width for responsiveness */
-  width: auto;
-  margin: 0 auto; /* Center content */
 }
 
 .tabMain p {
@@ -71,55 +43,41 @@ line-height: 126.5%; /* 25.3px */
   font-size: var(--desktop_p-font-size);
   font-style: normal;
   font-weight: 400;
-  line-height: 126.5%; /* 25.3px */
+  line-height: 126.5%;
+  /* 25.3px */
 }
 
 .tabdiv {
   border-radius: 10px;
   cursor: pointer;
-background-color: var(--white);
+  background-color: var(--white);
   padding: 10px;
   margin: 4px;
 }
 
 .sliders {
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.imgText{
-display: flex;
-gap: 6px;
-align-items: center;
+
+.imgText {
+  display: flex;
+  gap: 6px;
+  align-items: center;
 }
 
 .CourseCardHead {
   display: flex;
   grid-template-columns: 30% 30% 30%;
   margin: 50px 0;
-  gap:30px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .courseCard {
   width: 100%;
   max-width: 300px;
-}
-.cardContent {
-  border-bottom-left-radius: 35px;
-  border-bottom-right-radius: 35px;
-  background:var(--white);
-  padding: 16px 12px 21px 12px;
-}
-
-.cardContent h3 {
-  color: var(--light-black);
-  font-size: var(--desktop_h3-font-size);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 126.5%; /* 40.48px */
-  letter-spacing: -0.32px;
-  text-wrap: balance;
 }
 
 .lists {
@@ -134,7 +92,8 @@ align-items: center;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 155%; /* 31px */
+  line-height: 155%;
+  /* 31px */
 }
 
 .buttons {
@@ -143,17 +102,19 @@ align-items: center;
   gap: 18px;
   align-items: center;
   position: relative;
-    z-index: 2;
+  z-index: 2;
 }
+
 .brochurebtn {
   border-radius: 25px;
   background: var(--black);
   color: var(--white);
-  color:var(--white);
+  color: var(--white);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 155%; /* 34.1px */
+  line-height: 155%;
+  /* 34.1px */
   padding: 9px 18px;
   display: flex;
   align-items: center;
@@ -162,15 +123,16 @@ align-items: center;
   border: none;
 }
 
-.brochurebtnMaster{
+.brochurebtnMaster {
   border-radius: 25px;
   background: var(--light-orange);
-  color:var(--white);
-  color:var(--white);
+  color: var(--white);
+  color: var(--white);
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 155%; /* 34.1px */
+  line-height: 155%;
+  /* 34.1px */
   padding: 9px 18px;
   display: flex;
   align-items: center;
@@ -186,24 +148,27 @@ align-items: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 155%; /* 34.1px */
+  line-height: 155%;
+  /* 34.1px */
   padding: 9px 20px;
   cursor: pointer;
   border: 1px solid var(--black);
 }
 
-.viewDetailsButtonmaster{
+.viewDetailsButtonmaster {
   border-radius: 26px;
   background: transparent;
-  color:var(--white);
+  color: var(--white);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 155%; /* 34.1px */
+  line-height: 155%;
+  /* 34.1px */
   padding: 9px 28px;
   cursor: pointer;
   border: 1px solid var(--white);
 }
+
 .mainImage {
   width: 100%;
   height: auto;
@@ -221,7 +186,7 @@ align-items: center;
 
 .viewMoreButton {
   border-radius: 12px;
-  background:var(--primary-color);
+  background: var(--primary-color);
   color: var(--white);
   padding: 10px 50px;
   border: none;
@@ -231,7 +196,8 @@ align-items: center;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: 126.5%; /* 31.625px */
+  line-height: 126.5%;
+  /* 31.625px */
   cursor: pointer;
 }
 
@@ -243,9 +209,10 @@ align-items: center;
   width: 100%;
   max-width: 400px;
   margin-top: 50px;
-    position: sticky;
-    top: 80px; /* This will make the tabMain sticky with a top margin of 20px */
-  }
+  position: sticky;
+  top: 80px;
+  /* This will make the tabMain sticky with a top margin of 20px */
+}
 
 .tabdiv {
   display: flex;
@@ -261,21 +228,11 @@ align-items: center;
   color: var(--white);
 }
 
-.svgIcon {
-  fill: var(--black);
-  transition: fill 0.3s ease;
-}
-
-
-
 .listicondiv {
   display: flex;
   align-items: center;
   gap: 10px;
-  
-}
-.masterConteiner {
-  margin-top: 80px;
+
 }
 
 .MasterCard {
@@ -284,6 +241,7 @@ align-items: center;
   margin: auto;
   position: relative;
 }
+
 .contentConteiner {
   position: absolute;
   top: 30px;
@@ -292,35 +250,31 @@ align-items: center;
   flex-direction: column;
   gap: 10px;
 }
+
 .contentConteiner h2 {
   font-size: var(--desktop_h2-font-size);
   font-weight: 600;
   line-height: 126.5%;
   color: var(--white);
-letter-spacing: -0.4px;
+  letter-spacing: -0.4px;
 }
+
 .contentConteiner p {
   font-size: var(--desktop_p-font-size);
   font-style: normal;
   margin-top: 0;
- color: var(--secondary-color);
-font-style: normal;
-font-weight: 400;
-line-height: 155%; /* 34.1px */
+  color: var(--secondary-color);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%;
+  /* 34.1px */
 }
 
 .mastericon {
   display: flex;
   gap: 6px;
-  align-items: flex-start;
-  margin-bottom: 10px;
+}
 
-}
-.gridConteiner {
-  background-color: var(--red-official);;
-  display: grid;
-  grid-template-columns: 50% 45%;
-}
 .absloute {
   float: right;
   position: absolute;
@@ -333,99 +287,81 @@ line-height: 155%; /* 34.1px */
 .absloute h4 {
   color: var(--white);
   text-align: center;
-  font-size:var(--desktop_h4-font-size);;
+  font-size: var(--desktop_h4-font-size);
+  ;
   font-style: normal;
   font-weight: 800;
   display: flex;
   flex-direction: column;
 }
+
 .absloute span {
-  color:var(--white);
+  color: var(--white);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 155%;
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
-}
 @media screen and (max-width: 1381px) {
   .courseCard {
     max-width: 274px;
   }
+
   .mainImage {
     width: 100%;
   }
+
   .CourseCardHead {
     width: 100%;
     justify-content: center;
   }
-  .cardContent h3 {
-    font-size: var(--desktop_h3-font-size);;
-  }
+
   .brochurebtn svg {
     width: 12px;
   }
+
   .brochurebtn {
     font-size: 12px;
   }
+
   .MasterCard {
-    width: 1280px;
+    max-width: 1280px;
   }
-  .bgImageMaster{
+
+  .bgImageMaster {
     width: 100%;
-    height: auto;
+    max-width: 1200px;
   }
 
 }
+
 @media screen and (max-width: 1281px) {
-  .CourseCardHead {
-    user-select: auto;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    justify-content: center;
-  }
-  .MasterCard {
-    max-width: 100%;
-  
-  }
-  .bgImageMaster {
-    width: 100%;
-  }
-  .viewDetailsButton{
+
+  .viewDetailsButton {
     font-size: 12px;
   }
 }
 
 @media screen and (max-width: 1181px) {
   .CourseCardHead {
-    /* grid-template-columns: 28% 28% 28%; */
-    display: flex;
     gap: 20px;
     justify-content: left;
-
   }
 
-  .courseCard {
-    width: 250px;
+  y .contentConteiner h2 {
+    font-size: 34px;
   }
 
-  .cardContent h3 {
-    font-size: var(--desktop_h3-font-size);;
-  }
   .lists span {
     font-size: 12px;
   }
+
   .viewDetailsButton {
     font-size: 12px;
     padding: 10px 16px;
   }
 
-  .contentConteiner {
-    top: 30px;
-  }
   .brochurebtn {
     font-size: 12px;
   }
@@ -433,36 +369,47 @@ line-height: 155%; /* 34.1px */
 
 @media screen and (max-width: 1081px) {
 
-    .MasterCard {
-        width: 980px;
-        height: autonew;
-    }
-    .bgImageMaster{
-        width: 100%;
-    }
+  .MasterCard {
+    max-width: 980px;
+  }
+
+  .contentConteiner h2 {
+    font-size: 33px;
+  }
+
   .courseCard {
     width: 220px;
   }
-  .cardContent h3 {
-    font-size: var(--desktop_h3-font-size);;
-  }
+
+
   .lists span {
     font-size: 11px;
   }
+
   .viewDetailsButton {
     font-size: 8px;
     padding: 10px 16px;
   }
-  .brochurebtn{
+
+  .brochurebtn {
     font-size: 8px;
   }
 }
-@media screen and (max-width: 951px) {
 
-.MasterCard{
-    width: 100%;
+@media screen and (max-width: 968px) {
+  .bgImageMaster {
+    max-width: 920px;
+  }
 }
 
+@media screen and (max-width: 840px) {
+  .bgImageMaster {
+    max-width: 800px;
+  }
+
+  .contentConteiner h2 {
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 641px) {
@@ -471,94 +418,113 @@ line-height: 155%; /* 34.1px */
 
     display: flex;
     flex-direction: column;
-}
+  }
+
   .CourseCardHead {
     width: 100%;
     gap: 50px;
     display: flex;
-    padding:0;
-    margin-bottom:0;
+    padding: 0;
+    margin-bottom: 0;
     margin-top: 0;
 
   }
 
-/* Custom scrollbar styles for .tabMain */
-.tabMain {
-  width: 100%; /* Full width */
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap; /* Prevent wrapping */
-  gap: 10px; /* Space between tabs */
-  overflow-x: auto; /* Allow horizontal scrolling */
-  scroll-behavior: smooth; /* Smooth scrolling */
-  -webkit-overflow-scrolling: touch; /* For iOS devices */
-  padding: 10px 0; /* Optional padding for aesthetics */
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: #0072bc black; /* For Firefox (thumb, track) */
-}
+  /* Custom scrollbar styles for .tabMain */
+  .tabMain {
+    width: 100%;
+    /* Full width */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
+    gap: 10px;
+    /* Space between tabs */
+    overflow-x: auto;
+    /* Allow horizontal scrolling */
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* For iOS devices */
+    padding: 10px 0;
+    /* Optional padding for aesthetics */
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #0072bc black;
+    /* For Firefox (thumb, track) */
+  }
 
-/* WebKit browsers */
-.tabMain::-webkit-scrollbar {
-  height: 1px; /* Height of horizontal scrollbar */
-}
+  /* WebKit browsers */
+  .tabMain::-webkit-scrollbar {
+    height: 1px;
+    /* Height of horizontal scrollbar */
+  }
 
-.tabMain::-webkit-scrollbar-track {
-  background: var(--black); /* Track color */
-  border-radius: 10px; /* Round track */
-}
+  .tabMain::-webkit-scrollbar-track {
+    background: var(--black);
+    /* Track color */
+    border-radius: 10px;
+    /* Round track */
+  }
 
-.tabMain::-webkit-scrollbar-thumb {
-  background: var(--primary-color); /* Scrollbar thumb color */
-  border-radius: 10px; /* Round scrollbar thumb */
-  border: 10px solidvar(--black); /* Add border around the thumb */
-}
+  .tabMain::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    /* Scrollbar thumb color */
+    border-radius: 10px;
+    /* Round scrollbar thumb */
+    border: 10px solidvar(--black);
+    /* Add border around the thumb */
+  }
 
-.tabMain::-webkit-scrollbar-thumb:hover {
-  background:var(--dark-blue) /* Thumb color on hover (optional) */
-}
+  .tabMain::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue)
+      /* Thumb color on hover (optional) */
+  }
 
-.tabdiv {
-  flex: 0 0 auto; /* Ensure each tab does not shrink */
-  border-radius: 4px; /* Rounded corners */
-  cursor: pointer; /* Pointer on hover */
-  min-width: 150px; /* Minimum width to prevent small tabs */
-  padding: 10px 20px; /* Optional padding for tabs */
-  background-color: var(--white); /* Tab background color for visibility */
-}
+  .tabdiv {
+    flex: 0 0 auto;
+    /* Ensure each tab does not shrink */
+    border-radius: 4px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer on hover */
+    min-width: 150px;
+    /* Minimum width to prevent small tabs */
+    padding: 10px 20px;
+    /* Optional padding for tabs */
+    background-color: var(--white);
+    /* Tab background color for visibility */
+  }
 
 
 
   .tabMain p {
-    font-size:var(--desktop_p-font-size);
+    font-size: var(--desktop_p-font-size);
     font-weight: 600;
     margin-right: 10px;
   }
+
   .tabMain p :nth-child(2) {
-    background-color:var(--red-official);
+    background-color: var(--red-official);
     color: var(--primary-color);
   }
 
   .courseCard {
     width: 100%;
-        max-width: 100%;
-        padding: 0 20px;
+    max-width: 100%;
+    padding: 0 20px;
   }
+
   .courseCard img {
     width: 100%;
   }
 
-  .cardContent h3 {
-    font-size:var(--desktop_h3-font-size);;
-  }
-  .cardContent {
-    padding: 20px 30px;
-    margin-bottom: 40px;
-  }
 
   .buttons button {
     font-size: 17px;
     padding: 7px 19px;
   }
+
   .buttons {
     gap: 10px;
   }
@@ -577,84 +543,95 @@ line-height: 155%; /* 34.1px */
     width: 30px;
     height: auto;
   }
+
   .tabHead {
-    background: linear-gradient(
-      180deg,
-      #fff 1.26%,
-      #eff3f6 17.6%,
-      #eff3f6 90.85%,
-      #fff 100%
-    );
+    background: linear-gradient(180deg,
+        #fff 1.26%,
+        #eff3f6 17.6%,
+        #eff3f6 90.85%,
+        #fff 100%);
 
     padding: 0 20px;
   }
+
   .container {
     padding-bottom: 0;
   }
+
   .MasterCard {
-    width: 100%;
+    max-width: 100%;
     padding: 20px;
   }
+
   .contentConteiner h2 {
-    color:var(--white);
-    font-size:  var(--desktop_h2-font-size);
+    color: var(--white);
+    font-size: var(--desktop_h2-font-size);
     font-style: normal;
     font-weight: 600;
     line-height: 126.5%;
     letter-spacing: -0.22px;
     text-wrap: balance;
   }
+
   .contentConteiner {
     top: 70px;
     padding: 10px 20px;
   }
+
   .contentConteiner img {
     width: 30px;
     height: auto;
   }
+
   .absloute {
     top: 148px;
     left: 30px;
   }
+
   .absloute h4 {
     color: var(--dark-grey);
     text-align: center;
-    font-size: var(--desktop_h4-font-size);;
+    font-size: var(--desktop_h4-font-size);
+    ;
     font-style: normal;
     font-weight: 700;
     line-height: 155%;
     text-wrap: balance;
   }
+
   .absloute span {
-    color:var(--white);
+    color: var(--white);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 155%;
   }
+
   .mastericon {
     margin-top: 120px;
     align-items: center;
 
   }
+
   .contentConteiner p {
     font-size: var(--desktop_p-font-size);
   }
-  .swiperContainer{
-    padding-bottom: 30px;
-   }
 
-   .accordionContainer {
+  .swiperContainer {
+    padding-bottom: 30px;
+  }
+
+  .accordionContainer {
     display: flex;
     flex-direction: column;
   }
-  
+
   .accordionItem {
     margin-bottom: 10px;
     border: 1px solid var(--medium-grey);
     border-radius: 5px;
   }
-  
+
   .accordionHeader {
     display: flex;
     justify-content: space-between;
@@ -663,52 +640,57 @@ line-height: 155%; /* 34.1px */
     cursor: pointer;
     font-weight: bold;
   }
-  
+
   .accordionContent {
     padding: 15px;
     display: none;
     background-color: var(--white);
   }
-  
+
   .expanded .accordionContent {
     display: block;
   }
-  .lists span{
-font-size: 16px;
+
+  .lists span {
+    font-size: 16px;
   }
-  
+
 }
 
 @media screen and (max-width: 412px) {
 
-  .contentConteiner{
+  .contentConteiner {
     font-size: 20px;
     padding: 0 20px;
   }
+
   .absloute h4 {
-    font-size: var(--desktop_h4-font-size);;
+    font-size: var(--desktop_h4-font-size);
+    ;
   }
+
   .absloute span {
     font-size: 13px;
   }
 }
 
 @media screen and (max-width: 360px) {
-  .cardContent h3 {
-    font-size: var(--desktop_h3-font-size);;
-  }
+
   .buttons button {
     font-size: 12px;
   }
-  .absloute{
+
+  .absloute {
     top: 130px;
     width: fit-content;
     height: fit-content;
   }
+
   .contentConteiner h2 {
     font-size: var(--desktop_h2-font-size);
   }
-  .buttonsMaster{
+
+  .buttonsMaster {
     top: -20px;
   }
 }
