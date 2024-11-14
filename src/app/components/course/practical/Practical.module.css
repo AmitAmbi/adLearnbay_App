@@ -97,6 +97,22 @@
   /* width: 255px; */
 }
 
+.practicalSvgWrapper {
+  position: relative;
+  width: 38px;
+  height: 25px;
+}
+
+.practicalSvgWrapper svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.pointItem {
+  display: flex;
+  gap: 20px;
+}
 
 @media only screen and (max-width: 1081px) {
   .box {
@@ -208,11 +224,16 @@
   .box {
     padding: 0 13px 13px 13px;
   }
+
+  .pointItem {
+    flex-flow: column;
+    gap: 0;
+  }
 }
 
 @media only screen and (max-width: 761px) {
 
-  .container{
+  .container {
     margin-top: 70px;
   }
 
@@ -234,14 +255,11 @@
     margin-top: 11px;
   }
 
-  .spanDiv span{
-    line-height: 180%;;
+  .spanDiv span {
+    line-height: 180%;
+    ;
   }
 
-  .pointItem{
-    display: flex;
-    flex-flow: column;
-  }
 }
 
 @media only screen and (max-width: 641px) {
@@ -281,15 +299,17 @@
     max-width: 600px;
   }
 
-  /* .boxMain .box:nth-child(3) {
-    width: 70%;
-  } */
+  .pointItem{
+    align-items: center;
+  }
+
+  .practicalSvgWrapper{
+    left: -15px;
+  }
+
 }
 
 @media only screen and (max-width: 481px) {
-  /* .innerContainer {
-    max-width: 350px;
-  } */
 
   .pTag {
     font-size: 16px;

@@ -18,22 +18,37 @@ const Practical = () => {
               <div key={index} className={styles.pointItem}>
                 <span className={styles.svgIcon}>
                   {/* Simplified SVG for Testing */}
-                  <svg
+                  {/* <svg
                     width={svgRight.width}
                     height={svgRight.height}
                     viewBox={svgRight.viewBox}
                     xmlns={svgRight.xmlns}
-                  >
-                    {/* Directly render the arrow */}
-                    <g>
+                  > */}
+                  {/* Directly render the arrow */}
+                  {/* <g>
                       <path
                         d="M10,50 C40,10, 60,90, 90,50 C120,10, 140,90, 170,50"
                         fill="none"
                         stroke="#04C988" // Color of the signature (green here)
                         strokeWidth="8" // Width of the signature line
                       />
-                    </g>
-                  </svg>
+                    </g> */}
+                  {/* </svg> */}
+                  <div className={styles.practicalSvgWrapper}>
+                    <svg
+                      width="38px"
+                      height="25px"
+                      viewBox="0 0 1024 1024"
+                      class="icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="#04C988"
+                        stroke="10"
+                        d="M77.248 415.04a64 64 0 0190.496 0l226.304 226.304L846.528 188.8a64 64 0 1190.56 90.496l-543.04 543.04-316.8-316.8a64 64 0 010-90.496z"
+                      />
+                    </svg>
+                  </div>
                 </span>
                 <span className={styles.pointText}>{point.text}</span>
               </div>
