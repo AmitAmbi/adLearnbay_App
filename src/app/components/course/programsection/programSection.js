@@ -46,7 +46,7 @@ const ProgramSection = memo(({ designOverrides, popupProps, programSectionData }
       <div className="containerWidth">
         <div className={styles.innerDiv}>
           <h2>
-            Who is this program for?
+            Who is this <span>Program for?</span>
             <hr className={styles.hrline} />
           </h2>
           <p className={styles.pHead}>
@@ -79,14 +79,13 @@ const ProgramSection = memo(({ designOverrides, popupProps, programSectionData }
                   <div className={styles.innerBoxDiv}>
                     {content?.points?.map((point, index) => (
                       <div key={index} className={styles.innerBox}>
-                        <div>
+                        <div className={styles.imgWrapper}>
                           <Image
                             src={point.icon}
                             alt={point.title}
                             quality={100}
-                            layout="responsive"
-                            width={40}
-                            height={40}
+                            // layout="responsive"
+                            fill
                             loading="lazy"
                           />
                         </div>
