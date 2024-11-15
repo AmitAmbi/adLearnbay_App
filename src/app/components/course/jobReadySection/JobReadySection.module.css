@@ -144,17 +144,22 @@
   .innerdiv {
     grid-template-columns: 100%;
   }
-
+  
   .innerbox{
     position: relative;
   }
-
+  
   .Wrapper {
     position: absolute;
     top: 15px;
     right: 20px;
   }
-
+  
 }
 
-/* #Achive */
+@media only screen and (max-width: 401px) {
+  .Wrapper {
+    right: 0;
+  }
+  
+}

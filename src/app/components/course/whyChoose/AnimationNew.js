@@ -60,6 +60,7 @@ function AnimationNew() {
 
   return (
     <section className={styles.whyChooseSection}>
+      <div className="containerWidth">
       <div className={styles.containerMain}>
         <div className={styles.header}>
           <h2>
@@ -171,6 +172,7 @@ function AnimationNew() {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );

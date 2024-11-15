@@ -20,6 +20,10 @@
   padding: 60px 0;
 }
 
+.containerMain{
+  width: 100%;
+}
+
 .header p {
   color: var(--deep-cyann);
   text-align: center;
@@ -316,16 +320,30 @@
 
 
 
+@media screen and (max-width: 968px) {
+  .downBoxDesign2 {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+}
+
+@media screen and (max-width: 761px) {
+  .Contents{
+    padding-right: 40px;
+  }
+}
+
 @media screen and (max-width: 641px) {
   .whyChooseSection {
     background: radial-gradient(circle at 10% 10%,
-        rgba(6, 59, 92, 0.8) 1%,
-        transparent 30%),
-      radial-gradient(circle at 90% 80%,
-        rgba(254, 122, 54, 0.2) 1%,
+    rgba(6, 59, 92, 0.8) 1%,
+    transparent 30%),
+    radial-gradient(circle at 90% 80%,
+    rgba(254, 122, 54, 0.2) 1%,
         transparent 40%),
       var(--light-black);
-    margin-bottom: 60px;
+      margin-bottom: 60px;
   }
 
   .header p {
@@ -336,16 +354,12 @@
   .header h2 {
     font-size: var(--desktop_h2-font-size);
   }
-
-  .header span {
-    font-size: var(--desktop_span-font-size);
-  }
-
+  
   .divContainer {
-    margin: 30px;
+    margin-left: 15px;
     gap: 10px;
   }
-
+  
   .divContainer h4 {
     font-size: var(--desktop_h4-font-size);
   }
@@ -353,7 +367,7 @@
   .Contents h5 {
     font-size: var(--desktop_h5-font-size);
   }
-
+  
   .divContainer p {
     font-size: var(--desktop_p-font-size);
     line-height: 1.5;
@@ -367,21 +381,15 @@
     width: 50px;
     height: auto;
   }
-
+  
   .downBoxDesign1 {
     width: 100%;
     height: fit-content;
-
     padding: 4px;
   }
 
   .downBoxDesign2 {
-    display: flex;
     gap: 8px;
-    flex-wrap: wrap;
-    justify-content: left;
-
-
   }
 
   .downBoxDesign2 p {
@@ -392,7 +400,7 @@
 
     height: auto;
   }
-
+  
   .insideBoxDesign1 {
     gap: 4px;
   }
@@ -400,7 +408,7 @@
   .insideBoxDesign1 p {
     font-size: var(--desktop_p-font-size);
   }
-
+  
   .insideBoxDesign2 {
     gap: 4px;
   }
@@ -415,8 +423,34 @@
   .customSection p {
     width: 100%;
   }
-
+  
   .imageSection {
     width: auto;
+  }
+  
+  .Contents{
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 481px) {
+  .columnDiv{
+    margin: 80px auto;
+  }
+  
+  .downBox{
+    grid-template-columns: 50% 45%;
+  }
+  .insideBoxDesign1 p{
+    font-size: 12px;
+  }
+
+  .header h2,.header span{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .downBox{
+    grid-template-columns: 50% 50%;
   }
 }
