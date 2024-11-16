@@ -2,6 +2,7 @@
   0% {
     left: -100%;
   }
+
   100% {
     left: 100%;
   }
@@ -27,12 +28,10 @@
 .glassEffect:hover::before {
   left: 100%;
   animation: moveGlass 1s forwards;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0.2) 100%);
 }
 
 /* Button Styles */
@@ -69,7 +68,8 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  line-height: 28.679px; /* 143.396% */
+  line-height: 28.679px;
+  /* 143.396% */
 }
 
 .blackButton {
@@ -107,7 +107,8 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  line-height: 28.679px; /* 143.396% */
+  line-height: 28.679px;
+  /* 143.396% */
 }
 
 .button:hover {
@@ -235,12 +236,10 @@
 .grayButton:hover::before {
   left: 100%;
   animation: moveGlass 1s forwards;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0.2) 100%);
 }
 
 /* New Blue Button */
@@ -266,18 +265,27 @@
 
 /* Responsive Styles */
 @media (max-width: 1281px) {
+
   .button,
   .outLineBtn {
     padding: 10px 20px;
   }
 }
 
+@media (max-width: 761px) {
+  .OrangeButton {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 641px) {
+
   .button,
   .outLineBtn {
     font-size: 10px;
 
   }
+
   .button,
   .grayButton {
     font-size: 14px;
@@ -292,9 +300,11 @@
   .bannerButton {
     padding: 6px 50px;
   }
+
   .nobannerButton {
     padding: 6px 50px;
   }
+
   .whiteBgButton {
     padding: 6px 73px;
   }

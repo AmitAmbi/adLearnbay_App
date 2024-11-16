@@ -368,15 +368,15 @@ body {
   .outLineBtn {
     padding: 10px 20px;
   }
-}
 
-@media (max-width: 1281px) {
   .outLineBtn {
     position: relative;
     top: 0px;
     flex-flow: row-reverse;
+
   }
 }
+
 
 @media (max-width: 1024) {
   h2 {
@@ -389,8 +389,14 @@ body {
   h2 {
     font-size: 32px;
   }
+}
 
+@media (max-width: 761px) {
+  .OrangeButton {
+    font-size: 14px;
+    padding: 5px 10px;
 
+  }
 }
 
 @media (max-width: 481px) {

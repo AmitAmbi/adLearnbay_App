@@ -349,7 +349,7 @@
     justify-content: left;
   }
 
-  y .contentConteiner h2 {
+  .contentConteiner h2 {
     font-size: 34px;
   }
 
@@ -430,70 +430,44 @@
 
   }
 
-  /* Custom scrollbar styles for .tabMain */
   .tabMain {
     width: 100%;
-    /* Full width */
+    max-width: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* Prevent wrapping */
     gap: 10px;
-    /* Space between tabs */
     overflow-x: auto;
-    /* Allow horizontal scrolling */
-    scroll-behavior: smooth;
-    /* Smooth scrolling */
-    -webkit-overflow-scrolling: touch;
-    /* For iOS devices */
     padding: 10px 0;
-    /* Optional padding for aesthetics */
-    scrollbar-width: thin;
-    /* For Firefox */
     scrollbar-color: #0072bc black;
-    /* For Firefox (thumb, track) */
   }
 
-  /* WebKit browsers */
   .tabMain::-webkit-scrollbar {
     height: 1px;
-    /* Height of horizontal scrollbar */
   }
 
   .tabMain::-webkit-scrollbar-track {
     background: var(--black);
-    /* Track color */
     border-radius: 10px;
-    /* Round track */
   }
 
   .tabMain::-webkit-scrollbar-thumb {
     background: var(--primary-color);
-    /* Scrollbar thumb color */
     border-radius: 10px;
-    /* Round scrollbar thumb */
     border: 10px solidvar(--black);
-    /* Add border around the thumb */
   }
 
   .tabMain::-webkit-scrollbar-thumb:hover {
     background: var(--dark-blue)
-      /* Thumb color on hover (optional) */
   }
 
   .tabdiv {
     flex: 0 0 auto;
-    /* Ensure each tab does not shrink */
     border-radius: 4px;
-    /* Rounded corners */
     cursor: pointer;
-    /* Pointer on hover */
     min-width: 150px;
-    /* Minimum width to prevent small tabs */
     padding: 10px 20px;
-    /* Optional padding for tabs */
     background-color: var(--white);
-    /* Tab background color for visibility */
   }
 
 
