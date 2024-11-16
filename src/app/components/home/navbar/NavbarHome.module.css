@@ -62,6 +62,7 @@
   .right a {
     font-weight: 500;
     font-size: 18px;
+    color: var(--black);
   }
   
   .right span:hover {
