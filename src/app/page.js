@@ -39,16 +39,16 @@ export default function Home() {
     <main className={styles.main}>
       <NavbarHome />
       <HeroSection />
-      <InfinityLogo/>
-      {/* <KickStart/>
-<NewCourse/> */}
-<Animation/>
-      <ReviewSlider/>
-      <ContactUs/>
-      <CLogo/>
-<Other/>
-      <MobileTestimonial/>
-      <NewSevenSection/>
+      <InfinityLogo />
+      {/* <KickStart /> */}
+      {/* <NewCourse /> */}
+      <Animation />
+      <ReviewSlider />
+      <ContactUs />
+      <CLogo />
+      <Other />
+      <MobileTestimonial />
+      <NewSevenSection />
     </main>
   );
 }
