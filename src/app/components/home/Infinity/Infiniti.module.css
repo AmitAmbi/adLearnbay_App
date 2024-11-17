@@ -1,271 +1,246 @@
-.conteiner {
-    width: 1200px;
-    border-radius: 40px;
-    background: var(--cyan);
-    margin: 60px auto;
-    padding: 36px 0;
+.container {
+  width: 100%;
+  border-radius: 40px;
+  background: var(--cyan);
+  margin: 60px auto;
+  padding: 36px 0;
+}
+
+.container h2 {
+  color: var(--stone-color);
+  text-align: center;
+  font-size: var(--desktop_h2-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 126.5%;
+  /* 56.925px */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
   }
-  .conteiner h2 {
-    color: var(--stone-color);
-    text-align: center;
-    font-size:var(--desktop_h2-font-size);
-    font-style: normal;
-    font-weight: 600;
-    line-height: 126.5%; /* 56.925px */
+
+  100% {
+    transform: translateX(-50%);
   }
-  
-  @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateX(-50%);
   }
-  
-  .sliderWrapper {
-    /* width: 100vw; */
-    overflow: hidden;
-    position: relative;
+
+  100% {
+    transform: translateX(0);
   }
-  .sliderWrapperdown {
-    overflow: hidden;
-    position: relative;
+}
+
+.sliderWrapper,
+.sliderWrapperdown {
+  /* width: 100vw; */
+  overflow: hidden;
+  position: relative;
+}
+
+.sliderInner,
+.sliderInnerDown {
+  display: flex;
+  width: 200%;
+  /* This should be set to 200% of the width of the viewport to handle the duplicated content */
+}
+
+.sliderInner {
+  animation: slide 44s linear infinite;
+}
+
+.sliderInnerDown {
+  animation: slideDown 44s linear infinite;
+}
+
+.topDiv,
+.DownDiv {
+  display: flex;
+  flex-wrap: nowrap;
+  /* Ensure the content stays in a single line */
+  margin-top: 34px;
+}
+
+.cards,
+.cardsDown {
+  display: flex;
+  border-radius: 16px;
+  background: var(--white);
+  padding: 0 22px 0 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  /* Prevent wrapping */
+  flex: 0 0 auto;
+  /* Prevent flex items from shrinking */
+  margin: 20px;
+}
+
+.cards p,
+.cardsDown p {
+  margin-top: 0;
+  color: var(--light-black);
+  font-size: var(--desktop_p-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126.5%;
+  /* 31.625px */
+}
+
+.cards img,
+.cardsDown img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  position: relative;
+  left: -8px;
+}
+
+
+
+.mblonly {
+  display: none;
+}
+
+.Desktoponly span {
+  color: var(--light-bluee);
+}
+
+@media screen and (max-width: 1381px) {
+  .container h2 {
+    font-size: 36px;
   }
-  .sliderInner {
-    display: flex;
-    width: 200%; /* This should be set to 200% of the width of the viewport to handle the duplicated content */
-    animation: slide 44s linear infinite;
+}
+
+@media screen and (max-width: 1281px) {
+
+  /* .Desktoponly span {
+    color: var(--light-bluee);
+  } */
+}
+
+@media screen and (max-width: 1181px) {
+
+  .container h2 {
+    font-size: 34px;
   }
-  
-  .topDiv {
-    display: flex;
-    flex-wrap: nowrap; /* Ensure the content stays in a single line */
-    margin-top: 34px;
+}
+
+@media screen and (max-width: 968px) {}
+
+@media screen and (max-width: 841px) {
+  .container h2 {
+    font-size: 28px
   }
-  
-  .cards {
-    display: flex;
-    border-radius: 16px;
-    background: var(--white);
-    padding:0 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 40px;
-    white-space: nowrap; /* Prevent wrapping */
-    flex: 0 0 auto; /* Prevent flex items from shrinking */
-    margin: 19px 20px;
-  }
-  
-  .cards p {
-    margin-top: 0;
-    color: var(--light-black);
-    font-size: var(--desktop_p-font-size);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 126.5%; /* 31.625px */
-  }
-  
-  .cards img {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-    position: relative;
-    left: -8px;
-  }
-  
-  .sliderInnerDown {
-    display: flex;
-    animation: slideDown 20s linear infinite;
-  }
-  
-  @keyframes slideDown {
-    0% {
-      transform: translateX(-50%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  
-  .DownDiv {
-    display: flex;
-    flex-wrap: nowrap; /* Ensure the content stays in a single line */
-  }
-  
-  .cardsDown {
-    display: flex;
-    border-radius: 16px;
-    background: var(--white);
-    padding:0 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 40px;
-    white-space: nowrap; /* Prevent wrapping */
-    flex: 0 0 auto; /* Prevent flex items from shrinking */
-    margin: 4px 20px;
-  }
-  
+
+  .cards p,
   .cardsDown p {
-    margin-top: 0;
-    color: var(--light-black);
-    font-size:  var(--desktop_p-font-size);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 126.5%; /* 31.625px */
+    font-size: var(--desktop_p-font-size);
   }
-  
-  .cardsDown img {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-    position: relative;
-    left: -8px;
+
+  .cards,
+  .cardsDown {
+    margin: 10px 20px;
   }
-  
-  .mblonly {
+
+  .topDiv,
+  .DownDiv {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 641px) {
+  .container {
+    padding: 20px 0 40px 0;
+    margin: 60px 0;
+  }
+
+  .Desktoponly {
     display: none;
   }
-  
-  .cards{
-    padding-right: 22px;
+
+  .mblonly {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
   }
-  .cardsDown{
-    padding-right: 22px;
+
+  .mblonly h2 {
+    color: var(--stone-color);
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 126.5%;
+    text-wrap: pretty;
   }
-  .Desktoponly span{
-    color: var(--light-bluee);
+
+  .mblonly p {
+    color: var(--black);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 126.5%;
+    /* 20.24px */
   }
-  @media screen and (max-width: 1381px) {
-    .conteiner {
-      width: 1200px;
-    }
+
+  .cards p,
+  .cardsDown p {
+    font-size: var(--desktop_p-font-size);
   }
-  
-  @media screen and (max-width: 1281px) {
-    .conteiner {
-      width: 1100px;
-    }
-    .cards{
-      padding-right: 22px;
-    }
-    .cardsDown{
-      padding-right: 22px;
-    }
-    .Desktoponly span{
-      color: var(--light-bluee);
-    }
+
+  .cards,
+  .cardsDown {
+    padding: 0 10px;
+    margin: 10px;
   }
-  
-  @media screen and (max-width: 1180px) {
-    .conteiner {
-      width: 1000px;
-    }
+
+  .cards img,
+  .cardsDown img {
+    width: 50px;
+    height: auto;
   }
-  @media screen and (max-width: 980px) {
-    .conteiner {
-      width: 900px;
-    }
-    .cards {
-      margin: 18px 20px;
-    }
-  
-  
-  
+}
+
+@media screen and (max-width: 481px) {
+  .container {
+    padding: 20px 0;
   }
-  
-  @media screen and (max-width: 860px) {
-    .conteiner {
-      width: 100%;
-      max-width: 750px;
-    }
-    .conteiner h2 {
-      font-size: var(--desktop_h2-font-size);
-    }
-   .cardsDown p {
-      font-size:  var(--desktop_p-font-size);
-    }
-    .cards p{
-      font-size: var(--desktop_p-font-size);
-    }
-  
-  
+
+  .mblonly {
+    padding: 15px;
   }
-  @media screen and (max-width: 641px) {
-    .conteiner {
-      width: 100%;
-      padding: 20px 0 40px 0;
-      margin: 20px 0;
-  
-    }
-  
-    .section {
-      padding: 30px;
-      margin: 0;
-    }
-  
-    .mblonly {
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      gap: 20px;
-    }
-  
-    .Desktoponly {
-      display: none;
-    }
-  
-    .mblonly h2 {
-      color: var(--stone-color);
-      text-align: center;
-      font-size: var(--desktop_h2-font-size);
-      font-style: normal;
-      font-weight: 600;
-      line-height: 126.5%; /* 56.925px */
-      text-wrap: pretty;
-    }
-    .mblonly p {
-      color: var(--black);
-      font-size:  var(--desktop_p-font-size);
-      font-style: normal;
-      font-weight: 500;
-      line-height: 126.5%; /* 20.24px */
-    }
-  
-    .topDiv{
-      margin-top: 20px;
-    }
-  
-  
-    .cards p {
-      font-size:  var(--desktop_p-font-size);
-    }
-    .cards {
-      padding: 0 10px;
-      margin: 10px;
-    }
-    .cards img {
-      width: 50px;
-      height: auto;
-    }
-  
-    .cardsDown p {
-      font-size:  var(--desktop_p-font-size);
-    }
-    .cardsDown {
-      padding: 0 10px;
-      margin: 10px;
-    }
-    .cardsDown img {
-      width: 50px;
-      height: auto;
-    }
+
+  .topDiv,
+  .DownDiv {
+    margin-top: 10px;
   }
-  
+
+  .cards,
+  .cardsDown {
+    margin: 5px 10px;
+  }
+
+}
+
+@media screen and (max-width: 361px) {
+
+  .mblonly {
+    padding: 10px;
+  }
+
+  .mblonly h2 {
+    font-size: 22px;
+  }
+}

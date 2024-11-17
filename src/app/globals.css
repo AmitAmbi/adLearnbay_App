@@ -5,13 +5,9 @@
 @import "./Button.css";
 
 html,
-body,
 #__next {
-  height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 :root {
@@ -390,6 +386,7 @@ body {
   }
 }
 
+
 @media (max-width: 1024px) {
   
   .containerWidth {
@@ -410,6 +407,14 @@ body {
   
   h2 {
     font-size: 32px;
+  }
+}
+
+@media (max-width: 761px) {
+  .OrangeButton {
+    font-size: 14px;
+    padding: 5px 10px;
+
   }
   
   

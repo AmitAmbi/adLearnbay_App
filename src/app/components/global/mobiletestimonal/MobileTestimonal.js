@@ -256,12 +256,12 @@ const testimonials = [
   },
 ];
 
-function MobileTestimonial({dataScienceGeneric, dataScienceCounselling, radio, interstedInHide}) {
+function MobileTestimonial({ dataScienceGeneric, dataScienceCounselling, radio, interstedInHide }) {
   const [popups, setPopups] = useState(false);
 
   const [activeIndex, setActiveIndex] = useState(Math.floor(testimonials.length / 3));
 
-//   const [activeIndex, setActiveIndex] = useState(0);
+  //   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleNextClick = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -301,10 +301,10 @@ function MobileTestimonial({dataScienceGeneric, dataScienceCounselling, radio, i
               dataScienceCounselling={dataScienceCounselling}
               dataScienceGeneric={dataScienceGeneric}
               radio={radio}
-        
+
               upSkillingHide={true}
               interstedInHide={interstedInHide}
-              
+
             />
           </div>
         </Popup>
@@ -323,9 +323,8 @@ function MobileTestimonial({dataScienceGeneric, dataScienceCounselling, radio, i
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={testimonial.id}
-                    className={`${Styles.UserImage} ${
-                      activeIndex === index ? Styles.active : Styles.faded
-                    }`}
+                    className={`${Styles.UserImage} ${activeIndex === index ? Styles.active : Styles.faded
+                      }`}
                     style={{
                       transform: `translateX(-${activeIndex * 100}%)`,
                       transition: "transform 0.5s ease-in-out",
@@ -345,17 +344,17 @@ function MobileTestimonial({dataScienceGeneric, dataScienceCounselling, radio, i
               </div>
               <div onClick={handleNextClick}>
 
-              <MdOutlineKeyboardArrowRightSvg className={Styles.icons} />
+                <MdOutlineKeyboardArrowRightSvg className={Styles.icons} />
               </div>
             </div>
-          </div>
-          <div className={Styles.HideInMobile}>
-            <div className={Styles.btnWrapper} onClick={popupShow}>
-              <Button
-                className={Styles.Btn}
-                OrangeButton={true}
-                text="Free Career Counselling from Experts"
-              />
+            <div className={Styles.HideInMobile}>
+              <div className={Styles.btnWrapper} onClick={popupShow}>
+                <Button
+                  className={Styles.Btn}
+                  OrangeButton={true}
+                  text="Free Career Counselling from Experts"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -363,7 +362,7 @@ function MobileTestimonial({dataScienceGeneric, dataScienceCounselling, radio, i
           <Image
             width="363"
             height="500"
-            style={{width:"100%"}}
+            style={{ width: "100%" }}
             src={testimonials[activeIndex].MobileReviewImage}
             alt={`User ${testimonials[activeIndex].UserImage}`}
           />
