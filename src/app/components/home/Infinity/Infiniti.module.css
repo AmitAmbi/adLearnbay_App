@@ -2,7 +2,7 @@
   width: 100%;
   border-radius: 40px;
   background: var(--cyan);
-  margin: 60px auto;
+  margin: 100px auto;
   padding: 36px 0;
 }
 
@@ -133,11 +133,13 @@
   }
 }
 
-@media screen and (max-width: 968px) {}
-
 @media screen and (max-width: 841px) {
+  .container {
+    margin: 60px auto;
+  }
+
   .container h2 {
-    font-size: 28px
+    font-size: 28px;
   }
 
   .cards p,
@@ -215,6 +217,7 @@
 
 @media screen and (max-width: 481px) {
   .container {
+    margin: 40px auto;
     padding: 20px 0;
   }
 

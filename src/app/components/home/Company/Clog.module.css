@@ -1,10 +1,11 @@
 .mainContainer {
   width: 100%;
+  margin: 100px auto;
 }
 
 .container {
   /* width: 1000px; */
-  margin: 80px auto;
+  /* margin: 80px auto; */
   border-radius: 10px;
   border: 0.6px solid var(--primary-color);
   background: var(--whiteee);
@@ -71,12 +72,10 @@
   }
 }
 
-@media screen and (max-width:968px) {
-  /* .container {
-    width: 100%;
-    max-width: 800px;
-  } */
-
+@media screen and (max-width:841px) {
+  .mainContainer {
+    margin: 60px auto;
+  }
 }
 
 @media screen and (max-width: 641px) {
@@ -93,6 +92,10 @@
   }
 
   @media screen and (max-width: 481px) {
+
+    .mainContainer {
+      margin: 40px auto;
+    }
 
     .textWithLines p {
       margin: 0;

@@ -11,17 +11,6 @@
     var(--light-black);
 }
 
-.mainBg {
-  /* background: linear-gradient(
-      176deg,
-      #eff3f6 3.89%,
-      #fff 42.38%,
-      #eff3f6 80.09%,
-      #fff 95.5%
-    ); */
-  padding-bottom: 70px;
-}
-
 .innerDiv {
   display: grid;
   grid-template-columns: 59% 30%;
@@ -113,7 +102,7 @@
   border-radius: 20px;
   background: var(--white);
   width: 100%;
-  margin: 30px auto;
+  margin: 30px 0 0 0;
 }
 
 .innerBotDiv {

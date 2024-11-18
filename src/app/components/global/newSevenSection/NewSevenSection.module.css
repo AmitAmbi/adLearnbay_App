@@ -166,6 +166,12 @@
     }
 }
 
+@media screen and (max-width:841px) {
+    .NewSevenSection {
+        margin: 60px auto;
+    }
+}
+
 @media screen and (max-width:641px) {
     .NewSevenSection {
         display: none;
@@ -176,6 +182,7 @@
         border-radius: 30px;
         background: var(--light-black);
         padding: 20px;
+        margin: 60px auto;
     }
 
     .griContiner {
@@ -241,6 +248,10 @@
 
 
 @media screen and (max-width:481px) {
+
+    .NewSevenSectionM {
+        margin: 40px auto;
+    }
 
     .blue,
     .green {
