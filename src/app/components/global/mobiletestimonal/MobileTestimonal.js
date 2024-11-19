@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import Styles from "./MobileTestimonal.module.css";
@@ -6,7 +6,10 @@ import Image from "next/image";
 import Button from "@/app/components/global/button/Button";
 import Form from "@/app/components/global/form/Form";
 import Popup from "@/app/components/global/popup/Popup";
-import { MdOutlineKeyboardArrowLeftSvg, MdOutlineKeyboardArrowRightSvg } from "@/Data/svgData/MDIcons";
+import {
+  MdOutlineKeyboardArrowLeftSvg,
+  MdOutlineKeyboardArrowRightSvg,
+} from "@/Data/svgData/MDIcons";
 
 const testimonials = [
   {
@@ -256,10 +259,17 @@ const testimonials = [
   },
 ];
 
-function MobileTestimonial({ dataScienceGeneric, dataScienceCounselling, radio, interstedInHide }) {
+function MobileTestimonial({
+  dataScienceGeneric,
+  dataScienceCounselling,
+  radio,
+  interstedInHide,
+}) {
   const [popups, setPopups] = useState(false);
 
-  const [activeIndex, setActiveIndex] = useState(Math.floor(testimonials.length / 3));
+  const [activeIndex, setActiveIndex] = useState(
+    Math.floor(testimonials.length / 3)
+  );
 
   //   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -280,7 +290,10 @@ function MobileTestimonial({ dataScienceGeneric, dataScienceCounselling, radio, 
   const calculateTransform = () => {
     const centerOffset = Math.floor((5 - 1) / 2); // Assuming 5 users are visible at a time
     const offset = activeIndex * 100;
-    const translateValue = Math.max(Math.min(offset, 0), -((testimonials.length - 5) * 100));
+    const translateValue = Math.max(
+      Math.min(offset, 0),
+      -((testimonials.length - 5) * 100)
+    );
     return `translateX(${translateValue}%)`;
   };
 
@@ -291,82 +304,84 @@ function MobileTestimonial({ dataScienceGeneric, dataScienceCounselling, radio, 
   return (
     <>
       <section className={Styles.section}>
-        <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
-          <div className="leftPopup">
-            <div className="whiteP" />
+          <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+            <div className="leftPopup">
+              <div className="whiteP" />
+            </div>
+            <div className="RightPopup">
+              <h5>Apply For Counselling</h5>
+              <Form
+                dataScienceCounselling={dataScienceCounselling}
+                dataScienceGeneric={dataScienceGeneric}
+                radio={radio}
+                upSkillingHide={true}
+                interstedInHide={interstedInHide}
+              />
+            </div>
+          </Popup>
+          <div className={Styles.TestimonialContainer}>
+            <div className={Styles.FirstDiv}>
+              <h4>
+                <span>Insider glimpses:</span> Click to see real conversations
+                with our learners
+              </h4>
+              <div className={Styles.leftSlide}>
+                <div onClick={handlePrevClick}>
+                  {" "}
+                  <MdOutlineKeyboardArrowLeftSvg
+                    className={Styles.icons}
+                  />{" "}
+                </div>
+                <div
+                  className={Styles.sliderUser}
+                  style={{ transform: calculateTransform() }}
+                >
+                  {testimonials.map((testimonial, index) => (
+                    <div
+                      key={testimonial.id}
+                      className={`${Styles.UserImage} ${
+                        activeIndex === index ? Styles.active : Styles.faded
+                      }`}
+                      style={{
+                        transform: `translateX(-${activeIndex * 100}%)`,
+                        transition: "transform 0.5s ease-in-out",
+                      }}
+                      onClick={() => handleUserClick(index)}
+                    >
+                      <Image
+                        width="100"
+                        height="100"
+                        src={testimonial.UserImage}
+                        alt={`User ${testimonial.UserImage}`}
+                        className={Styles.imgBorder}
+                        loading="lazy"
+                      />
+                    </div>
+                  ))}
+                </div>
+                <div onClick={handleNextClick}>
+                  <MdOutlineKeyboardArrowRightSvg className={Styles.icons} />
+                </div>
+              </div>
+              <div className={Styles.HideInMobile}>
+                <div className={Styles.btnWrapper} onClick={popupShow}>
+                  <Button
+                    className={Styles.Btn}
+                    OrangeButton={true}
+                    text="Free Career Counselling from Experts"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="RightPopup">
-            <h5>Apply For Counselling</h5>
-            <Form
-              dataScienceCounselling={dataScienceCounselling}
-              dataScienceGeneric={dataScienceGeneric}
-              radio={radio}
-
-              upSkillingHide={true}
-              interstedInHide={interstedInHide}
-
+          <div className={Styles.MobileReviewImageContainer}>
+            <Image
+              width="363"
+              height="500"
+              src={testimonials[activeIndex].MobileReviewImage}
+              alt={`User ${testimonials[activeIndex].UserImage}`}
             />
           </div>
-        </Popup>
-        <div className={Styles.TestimonialContainer}>
-          <div className={Styles.FirstDiv}>
-            <h4>
-              <span>Insider glimpses:</span> Click to see real conversations
-              with our learners
-            </h4>
-            <div className={Styles.leftSlide}>
-              <div onClick={handlePrevClick}>
-                {" "}
-                <MdOutlineKeyboardArrowLeftSvg className={Styles.icons} />{" "}
-              </div>
-              <div className={Styles.sliderUser} style={{ transform: calculateTransform() }}>
-                {testimonials.map((testimonial, index) => (
-                  <div
-                    key={testimonial.id}
-                    className={`${Styles.UserImage} ${activeIndex === index ? Styles.active : Styles.faded
-                      }`}
-                    style={{
-                      transform: `translateX(-${activeIndex * 100}%)`,
-                      transition: "transform 0.5s ease-in-out",
-                    }}
-                    onClick={() => handleUserClick(index)}
-                  >
-                    <Image
-                      width="100"
-                      height="100"
-                      src={testimonial.UserImage}
-                      alt={`User ${testimonial.UserImage}`}
-                      className={Styles.imgBorder}
-                      loading="lazy"
-                    />
-                  </div>
-                ))}
-              </div>
-              <div onClick={handleNextClick}>
-
-                <MdOutlineKeyboardArrowRightSvg className={Styles.icons} />
-              </div>
-            </div>
-            <div className={Styles.HideInMobile}>
-              <div className={Styles.btnWrapper} onClick={popupShow}>
-                <Button
-                  className={Styles.Btn}
-                  OrangeButton={true}
-                  text="Free Career Counselling from Experts"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={Styles.MobileReviewImageContainer}>
-          <Image
-            width="363"
-            height="500"
-            style={{ width: "100%" }}
-            src={testimonials[activeIndex].MobileReviewImage}
-            alt={`User ${testimonials[activeIndex].UserImage}`}
-          />
-        </div>
       </section>
       <div className={Styles.ShowInMobile}>
         <div className={Styles.btnWrapper} onClick={popupShow}>

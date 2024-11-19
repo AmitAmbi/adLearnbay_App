@@ -411,6 +411,15 @@
     font-size: 16px;
     margin: 0 0 50px 0;
   }
+
+  .firstBotImgWrapper{
+    width: 355px;
+    height: 130px;
+  }
+
+  .firstBotReview{
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 361px) {

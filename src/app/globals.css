@@ -410,22 +410,18 @@ body {
   }
 }
 
-@media (max-width: 761px) {
-  .OrangeButton {
-    font-size: 14px;
-    padding: 5px 10px;
-
-  }
-  
-  
-}
-
 @media (max-width: 841px) {
   .containerWidth {
     max-width: 761px;
   }
 }
+
 @media (max-width: 761px) {
+  .OrangeButton {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
   .containerWidth {
     max-width: 680px;
   }
@@ -434,6 +430,7 @@ body {
     font-size: 15px;
   }
 }
+
 
 @media (max-width: 641px) {
   .containerWidth {

@@ -40,7 +40,7 @@
 
 .h1 {
   color: var(--white);
-  font-size: var(--desktop_h1-font-size);
+  font-size: 38px;
   font-style: normal;
   font-weight: 600;
   line-height: 119%;
@@ -246,8 +246,10 @@
 @media (max-width: 1281px) {
 
   .ContactUs {
-    width: 960px;
-    grid-template-columns: 44% 44%;
+    width: 100%;
+    max-width: 1117px;
+    grid-template-columns: 44% 40%;
+    justify-content: space-between;
 
   }
 
@@ -266,7 +268,7 @@
   .ContactUs {
     width: 960px;
     grid-template-columns: 48% 40%;
-    justify-content: center;
+    justify-content: space-between;
     gap: 40px;
   }
 }
@@ -283,9 +285,15 @@
   .h1Span {
     font-size: var(--desktop_h1-font-size);
   }
+  .h1{
+    font-size: 35px;
+  }
 
   .RightSide {
     padding: 10px;
+  }
+  .NormalPForm{
+    font-size: 25.602px;
   }
 }
 
@@ -300,6 +308,28 @@
 
   .RightSide {
     padding: 10px;
+  }
+}
+
+@media (max-width: 841px) {
+
+  .section{
+    padding-bottom: 0;
+  }
+
+  .ContactUs {
+    width: 816px;
+    grid-template-columns: 56% 39%;
+    justify-content: space-between;
+  }
+  .ContactUs h1{
+    font-size: 34px;
+  }
+  .NormalPForm{
+    font-size: 25.602px;
+  }
+  .conpara p{
+    width: 100%;
   }
 }
 
@@ -330,6 +360,22 @@
     line-height: 32px;
   }
 }
+@media (max-width: 761px) {
+  .ContactUs{
+    width: 698px;
+    grid-template-columns: 55% 42%;
+    justify-content: center;
+  }
+  .h1{
+    font-size: 28px;
+  }
+  .RightSide{
+    width: 275px;
+  }
+  .NormalPForm{
+    font-size: 21.602px;
+  }
+}
 
 @media (max-width: 641px) {
   .LeftSide {
@@ -338,6 +384,9 @@
 
     /* background-color: red; */
     padding: 0px;
+  }
+  .RightSide{
+    margin: auto;
   }
 
   .leftpaerson {
@@ -359,10 +408,10 @@
   }
 
   .h1 {
-    font-size: var(--desktop_h1-font-size);
+    font-size: 38px;
     font-style: normal;
     font-weight: 700;
-    line-height: 153%;
+    line-height: 130%;
     padding: 0px;
     margin-bottom: 23px;
     margin-left: 0px;
@@ -397,5 +446,11 @@
 @media (max-width: 481px) {
   .RightSide {
     width: 100%;
+  }
+  .h1{
+    font-size: 26px;
+  }
+  .LeftSide p{
+    font-size: 13px;
   }
 }
