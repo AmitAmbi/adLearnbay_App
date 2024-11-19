@@ -19,7 +19,7 @@
 
 .FirstDiv h4 {
   color: var(--black);
-  font-size: var(--desktop_h4-font-size);
+  font-size: 40px;
   font-weight: 600;
 }
 
@@ -28,8 +28,6 @@
   background-clip: text;
   color: var(--black);
 }
-
-
 
 .btnWrapper button {
   border-radius: 10px;
@@ -42,9 +40,13 @@
   position: relative;
 }
 
+.MobileReviewImageContainer img {
+  width: 100%;
+}
+
+
 .leftSlide {
   display: flex;
-  grid-template-columns: 10% 80% 10%;
   gap: 20px;
   align-items: center;
 }
@@ -81,24 +83,45 @@
   display: none;
 }
 
-@media (max-width: 1181px) {
+@media (max-width: 1281px) {
 
   .section {
-    max-width: 900px;
+    max-width: 1120px;
   }
+}
+
+@media (max-width: 1181px) {
 
   .MobileReviewImageContainer img {
     height: auto;
+  }
+
+  .FirstDiv h4 {
+    font-size: 32px;
+  }
+
+}
+
+@media (max-width: 1080px) {
+  .section {
+    max-width: 960px;
+    grid-template-columns: 64% 35%;
+    padding: 50px 30px 0 30px;
   }
 }
 
 @media (max-width: 1024px) {
   .section {
-    margin: 30px;
+    padding: 50px 30px 0px 30px;
+    max-width: 904px;
   }
 
-  .section {
-    max-width: 900px;
+  .FirstDiv h4 {
+    font-size: 30px;
+  }
+
+  .btnWrapper {
+    margin-top: 20px;
   }
 
 
@@ -106,16 +129,47 @@
 
 @media (max-width: 968px) {
 
+  .section {
+    max-width: 888px;
+  }
+
   .MobileReviewImageContainer img {
     width: 250px;
   }
 
+  .FirstDiv h4 {
+    font-size: 28px;
+  }
 }
 
 
 @media (max-width: 841px) {
+  .section {
+    max-width: 761px;
+  }
+
+  .imgBorder {
+    width: 60px;
+    height: 60px;
+  }
+
+  .FirstDiv h4 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 761px) {
+
+  .section {
+    max-width: 680px;
+  }
+
   .FirstDiv h4 {
     font-size: 23px;
+  }
+
+  .MobileReviewImageContainer img{
+    width: 240px;
   }
 }
 
@@ -138,13 +192,18 @@
   }
 
   .FirstDiv h4 {
-    font-size: var(--desktop_h4-font-size);
+    font-size: 25px;
     font-weight: 400;
   }
 
-
   .FirstDiv {
     padding: 0;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .leftSlide {
+    width: 70%;
   }
 
   .icons {
@@ -165,7 +224,6 @@
     justify-content: center;
   }
 
-
   .HideInMobile {
     display: none;
   }
@@ -174,4 +232,48 @@
     display: block;
   }
 
+  .MobileReviewImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .MobileReviewImageContainer img {
+    width: 366px;
+  }
+}
+
+@media(max-width:481px) {
+  .leftSlide {
+    width: 90%;
+  }
+
+  .FirstDiv h4{
+    font-size: 20px;
+  }
+
+  .leftSlide svg{
+    width: 40px;
+    height: 40px;
+  }
+}
+@media(max-width:441px) {
+  .FirstDiv h4 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .FirstDiv span {
+    font-size: 20px;
+  }
+}
+
+@media(max-width:361px) {
+  .FirstDiv h4 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .MobileReviewImageContainer img{
+    width: 85%;
+  }
 }

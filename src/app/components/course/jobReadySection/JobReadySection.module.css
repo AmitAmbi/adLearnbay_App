@@ -1,5 +1,5 @@
 .container {
-  margin-top: 100px;
+  margin: 100px auto;
   background: linear-gradient(180deg, var(--white) 0%, #eff3f6 49.89%, var(--white) 100%);
 }
 
@@ -110,6 +110,12 @@
   }
 }
 
+@media screen and (max-width:841px) {
+  .container {
+    margin: 60px auto;
+  }
+}
+
 @media screen and (max-width:761px) {
   .innerbox {
     padding: 30px 30px 0 30px;
@@ -137,6 +143,11 @@
 }
 
 @media only screen and (max-width: 481px) {
+
+  .container {
+    margin: 40px auto;
+  }
+
   .headH2 {
     font-size: 23px;
   }
@@ -144,22 +155,22 @@
   .innerdiv {
     grid-template-columns: 100%;
   }
-  
-  .innerbox{
+
+  .innerbox {
     position: relative;
   }
-  
+
   .Wrapper {
     position: absolute;
     top: 15px;
     right: 20px;
   }
-  
+
 }
 
 @media only screen and (max-width: 401px) {
   .Wrapper {
     right: 0;
   }
-  
+
 }

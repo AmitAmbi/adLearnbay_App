@@ -11,7 +11,6 @@ const InfinityLogo = () => {
             Upskill and transform your career in latest <br />
             <span>technologies</span> and <span> domains</span>
           </h2>
-
           <div className={styles.mblonly}>
             <h2>
               Build Skills in <span>High-Demand Technologies</span>

@@ -1,6 +1,6 @@
 .keyContainer {
+  margin: 100px auto;
   width: 100%;
-  margin: auto;
 }
 
 .mainContiner {
@@ -136,9 +136,9 @@
   height: 70px;
 }
 
-.headingContainer {
+/* .headingContainer {
   padding-top: 100px;
-}
+} */
 
 .mainHeading {
   color: var(--deep-blueee);
@@ -199,7 +199,7 @@
 .reviewBotSection {
   display: grid;
   grid-template-columns: 55% 36%;
-  margin-top: 100px;
+  margin-top: 60px;
   align-items: center;
   gap: 0px;
   justify-content: center;
@@ -298,13 +298,7 @@
 
 
 
-@media screen and (max-width: 841px) {
 
-  .reviewBotSection {
-    grid-template-columns: 55% 40%;
-
-  }
-}
 
 @media screen and (max-width: 761px) {
   .firstBotImgWrapper {
@@ -323,6 +317,17 @@
   }
 }
 
+@media screen and (max-width: 841px) {
+  .keyContainer {
+    margin: 60px auto;
+  }
+
+  .reviewBotSection {
+    grid-template-columns: 55% 40%;
+
+  }
+}
+
 @media screen and (max-width: 641px) {
   .reviewBotSection {
     display: flex;
@@ -334,6 +339,11 @@
 
   .firstBotReview {
     gap: 10px;
+  }
+
+  .firstBotImgWrapper {
+    width: 430px;
+    height: 150px;
   }
 
   .keyContainer {
@@ -349,7 +359,7 @@
   }
 
   .headingContainer {
-    padding: 20px;
+    padding: 0 20px;
   }
 
   .prevBtn {
@@ -384,6 +394,31 @@
 
   .subHeading {
     text-wrap: pretty;
+  }
+}
+
+@media screen and (max-width: 481px) {
+
+  .keyContainer {
+    margin: 40px auto;
+  }
+
+  .headingContainer h2 {
+    font-size: 30px;
+  }
+
+  .subHeading {
+    font-size: 16px;
+    margin: 0 0 50px 0;
+  }
+
+  .firstBotImgWrapper{
+    width: 355px;
+    height: 130px;
+  }
+
+  .firstBotReview{
+    align-items: center;
   }
 }
 

@@ -1,7 +1,7 @@
 .container {
   background: linear-gradient(180deg, var(--white) 1.29%, var(--senary-color) 98.18%);
   color: var(--black);
-  padding: 50px 0 0 0;
+  padding: 100px 0;
 }
 
 .innerDiv h2 {
@@ -205,6 +205,9 @@
 }
 
 @media only screen and (max-width: 841px) {
+  .container {
+    padding: 60px 0;
+  }
   .hrline {
     left: 27%;
   }
@@ -340,6 +343,11 @@
 }
 
 @media only screen and (max-width: 481px) {
+
+  .container {
+    padding: 40px 0;
+  }
+
   .innerDiv h2 {
     font-size: 30px;
     color: var(--light-deep-blue);
