@@ -76,6 +76,16 @@
   .mainContainer {
     margin: 60px auto;
   }
+
+  .imageContainer {
+    gap: 10px 60px;
+  }
+}
+
+@media screen and (max-width:761px) {
+  .imageContainer {
+    gap: 10px 40px;
+  }
 }
 
 @media screen and (max-width: 641px) {
@@ -91,6 +101,10 @@
 
   }
 
+  .imageContainer {
+    gap: 10px 20px;
+  }
+
   @media screen and (max-width: 481px) {
 
     .mainContainer {
@@ -104,6 +118,12 @@
     .imageContainer {
       gap: 15px;
     }
+
+    /* .imageContainer img {
+      height: 30px;
+      width: 60px
+    } */
+
   }
 }
 

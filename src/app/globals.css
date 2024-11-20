@@ -35,7 +35,7 @@ html,
   --light-black: #212121;
   --light-green: #35d028;
   --deep-blue: #022646;
-  --light-deep-blue:#21415D;
+  --light-deep-blue: #21415D;
   --stone-color: #606060;
   --light-bluee: #0383ff;
   --dark-black: #00090F;
@@ -380,6 +380,12 @@ body {
 }
 
 
+@media (max-width: 1181px) {
+  .containerWidth {
+    max-width: 1020px;
+  }
+}
+
 @media (max-width: 1081px) {
   .containerWidth {
     max-width: 960px;
@@ -388,23 +394,23 @@ body {
 
 
 @media (max-width: 1024px) {
-  
+
   .containerWidth {
     max-width: 904px;
   }
-  
+
   h2 {
     font-size: 32px;
   }
-  
+
 }
 
 @media (max-width: 968px) {
-  
+
   .containerWidth {
     max-width: 888px;
   }
-  
+
   h2 {
     font-size: 32px;
   }
@@ -425,6 +431,7 @@ body {
   .containerWidth {
     max-width: 680px;
   }
+
   .button {
     padding: 10px 14px;
     font-size: 15px;
@@ -465,10 +472,11 @@ body {
 }
 
 @media (max-width: 401px) {
-  .button{
+  .button {
     line-height: 19.679px;
     font-size: 13px;
   }
+
   .containerWidth {
     max-width: 360px;
   }
@@ -479,7 +487,7 @@ body {
     max-width: 320px;
   }
 
-  .button{
+  .button {
     padding: 10px;
   }
 }

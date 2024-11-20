@@ -107,13 +107,15 @@
     display: none;
 }
 
-@media screen and (max-width:1381px) {}
-
-@media screen and (max-width:1281px) {}
-
-@media screen and (max-width:1080px) {
+@media screen and (max-width:1181px) {
     .NewSevenSection {
-        padding: 40px 60px;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width:1081px) {
+    .NewSevenSection {
+        padding: 40px;
     }
 
     .rytImgWrapper {
@@ -144,6 +146,7 @@
 
 @media screen and (max-width: 841px) {
     .NewSevenSection {
+        margin: 60px auto;
         padding: 25px 40px;
     }
 
@@ -163,12 +166,6 @@
         width: 195px;
         height: 303px;
         bottom: -20px;
-    }
-}
-
-@media screen and (max-width:841px) {
-    .NewSevenSection {
-        margin: 60px auto;
     }
 }
 
@@ -273,7 +270,7 @@
     }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:361px) {
 
     .blue,
     .green {

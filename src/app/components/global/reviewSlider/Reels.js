@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import Reeldata from "./Reeldata";
-import VideoPopup from "@/app/components/global/videoPopup/VideoPopup"; 
+import VideoPopup from "@/app/components/global/videoPopup/VideoPopup";
 import styles from "./ReviewSlider.module.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -38,15 +38,15 @@ const Reels = () => {
     <>
       <VideoPopup triggers={video} setTriggers={setVideo} ids={vId} />
       <div className={styles.headingContainer}>
-       <div className={styles.Header}>
+        <div className={styles.Header}>
 
-       <h2>
-          Real Stories, <span className={styles.topSpan}>Real Success</span>
-        </h2>
-        <p className={styles.subHeading}>
-          Discover what our learners say about us
-        </p>
-       </div>
+          <h2>
+            Real Stories, <span className={styles.topSpan}>Real Success</span>
+          </h2>
+          <p className={styles.subHeading}>
+            Discover what our learners say about us
+          </p>
+        </div>
         {/* Custom Navigation Buttons */}
         <div className={styles.btnContainer}></div>
 
@@ -58,21 +58,33 @@ const Reels = () => {
             onSwiper={(swiper) => {
               reelswiperRef.current = swiper;
             }}
-    
+
             slidesPerView={4}
             spaceBetween={20}
             className={styles.mySwiper}
             breakpoints={{
               320: {
-                slidesPerView: 2.6,
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+              },
+              361: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              481: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+              641: {
+                slidesPerView: 3,
                 spaceBetween: 20,
               },
               768: {
-                slidesPerView: 3.5,
+                slidesPerView: 4,
                 spaceBetween: 20,
               },
               1024: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 30,
               },
               1081: {

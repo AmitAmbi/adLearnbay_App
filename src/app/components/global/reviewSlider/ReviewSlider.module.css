@@ -182,7 +182,7 @@
 
 .mySwiper {
   width: 1250px;
-  margin: auto;
+  text-align: center;
 }
 
 .videoImage {
@@ -325,6 +325,20 @@
     grid-template-columns: 55% 40%;
 
   }
+
+  .videoImage {
+    width: 140px;
+  }
+
+  .nextBtn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .prevBtn {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 @media screen and (max-width: 641px) {
@@ -411,12 +425,12 @@
     margin: 0 0 50px 0;
   }
 
-  .firstBotImgWrapper{
+  .firstBotImgWrapper {
     width: 355px;
     height: 130px;
   }
 
-  .firstBotReview{
+  .firstBotReview {
     align-items: center;
   }
 }

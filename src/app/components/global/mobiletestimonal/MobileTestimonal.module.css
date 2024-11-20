@@ -92,6 +92,10 @@
 
 @media (max-width: 1181px) {
 
+  .section {
+    max-width: 1020px;
+  }
+
   .MobileReviewImageContainer img {
     height: auto;
   }
@@ -134,7 +138,7 @@
   }
 
   .MobileReviewImageContainer img {
-    width: 250px;
+    width: 100%;
   }
 
   .FirstDiv h4 {
@@ -168,7 +172,7 @@
     font-size: 23px;
   }
 
-  .MobileReviewImageContainer img{
+  .MobileReviewImageContainer img {
     width: 240px;
   }
 }
@@ -247,15 +251,16 @@
     width: 90%;
   }
 
-  .FirstDiv h4{
+  .FirstDiv h4 {
     font-size: 20px;
   }
 
-  .leftSlide svg{
+  .leftSlide svg {
     width: 40px;
     height: 40px;
   }
 }
+
 @media(max-width:441px) {
   .FirstDiv h4 {
     font-size: 20px;
@@ -273,7 +278,7 @@
     font-weight: 400;
   }
 
-  .MobileReviewImageContainer img{
+  .MobileReviewImageContainer img {
     width: 85%;
   }
 }

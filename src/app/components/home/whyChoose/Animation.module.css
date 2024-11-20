@@ -322,14 +322,16 @@
 @media screen and (max-width: 841px) {
   .columnDiv {
     padding: 20px;
+    width: 100%;
+    margin: 90px auto;
+  }
+
+  .whyChooseSection {
+    padding: 60px 0 30px 0;
   }
 }
 
 @media screen and (max-width: 761px) {
-  .columnDiv {
-    width: 100%;
-    margin: 90px auto;
-  }
 
   .divContainer h4 {
     font-size: 22px;
@@ -444,19 +446,19 @@
     margin: 30px 0;
   }
 
-  .divContainer p{
+  .divContainer p {
     font-size: 14px;
   }
 
-  .divContainer h4{
+  .divContainer h4 {
     font-size: 18px;
   }
 
-  .columnDiv{
+  .columnDiv {
     margin: 20px auto;
   }
 
-  .svglogo svg{
+  .svglogo svg {
     height: 150px;
   }
 }
