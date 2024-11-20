@@ -353,9 +353,9 @@
     font-size: 13px;
   }
 
-  .hr {
+  /* .hr {
     width: 280px;
-  }
+  } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -366,13 +366,13 @@
     font-size: 30px;
   }
 
-  .hr {
+  /* .hr {
     width: 260px;
-  }
+  } */
 
-  .hr {
+  /* .hr {
     width: 260px;
-  }
+  } */
 
   .bookFreebtn {
     grid-template-columns: 62% 30%;
@@ -396,9 +396,9 @@
     font-size: 12px;
   }
 
-  .hr {
+  /* .hr {
     width: 100%;
-  }
+  } */
 
   .gridConteiner h1 {
     font-size: 29px;
@@ -432,9 +432,9 @@
     margin-top: 10px;
   }
 
-  .hr{
+  /* .hr{
     width: 100%;
-  }
+  } */
   .bookFreebtn{
     grid-template-columns: 63% 30%;
   }
@@ -532,9 +532,9 @@
     font-size: 25px;
   }
 
-  .hr{
+  /* .hr{
     width: 220px;
-  }
+  } */
 
   .listDown {
     padding: 11px 20px;

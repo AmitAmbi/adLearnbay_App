@@ -261,9 +261,6 @@
 }
 
 @media (max-width: 1024px) {
-  .ContactUs {
-    /* padding: 30px; */
-  }
 
   .slider {
     overflow: -moz-hidden-unscrollable;
@@ -280,9 +277,6 @@
   .NormalPForm {
     font-size: 25.602px;
   }
-}
-
-@media (max-width: 961px) {
 }
 
 @media (max-width: 841px) {
