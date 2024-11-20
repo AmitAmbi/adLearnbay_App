@@ -457,6 +457,10 @@
 
 @media screen and (max-width: 761px) {
 
+  .gridConteiner{
+    grid-template-columns: 53% 40%;
+  }
+
   .listDown{
     padding: 15px 10px;
   }

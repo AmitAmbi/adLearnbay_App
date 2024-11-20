@@ -417,13 +417,26 @@
   }
 
   .headingContainer h2 {
+    font-size: 26px;
+  }
+
+  .headingContainer{
+    padding: 0;
+  }
+
+  .subHeading {
+    font-size: 14px;
+    margin: 0 0 50px 0;
+  }
+
+  /* .headingContainer h2 {
     font-size: 30px;
   }
 
   .subHeading {
     font-size: 16px;
     margin: 0 0 50px 0;
-  }
+  } */
 
   .firstBotImgWrapper {
     width: 355px;
@@ -432,6 +445,20 @@
 
   .firstBotReview {
     align-items: center;
+  }
+
+  .mainHeading{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .headingContainer h2 {
+    font-size: 23px;
+  }
+
+  .subHeading {
+    font-size: 14px;
   }
 }
 
