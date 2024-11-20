@@ -130,7 +130,7 @@
 }
 
 .hr {
-  width: 330px;
+  width: 100%;
   height: 1px;
 }
 
@@ -268,6 +268,12 @@
 }
 
 @media screen and (max-width: 1381px) {
+  .gridConteiner{
+    grid-template-columns: 57% 36%;
+  }
+  .gridConteiner h1{
+    font-size: 40px;
+  }
 
   .listDown {
     padding: 24px;
@@ -288,10 +294,23 @@
     gap: 10px;
   }
 }
-
+@media (max-width: 1281px) {
+  .gridConteiner h1{
+    font-size: 36px;
+  }
+  .gridConteiner h2{
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 1181px) {
+  .gridConteiner{
+    padding: 60px 0 50px 0;
+  }
   .gridConteiner h1 {
-    font-size: 38px;
+    font-size: 34px;
+  }
+  .bookFreebtn{
+    grid-template-columns: 67% 30%;
   }
 
   .listleft p {
@@ -320,15 +339,18 @@
 
 @media screen and (max-width: 1081px) {
   .gridConteiner h1 {
-    font-size: 35px;
+    font-size: 31px;
   }
 
   .listleft p {
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .rytConteiner h2 {
-    font-size: 32px;
+    font-size: 29px;
+  }
+  .bookFreebtn button{
+    font-size: 13px;
   }
 
   .hr {
@@ -338,6 +360,9 @@
 
 @media screen and (max-width: 1024px) {
   .rytConteiner h2 {
+    font-size: 27px;
+  }
+  .gridConteiner h1{
     font-size: 30px;
   }
 
@@ -350,7 +375,12 @@
   }
 
   .bookFreebtn {
-    grid-template-columns: 65% 30%;
+    grid-template-columns: 62% 30%;
+    gap: 14px;
+  }
+  .bookFreebtn button{
+    font-size: 12px;
+    padding: 13px 17px;
   }
 }
 
@@ -359,17 +389,19 @@
   .desktopImg {
     width: 80px;
   }
-
+  .bookFreebtn{
+    grid-template-columns: 67% 30%;
+  }
   .bookFreebtn button {
     font-size: 12px;
   }
 
   .hr {
-    width: 235px;
+    width: 100%;
   }
 
   .gridConteiner h1 {
-    font-size: 32px;
+    font-size: 29px;
   }
 
   .listleft p {
@@ -377,25 +409,38 @@
   }
 
   .rytConteiner h2 {
-    font-size: 27px;
+    font-size: 26px;
+  }
+  .listryt span{
+    font-size: 15px;
   }
 }
 
 
 @media screen and (max-width: 841px) {
+  .gridConteiner{
+    grid-template-columns: 61% 36%;
+  }
+  .gridConteiner h1{
+    font-size: 26px;
+  }
   .rytConteiner {
-    padding: 30px 23px;
+    padding: 30px 15px;
   }
   .rytConteiner h2 {
-    font-size: 25px;
+    font-size: 23px;
+    margin-top: 10px;
   }
 
   .hr{
-    width: 220px;
+    width: 100%;
   }
-
+  .bookFreebtn{
+    grid-template-columns: 63% 30%;
+  }
   .bookFreebtn button{
-    padding: 15px 10px;
+    padding: 15px 13px;
+    font-size: 11px;
   }
 
   .leftside{
@@ -405,20 +450,23 @@
   .listryt span {
     font-size: 14px;
   }
+  .listDown{
+    padding: 23px 15px;
+  }
 }
 
 @media screen and (max-width: 761px) {
 
   .listDown{
-    padding: 10px;
+    padding: 15px 10px;
   }
 
-  .hr{
-    width: 200px;
-  }
+ .bookFreebtn p{
+  font-size: 11px;
+ }
 
   .rytConteiner{
-    padding: 30px 14px;
+    padding: 30px 14px 10px;
   }
 
   .leftside{
@@ -434,7 +482,7 @@
   }
 
   .rytConteiner h2 {
-    font-size: 23px;
+    font-size: 22px;
     margin-top: 10px;
   }
 
@@ -445,6 +493,9 @@
   .desktopImg {
     width: 80px;
     margin-left: -10px;
+  }
+  .spandiv{
+    margin-top: 0;
   }
 }
 
@@ -542,8 +593,6 @@
     width: 100%;
     height: auto;
   }
-
-
 }
 
 
@@ -558,6 +607,9 @@
 }
 
 @media screen and (max-width: 360px) {
+  .gridConteiner h1{
+    font-size: 26px;
+  }
 
   .bookFreebtn button {
     font-size: 11px;
