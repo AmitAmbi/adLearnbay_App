@@ -51,7 +51,7 @@ function ContactUs({
 
         <div className={styles.ContactUs}>
           <div className={styles.LeftSide}>
-            <h2 className={styles.h1}>
+            <h2 className={styles.leftSideH2}>
               Get Ahead with Industry-Leading Courses <br />
             </h2>
 

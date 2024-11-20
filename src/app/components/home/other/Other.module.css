@@ -4,7 +4,7 @@
   font-size: var(--desktop_h2-font-size);
   font-style: normal;
   font-weight: 600;
-  line-height: 50px;
+  /* line-height: 50px; */
 }
 
 .mainContainer {
@@ -17,7 +17,7 @@
   justify-content: center;
   overflow-x: auto;
   grid-gap: 18px;
-  padding: 20px;
+  padding: 70px 20px 20px;
   align-items: center;
   grid-template-columns: 26% 35% 32%;
   justify-content: center;
