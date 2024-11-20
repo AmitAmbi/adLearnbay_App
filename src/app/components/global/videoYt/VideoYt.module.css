@@ -94,7 +94,7 @@
 
 .muteButton {
   position: absolute;
-  right: 50px;
+  right: 26px;
   top: 30px;
   font-size: 20px;
   border-radius: 50%;
@@ -132,10 +132,12 @@
 }
 
 @media screen and (max-width: 841px) {
-  .muteButton{
+  .muteButton {
     right: 25px;
+    font-size: 14px;
   }
 }
+
 @media screen and (max-width: 641px) {
   .videoContainer {
     padding-bottom: 60px;
@@ -163,7 +165,6 @@
   .muteButton {
     right: 27px;
     top: 26px;
-    font-size: 14px;
     padding: 6px 7px;
 
   }
