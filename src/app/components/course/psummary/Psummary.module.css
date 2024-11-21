@@ -150,7 +150,7 @@
 
 @media only screen and (max-width: 968px) {
   .extraImgWrapper {
-    width: 150px;
+    width: 170px;
   }
 
   .contentConteiner {
@@ -230,11 +230,9 @@
     width: 40px;
     border-radius: 20px;
   }
-
   .dot:hover {
     background-color: var(--black);
   }
-
   .ContainerForm {
     display: none;
   }
@@ -243,7 +241,12 @@
     width: 120px;
   }
 }
-
+@media only screen and (max-width: 641px) {
+  .extraImgWrapper {
+    width: 150px;
+    height:27px;
+  }
+}
 @media only screen and (max-width: 481px) {
 
   .Container {

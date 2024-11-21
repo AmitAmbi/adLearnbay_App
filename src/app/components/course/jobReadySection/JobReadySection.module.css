@@ -114,6 +114,9 @@
   .container {
     margin: 60px auto;
   }
+  .innerdiv{
+    grid-template-columns: 47.5% 48.5%;
+  }
 }
 
 @media screen and (max-width:761px) {
@@ -124,7 +127,9 @@
   .headH2 {
     font-size: 24px;
   }
-
+  .innerdiv{
+    grid-template-columns: 46.5% 47.5%;
+  }
   .innerdiv div h4 {
     font-size: 22px;
   }
@@ -135,11 +140,16 @@
     font-size: 12px;
     line-height: 21px;
   }
-
   .headH4 {
     font-size: 18px;
   }
-
+  .innerdiv{
+    grid-template-columns: 50.5% 50.5%;
+    gap:30px 30px;
+  }
+  .innerdiv div h4 {
+    font-size: 17px;
+  }
 }
 
 @media only screen and (max-width: 481px) {
@@ -174,9 +184,3 @@
   }
 }
 
-@media only screen and (max-width: 401px) {
-  .Wrapper {
-    right: 0;
-  }
-
-}
