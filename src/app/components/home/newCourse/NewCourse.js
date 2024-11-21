@@ -221,7 +221,7 @@ const NewCourse = ({
                         setPopups(true);
                       }}
                     >
-                      Brochure <MdOutlineFileDownloadSvg/>
+                      Brochure <MdOutlineFileDownloadSvg />
                     </button>
 
                     {course.link ? (
@@ -356,24 +356,24 @@ const NewCourse = ({
     setVisibleCount(isMobile ? 9 : 9); // Adjust visibility count if needed
 
     if (containerRef.current) {
-        const containerTop = containerRef.current.getBoundingClientRect().top + window.scrollY;
+      const containerTop = containerRef.current.getBoundingClientRect().top + window.scrollY;
 
-        window.scrollTo({
-            top: containerTop - 100, // Scroll to the top of the container
-            behavior: "smooth",
-        });
+      window.scrollTo({
+        top: containerTop - 100, // Scroll to the top of the container
+        behavior: "smooth",
+      });
 
-        // Ensure the active tab is scrolled into view
-        const activeTabElement = document.querySelector(`.${styles.tabdiv}.active`);
-        if (activeTabElement) {
-            activeTabElement.scrollIntoView({ behavior: "smooth", inline: "nearest" });
-        }
+      // Ensure the active tab is scrolled into view
+      const activeTabElement = document.querySelector(`.${styles.tabdiv}.active`);
+      if (activeTabElement) {
+        activeTabElement.scrollIntoView({ behavior: "smooth", inline: "nearest" });
+      }
     }
-}, 200);
+  }, 200);
   const handleViewMore = () => {
     setVisibleCount((prevCount) => prevCount + (isMobile ? 3 : 3));
   };
-  
+
   const handleWheel = (event) => {
     event.preventDefault();
     if (containerRef.current) {
@@ -389,11 +389,10 @@ const NewCourse = ({
       <div className={styles.container} ref={containerRef}  >
         <div className={styles.newSection}>
           <div className={styles.tabHead}>
-            <div className={styles.tabMain}  onWheel={handleWheel}>
+            <div className={styles.tabMain} onWheel={handleWheel}>
               <div
-                className={`${styles.tabdiv} ${
-                  activeTab === "all" ? styles.active : ""
-                }`}
+                className={`${styles.tabdiv} ${activeTab === "all" ? styles.active : ""
+                  }`}
                 onClick={() => handleTabClick("all")}
               >
                 <div className={styles.sliders}>
@@ -411,11 +410,10 @@ const NewCourse = ({
 
                 <SvgArrow color={activeTab === "all" ? "white" : "black"} />
               </div>
-              {}
+              { }
               <div
-                className={`${styles.tabdiv} ${
-                  activeTab === "Certifications" ? styles.active : ""
-                }`}
+                className={`${styles.tabdiv} ${activeTab === "Certifications" ? styles.active : ""
+                  }`}
                 onClick={() => handleTabClick("Certifications")}
               >
                 <div className={styles.sliders}>
@@ -435,9 +433,8 @@ const NewCourse = ({
                 />
               </div>
               <div
-                className={`${styles.tabdiv} ${
-                  activeTab === "domainCourse" ? styles.active : ""
-                }`}
+                className={`${styles.tabdiv} ${activeTab === "domainCourse" ? styles.active : ""
+                  }`}
                 onClick={() => handleTabClick("domainCourse")}
               >
                 <div className={styles.sliders}>
@@ -458,9 +455,8 @@ const NewCourse = ({
               </div>
 
               <div
-                className={`${styles.tabdiv} ${
-                  activeTab === "CloudDevops" ? styles.active : ""
-                }`}
+                className={`${styles.tabdiv} ${activeTab === "CloudDevops" ? styles.active : ""
+                  }`}
                 onClick={() => handleTabClick("CloudDevops")}
               >
                 <div className={styles.sliders}>
@@ -502,9 +498,8 @@ const NewCourse = ({
               </div>
               </div> */}
               <div
-                className={`${styles.tabdiv} ${
-                  activeTab === "bfsi" ? styles.active : ""
-                }`}
+                className={`${styles.tabdiv} ${activeTab === "bfsi" ? styles.active : ""
+                  }`}
                 onClick={() => handleTabClick("bfsi")}
               >
                 <div className={styles.sliders}>
@@ -522,9 +517,8 @@ const NewCourse = ({
                 <SvgArrow color={activeTab === "bfsi" ? "white" : "black"} />
               </div>
               <div
-                className={`${styles.tabdiv} ${
-                  activeTab === "hr" ? styles.active : ""
-                }`}
+                className={`${styles.tabdiv} ${activeTab === "hr" ? styles.active : ""
+                  }`}
                 onClick={() => handleTabClick("hr")}
               >
                 <div className={styles.sliders}>
@@ -542,9 +536,8 @@ const NewCourse = ({
                 <SvgArrow color={activeTab === "hr" ? "white" : "black"} />
               </div>
               <div
-                className={`${styles.tabdiv} ${
-                  activeTab === "manager" ? styles.active : ""
-                }`}
+                className={`${styles.tabdiv} ${activeTab === "manager" ? styles.active : ""
+                  }`}
                 onClick={() => handleTabClick("manager")}
               >
                 <div className={styles.sliders}>

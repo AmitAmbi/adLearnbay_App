@@ -73,10 +73,14 @@
 }
 
 .card {
-  border-bottom-left-radius: 35px;
-  border-bottom-right-radius: 35px;
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  /* border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px; */
   background: var(--white);
   padding: 16px 12px 21px 12px;
+  border-radius: 0 0 35px 35px;
 }
 
 .buttons {
