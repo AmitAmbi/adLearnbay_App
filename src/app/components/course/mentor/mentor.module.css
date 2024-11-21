@@ -3,7 +3,12 @@
 }
 
 .container h4 {
-  font-weight: 400;
+  color:#000;
+  font-size: 32px;
+}
+.container p{
+  font-size: 15px;
+  margin: 10px  0;
 }
 
 .SliderDiv {
@@ -75,12 +80,12 @@
 
 .hrLine {
   background: #FE7A36;
-  width: 65px;
+  width: 125px;
   height: 3px;
   border: none;
   border-radius: 20px;
   position: relative;
-  left: 50.5%;
+  left: 51%;
 }
 
 .Name {
@@ -90,30 +95,53 @@
   /* margin-top: 10px; */
 }
 
-.sliderTrack {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
-}
-
-.slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 100%;
-  /* This can adjust dynamically based on `slidesPerView` */
-}
-
-@media (max-width: 768px) {
-  /* .slide {
-    flex: 1 0 100%;
-  } */
-
-  .prevBtn,
-  .nextBtn {
-    width: 30px;
-    height: 30px;
+  .sliderTrack {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
   }
-
-}
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%; /* This can adjust dynamically based on `slidesPerView` */
+  }
+  
+  @media (max-width: 768px) {
+    /* .slide {
+      flex: 1 0 100%;
+    } */
+    .container {
+      margin: 50px 20px;
+    }
+    .prevBtn, .nextBtn {
+      width: 30px;
+      height: 30px;
+    }
+    .hrLine {
+      width: 126px;
+      left:52%;
+    }
+   
+    
+    
+  }
+  @media (max-width: 481px) {
+    .container p{
+      margin-top: 15px;
+    }
+    .hrLine{
+      left: 53%;
+      width: 130px;
+    }
+    .container h4{
+      font-weight: 400;
+    }
+    .spans{
+      font-weight: bold !important;
+    }
+  }
+  
+  
