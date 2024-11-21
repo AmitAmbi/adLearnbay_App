@@ -3,7 +3,12 @@
     text-align: center;
   }
   .container h4 {
-    font-weight: 400;
+    color:#000;
+    font-size: 32px;
+  }
+  .p{
+    font-size: 16px;
+    margin: 10px  0;
   }
   .SliderDiv {
     position: relative;
@@ -62,12 +67,12 @@
   }
   .hrLine {
     background: #FE7A36;
-    width: 140px;
+    width: 125px;
     height: 3px;
     border: none;
     border-radius: 20px;
     position: relative;
-    left: 50%;
+    left: 51%;
   }
   .Name {
     color: #000;
@@ -102,7 +107,28 @@
       height: 30px;
     }
     .hrLine {
-      width: 100px;
+      width: 126px;
+      left:52%;
+    }
+   
+    
+    
+  }
+  @media (max-width: 481px) {
+    .container p{
+      font-size: 15px;
+      margin-top: 15px;
+    }
+    .hrLine{
+      left: 53%;
+      width: 130px;
+    }
+    .container h4{
+      font-weight: 400;
+    }
+    .spans{
+      font-weight: bold !important;
     }
   }
+  
   
