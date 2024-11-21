@@ -48,6 +48,7 @@
     margin: 60px auto;
   }
 }
+
 @media only screen and (max-width: 641px) {
 
   .container h2 {
@@ -69,6 +70,10 @@
   .languageToolsImageWrapperMbl img {
     position: absolute;
   }
+
+  .languageToolsImageWrapperMbl {
+    height: 220px;
+  }
 }
 
 @media only screen and (max-width: 481px) {
@@ -76,11 +81,6 @@
   .container {
     margin: 40px auto;
   }
-
-  .languageToolsImageWrapperMbl {
-    height: 220px;
-  }
-
 }
 
 @media only screen and (max-width: 361px) {

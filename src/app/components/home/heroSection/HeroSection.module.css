@@ -268,10 +268,11 @@
 }
 
 @media screen and (max-width: 1381px) {
-  .gridConteiner{
+  .gridConteiner {
     grid-template-columns: 57% 36%;
   }
-  .gridConteiner h1{
+
+  .gridConteiner h1 {
     font-size: 40px;
   }
 
@@ -294,22 +295,27 @@
     gap: 10px;
   }
 }
+
 @media (max-width: 1281px) {
-  .gridConteiner h1{
+  .gridConteiner h1 {
     font-size: 36px;
   }
-  .gridConteiner h2{
+
+  .gridConteiner h2 {
     font-size: 30px;
   }
 }
+
 @media screen and (max-width: 1181px) {
-  .gridConteiner{
+  .gridConteiner {
     padding: 60px 0 50px 0;
   }
+
   .gridConteiner h1 {
     font-size: 34px;
   }
-  .bookFreebtn{
+
+  .bookFreebtn {
     grid-template-columns: 67% 30%;
   }
 
@@ -349,7 +355,8 @@
   .rytConteiner h2 {
     font-size: 29px;
   }
-  .bookFreebtn button{
+
+  .bookFreebtn button {
     font-size: 13px;
   }
 
@@ -362,7 +369,8 @@
   .rytConteiner h2 {
     font-size: 27px;
   }
-  .gridConteiner h1{
+
+  .gridConteiner h1 {
     font-size: 30px;
   }
 
@@ -378,7 +386,8 @@
     grid-template-columns: 62% 30%;
     gap: 14px;
   }
-  .bookFreebtn button{
+
+  .bookFreebtn button {
     font-size: 12px;
     padding: 13px 17px;
   }
@@ -389,9 +398,11 @@
   .desktopImg {
     width: 80px;
   }
-  .bookFreebtn{
+
+  .bookFreebtn {
     grid-template-columns: 67% 30%;
   }
+
   .bookFreebtn button {
     font-size: 12px;
   }
@@ -411,65 +422,72 @@
   .rytConteiner h2 {
     font-size: 26px;
   }
-  .listryt span{
+
+  .listryt span {
     font-size: 15px;
   }
 }
 
 
 @media screen and (max-width: 841px) {
-  .gridConteiner{
+  .gridConteiner {
     grid-template-columns: 61% 36%;
   }
-  .gridConteiner h1{
+
+  .gridConteiner h1 {
     font-size: 26px;
   }
+
   .rytConteiner {
     padding: 30px 15px;
   }
+
   .rytConteiner h2 {
     font-size: 23px;
     margin-top: 10px;
   }
 
-  .hr{
+  .hr {
     width: 100%;
   }
-  .bookFreebtn{
+
+  .bookFreebtn {
     grid-template-columns: 63% 30%;
   }
-  .bookFreebtn button{
+
+  .bookFreebtn button {
     padding: 15px 13px;
     font-size: 11px;
   }
 
-  .leftside{
+  .leftside {
     gap: 30px;
   }
 
   .listryt span {
     font-size: 14px;
   }
-  .listDown{
+
+  .listDown {
     padding: 23px 15px;
   }
 }
 
 @media screen and (max-width: 761px) {
 
-  .listDown{
+  .listDown {
     padding: 15px 10px;
   }
 
- .bookFreebtn p{
-  font-size: 11px;
- }
+  .bookFreebtn p {
+    font-size: 11px;
+  }
 
-  .rytConteiner{
+  .rytConteiner {
     padding: 30px 14px 10px;
   }
 
-  .leftside{
+  .leftside {
     gap: 27px;
   }
 
@@ -494,7 +512,8 @@
     width: 80px;
     margin-left: -10px;
   }
-  .spandiv{
+
+  .spandiv {
     margin-top: 0;
   }
 }
@@ -520,7 +539,7 @@
   }
 
   .gridConteiner h1 {
-    font-size: 34px;
+    font-size: 29px;
   }
 
   .listleft {
@@ -528,11 +547,11 @@
     gap: 20px;
   }
 
-  .rytConteiner h2{
+  .rytConteiner h2 {
     font-size: 25px;
   }
 
-  .hr{
+  .hr {
     width: 220px;
   }
 
@@ -601,13 +620,13 @@
     font-size: 29px;
   }
 
-  .bookFreebtn{
+  .bookFreebtn {
     grid-template-columns: 70% 20%;
   }
 }
 
 @media screen and (max-width: 360px) {
-  .gridConteiner h1{
+  .gridConteiner h1 {
     font-size: 26px;
   }
 

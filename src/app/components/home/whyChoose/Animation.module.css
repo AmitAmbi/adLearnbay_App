@@ -56,14 +56,10 @@
 .divContainer {
   display: flex;
   gap: 1rem;
-  /* Use rem instead of px */
   margin-bottom: 2rem;
-  /* Rem-based margin for better scaling */
   opacity: 0.1;
-  /* Initially dim the divs */
   transition: opacity 0.5s ease, transform 0.5s ease;
   will-change: opacity, transform;
-  /* Performance optimization */
 }
 
 .divContainerANI {
@@ -75,7 +71,6 @@
 .divContainer h4 {
   color: var(--white);
   font-size: var(--desktop_h4-font-size);
-  /* Use rem for responsiveness */
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
@@ -84,7 +79,6 @@
 .divContainer p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.3rem;
-  /* Responsive font size */
   font-style: normal;
   font-weight: 300;
   line-height: 1.875rem;
@@ -92,9 +86,7 @@
 
 .highlight {
   opacity: 1;
-  /* Highlight the div */
   transform: scale(1.05);
-  /* Scale effect */
 }
 
 .whyChooseSection {
@@ -362,12 +354,9 @@
   }
 
   .header h2 {
-    font-size: 28px;
-  }
-
-  .header span {
     font-size: 2.0rem;
   }
+
 
   .divContainer {
     margin: 30px;

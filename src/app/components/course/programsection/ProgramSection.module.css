@@ -208,6 +208,7 @@
   .container {
     padding: 60px 0;
   }
+
   .hrline {
     left: 27%;
   }
@@ -392,11 +393,11 @@
     font-size: 30px;
   }
 
-  .innerBoxDiv{
+  .innerBoxDiv {
     gap: 40px;
   }
 
-  .firstSection{
+  .firstSection {
     padding: 25px 14px;
   }
 }

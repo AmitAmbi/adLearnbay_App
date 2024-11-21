@@ -23,7 +23,8 @@
   display: flex;
   gap: 40px;
   justify-content: space-around;
-  margin: 80px 0;
+  margin: 80px auto;
+  max-width: 1200px;
 }
 
 
@@ -97,16 +98,30 @@
   height: 60px;
 }
 
-@media only screen and (max-width: 1280px) {
-  .contentConteiner{
+@media only screen and (max-width: 1281px) {
+  .contentConteiner {
     justify-content: space-between;
+    max-width: 1120px;
   }
 }
+
+@media only screen and (max-width: 1181px) {
+  .contentConteiner {
+    max-width: 1020px;
+  }
+}
+
+@media only screen and (max-width: 1081px) {
+  .contentConteiner {
+    max-width: 960px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .contentConteiner {
     padding: 40px 0px;
-    margin: 0;
     gap: 20px;
+    max-width: 904px;
   }
 
   .imgWrapper {
@@ -137,13 +152,22 @@
   .extraImgWrapper {
     width: 150px;
   }
+
+  .contentConteiner {
+    max-width: 888px;
+  }
 }
 
 @media only screen and (max-width: 841px) {
   .Container {
     margin: 60px auto;
   }
+
+  .contentConteiner {
+    max-width: 761px;
+  }
 }
+
 @media only screen and (max-width: 761px) {
   .Container {
     padding: 0 20px;
