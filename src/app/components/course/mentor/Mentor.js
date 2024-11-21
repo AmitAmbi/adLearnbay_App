@@ -80,6 +80,7 @@ function MentorsSection() {
   };
 
   return (
+  <div className="containerWidth">
     <section className={styles.container}>
       <h4>
         Meet Our <span className={styles.spans}>Mentors <hr className={styles.hrLine} /></span>
@@ -122,6 +123,7 @@ function MentorsSection() {
         <button className={styles.nextBtn} onClick={nextSlide}>›</button>
       </div>
     </section>
+    </div>
   );
 }
 

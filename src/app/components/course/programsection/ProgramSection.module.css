@@ -294,7 +294,7 @@
   }
 
   .innerBoxDiv {
-    gap: 130px;
+    gap: 63px;
     margin: 20px 0;
   }
 
@@ -314,7 +314,7 @@
 
   .blackSpan,
   .colors {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .H3 {
@@ -339,7 +339,7 @@
   }
 
   .innerBox h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 

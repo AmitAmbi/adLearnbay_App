@@ -1,5 +1,4 @@
 .container {
-  margin: 100px 100px 0px;
   text-align: center;
 }
 
@@ -60,9 +59,10 @@
   border-radius: 20px;
   background: #fff;
   box-shadow: 0px 0px 1.8px rgba(0, 0, 0, 0.25);
-  padding: 20px;
+  padding: 8px;
   text-align: center;
   margin: 20px;
+  gap: 16px;                 
 }
 
 .mentorImg img {
@@ -85,9 +85,9 @@
 
 .Name {
   color: #000;
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 700;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .sliderTrack {
@@ -106,13 +106,9 @@
 }
 
 @media (max-width: 768px) {
-  .slide {
+  /* .slide {
     flex: 1 0 100%;
-  }
-
-  .container {
-    margin: 50px 20px;
-  }
+  } */
 
   .prevBtn,
   .nextBtn {
