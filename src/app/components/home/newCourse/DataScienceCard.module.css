@@ -2,10 +2,10 @@
 .cardContainer {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 30px;
   width: 100%;
   max-width: 1200px;
-  margin: auto;
+  margin: 50px auto auto;
 }
 
 .swiperContainer {
@@ -23,7 +23,7 @@
 
 .sectionTitle {
   color: var(--deeep-grey);
-  margin-top: 50px;
+  /* margin-top: 50px; */
   font-size: 30px;
   font-weight: 600;
 
@@ -58,7 +58,7 @@
 
 .desktopContainer {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   flex-wrap: wrap;
   width: 100%;
   max-width: 1200px;
@@ -73,10 +73,12 @@
 }
 
 .card {
-  border-bottom-left-radius: 35px;
-  border-bottom-right-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius:0 0 35px 35px;
   background: var(--white);
-  padding: 16px 12px 21px 12px;
+  padding: 10px;
 }
 
 .buttons {
@@ -93,7 +95,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 155%;
-  padding: 10px 18px;
+  padding: 9px 18px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -108,7 +110,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 155%;
-  padding: 10px 20px;
+  padding: 9px 20px;
   cursor: pointer;
   border: 1px solid var(--black);
 }
@@ -116,7 +118,7 @@
 @media screen and (max-width:1381px) {
   .desktopContainer {
     gap: 60px 42px;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .maindiv {
@@ -133,20 +135,20 @@
 
   .viewDetailsButton {
     font-size: 12px;
-    padding: 10px 23px;
+    padding: 9px 23px;
   }
 
 }
 
 @media screen and (max-width:1281px) {
-  .maindiv {
+  /* .maindiv {
     max-width: 274px;
-  }
+  } */
 
   .sectionTitle {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     font-size: 26px;
-    font-weight: 600;
+    /* font-weight: 600; */
   }
 
   .desktopContainer {
@@ -168,13 +170,12 @@
     font-size: 16px;
   }
 
-  .brochurebtn {
+  /* .brochurebtn {
     font-size: 18px;
-  }
+  } */
 
   .viewDetailsButton {
-    font-size: 18px;
-    padding: 10px 16px;
+    padding: 9px 16px;
   }
 
   .lists span {
@@ -184,45 +185,74 @@
   .brochurebtn {
     font-size: 10px;
   }
-
-  .viewDetailsButton {
-    font-size: 10px;
-  }
 }
 
 @media screen and (max-width:1081px) {
+
+  
+
+  .card{
+    gap: 10px;
+  }
+
+  .viewDetailsButton {
+    padding: 9px 12px;
+    font-size: 10px;
+  }
 
   .maindiv {
     max-width: 220px;
   }
 
-  .viewDetailsButton {
+  /* .viewDetailsButton {
     font-size: 8px;
   }
 
   .brochurebtn {
     font-size: 8px;
-  }
+  } */
 
   .cardTitle {
     font-size: 14px;
   }
 
   .lists span {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 
-@media screen and (max-width:961px) {
+@media screen and (max-width:968px) {
+
+  .maindiv{
+    max-width: 300px;
+  }
 
   .sectionTitle {
     text-align: center;
   }
+
+  .lists span,.brochurebtn,.viewDetailsButton{
+    font-size: 13px;
+  }
 }
 
+@media (max-width: 841px) {
+  .maindiv{
+    max-width: 250px;
+  }
+}
 
 /* Media Queries for Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 761px) {
+
+  .cardContainer{
+    margin: 0;
+  }
+
+  .cardContainer{
+    gap: 10px;
+  }
+
   .desktopContainer {
     display: none;
     /* Hide desktop container on mobile */
@@ -255,25 +285,24 @@
   }
 
   .cardTitle {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .sectionTitle {
     font-size: 22px;
     /* text-align: center; */
     padding: 0 30px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-align: left;
   }
 
-  .brochurebtn {
+  /* .brochurebtn {
     font-size: 16px;
-  }
+  } */
 
-  .viewDetailsButton {
-    font-size: 15px;
-    padding: 10px 22px;
-
+  .viewDetailsButton,.brochurebtn {
+    font-size: 13px;
+    padding: 7px 19px;
   }
 
   .maindiv {
@@ -286,15 +315,18 @@
 
   .swiperContainer {
 
-    padding-bottom: 30px;
+    padding: 0px;
   }
 
   .lists span {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:481px) {
+  
+}
+@media screen and (max-width:361px) {
   .cardTitle {
     font-size: 16px;
   }

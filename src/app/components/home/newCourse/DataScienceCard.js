@@ -1,15 +1,15 @@
-"use client"
-import React, { useState, useEffect } from 'react';
-import { courses } from './NewcourseData'; 
-import styles from './DataScienceCard.module.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css'; // Correct import for the CSS
-import { Navigation, Pagination } from 'swiper'; 
-import Image from 'next/image';
-import Form from '@/app/components/global/form/Form';
-import Popup from '@/app/components/global/popup/Popup';
-import Link from 'next/link'; 
-import { MdOutlineFileDownloadSvg } from '@/Data/svgData/MDIcons';
+"use client";
+import React, { useState, useEffect } from "react";
+import { courses } from "./NewcourseData";
+import styles from "./DataScienceCard.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css"; // Correct import for the CSS
+import { Navigation, Pagination } from "swiper";
+import Image from "next/image";
+import Form from "@/app/components/global/form/Form";
+import Popup from "@/app/components/global/popup/Popup";
+import Link from "next/link";
+import { MdOutlineFileDownloadSvg } from "@/Data/svgData/MDIcons";
 
 const DataScienceCard = ({
   dataScience,
@@ -21,34 +21,38 @@ const DataScienceCard = ({
   brochurePdf,
 }) => {
   const [isMobile, setIsMobile] = useState(false);
-  const [titleCourse, setTitleCourse] = useState('');
-  const [brochureLinks, setBrochureLinks] = useState('');
-  const [brochurePdfs, setBrochurePdf] = useState('');
+  const [titleCourse, setTitleCourse] = useState("");
+  const [brochureLinks, setBrochureLinks] = useState("");
+  const [brochurePdfs, setBrochurePdf] = useState("");
   const [popups, setPopups] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+      setIsMobile(window.innerWidth <= 761); // Adjust the breakpoint as needed
     };
 
     handleResize(); // Check on initial render
-    window.addEventListener('resize', handleResize); // Add event listener
+    window.addEventListener("resize", handleResize); // Add event listener
 
-    return () => window.removeEventListener('resize', handleResize); // Cleanup
+    return () => window.removeEventListener("resize", handleResize); // Cleanup
   }, []);
 
   const popupShow = () => {
     setPopups(true);
   };
 
-  const renderSwiper = (sectionData, sectionTitle, sectionClass = '') => (
+  const renderSwiper = (sectionData, sectionTitle, sectionClass = "") => (
     <div className={`${styles.sectionContainer} ${sectionClass}`}>
       <h2 className={styles.sectionTitle}>{sectionTitle}</h2>
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={16}
-        slidesPerView={1}
+        slidesPerView={2}
         pagination={{ clickable: true }}
+        breakpoints={{
+          481: { slidesPerView: 2, spaceBetween: 16 },
+          0: { slidesPerView: 1, spaceBetween: 10 },
+        }}
         className={styles.swiperContainer}
       >
         {sectionData.map((course) => (
@@ -128,7 +132,7 @@ const DataScienceCard = ({
     </div>
   );
 
-  const renderDesktop = (sectionData, sectionTitle, sectionClass = '') => (
+  const renderDesktop = (sectionData, sectionTitle, sectionClass = "") => (
     <div className={`${styles.mainContainer} ${sectionClass}`}>
       <h2 className={styles.sectionTitle}>{sectionTitle}</h2>
       <div className={styles.desktopContainer}>
@@ -186,7 +190,7 @@ const DataScienceCard = ({
                     popupShow();
                   }}
                 >
-                  Brochure <MdOutlineFileDownloadSvg/>
+                  Brochure <MdOutlineFileDownloadSvg />
                 </button>
                 {course.link ? (
                   <Link href={course.link} passHref>
@@ -218,7 +222,7 @@ const DataScienceCard = ({
         <div className="leftPopup">
           <div
             className="whiteP"
-            style={{ width: '340px', height: '400px' }}
+            style={{ width: "340px", height: "400px" }}
           ></div>
         </div>
         <div className="RightPopup">
@@ -240,18 +244,34 @@ const DataScienceCard = ({
 
       {/* Data Science and AI Section */}
       {isMobile
-        ? renderSwiper(courses.dataScienceAndAI, 'Data Science and AI')
-        : renderDesktop(courses.dataScienceAndAI, 'Data Science and AI')}
+        ? renderSwiper(courses.dataScienceAndAI, "Data Science and AI")
+        : renderDesktop(courses.dataScienceAndAI, "Data Science and AI")}
 
       {/* Business Analytics / Data Analytics Section */}
       {isMobile
-        ? renderSwiper(courses.DABA, 'Business Analytics / Data Analytics', styles.BADA)
-        : renderDesktop(courses.DABA, 'Business Analytics / Data Analytics', styles.BADA)}
+        ? renderSwiper(
+            courses.DABA,
+            "Business Analytics / Data Analytics",
+            styles.BADA
+          )
+        : renderDesktop(
+            courses.DABA,
+            "Business Analytics / Data Analytics",
+            styles.BADA
+          )}
 
       {/* Cloud Computing & Software Development Section */}
       {isMobile
-        ? renderSwiper(courses.CloudS, 'Cloud Computing & Software Development', styles.CloudS)
-        : renderDesktop(courses.CloudS, 'Cloud Computing & Software Development', styles.CloudS)}
+        ? renderSwiper(
+            courses.CloudS,
+            "Cloud Computing & Software Development",
+            styles.CloudS
+          )
+        : renderDesktop(
+            courses.CloudS,
+            "Cloud Computing & Software Development",
+            styles.CloudS
+          )}
     </div>
   );
 };
