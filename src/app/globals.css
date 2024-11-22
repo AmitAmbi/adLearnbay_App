@@ -422,7 +422,7 @@ body {
   }
 }
 
-@media (max-width: 761px) {
+@media (max-width: 769px) {
   .OrangeButton {
     font-size: 14px;
     padding: 5px 10px;
