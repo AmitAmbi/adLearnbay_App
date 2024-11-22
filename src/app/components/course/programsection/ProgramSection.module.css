@@ -208,6 +208,7 @@
   .container {
     padding: 60px 0;
   }
+
   .hrline {
     left: 27%;
   }
@@ -293,7 +294,7 @@
   }
 
   .innerBoxDiv {
-    gap: 130px;
+    gap: 63px;
     margin: 20px 0;
   }
 
@@ -313,7 +314,7 @@
 
   .blackSpan,
   .colors {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .H3 {
@@ -338,7 +339,7 @@
   }
 
   .innerBox h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -392,11 +393,11 @@
     font-size: 30px;
   }
 
-  .innerBoxDiv{
+  .innerBoxDiv {
     gap: 40px;
   }
 
-  .firstSection{
+  .firstSection {
     padding: 25px 14px;
   }
 }

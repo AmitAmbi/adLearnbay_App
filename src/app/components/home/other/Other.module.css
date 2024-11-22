@@ -23,6 +23,7 @@
   justify-content: center;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  margin: 0 100px;
 }
 
 .left {
@@ -131,7 +132,6 @@
 }
 
 @media screen and (max-width: 841px) {
-
   .middle p {
     font-size: 13px;
   }
@@ -161,6 +161,7 @@
   .HeadDiv {
     grid-template-columns: 35% 50% 42%;
     justify-content: flex-start;
+    margin: 0 0 0 65px;
   }
 
   .customScrollbar {
@@ -242,6 +243,7 @@
 @media screen and (max-width: 481px) {
   .HeadDiv {
     grid-template-columns: 54% 76% 68%;
+    margin: 0 0 0 20px
   }
 
   .h2 {

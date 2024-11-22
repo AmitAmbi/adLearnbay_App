@@ -228,10 +228,10 @@
   }
 
   .hrline {
-    width: 205px;
+    width: 179px;
     align-items: center;
     position: relative;
-    left: 43%;
+    left: 50%;
     background: #FE7A36;
     height: 2px;
     border: none;
@@ -259,13 +259,13 @@
   }
 
   .innerDiv h2 {
-    font-size: 28px;
+    font-size: 27px;
     line-height: 38px;
   }
 
-  .borderBot {
+  /* .borderBot {
     text-underline-offset: 12px;
-  }
+  } */
 
   .innerBox {
     border-radius: 15px;

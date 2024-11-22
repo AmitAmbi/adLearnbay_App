@@ -441,7 +441,8 @@ body {
 
 @media (max-width: 641px) {
   .containerWidth {
-    width: 600px;
+    /* width: 600px; */
+    width: 510px;
   }
 }
 
