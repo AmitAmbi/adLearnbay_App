@@ -8,7 +8,7 @@
   right: 0;
   left: 0;
   height: 80px;
-  padding: 0px 140px 0px 125px;
+  padding: 0px 160px 0px 150px;
   background: var(--white);
   /* box-shadow: 0px 1px 3px 0px #e8f1f5; */
 }
@@ -22,7 +22,7 @@
 }
 
 .left button,
-.right button{
+.right button {
   border-radius: 2.67px;
   color: var(--white);
   font-size: 16px;
@@ -52,14 +52,16 @@
   margin-top: -5px;
 }
 
-.right span{
+.right span {
   margin-right: 50px;
   cursor: pointer;
   font-weight: 600;
 }
 
 .right a {
-  font-weight: 500;
+  display: flex;
+  gap: 2px;
+  font-weight: 600;
   font-size: 18px;
   color: var(--black);
 }
@@ -241,10 +243,15 @@
 }
 
 
+@media only screen and (max-width: 1381px) {
+  .nav {
+    padding: 0px 75px 0px 80px;
+  }
+}
 
 @media only screen and (max-width: 1281px) {
   .nav {
-    padding: 0 20px;
+    padding: 0px 65px 0px 75px;
   }
 
   .right span {
@@ -254,6 +261,7 @@
 }
 
 @media only screen and (max-width: 1081px) {
+
   .right span {
     margin-right: 12px;
   }
@@ -263,8 +271,8 @@
   }
 
   .nav {
-    padding: 0px 20px;
-    width: 100%;
+    padding: 0px 45px 0px 50px;
+    /* width: 100%; */
     height: 60px;
     background: var(--white);
     /* box-shadow: 0px 2px 4px 0px rgba(0, 114, 188, 0.15); */
@@ -284,26 +292,50 @@
   }
 
   .right button {
-    padding: 12px 15px;
+    padding: 10px 15px;
     font-size: 14px;
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
     background-color: transparent;
-    border: 2px solid var(--primary-color);
+    /* border: 2px solid var(--primary-color); */
     font-weight: 500;
   }
 }
 
-@media only screen and (max-width: 841px) {
+@media only screen and (max-width: 1024px) {
+  .right span {
+    margin: 0;
+  }
+
+  .right {
+    gap: 15px;
+  }
+
+  .right a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 968px) {
+
   .requestBtn {
     padding: 0;
   }
+
+  .nav {
+    padding: 0px 40px 0px 30px;
+  }
+}
+
+@media only screen and (max-width: 841px) {
+  
 
   .requestBtn button {
     padding: 5px;
   }
 
-  .right a {
-    font-size: 16px;
+  .right a,
+  .right span {
+    font-size: 14px;
   }
 
   .right span {
@@ -314,31 +346,36 @@
     gap: 0;
   }
 
-  .nav{
+  .nav {
+    padding: 0px 30px 0px 20px;
     gap: 15px;
+  }
+
+  .left button {
+    padding: 8px 10px;
   }
 }
 
 @media only screen and (max-width: 761px) {
   .nav {
-    width: 100%;
-    padding: 0px 10px;
+    /* width: 100%; */
+    padding: 0px 40px 0px 35px;
   }
 
   .logo {
     width: 160px;
   }
-
+  
   .left {
     width: 100%;
     gap: 0;
     justify-content: space-between;
   }
-
+  
   .megaMenu {
     position: absolute;
   }
-
+  
   .ham {
     display: flex;
     font-size: 28px;
@@ -346,7 +383,7 @@
     margin-left: 5px;
     margin-top: -5px;
   }
-
+  
   .right {
     display: none;
   }
@@ -359,10 +396,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top: 70px;
+    top: 65px;
     left: 0;
+    right: 0;
     margin: auto;
-    width: 99vw;
+    width: 100vw;
     height: max-content;
     border-radius: 0 5px 5px 0;
     background-color: var(--white);
@@ -370,12 +408,12 @@
     position: absolute;
     z-index: 999;
   }
-
+  
   .mobileWrapper .mobileMenu a {
     text-decoration: none;
     color: var(--black);
   }
-
+  
   .mobileWrapper .mobileMenu span {
     font-size: 18px;
     padding: 10px;
@@ -384,27 +422,32 @@
     width: 100%;
     text-align: left;
   }
-
+  
   .mobileWrapper .mobileMenu span:hover {
     color: var(--white);
     background-color: var(--light-blue);
   }
-
+  
   .left img {
     height: auto;
   }
 }
 
+@media only screen and (max-width: 481px) {
+  .nav{
+    padding: 0px 20px 0px 15px;
+  }
+}
 /* @media only screen and (max-width: 801px) {
   .left {
     width: 100vw;
     justify-content: space-between;
   }
-
+  
   .nav {
     width: 100vw;
   }
-
+  
   .requestBtn {
     display: none;
   }

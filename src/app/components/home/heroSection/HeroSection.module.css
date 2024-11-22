@@ -338,6 +338,11 @@
 }
 
 @media screen and (max-width: 1081px) {
+
+  .container{
+    margin-top: 61px;
+  }
+
   .gridConteiner h1 {
     font-size: 31px;
   }

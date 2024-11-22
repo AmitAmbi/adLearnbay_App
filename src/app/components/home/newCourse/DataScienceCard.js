@@ -51,7 +51,7 @@ const DataScienceCard = ({
         pagination={{ clickable: true }}
         breakpoints={{
           481: { slidesPerView: 2, spaceBetween: 16 },
-          0: { slidesPerView: 1, spaceBetween: 10 },
+          0: { slidesPerView: 1.2, spaceBetween: 10 },
         }}
         className={styles.swiperContainer}
       >
