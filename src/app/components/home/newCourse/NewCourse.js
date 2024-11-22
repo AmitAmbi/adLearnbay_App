@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useRef, useEffect, memo } from "react";
 import styles from "./NewCourse.module.css";
 import Image from "next/image";
@@ -6,9 +6,9 @@ import { courses, masterCourse, SvgArrow } from "./NewcourseData"; // Import cou
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import DataScienceCard from "./DataScienceCard";
+import "swiper/css"; // Correct import for the CSS
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css'; // Correct import for the CSS
-import { Navigation, Pagination } from "swiper"; // Import modules for Swiper
+import { Navigation, Pagination } from 'swiper/modules'; // Import modules for Swiper
 import { MdOutlineFileDownloadSvg } from "@/Data/svgData/MDIcons";
 
 const Popup = dynamic(() => import("@/app/components/global/popup/Popup"));
@@ -25,6 +25,7 @@ const NewCourse = ({
   const [activeTab, setActiveTab] = useState("all");
   const [visibleCount, setVisibleCount] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const [isMobileImage, setIsMobileImage] = useState(false);
   const [popups, setPopups] = useState(false);
   const [titleCourse, setTitleCourse] = useState();
   const [brochureLinks, setBrochureLinks] = useState();
@@ -33,9 +34,12 @@ const NewCourse = ({
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 761) {
         setIsMobile(true);
         setVisibleCount(0);
+      }
+      if (window.innerWidth <= 641) {
+        setIsMobileImage(true);
       } else {
         setIsMobile(false);
         setVisibleCount(0);
@@ -57,8 +61,12 @@ const NewCourse = ({
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={16}
-            slidesPerView={1}
+            slidesPerView={2}
             pagination={{ clickable: true }}
+            breakpoints={{
+              481: { slidesPerView: 2, spaceBetween: 16 },
+              0: { slidesPerView: 1.2, spaceBetween: 10 },
+            }}
             className={styles.swiperContainer}
           >
             {visibleCourses.map((course, index) => (
@@ -276,7 +284,7 @@ const NewCourse = ({
         </div>
       </Popup>
       <Image
-        src={isMobile ? masterCourse.mImage : masterCourse.image}
+        src={isMobileImage ? masterCourse.mImage : masterCourse.image}
         width={isMobile ? 375 : 1200}
         height={isMobile ? 300 : 200}
         alt="MasterCard"
@@ -356,7 +364,8 @@ const NewCourse = ({
     setVisibleCount(isMobile ? 9 : 9); // Adjust visibility count if needed
 
     if (containerRef.current) {
-      const containerTop = containerRef.current.getBoundingClientRect().top + window.scrollY;
+      const containerTop =
+        containerRef.current.getBoundingClientRect().top + window.scrollY;
 
       window.scrollTo({
         top: containerTop - 100, // Scroll to the top of the container
@@ -364,9 +373,14 @@ const NewCourse = ({
       });
 
       // Ensure the active tab is scrolled into view
-      const activeTabElement = document.querySelector(`.${styles.tabdiv}.active`);
+      const activeTabElement = document.querySelector(
+        `.${styles.tabdiv}.active`
+      );
       if (activeTabElement) {
-        activeTabElement.scrollIntoView({ behavior: "smooth", inline: "nearest" });
+        activeTabElement.scrollIntoView({
+          behavior: "smooth",
+          inline: "nearest",
+        });
       }
     }
   }, 200);
@@ -379,14 +393,14 @@ const NewCourse = ({
     if (containerRef.current) {
       containerRef.current.scrollBy({
         left: event.deltaX > 0 ? 100 : -100, // Scroll right on down scroll and left on up scroll
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
 
   return (
     <section className={styles.section}>
-      <div className={styles.container} ref={containerRef}  >
+      <div className={styles.container} ref={containerRef}>
         <div className={styles.newSection}>
           <div className={styles.tabHead}>
             <div className={styles.tabMain} onWheel={handleWheel}>
@@ -588,6 +602,5 @@ const NewCourse = ({
     </section>
   );
 };
-
 
 export default memo(NewCourse);

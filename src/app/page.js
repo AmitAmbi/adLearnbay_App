@@ -40,8 +40,8 @@ export default function Home() {
       <NavbarHome />
       <HeroSection />
       <InfinityLogo />
-      {/* <KickStart />
-      <NewCourse /> */}
+      <KickStart />
+      <NewCourse />
       <Animation />
       <ReviewSlider />
       <ContactUs />

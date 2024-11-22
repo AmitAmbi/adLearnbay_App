@@ -104,31 +104,35 @@
   .imageContainer {
     gap: 10px 20px;
   }
+}
 
-  @media screen and (max-width: 481px) {
+@media screen and (max-width: 481px) {
 
-    .mainContainer {
-      margin: 40px auto;
-    }
-
-    .textWithLines p {
-      margin: 0;
-    }
-
-    .imageContainer {
-      gap: 15px;
-    }
-
-    /* .imageContainer img {
-      height: 30px;
-      width: 60px
-    } */
-
+  .mainContainer {
+    margin: 40px auto;
   }
+
+  .textWithLines p {
+    margin: 0;
+  }
+
+  .imageContainer {
+    gap: 10px;
+  }
+
+  .imageWrapper img {
+    width: 70px;
+    height: 20px;
+  }
+
+  .imageWrapper:last-child img{
+    height: 35px;
+  }
+
 }
 
 @media screen and (max-width: 361px) {
-  .container {
+  .container  {
     padding: 10px;
   }
 }
