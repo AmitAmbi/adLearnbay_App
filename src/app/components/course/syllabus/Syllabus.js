@@ -1,14 +1,18 @@
-"use client";
+"use client"
 
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./syllabus.module.css";
 import Image from "next/image";
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css'; // Swiper core styles
-import 'swiper/css/navigation'; // Navigation styles (if used)
-import 'swiper/css/pagination'; // Pagination styles (if used)
-import 'swiper/css/effect-coverflow'; // Coverflow effect styles (if used)
+import { EffectCoverflow } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
 
+
+
+// import PopupContent from "@/components/Global/PopupContent/PopupContent";
 
 const SyllabusSection = ({
   sections = [],
@@ -43,6 +47,7 @@ const SyllabusSection = ({
     setInitialSlide(index);
     setOpenSliderIndex(openSliderIndex === index ? null : index);
 
+    // Scroll to the first card when opening the popup
     if (gridContainerRef.current) {
       const firstCard = gridContainerRef.current.querySelector(".card");
       if (firstCard) {
@@ -56,7 +61,7 @@ const SyllabusSection = ({
   };
 
   const updateActiveSlides = () => {
-    if (!swiperRef.current?.swiper) return;
+    if (!swiperRef.current) return;
 
     const swiperInstance = swiperRef.current.swiper;
     const slides = Array.from(swiperInstance.slides);
@@ -104,6 +109,17 @@ const SyllabusSection = ({
 
   return (
     <div className={styles.mainConteiner}>
+      {/* <PopupContent
+        popups={popups}
+        setPopups={setPopups}
+        heading="Download Syllabus"
+        downloadBrochure
+        dataScience={true}
+        interstedInHide={interstedInHide}
+        brochureLink={brochureLink}
+        brochurePdf={brochurePdf}
+        radio={radio}
+      /> */}
       <h2 className={styles.headline}>
         Explore Our <span>Syllabus</span>
       </h2>
@@ -221,12 +237,19 @@ const SyllabusSection = ({
                                   key={module.moduleTitle}
                                 >
                                   <div className={styles.popupleft}>
-                                    <span>{module.moduleTitle}</span>
+                                    <span className={styles.rotateText}>
+                                      {module.moduleTitle}
+                                    </span>
                                   </div>
-                                  <div className={styles.populist}>
-                                    {module.moduleContent.map((content, idx) => (
-                                      <p key={idx}>{content}</p>
-                                    ))}
+                                  <div className={styles.rytdiv}>
+                                    <p>{module.moduleContent}</p>
+                                    <ul className={styles.listItem}>
+                                      {module.moduleList.map(
+                                        (detail, detailIdx) => (
+                                          <li key={detailIdx}>{detail}</li>
+                                        )
+                                      )}
+                                    </ul>
                                   </div>
                                 </div>
                               ))}
@@ -237,20 +260,67 @@ const SyllabusSection = ({
                     ))}
                   </Swiper>
                 ) : (
-                  section.popuplist.map((item) => (
-                    <div className={styles.slidercontent} key={item.id}>
-                      <h3>{item.title}</h3>
-                      <p>{item.description}</p>
-                    </div>
-                  ))
+                  <div className={styles.cardContainer}>
+                    {section.popuplist.map((item, idx) => (
+                      <div key={idx} className={styles.card}>
+                        <div className={styles.cardContent}>
+                          <div className={styles.cardHead}>
+                            <div className={styles.termGreen}>{item.term}</div>
+                            <div className={styles.date}>
+                              <span>{item.duration}</span>
+                            </div>
+                          </div>
+                          <h5 className={styles.titleH}>{item.title}</h5>
+                          <div className={styles.slidercontent}>
+                            {item.modules.map((module) => (
+                              <div
+                                className={styles.module}
+                                key={module.moduleTitle}
+                              >
+                                <div className={styles.popupleft}>
+                                  <span className={styles.rotateText}>
+                                    {module.moduleTitle}
+                                  </span>
+                                </div>
+                                <div className={styles.rytdiv}>
+                                  <p>{module.moduleContent}</p>
+                                  <ul className={styles.listItem}>
+                                    {module.moduleList.map(
+                                      (detail, detailIdx) => (
+                                        <li key={detailIdx}>{detail}</li>
+                                      )
+                                    )}
+                                  </ul>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 )
               ) : (
-                <div>No content available</div>
+                <div>No modules available.</div>
               )}
             </div>
           )}
         </div>
       ))}
+
+<div className={styles.buttondiv}>
+        <div className={styles.btnone} onClick={popupShow}>
+          <Image src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/Thumb_Icon+(1).webp" width={30} height={30} loading="lazy" alt="Python"/>
+          Start Your Application
+        </div>
+        <div className={styles.btntwo} onClick={popupShow}>
+          <div className={styles.pdficon}>
+            <Image src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/pdF_icon+(1).webp" width={30} height={30} loading="lazy" alt="Python"/>
+          </div>
+          Download Brochure
+        </div>
+      </div>
+  
     </div>
   );
 };

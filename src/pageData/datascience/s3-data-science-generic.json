@@ -143,6 +143,1100 @@
     ]
   }
 
-]
+],
+
+"sections": [
+  {
+    "id": "0",
+    "trackIcon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/SyllabusIcon/excel-icon.webp",
+    "width": 80,
+    "height": 80,
+    "title": "Module 0",
+    "toolsImg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/SyllabusIcon/python-right.webp",
+    "toolwidth": "120",
+    "toolheight": "30",
+    "description": "Python Bootcamp for Non-Programmers",
+    "duration": "1.5 Months",
+    "contentModule": "Topics Covered",
+    "contentDescription": "",
+    "contentDetails": [
+      "Installation & Setup",
+      "Basic Syntax & I/O"
+    ],
+    "popuplist": [
+      {
+        "term": "Module 0",
+        "title": "Topics Covered",
+        "duration": "40-50 hrs",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Installation & Setup",
+            "moduleList": [
+              "Installing Python and setting up IDEs (Jupyter, VSCode).",
+              "Overview of the Python environment and running basic scripts.",
+              "Introduction to Jupyter Notebook for interactive coding.",
+              "Data Structures",
+              "Functions And Modules"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Basic Syntax & I/O",
+            "moduleList": [
+              "Understanding variables, data types (integers, floats, strings, booleans).",
+              "Input and output operations using the input() and print() functions.",
+              "Performing basic arithmetic operations."
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Control Structures",
+            "moduleList": [
+              "Conditional logic using if, else, and elif statements.",
+              "Looping with for and while loops to iterate over data."
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Basic Data Structures",
+            "moduleList": [
+              "Introduction to lists, tuples, and dictionaries.",
+              "Accessing, modifying, and iterating through collections.",
+              "Understanding how to use indexing and slicing with lists and tuples"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "TERM 1",
+        "title": "Python for Data Science",
+        "duration": "40-50 hrs",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Core Python Basics",
+            "moduleList": [
+              "Python Environment Setup",
+              "Python Syntax and Code Structure",
+              "Data Types and Control Flow",
+              "Data Structures",
+              "Functions And Modules"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Data Analytics Using Python",
+            "moduleList": [
+              "File I/O And Exception Handling and Regular Expression",
+              "Basic Web Scraping for Data Analytics",
+              "Data Analysis using Numpy",
+              "Data Analysis using Pandas",
+              "Data Visualization using Matplotlib",
+              "Data Visualization using Seaborn"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "Term 2",
+        "duration": "70-75 hrs",
+        "title": "Statistics and Machine Learning + GenAI",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Statistics",
+            "moduleList": [
+              "Fundamentals of Math and Probability",
+              "All about Population & Sample",
+              "Introduction to Statistics, Statistical Thinking",
+              "Descriptive Statistics",
+              "Inferential Statistics"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Advance Statistics",
+            "moduleList": [
+              "Hypothesis Testing",
+              "Linear Algebra",
+              "Data Processing & Exploratory Data Analysis",
+              "EDA"
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Machine Learning",
+            "moduleList": [
+              "Machine Learning Introduction",
+              "Data Preprocessing",
+              "Logistic Regression Model",
+              "Evaluation Metrics for Classification model",
+              "K Nearest Neighbours Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Advance Machine Learning Concepts",
+            "moduleList": [
+              "Decision Tree Model",
+              "Random Forest Model",
+              "Hyperparameter Tuning",
+              "Naive Baye’s Model",
+              "K Means and Hierarchical Clustering",
+              "Hierarchical Clustering",
+              "Principal Component Analysis(PCA)",
+              "Support Vector Machine(SVM)",
+              "XGBoost Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 5",
+            "moduleContent": "GenAI",
+            "moduleList": [
+              "Introduction to Generative AI concepts: GANs, VAEs, Transformers.",
+              "Text generation techniques using GPT models and Hugging Face Transformers.",
+              "Image generation with GANs, StyleGAN, and DeepDream.",
+              "Building generative models using TensorFlow, PyTorch, and Keras.",
+              "Ethical considerations in AI: bias mitigation, fairness, interpretability.",
+              "Practical applications like chatbots, art generation, and data augmentation.",
+              "Advanced topics on fine-tuning models and deploying generative AI solutions"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "trackIcon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/SyllabusIcon/excel-icon.webp",
+    "width": 80,
+    "height": 80,
+    "title": "Module 0",
+    "toolsImg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/SyllabusIcon/python-right.webp",
+    "toolwidth": "120",
+    "toolheight": "30",
+    "description": "Python Bootcamp for Non-Programmers",
+    "duration": "1.5 Months",
+    "contentModule": "Topics Covered",
+    "contentDescription": "",
+    "contentDetails": [
+      "Installation & Setup",
+      "Basic Syntax & I/O"
+    ],
+    "popuplist": [
+      {
+        "term": "Module 0",
+        "title": "Topics Covered",
+        "duration": "40-50 hrs",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Installation & Setup",
+            "moduleList": [
+              "Installing Python and setting up IDEs (Jupyter, VSCode).",
+              "Overview of the Python environment and running basic scripts.",
+              "Introduction to Jupyter Notebook for interactive coding.",
+              "Data Structures",
+              "Functions And Modules"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Basic Syntax & I/O",
+            "moduleList": [
+              "Understanding variables, data types (integers, floats, strings, booleans).",
+              "Input and output operations using the input() and print() functions.",
+              "Performing basic arithmetic operations."
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Control Structures",
+            "moduleList": [
+              "Conditional logic using if, else, and elif statements.",
+              "Looping with for and while loops to iterate over data."
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Basic Data Structures",
+            "moduleList": [
+              "Introduction to lists, tuples, and dictionaries.",
+              "Accessing, modifying, and iterating through collections.",
+              "Understanding how to use indexing and slicing with lists and tuples"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "TERM 1",
+        "title": "Python for Data Science",
+        "duration": "40-50 hrs",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Core Python Basics",
+            "moduleList": [
+              "Python Environment Setup",
+              "Python Syntax and Code Structure",
+              "Data Types and Control Flow",
+              "Data Structures",
+              "Functions And Modules"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Data Analytics Using Python",
+            "moduleList": [
+              "File I/O And Exception Handling and Regular Expression",
+              "Basic Web Scraping for Data Analytics",
+              "Data Analysis using Numpy",
+              "Data Analysis using Pandas",
+              "Data Visualization using Matplotlib",
+              "Data Visualization using Seaborn"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "Term 2",
+        "duration": "70-75 hrs",
+        "title": "Statistics and Machine Learning + GenAI",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Statistics",
+            "moduleList": [
+              "Fundamentals of Math and Probability",
+              "All about Population & Sample",
+              "Introduction to Statistics, Statistical Thinking",
+              "Descriptive Statistics",
+              "Inferential Statistics"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Advance Statistics",
+            "moduleList": [
+              "Hypothesis Testing",
+              "Linear Algebra",
+              "Data Processing & Exploratory Data Analysis",
+              "EDA"
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Machine Learning",
+            "moduleList": [
+              "Machine Learning Introduction",
+              "Data Preprocessing",
+              "Logistic Regression Model",
+              "Evaluation Metrics for Classification model",
+              "K Nearest Neighbours Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Advance Machine Learning Concepts",
+            "moduleList": [
+              "Decision Tree Model",
+              "Random Forest Model",
+              "Hyperparameter Tuning",
+              "Naive Baye’s Model",
+              "K Means and Hierarchical Clustering",
+              "Hierarchical Clustering",
+              "Principal Component Analysis(PCA)",
+              "Support Vector Machine(SVM)",
+              "XGBoost Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 5",
+            "moduleContent": "GenAI",
+            "moduleList": [
+              "Introduction to Generative AI concepts: GANs, VAEs, Transformers.",
+              "Text generation techniques using GPT models and Hugging Face Transformers.",
+              "Image generation with GANs, StyleGAN, and DeepDream.",
+              "Building generative models using TensorFlow, PyTorch, and Keras.",
+              "Ethical considerations in AI: bias mitigation, fairness, interpretability.",
+              "Practical applications like chatbots, art generation, and data augmentation.",
+              "Advanced topics on fine-tuning models and deploying generative AI solutions"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "trackIcon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/SyllabusIcon/excel-icon.webp",
+    "width": 80,
+    "height": 80,
+    "title": "Module 0",
+    "toolsImg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/SyllabusIcon/python-right.webp",
+    "toolwidth": "120",
+    "toolheight": "30",
+    "description": "Python Bootcamp for Non-Programmers",
+    "duration": "1.5 Months",
+    "contentModule": "Topics Covered",
+    "contentDescription": "",
+    "contentDetails": [
+      "Installation & Setup",
+      "Basic Syntax & I/O"
+    ],
+    "popuplist": [
+      {
+        "term": "Module 0",
+        "title": "Topics Covered",
+        "duration": "40-50 hrs",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Installation & Setup",
+            "moduleList": [
+              "Installing Python and setting up IDEs (Jupyter, VSCode).",
+              "Overview of the Python environment and running basic scripts.",
+              "Introduction to Jupyter Notebook for interactive coding.",
+              "Data Structures",
+              "Functions And Modules"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Basic Syntax & I/O",
+            "moduleList": [
+              "Understanding variables, data types (integers, floats, strings, booleans).",
+              "Input and output operations using the input() and print() functions.",
+              "Performing basic arithmetic operations."
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Control Structures",
+            "moduleList": [
+              "Conditional logic using if, else, and elif statements.",
+              "Looping with for and while loops to iterate over data."
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Basic Data Structures",
+            "moduleList": [
+              "Introduction to lists, tuples, and dictionaries.",
+              "Accessing, modifying, and iterating through collections.",
+              "Understanding how to use indexing and slicing with lists and tuples"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "TERM 1",
+        "title": "Python for Data Science",
+        "duration": "40-50 hrs",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Core Python Basics",
+            "moduleList": [
+              "Python Environment Setup",
+              "Python Syntax and Code Structure",
+              "Data Types and Control Flow",
+              "Data Structures",
+              "Functions And Modules"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Data Analytics Using Python",
+            "moduleList": [
+              "File I/O And Exception Handling and Regular Expression",
+              "Basic Web Scraping for Data Analytics",
+              "Data Analysis using Numpy",
+              "Data Analysis using Pandas",
+              "Data Visualization using Matplotlib",
+              "Data Visualization using Seaborn"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "Term 2",
+        "duration": "70-75 hrs",
+        "title": "Statistics and Machine Learning + GenAI",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Statistics",
+            "moduleList": [
+              "Fundamentals of Math and Probability",
+              "All about Population & Sample",
+              "Introduction to Statistics, Statistical Thinking",
+              "Descriptive Statistics",
+              "Inferential Statistics"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Advance Statistics",
+            "moduleList": [
+              "Hypothesis Testing",
+              "Linear Algebra",
+              "Data Processing & Exploratory Data Analysis",
+              "EDA"
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Machine Learning",
+            "moduleList": [
+              "Machine Learning Introduction",
+              "Data Preprocessing",
+              "Logistic Regression Model",
+              "Evaluation Metrics for Classification model",
+              "K Nearest Neighbours Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Advance Machine Learning Concepts",
+            "moduleList": [
+              "Decision Tree Model",
+              "Random Forest Model",
+              "Hyperparameter Tuning",
+              "Naive Baye’s Model",
+              "K Means and Hierarchical Clustering",
+              "Hierarchical Clustering",
+              "Principal Component Analysis(PCA)",
+              "Support Vector Machine(SVM)",
+              "XGBoost Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 5",
+            "moduleContent": "GenAI",
+            "moduleList": [
+              "Introduction to Generative AI concepts: GANs, VAEs, Transformers.",
+              "Text generation techniques using GPT models and Hugging Face Transformers.",
+              "Image generation with GANs, StyleGAN, and DeepDream.",
+              "Building generative models using TensorFlow, PyTorch, and Keras.",
+              "Ethical considerations in AI: bias mitigation, fairness, interpretability.",
+              "Practical applications like chatbots, art generation, and data augmentation.",
+              "Advanced topics on fine-tuning models and deploying generative AI solutions"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "trackIcon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/SyllabusIcon/excel-icon.webp",
+    "width": 80,
+    "height": 80,
+    "title": "Module 0",
+    "toolsImg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/SyllabusIcon/python-right.webp",
+    "toolwidth": "120",
+    "toolheight": "30",
+    "description": "Python Bootcamp for Non-Programmers",
+    "duration": "1.5 Months",
+    "contentModule": "Topics Covered",
+    "contentDescription": "",
+    "contentDetails": [
+      "Installation & Setup",
+      "Basic Syntax & I/O"
+    ],
+    "popuplist": [
+      {
+        "term": "Module 0",
+        "title": "Topics Covered",
+        "duration": "40-50 hrs",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Installation & Setup",
+            "moduleList": [
+              "Installing Python and setting up IDEs (Jupyter, VSCode).",
+              "Overview of the Python environment and running basic scripts.",
+              "Introduction to Jupyter Notebook for interactive coding.",
+              "Data Structures",
+              "Functions And Modules"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Basic Syntax & I/O",
+            "moduleList": [
+              "Understanding variables, data types (integers, floats, strings, booleans).",
+              "Input and output operations using the input() and print() functions.",
+              "Performing basic arithmetic operations."
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Control Structures",
+            "moduleList": [
+              "Conditional logic using if, else, and elif statements.",
+              "Looping with for and while loops to iterate over data."
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Basic Data Structures",
+            "moduleList": [
+              "Introduction to lists, tuples, and dictionaries.",
+              "Accessing, modifying, and iterating through collections.",
+              "Understanding how to use indexing and slicing with lists and tuples"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "TERM 1",
+        "title": "Python for Data Science",
+        "duration": "40-50 hrs",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Core Python Basics",
+            "moduleList": [
+              "Python Environment Setup",
+              "Python Syntax and Code Structure",
+              "Data Types and Control Flow",
+              "Data Structures",
+              "Functions And Modules"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Data Analytics Using Python",
+            "moduleList": [
+              "File I/O And Exception Handling and Regular Expression",
+              "Basic Web Scraping for Data Analytics",
+              "Data Analysis using Numpy",
+              "Data Analysis using Pandas",
+              "Data Visualization using Matplotlib",
+              "Data Visualization using Seaborn"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "Term 2",
+        "duration": "70-75 hrs",
+        "title": "Statistics and Machine Learning + GenAI",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Statistics",
+            "moduleList": [
+              "Fundamentals of Math and Probability",
+              "All about Population & Sample",
+              "Introduction to Statistics, Statistical Thinking",
+              "Descriptive Statistics",
+              "Inferential Statistics"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Advance Statistics",
+            "moduleList": [
+              "Hypothesis Testing",
+              "Linear Algebra",
+              "Data Processing & Exploratory Data Analysis",
+              "EDA"
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Machine Learning",
+            "moduleList": [
+              "Machine Learning Introduction",
+              "Data Preprocessing",
+              "Logistic Regression Model",
+              "Evaluation Metrics for Classification model",
+              "K Nearest Neighbours Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Advance Machine Learning Concepts",
+            "moduleList": [
+              "Decision Tree Model",
+              "Random Forest Model",
+              "Hyperparameter Tuning",
+              "Naive Baye’s Model",
+              "K Means and Hierarchical Clustering",
+              "Hierarchical Clustering",
+              "Principal Component Analysis(PCA)",
+              "Support Vector Machine(SVM)",
+              "XGBoost Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 5",
+            "moduleContent": "GenAI",
+            "moduleList": [
+              "Introduction to Generative AI concepts: GANs, VAEs, Transformers.",
+              "Text generation techniques using GPT models and Hugging Face Transformers.",
+              "Image generation with GANs, StyleGAN, and DeepDream.",
+              "Building generative models using TensorFlow, PyTorch, and Keras.",
+              "Ethical considerations in AI: bias mitigation, fairness, interpretability.",
+              "Practical applications like chatbots, art generation, and data augmentation.",
+              "Advanced topics on fine-tuning models and deploying generative AI solutions"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "trackIcon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/SyllabusIcon/excel-icon.webp",
+    "width": 80,
+    "height": 80,
+    "title": "Module 0",
+    "toolsImg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/SyllabusIcon/python-right.webp",
+    "toolwidth": "120",
+    "toolheight": "30",
+    "description": "Python Bootcamp for Non-Programmers",
+    "duration": "1.5 Months",
+    "contentModule": "Topics Covered",
+    "contentDescription": "",
+    "contentDetails": [
+      "Installation & Setup",
+      "Basic Syntax & I/O"
+    ],
+    "popuplist": [
+      {
+        "term": "Module 0",
+        "title": "Topics Covered",
+        "duration": "40-50 hrs",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Installation & Setup",
+            "moduleList": [
+              "Installing Python and setting up IDEs (Jupyter, VSCode).",
+              "Overview of the Python environment and running basic scripts.",
+              "Introduction to Jupyter Notebook for interactive coding.",
+              "Data Structures",
+              "Functions And Modules"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Basic Syntax & I/O",
+            "moduleList": [
+              "Understanding variables, data types (integers, floats, strings, booleans).",
+              "Input and output operations using the input() and print() functions.",
+              "Performing basic arithmetic operations."
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Control Structures",
+            "moduleList": [
+              "Conditional logic using if, else, and elif statements.",
+              "Looping with for and while loops to iterate over data."
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Basic Data Structures",
+            "moduleList": [
+              "Introduction to lists, tuples, and dictionaries.",
+              "Accessing, modifying, and iterating through collections.",
+              "Understanding how to use indexing and slicing with lists and tuples"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "TERM 1",
+        "title": "Python for Data Science",
+        "duration": "40-50 hrs",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Core Python Basics",
+            "moduleList": [
+              "Python Environment Setup",
+              "Python Syntax and Code Structure",
+              "Data Types and Control Flow",
+              "Data Structures",
+              "Functions And Modules"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Data Analytics Using Python",
+            "moduleList": [
+              "File I/O And Exception Handling and Regular Expression",
+              "Basic Web Scraping for Data Analytics",
+              "Data Analysis using Numpy",
+              "Data Analysis using Pandas",
+              "Data Visualization using Matplotlib",
+              "Data Visualization using Seaborn"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "Term 2",
+        "duration": "70-75 hrs",
+        "title": "Statistics and Machine Learning + GenAI",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Statistics",
+            "moduleList": [
+              "Fundamentals of Math and Probability",
+              "All about Population & Sample",
+              "Introduction to Statistics, Statistical Thinking",
+              "Descriptive Statistics",
+              "Inferential Statistics"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Advance Statistics",
+            "moduleList": [
+              "Hypothesis Testing",
+              "Linear Algebra",
+              "Data Processing & Exploratory Data Analysis",
+              "EDA"
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Machine Learning",
+            "moduleList": [
+              "Machine Learning Introduction",
+              "Data Preprocessing",
+              "Logistic Regression Model",
+              "Evaluation Metrics for Classification model",
+              "K Nearest Neighbours Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Advance Machine Learning Concepts",
+            "moduleList": [
+              "Decision Tree Model",
+              "Random Forest Model",
+              "Hyperparameter Tuning",
+              "Naive Baye’s Model",
+              "K Means and Hierarchical Clustering",
+              "Hierarchical Clustering",
+              "Principal Component Analysis(PCA)",
+              "Support Vector Machine(SVM)",
+              "XGBoost Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 5",
+            "moduleContent": "GenAI",
+            "moduleList": [
+              "Introduction to Generative AI concepts: GANs, VAEs, Transformers.",
+              "Text generation techniques using GPT models and Hugging Face Transformers.",
+              "Image generation with GANs, StyleGAN, and DeepDream.",
+              "Building generative models using TensorFlow, PyTorch, and Keras.",
+              "Ethical considerations in AI: bias mitigation, fairness, interpretability.",
+              "Practical applications like chatbots, art generation, and data augmentation.",
+              "Advanced topics on fine-tuning models and deploying generative AI solutions"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "trackIcon": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/SyllabusIcon/excel-icon.webp",
+    "width": 80,
+    "height": 80,
+    "title": "Module 0",
+    "toolsImg": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/SyllabusIcon/python-right.webp",
+    "toolwidth": "120",
+    "toolheight": "30",
+    "description": "Python Bootcamp for Non-Programmers",
+    "duration": "1.5 Months",
+    "contentModule": "Topics Covered",
+    "contentDescription": "",
+    "contentDetails": [
+      "Installation & Setup",
+      "Basic Syntax & I/O"
+    ],
+    "popuplist": [
+      {
+        "term": "Module 0",
+        "title": "Topics Covered",
+        "duration": "40-50 hrs",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Installation & Setup",
+            "moduleList": [
+              "Installing Python and setting up IDEs (Jupyter, VSCode).",
+              "Overview of the Python environment and running basic scripts.",
+              "Introduction to Jupyter Notebook for interactive coding.",
+              "Data Structures",
+              "Functions And Modules"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Basic Syntax & I/O",
+            "moduleList": [
+              "Understanding variables, data types (integers, floats, strings, booleans).",
+              "Input and output operations using the input() and print() functions.",
+              "Performing basic arithmetic operations."
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Control Structures",
+            "moduleList": [
+              "Conditional logic using if, else, and elif statements.",
+              "Looping with for and while loops to iterate over data."
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Basic Data Structures",
+            "moduleList": [
+              "Introduction to lists, tuples, and dictionaries.",
+              "Accessing, modifying, and iterating through collections.",
+              "Understanding how to use indexing and slicing with lists and tuples"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "TERM 1",
+        "title": "Python for Data Science",
+        "duration": "40-50 hrs",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Core Python Basics",
+            "moduleList": [
+              "Python Environment Setup",
+              "Python Syntax and Code Structure",
+              "Data Types and Control Flow",
+              "Data Structures",
+              "Functions And Modules"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Data Analytics Using Python",
+            "moduleList": [
+              "File I/O And Exception Handling and Regular Expression",
+              "Basic Web Scraping for Data Analytics",
+              "Data Analysis using Numpy",
+              "Data Analysis using Pandas",
+              "Data Visualization using Matplotlib",
+              "Data Visualization using Seaborn"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "Term 2",
+        "duration": "70-75 hrs",
+        "title": "Statistics and Machine Learning + GenAI",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Statistics",
+            "moduleList": [
+              "Fundamentals of Math and Probability",
+              "All about Population & Sample",
+              "Introduction to Statistics, Statistical Thinking",
+              "Descriptive Statistics",
+              "Inferential Statistics"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Advance Statistics",
+            "moduleList": [
+              "Hypothesis Testing",
+              "Linear Algebra",
+              "Data Processing & Exploratory Data Analysis",
+              "EDA"
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Machine Learning",
+            "moduleList": [
+              "Machine Learning Introduction",
+              "Data Preprocessing",
+              "Logistic Regression Model",
+              "Evaluation Metrics for Classification model",
+              "K Nearest Neighbours Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Advance Machine Learning Concepts",
+            "moduleList": [
+              "Decision Tree Model",
+              "Random Forest Model",
+              "Hyperparameter Tuning",
+              "Naive Baye’s Model",
+              "K Means and Hierarchical Clustering",
+              "Hierarchical Clustering",
+              "Principal Component Analysis(PCA)",
+              "Support Vector Machine(SVM)",
+              "XGBoost Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 5",
+            "moduleContent": "GenAI",
+            "moduleList": [
+              "Introduction to Generative AI concepts: GANs, VAEs, Transformers.",
+              "Text generation techniques using GPT models and Hugging Face Transformers.",
+              "Image generation with GANs, StyleGAN, and DeepDream.",
+              "Building generative models using TensorFlow, PyTorch, and Keras.",
+              "Ethical considerations in AI: bias mitigation, fairness, interpretability.",
+              "Practical applications like chatbots, art generation, and data augmentation.",
+              "Advanced topics on fine-tuning models and deploying generative AI solutions"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+
+],  
+"upskillingData":[
+{
+  "term": "Term 1",
+  "duration": "30 hrs",
+  "title": "Python Bootcamp for Non-Programmers",
+  "useCases": "These sessions are recommended for non programmers to learn basics of programming.",
+  "toolImage": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/pythonnew5+(1).webp",
+  "toolImageWidth": 122,
+  "toolImageHeight": 30
+},
+{
+  "term": "Term 2",
+  "duration": "30 hrs",
+  "title": "Python for Data Science",
+  "useCases": "We will cover Python basics and data analytics using popular libraries like NumPy, Pandas, Matplotlib, and Seaborn.",
+  "toolImage": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/newimg+(1).webp",
+  "toolImageWidth": 120,
+  "toolImageHeight": 69
+},
+{
+  "term": "Term 3",
+  "duration": "10 Weeks",
+  "title": "Statistics and Machine Learning + GenAI",
+  "useCases": "Apply statistical methods and machine learning algorithms to solve data problems, with an introduction to generative AI techniques.",
+  "toolImage": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/newimg2+(1).webp",
+  "toolImageWidth": 128,
+  "toolImageHeight": 50
+},
+{
+  "term": "Project",
+  "duration": "6 Weeks",
+  "title": "AI-Powered Customer Support Chatbot",
+  "useCases": "Build a chatbot using GPT-3 for query handling and RNN-based sentiment analysis",
+  "toolImage": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/newimg6+(1).webp",
+  "toolImageWidth": 127,
+  "toolImageHeight": 60
+},
+{
+  "term": "Term 5",
+  "duration": "6 Weeks",
+  "title": "AI Tools and Deployment",
+  "useCases": "Build and deploy advanced AI models, including deep learning, NLP, CV and Reinforcement Learning using cloud-based MLOps tools for real-world applications.",
+  "toolImage": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/newimg4+(1).webp",
+  "toolImageWidth": 120,
+  "toolImageHeight": 60
+},
+{
+  "term": "Term 4",
+  "duration": "18 Weeks",
+  "title": "Data Visualization & Data Analysis",
+  "useCases": "Master SQL, NoSQL, and Power BI for efficient data management, querying, and visualization of complex datasets.",
+  "toolImage": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/newimg3+(1).webp",
+  "toolImageWidth": 128,
+  "toolImageHeight": 69
+}
+],
+
+"upskillMbl":[
+{
+  "term": 1,
+  "duration": "30 hrs",
+  "title": "Python Bootcamp for Non-Programmers",
+  "description": "These sessions are recommended for non-programmers to learn basics of programming.",
+  "toolsImage": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/tool_BA_one+(1).webp",
+  "width": "120",
+  "height": "20"
+},
+{
+  "term": 2,
+  "duration": "30 hrs",
+  "title": "Python for Data Science",
+  "description": "We will cover Python basics and data analytics using popular libraries like NumPy, Pandas, Matplotlib, and Seaborn.",
+  "toolsImage": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/tool_ba_two+(1).webp",
+  "width": "120",
+  "height": "20"
+},
+{
+  "term": 3,
+  "duration": "18 Weeks",
+  "title": "Statistics and Machine Learning + GenAI",
+  "description": "Apply statistical methods and machine learning algorithms to solve data problems, with an introduction to generative AI techniques.",
+  "toolsImage": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/master_two+(1).webp",
+  "width": "120",
+  "height": "20"
+},
+{
+  "term": 4,
+  "duration": "10 Weeks",
+  "title": "Data Visualization & Data Analysis",
+  "description": "Master SQL, NoSQL, and Power BI for efficient data management, querying, and visualization of complex datasets.",
+  "toolsImage": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/master_three+(1).webp",
+  "width": "120",
+  "height": "20"
+},
+{
+  "term": 5,
+  "duration": "60 hrs",
+  "title": "AI Tools and Deployment",
+  "description": "Build and deploy advanced AI models, including deep learning, NLP, CV, and Reinforcement Learning using cloud-based MLOps tools for real-world applications.",
+  "toolsImage": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/master_four+(1).webp",
+  "width": "120",
+  "height": "20"
+}
+],
+  "FeeSection": {
+    "Fee": "₹50,000",
+    "FeeEmi": "₹4,500/month",
+    "hybridFee": "₹70,000",
+    "hybridEmi": "₹6,000/month",
+    "emiType": "Flexible",
+    "duration1": "6 months",
+    "totalAmount1": "₹54,000",
+    "monthlyPayment1": "₹9,000",
+    "greenDown1": "10%",
+    "duration2": "12 months",
+    "totalAmount2": "₹60,000",
+    "monthlyPayment2": "₹5,000",
+    "greenDown2": "5%",
+    "dataScience": true,
+    "iitGuwatiGen": false,
+    "dataScienceCounselling": true,
+    "interstedInHide": false
+  }
+
   
 }

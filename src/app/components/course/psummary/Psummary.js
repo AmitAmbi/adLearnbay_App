@@ -1,41 +1,96 @@
-// PSummaryAD.jsx
 "use client"; // Must be at the top
 
-import React, { useEffect, useState, useRef, memo, useCallback } from "react";
+import React, { useState, useRef, memo, useCallback, useEffect } from "react";
 import Image from "next/image";
-import styles from "./Psummary.module.css"; // Ensure the CSS is correct
+import styles from "./Psummary.module.css"; 
 
-const PSummaryAD = ({ summaryData = [], customClassName = "" }) => { // Default to an empty array
-  const [activeDot, setActiveDot] = useState(0); // Track the active dot
-  const contentContainerRef = useRef(null); // Ref for content container
+const PSummaryAD = ({ summaryData = [], customClassName = "" }) => {
+  const [activeDot, setActiveDot] = useState(0);
+  const contentContainerRef = useRef(null);
+  const sectionRefs = useRef([]); 
 
-  // Ensure summaryData is fetched if not passed in
   useEffect(() => {
-    if (summaryData.length === 0) {
-      const fetchData = async () => {
+    const fetchData = async () => {
+      if (summaryData.length === 0) {
         try {
-          const response = await fetch('/summaryData.json'); // Adjust path if necessary
+          const response = await fetch("/summaryData.json"); 
           const data = await response.json();
-          // Handle fetched data here if you choose to fetch again
+
         } catch (error) {
           console.error("Error fetching data:", error);
         }
-      };
+      }
+    };
 
-      fetchData();
+    fetchData();
+
+    const contentContainer = contentContainerRef.current;
+
+
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        contentContainer.style.overflowX = "auto";
+      } else {
+        contentContainer.style.overflowX = "hidden"; 
+      }
+    };
+
+    const handleScroll = () => {
+      const sections = document.querySelectorAll(`.${styles.Box}`);
+      let updatedDot = activeDot;
+
+      sections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.left >= 0 && rect.left < window.innerWidth / 2 && activeDot !== index) {
+          updatedDot = index;
+        }
+      });
+
+      if (updatedDot !== activeDot) {
+        setActiveDot(updatedDot);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    contentContainer.addEventListener("scroll", handleScroll);
+
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      contentContainer.removeEventListener("scroll", handleScroll);
+    };
+  }, [summaryData, activeDot]);
+
+
+  const scrollToSection = useCallback((index) => {
+    const section = document.querySelectorAll(`.${styles.Box}`)[index];
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest", 
+        inline: "start",
+      });
+      setActiveDot(index);
     }
-  }, [summaryData]);
-
-  // Scroll handling and other logic remains the same...
+  }, []);
 
   return (
     <div className={`${styles.Container} ${customClassName}`}>
       <h2>
-        Program <span className={styles.spans}>Summary <hr className={styles.hrline}/></span>
+        Program{" "}
+        <span className={styles.spans}>
+          Summary <hr className={styles.hrline} />
+        </span>
       </h2>
       <div className={styles.contentConteiner} ref={contentContainerRef}>
-        {summaryData.map((item) => (
-          <div key={item.id} className={styles.Box}>
+        {summaryData.map((item, index) => (
+          <div
+            key={item.id}
+            className={styles.Box}
+            ref={(el) => (sectionRefs.current[index] = el)} 
+          >
             <div>
               <Image
                 src={item.imageSrc}
@@ -63,14 +118,16 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => { // Default 
         ))}
       </div>
 
-      {/* Custom Scrollbar with Dots */}
+
       <div className={styles.customScrollbar}>
         <div className={styles.dotContainer}>
           {summaryData.map((_, index) => (
             <span
               key={index}
               onClick={() => scrollToSection(index)}
-              className={`${styles.dot} ${activeDot === index ? styles.active : ""}`}
+              className={`${styles.dot} ${
+                activeDot === index ? styles.active : ""
+              }`}
             />
           ))}
         </div>

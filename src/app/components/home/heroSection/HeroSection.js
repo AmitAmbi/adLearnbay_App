@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect } from "react";
 import styles from "./HeroSection.module.css";
@@ -6,13 +6,15 @@ import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import PopupContent from "../../global/popup/PopupContent";
 
-function HeroSection({ dataScience,
-    radio,
-    dataScienceCounselling,
-    interstedInHide,
-    idss,
-    btnHide,
-    dataScienceGeneric, }) {
+function HeroSection({
+  dataScience,
+  radio,
+  dataScienceCounselling,
+  interstedInHide,
+  idss,
+  btnHide,
+  dataScienceGeneric,
+}) {
   const popupShow = () => {
     setPopups(true);
   };
@@ -31,8 +33,7 @@ function HeroSection({ dataScience,
   const [popups, setPopups] = useState(false);
   return (
     <section className={styles.conteiner}>
-
-<PopupContent
+      <PopupContent
         dataScience={dataScience}
         radio={radio}
         dataScienceCounselling={dataScienceCounselling}
@@ -45,7 +46,8 @@ function HeroSection({ dataScience,
       <div className={styles.gridConteiner}>
         <div className={styles.leftside}>
           <h1>
-            India’s #1 <span className={styles.spantitle }>Project-based</span> Upskilling Platform for Professionals
+            India’s #1 <span className={styles.spantitle}>Project-based</span>{" "}
+            Upskilling Platform for Professionals
           </h1>
 
           <div className={styles.listleft}>
@@ -219,7 +221,7 @@ function HeroSection({ dataScience,
         </div>
         <div className={styles.typelogo}>
           <Image
-            src={typeLogo}
+            src={typeLogo || "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/type_logo_mbl.webp"}
             width={isMobile ? 400 : 760}
             height={36}
             alt="type-logo"
