@@ -1,7 +1,7 @@
 // Emipopup.js
 
 import React from 'react';
-import Styles from './emiPopup.module.csss';
+import Styles from './emiPopup.module.css';
 
 function Emipopup({
   closeEmiPopup,
