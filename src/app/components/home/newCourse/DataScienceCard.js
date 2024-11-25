@@ -4,7 +4,8 @@ import { courses } from "./NewcourseData";
 import styles from "./DataScienceCard.module.css";
 import "swiper/css"; // Correct import for the CSS
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from 'swiper/modules';
+// import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation,Pagination } from "swiper/modules";
 import Image from "next/image";
 import Form from "@/app/components/global/form/Form";
 import Popup from "@/app/components/global/popup/Popup";

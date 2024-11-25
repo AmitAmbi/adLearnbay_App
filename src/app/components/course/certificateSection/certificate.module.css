@@ -1,0 +1,263 @@
+.mainBg{
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+    margin-top: 120px;
+    flex-direction: column;
+    border-radius: 54px;
+    background:radial-gradient(
+        circle at 90% 20%, /* Blue circle positioned at the top left */
+        rgba(6, 59, 92, 0.9) 1%, /* Smaller blue circle */
+        transparent 30% /* Smooth transition to black */
+      ),
+      radial-gradient(
+        circle at 10% 80%, /* Orange circle positioned at the bottom right */
+        rgba(254, 122, 54, 000.30) 1%, /* Glowing orange circle */
+        transparent 40% /* Smooth transition to black */
+      ),
+      #212121;
+      background-color: rgba(15, 14, 14, 0.954);
+    padding: 50px 0px 100px 0px;
+    gap: 10px;
+  }
+  
+  .upskillHeading{
+    font-size: 42px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .spanHead {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 16px;
+    text-decoration-color: #FE7A36;
+  }
+  
+  .innerDiv {
+    /* display: grid;
+    grid-template-columns: 42% 42%; */
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .middleLine {
+  margin: 0px auto 30px auto;
+  }
+  
+  
+  .iconDivMain {
+    margin-top: 20px;
+    margin-left: 16px;
+  }
+  
+  .iconDivMain h4 {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 26px;
+    }
+  
+    .iconDiv {
+        /* display: grid; */
+        grid-template-columns: 5% 90%;
+        gap: 10px;
+        align-items: flex-start;
+    }
+  
+    .iconDiv p {
+        margin: 0;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 20px;
+        margin-top: -5px;
+        width: 100%;
+        max-width: 400px;
+    }
+  
+    .iconDiv svg {
+        fill: #20A898;
+        font-size: 22px;
+    }
+  
+    .certBoxWrapperTop{
+      display: grid;
+      grid-template-columns: 61% 48%;
+      justify-content: center;
+      grid-gap: 80px;
+      gap: 34px;
+    }
+    .certBoxDemo{
+      display: grid;
+      grid-template-columns: 36% 49%;
+      justify-content: flex-start;
+      gap:120px;
+      align-items: center;
+  
+    }
+    .Addon p{
+      color: #0383FF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 126.5%; /* 31.625px */
+  margin: 0;
+    }
+   
+    .Addon{
+        display: block;
+        border-radius: 28px;
+      border: 1px solid #0383FF;
+      background: rgba(3, 131, 255, 0.19);
+      width: fit-content;
+      padding: 4px 18px;
+      margin-bottom: 16px;
+  
+    }
+    .AddonMbl{
+      display: none;
+    }
+    @media only screen and (max-width:1280px){
+      .certBoxWrapperTop{
+        grid-template-columns: 53% 43%;
+      }
+      .certBoxDemo{
+        grid-template-columns: 43% 49%;
+        gap:100px;
+      }
+    }
+
+  @media only screen and (max-width:1024px){
+    .certBoxWrapperTop{
+      grid-template-columns: 50% 46%;
+    }
+    .certBoxDemo{
+      grid-template-columns: 46% 44%;
+      gap:75px;
+    }
+    .upskillHeading{
+      font-size: 40px;
+    }
+  }
+  @media only screen and (max-width: 841px) {
+    .containerWidth{
+      width:100%;
+    }
+    .certBox img{
+      width:100%;
+    }
+    .certBoxWrapperTop{
+      gap: 20px;
+  }
+  .certBoxDemo{
+    gap: 60px
+}
+}
+
+@media only screen and (max-width: 761px){
+  .certBoxDemo{
+  grid-template-columns: 45% 45%;
+
+}
+}
+  @media only screen and (max-width: 641px) {
+  .mainBg{
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 0px;
+    padding: 40px 24px;
+  }
+  .upskillHeading{
+    font-size: 28px;
+  }
+  .middleLine {
+    width: 0px;
+    margin: 10px 0px;
+  }
+  .spanHead {
+    text-underline-offset: 14px;
+  }
+  .innerDiv {
+    grid-template-columns: 100%;
+    gap: 30px;
+  }
+  .certBox img {
+    height: auto;
+    width:320px;
+  }
+  .certBoxDemo img {
+    height: auto;
+    width:320px;
+  }
+  .iconDiv {
+    grid-template-columns: 7% 90%;
+  }
+  .iconDivMain h4 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .iconDivMain {
+    margin-left: 8px;
+  }
+  .iconDiv svg {
+    font-size: 20px;
+  }
+  .iconDiv p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .mHead {
+    margin-top: -24px;
+  }
+  
+  .certBoxWrapperTop{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .certBoxDemo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: baseline;
+  }
+  
+  .AddonMbl{
+    display: block;
+    border-radius: 28px;
+    border: 1px solid #FE7A36;
+    background: rgba(254, 122, 54, 0.18);
+    width: fit-content;
+    padding: 4px 18px;
+    margin-bottom: 16px;
+  }
+  .Addon{
+    display: none;
+  }
+  
+  .AddonMbl p{
+    background: linear-gradient(90deg, #FE7A36 7.69%, #FFC436 93.08%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 126.5%; /* 31.625px */
+  margin: 0;
+  }
+  }
+  
+  @media only screen and (max-width: 481px){
+    .upskillHeading{
+      font-size: 22px;
+    }
+}

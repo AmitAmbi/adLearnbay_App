@@ -76,8 +76,9 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => {
             <span
               key={index}
               onClick={() => scrollToSection(index)}
-              className={`${styles.dot} ${activeDot === index ? styles.active : ""
-                }`}
+              className={`${styles.dot} ${
+                activeDot === index ? styles.active : ""
+              }`}
             />
           ))}
         </div>
