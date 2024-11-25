@@ -285,10 +285,13 @@
   }
 }
 
-@media only screen and (max-width: 1081px) {
+@media only screen and (max-width: 1180px) {
   .innerDiv {
     grid-template-columns: 59% 35%;
     gap: 50px;
+  }
+  .formdiv h3 {
+    font-size: 28px;
   }
 }
 
@@ -303,9 +306,10 @@
   .innerDiv {
     gap: 52px;
   }
+  
 }
 
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 967px) {
 
   /* .innerDiv {
     gap: 90px;
@@ -314,6 +318,7 @@
   .content h3 {
     font-size: 26px;
   }
+ 
 
   .firstSection h1 {
     font-size: 36px;
@@ -326,9 +331,17 @@
     width: 71px;
     height: 56px;
   }
-
+  .firstSection h1 {
+    letter-spacing: 0.9px;
+  }
+  .formdiv h3 {
+    font-size: 23px;
+  }
   .content {
     gap: 1px;
+  }
+  .starDiv p{
+    font-size: 19px;
   }
 
   .firstSection {
@@ -368,10 +381,12 @@
 
 @media only screen and (max-width: 761px) {
   .firstSection h1 {
-    font-size: 27px;
-    line-height: 37px;
+    font-size: 28px;
+    line-height: 34px;
   }
-
+  .starDiv p{
+    font-size: 17px;
+  }
   .content p {
     font-size: 14px;
   }
@@ -387,6 +402,9 @@
 
   .btnDiv {
     gap: 45px;
+  }
+  .formdiv h3 {
+    font-size: 20px;
   }
 }
 
@@ -429,6 +447,10 @@
   .botDiv {
     padding: 20px 7px;
   }
+  .starDiv p{
+    font-size: 14px;
+  }
+ 
 }
 
 @media only screen and (max-width: 361px) {
@@ -456,4 +478,9 @@
   .btnDiv {
     gap: 35px;
   }
+  .starDiv p{
+    font-size: 14px;
+  }
+ 
+ 
 }
