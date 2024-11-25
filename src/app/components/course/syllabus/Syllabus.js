@@ -1,16 +1,18 @@
 "use client";
+
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./Syllabus.module.css";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { sections } from "./SyllabusData";
-import { EffectCoverflow } from "swiper/modules";
-import PopupContent from "../../global/popup/PopupContent";
-// import PopupContent from "@/components/Global/PopupContent/PopupContent";
+import "swiper/css/effect-coverflow";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css"; // Swiper core styles
+import "swiper/css/navigation"; // Navigation styles (if used)
+import "swiper/css/pagination"; // Pagination styles (if used)
+import "swiper/css/effect-coverflow"; // Coverflow effect styles (if used)
 
 const SyllabusSection = ({
-  //   sections = [],
+  sections = [],
   brochureLink,
   brochurePdf,
   interstedInHide,
@@ -104,7 +106,7 @@ const SyllabusSection = ({
 
   return (
     <div className={styles.mainConteiner}>
-      <PopupContent
+      {/* <PopupContent
         popups={popups}
         setPopups={setPopups}
         heading="Download Syllabus"
@@ -114,7 +116,7 @@ const SyllabusSection = ({
         brochureLink={brochureLink}
         brochurePdf={brochurePdf}
         radio={radio}
-      />
+      /> */}
       <h2 className={styles.headline}>
         Explore Our <span>Syllabus</span>
       </h2>
