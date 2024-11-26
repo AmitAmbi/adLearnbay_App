@@ -302,6 +302,274 @@
             ]
           }
         ]
+      },
+      {
+        "term": "Term 2",
+        "duration": "70-75 hrs",
+        "title": "Statistics and Machine Learning + GenAI",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Statistics",
+            "moduleList": [
+              "Fundamentals of Math and Probability",
+              "All about Population & Sample",
+              "Introduction to Statistics, Statistical Thinking",
+              "Descriptive Statistics",
+              "Inferential Statistics"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Advance Statistics",
+            "moduleList": [
+              "Hypothesis Testing",
+              "Linear Algebra",
+              "Data Processing & Exploratory Data Analysis",
+              "EDA"
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Machine Learning",
+            "moduleList": [
+              "Machine Learning Introduction",
+              "Data Preprocessing",
+              "Logistic Regression Model",
+              "Evaluation Metrics for Classification model",
+              "K Nearest Neighbours Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Advance Machine Learning Concepts",
+            "moduleList": [
+              "Decision Tree Model",
+              "Random Forest Model",
+              "Hyperparameter Tuning",
+              "Naive Baye’s Model",
+              "K Means and Hierarchical Clustering",
+              "Hierarchical Clustering",
+              "Principal Component Analysis(PCA)",
+              "Support Vector Machine(SVM)",
+              "XGBoost Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 5",
+            "moduleContent": "GenAI",
+            "moduleList": [
+              "Introduction to Generative AI concepts: GANs, VAEs, Transformers.",
+              "Text generation techniques using GPT models and Hugging Face Transformers.",
+              "Image generation with GANs, StyleGAN, and DeepDream.",
+              "Building generative models using TensorFlow, PyTorch, and Keras.",
+              "Ethical considerations in AI: bias mitigation, fairness, interpretability.",
+              "Practical applications like chatbots, art generation, and data augmentation.",
+              "Advanced topics on fine-tuning models and deploying generative AI solutions"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "Term 2",
+        "duration": "70-75 hrs",
+        "title": "Statistics and Machine Learning + GenAI",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Statistics",
+            "moduleList": [
+              "Fundamentals of Math and Probability",
+              "All about Population & Sample",
+              "Introduction to Statistics, Statistical Thinking",
+              "Descriptive Statistics",
+              "Inferential Statistics"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Advance Statistics",
+            "moduleList": [
+              "Hypothesis Testing",
+              "Linear Algebra",
+              "Data Processing & Exploratory Data Analysis",
+              "EDA"
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Machine Learning",
+            "moduleList": [
+              "Machine Learning Introduction",
+              "Data Preprocessing",
+              "Logistic Regression Model",
+              "Evaluation Metrics for Classification model",
+              "K Nearest Neighbours Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Advance Machine Learning Concepts",
+            "moduleList": [
+              "Decision Tree Model",
+              "Random Forest Model",
+              "Hyperparameter Tuning",
+              "Naive Baye’s Model",
+              "K Means and Hierarchical Clustering",
+              "Hierarchical Clustering",
+              "Principal Component Analysis(PCA)",
+              "Support Vector Machine(SVM)",
+              "XGBoost Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 5",
+            "moduleContent": "GenAI",
+            "moduleList": [
+              "Introduction to Generative AI concepts: GANs, VAEs, Transformers.",
+              "Text generation techniques using GPT models and Hugging Face Transformers.",
+              "Image generation with GANs, StyleGAN, and DeepDream.",
+              "Building generative models using TensorFlow, PyTorch, and Keras.",
+              "Ethical considerations in AI: bias mitigation, fairness, interpretability.",
+              "Practical applications like chatbots, art generation, and data augmentation.",
+              "Advanced topics on fine-tuning models and deploying generative AI solutions"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "Term 2",
+        "duration": "70-75 hrs",
+        "title": "Statistics and Machine Learning + GenAI",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Statistics",
+            "moduleList": [
+              "Fundamentals of Math and Probability",
+              "All about Population & Sample",
+              "Introduction to Statistics, Statistical Thinking",
+              "Descriptive Statistics",
+              "Inferential Statistics"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Advance Statistics",
+            "moduleList": [
+              "Hypothesis Testing",
+              "Linear Algebra",
+              "Data Processing & Exploratory Data Analysis",
+              "EDA"
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Machine Learning",
+            "moduleList": [
+              "Machine Learning Introduction",
+              "Data Preprocessing",
+              "Logistic Regression Model",
+              "Evaluation Metrics for Classification model",
+              "K Nearest Neighbours Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Advance Machine Learning Concepts",
+            "moduleList": [
+              "Decision Tree Model",
+              "Random Forest Model",
+              "Hyperparameter Tuning",
+              "Naive Baye’s Model",
+              "K Means and Hierarchical Clustering",
+              "Hierarchical Clustering",
+              "Principal Component Analysis(PCA)",
+              "Support Vector Machine(SVM)",
+              "XGBoost Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 5",
+            "moduleContent": "GenAI",
+            "moduleList": [
+              "Introduction to Generative AI concepts: GANs, VAEs, Transformers.",
+              "Text generation techniques using GPT models and Hugging Face Transformers.",
+              "Image generation with GANs, StyleGAN, and DeepDream.",
+              "Building generative models using TensorFlow, PyTorch, and Keras.",
+              "Ethical considerations in AI: bias mitigation, fairness, interpretability.",
+              "Practical applications like chatbots, art generation, and data augmentation.",
+              "Advanced topics on fine-tuning models and deploying generative AI solutions"
+            ]
+          }
+        ]
+      },
+      {
+        "term": "Term 2",
+        "duration": "70-75 hrs",
+        "title": "Statistics and Machine Learning + GenAI",
+        "modules": [
+          {
+            "moduleTitle": "Section 1",
+            "moduleContent": "Statistics",
+            "moduleList": [
+              "Fundamentals of Math and Probability",
+              "All about Population & Sample",
+              "Introduction to Statistics, Statistical Thinking",
+              "Descriptive Statistics",
+              "Inferential Statistics"
+            ]
+          },
+          {
+            "moduleTitle": "Section 2",
+            "moduleContent": "Advance Statistics",
+            "moduleList": [
+              "Hypothesis Testing",
+              "Linear Algebra",
+              "Data Processing & Exploratory Data Analysis",
+              "EDA"
+            ]
+          },
+          {
+            "moduleTitle": "Section 3",
+            "moduleContent": "Machine Learning",
+            "moduleList": [
+              "Machine Learning Introduction",
+              "Data Preprocessing",
+              "Logistic Regression Model",
+              "Evaluation Metrics for Classification model",
+              "K Nearest Neighbours Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 4",
+            "moduleContent": "Advance Machine Learning Concepts",
+            "moduleList": [
+              "Decision Tree Model",
+              "Random Forest Model",
+              "Hyperparameter Tuning",
+              "Naive Baye’s Model",
+              "K Means and Hierarchical Clustering",
+              "Hierarchical Clustering",
+              "Principal Component Analysis(PCA)",
+              "Support Vector Machine(SVM)",
+              "XGBoost Model"
+            ]
+          },
+          {
+            "moduleTitle": "Section 5",
+            "moduleContent": "GenAI",
+            "moduleList": [
+              "Introduction to Generative AI concepts: GANs, VAEs, Transformers.",
+              "Text generation techniques using GPT models and Hugging Face Transformers.",
+              "Image generation with GANs, StyleGAN, and DeepDream.",
+              "Building generative models using TensorFlow, PyTorch, and Keras.",
+              "Ethical considerations in AI: bias mitigation, fairness, interpretability.",
+              "Practical applications like chatbots, art generation, and data augmentation.",
+              "Advanced topics on fine-tuning models and deploying generative AI solutions"
+            ]
+          }
+        ]
       }
     ]
   },

@@ -66,89 +66,94 @@ const UpskillMbl = ({ upskillMbl }) => {
     };
   }, [handleScroll]);
 
-  const scrollToSlide = useCallback((index) => {
-    const slider = sliderRef.current;
-    const slideWidth = slider.children[0].offsetWidth;
-    slider.scrollLeft = slideWidth * index;
-    setActiveIndex(index);
+  const scrollToSlide = useCallback(
+    (index) => {
+      const slider = sliderRef.current;
+      const slideWidth = slider.children[0].offsetWidth;
+      slider.scrollLeft = slideWidth * index;
+      setActiveIndex(index);
 
-    if (index === totalSlides - 1) {
-      setArrowDirection("right");
-    } else if (index === 0) {
-      setArrowDirection("left");
-    } else {
-      setArrowDirection("neutral");
-    }
-  }, [totalSlides]);
+      if (index === totalSlides - 1) {
+        setArrowDirection("right");
+      } else if (index === 0) {
+        setArrowDirection("left");
+      } else {
+        setArrowDirection("neutral");
+      }
+    },
+    [totalSlides]
+  );
 
   return (
-    <section className={styles.section}>
-      <div className={styles.Container}>
-        <h2>
-          Journey towards <span className={styles.span}>Upskilling</span>
-        </h2>
+    <div className="containerWidth">
+      <section className={styles.section}>
+        <div className={styles.Container}>
+          <h2>
+            Journey towards <span className={styles.span}>Upskilling</span>
+          </h2>
 
-        <div className={styles.sliderMain} ref={sliderRef}>
-          {upskillMbl.map((item, index) => (
-            <div className={styles.Box} key={index}>
-              <div className={styles.svglineDiv}>
-                <div className={styles.termBox}>
-                  <h5>Term {item.term}</h5>
-                  <span>{item.duration}</span>
+          <div className={styles.sliderMain} ref={sliderRef}>
+            {upskillMbl.map((item, index) => (
+              <div className={styles.Box} key={index}>
+                <div className={styles.svglineDiv}>
+                  <div className={styles.termBox}>
+                    <h5>Term {item.term}</h5>
+                    <span>{item.duration}</span>
+                  </div>
+                  {index < totalSlides - 1 && <SVgLine />}
                 </div>
-                {index < totalSlides - 1 && <SVgLine />}
+                <div className={styles.contentBox}>
+                  <h4>{item.title}</h4>
+                  <p>{item.description}</p>
+                </div>
+                <div className={styles.ToolsBox}>
+                  <p>tool: </p>
+                  <Image
+                    src={item.toolsImage}
+                    width={item.width}
+                    height={item.height}
+                    alt="tools"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-              <div className={styles.contentBox}>
-                <h4>{item.title}</h4>
-                <p>{item.description}</p>
-              </div>
-              <div className={styles.ToolsBox}>
-                <p>tool: </p>
-                <Image
-                  src={item.toolsImage}
-                  width={item.width}
-                  height={item.height}
-                  alt="tools"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className={styles.pagination}>
-          <div className={styles.dotBar}>
-            <div
-              className={styles.activeDotBar}
-              style={{ left: `${activeIndex * (100 / totalSlides)}%` }}
-            />
+            ))}
           </div>
-          {upskillMbl.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => scrollToSlide(index)}
-              className={`${styles.dot} ${
-                activeIndex === index ? styles.activeDot : ""
-              }`}
-            >
-              {activeIndex === index && (
-                <span
-                  className={`${styles.arrow} ${
-                    arrowDirection === "right" && index === totalSlides - 1
-                      ? styles.rotate
-                      : arrowDirection === "left" && index === 0
-                      ? styles.rotateLeft
-                      : ""
-                  }`}
-                >
-                  ⟶
-                </span>
-              )}
-            </button>
-          ))}
+
+          <div className={styles.pagination}>
+            <div className={styles.dotBar}>
+              <div
+                className={styles.activeDotBar}
+                style={{ left: `${activeIndex * (100 / totalSlides)}%` }}
+              />
+            </div>
+            {upskillMbl.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => scrollToSlide(index)}
+                className={`${styles.dot} ${
+                  activeIndex === index ? styles.activeDot : ""
+                }`}
+              >
+                {activeIndex === index && (
+                  <span
+                    className={`${styles.arrow} ${
+                      arrowDirection === "right" && index === totalSlides - 1
+                        ? styles.rotate
+                        : arrowDirection === "left" && index === 0
+                        ? styles.rotateLeft
+                        : ""
+                    }`}
+                  >
+                    ⟶
+                  </span>
+                )}
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
