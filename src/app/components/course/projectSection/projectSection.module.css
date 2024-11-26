@@ -1,4 +1,4 @@
-.projectSection {
+/* .projectSection {
     margin-top: 4rem;
     width: 100%;
     background: linear-gradient(180deg, #fff 8.58%, #eff3f6 69.44%, #fff 99.96%);
@@ -13,7 +13,7 @@
     font-style: normal;
     text-align: center;
     font-weight: 400;
-    line-height: 126.5%; /* 69.575px */
+    line-height: 126.5%; 
   }
   
   .headline span {
@@ -244,13 +244,13 @@
   align-items: center;
     background: radial-gradient(
       circle at 10% 10%,
-      /* Blue circle positioned at the top left */ rgba(218, 105, 44, 0.4) 4%, 
-      /* Larger blue circle */ transparent 40% /* Smoother transition */
+      rgba(218, 105, 44, 0.4) 4%, 
+       transparent 40% 
     ),
     radial-gradient(
       circle at 90% 80%,
-      /* Orange circle positioned at the bottom right */ rgba(2, 54, 92, 0.9) 1%,
-      /* Glowing orange circle */ transparent 30% /* Smoother transition */
+      rgba(2, 54, 92, 0.9) 1%,
+       transparent 30% 
     ),
     #212121;
   }
@@ -258,7 +258,7 @@
     color: #FFF;
   font-style: normal;
   font-weight: 600;
-  line-height: 126.5%; /* 44.275px */
+  line-height: 126.5%; 
   }
   .ryticons{
     display: flex;
@@ -428,4 +428,4 @@
       font-size: 14px;
     }
   }
-  
+   */
