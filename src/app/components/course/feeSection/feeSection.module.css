@@ -589,6 +589,14 @@ padding: 24px 0px 40px 0px;
   .ThreeCard {
     padding: 20px 50px;
   }
+  .headBlue{
+    font-size: 32px;
+  }
+}
+@media (max-width:967px) {
+  .headBlue, .headOrange {
+    font-size: 29px;
+  }
 }
 
 @media (max-width: 641px) {

@@ -1,5 +1,5 @@
 .mainBg{
-    max-width: 1200px;
+    max-width: 100%;
     display: flex;
     margin: auto;
     margin-top: 120px;
@@ -112,7 +112,6 @@
     }
    
     .Addon{
-  
         display: block;
         border-radius: 28px;
       border: 1px solid #0383FF;
@@ -125,7 +124,49 @@
     .AddonMbl{
       display: none;
     }
-  
+    @media only screen and (max-width:1280px){
+      .certBoxWrapperTop{
+        grid-template-columns: 53% 43%;
+      }
+      .certBoxDemo{
+        grid-template-columns: 43% 49%;
+        gap:100px;
+      }
+    }
+
+  @media only screen and (max-width:1024px){
+    .certBoxWrapperTop{
+      grid-template-columns: 50% 46%;
+    }
+    .certBoxDemo{
+      grid-template-columns: 46% 44%;
+      gap:75px;
+    }
+    .upskillHeading{
+      font-size: 40px;
+    }
+  }
+  @media only screen and (max-width: 841px) {
+    .containerWidth{
+      width:100%;
+    }
+    .certBox img{
+      width:100%;
+    }
+    .certBoxWrapperTop{
+      gap: 20px;
+  }
+  .certBoxDemo{
+    gap: 60px
+}
+}
+
+@media only screen and (max-width: 761px){
+  .certBoxDemo{
+  grid-template-columns: 45% 45%;
+
+}
+}
   @media only screen and (max-width: 641px) {
   .mainBg{
     width: 100%;
@@ -133,7 +174,6 @@
     border-radius: 0px;
     padding: 40px 24px;
   }
-  
   .upskillHeading{
     font-size: 28px;
   }
@@ -215,3 +255,9 @@
   margin: 0;
   }
   }
+  
+  @media only screen and (max-width: 481px){
+    .upskillHeading{
+      font-size: 22px;
+    }
+}
