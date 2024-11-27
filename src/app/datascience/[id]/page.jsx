@@ -101,6 +101,7 @@ const Page = async ({ params }) => {
         totalAmount2={pageData.FeeSection?.totalAmount2}
         monthlyPayment2={pageData.FeeSection?.monthlyPayment2}
         greenDown2={pageData.FeeSection?.greenDown2}
+        hybridEmi={pageData.FeeSection?.hybridEmi}
       />
   
       <StructuredSection />
