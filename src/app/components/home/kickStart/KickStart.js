@@ -1,3 +1,5 @@
+
+"use client"
 import React from "react";
 import styles from "./KickStart.module.css";
 
@@ -115,16 +117,16 @@ const KickStart = () => {
         </p>
       </div>
       <div className={styles.spantags}>
-        <span>{SvgRightMark} 200-400 hours of learning</span>
-        <span>{SvgRightMark} Live, interactive sessions</span>
-        <span>{SvgRightMark} Hybrid training mode</span>
+        <span key="1">{SvgRightMark} 200-400 hours of learning</span>
+        <span key="2">{SvgRightMark} Live, interactive sessions</span>
+        <span key="3">{SvgRightMark} Hybrid training mode</span>
       </div>
 
       <div className={styles.spantagsMbl}>
         <div className={styles.MblTop}>
           {" "}
-          <span>{SvgRightMarkMbl} 200-400 hours of learning</span>
-          <span>{SvgRightMarkMbl} Live, interactive sessions</span>
+          <span key="4">{SvgRightMarkMbl} 200-400 hours of learning</span>
+          <span key="5">{SvgRightMarkMbl} Live, interactive sessions</span>
         </div>
         <div className={styles.MblDown}>
           <span>{SvgRightMarkMbl} Hybrid training mode</span>

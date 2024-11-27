@@ -1,4 +1,5 @@
 "use client";
+"use client";
 
 import React, { useState, useEffect } from "react";
 import styles from "./HeroSection.module.css";
@@ -6,6 +7,15 @@ import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import PopupContent from "../../global/popup/PopupContent";
 
+// function HeroSection({
+//   dataScience,
+//   radio,
+//   dataScienceCounselling,
+//   interstedInHide,
+//   idss,
+//   btnHide,
+//   dataScienceGeneric,
+// }) {
 function HeroSection({
   dataScience,
   radio,
