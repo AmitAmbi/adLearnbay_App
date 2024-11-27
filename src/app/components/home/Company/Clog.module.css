@@ -66,6 +66,13 @@
 
 
 
+@media screen and (max-width:1181px) {
+  .mainContainer {
+    width: 100%;
+    margin: 80px auto;
+  }
+}
+
 @media screen and (max-width:1024px) {
   .container {
     padding: 20px 10px;
@@ -74,7 +81,7 @@
 
 @media screen and (max-width:841px) {
   .mainContainer {
-    margin: 60px auto;
+    margin: 50px auto;
   }
 
   .imageContainer {
@@ -89,6 +96,10 @@
 }
 
 @media screen and (max-width: 641px) {
+
+  .mainContainer {
+    margin: 40px auto;
+  }
 
   .container p {
     font-size: var(--desktop_p-font-size);
@@ -108,9 +119,9 @@
 
 @media screen and (max-width: 481px) {
 
-  .mainContainer {
+  /* .mainContainer {
     margin: 40px auto;
-  }
+  } */
 
   .textWithLines p {
     margin: 0;
@@ -125,14 +136,19 @@
     height: 20px;
   }
 
-  .imageWrapper:last-child img{
+  .imageWrapper:last-child img {
     height: 35px;
   }
 
 }
 
 @media screen and (max-width: 361px) {
-  .container  {
+
+  .mainContainer {
+    margin: 20px auto;
+  }
+
+  .container {
     padding: 10px;
   }
 }

@@ -76,9 +76,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border-radius:0 0 35px 35px;
+  border-radius: 0 0 35px 35px;
   background: var(--white);
-  padding: 10px;
+  padding: 10px 10px 20px;
 }
 
 .buttons {
@@ -110,7 +110,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 155%;
-  padding: 9px 20px;
+  padding: 9px 18px;
   cursor: pointer;
   border: 1px solid var(--black);
 }
@@ -129,13 +129,21 @@
     width: 100%;
   }
 
-  .brochurebtn {
-    font-size: 12px;
+  .brochurebtn,
+  .viewDetailsButton {
+    font-size: 16px;
   }
 
   .viewDetailsButton {
-    font-size: 12px;
-    padding: 9px 23px;
+    /* padding: 9px 23px; */
+  }
+
+  .cardTitle {
+    font-size: 19px;
+  }
+
+  .lists span {
+    font-size: 17px;
   }
 
 }
@@ -146,8 +154,8 @@
   } */
 
   .sectionTitle {
-    /* margin-top: 50px; */
     font-size: 26px;
+    /* margin-top: 50px; */
     /* font-weight: 600; */
   }
 
@@ -163,54 +171,52 @@
 
 @media screen and (max-width:1181px) {
   .maindiv {
-    max-width: 250px;
+    max-width: 350px;
   }
 
-  .cardTitle {
-    font-size: 16px;
+  .lists span {
+    font-size: 15px;
   }
+
+  /* .cardTitle {
+    font-size: 16px;
+  } */
 
   /* .brochurebtn {
     font-size: 18px;
   } */
 
-  .viewDetailsButton {
+  /* .viewDetailsButton {
     padding: 9px 16px;
-  }
+  } */
 
-  .lists span {
-    font-size: 12px;
-  }
 
-  .brochurebtn {
+  /* .brochurebtn {
     font-size: 10px;
-  }
+  } */
 }
 
 @media screen and (max-width:1081px) {
-
-  
-
-  .card{
-    gap: 10px;
+  .card {
+    gap: 15px;
   }
 
-  .viewDetailsButton {
+  /* .viewDetailsButton {
     padding: 9px 12px;
     font-size: 10px;
   }
 
-  .maindiv {
+   .maindiv {
     max-width: 220px;
   }
 
-  /* .viewDetailsButton {
+  .viewDetailsButton {
     font-size: 8px;
   }
 
   .brochurebtn {
     font-size: 8px;
-  } */
+  }
 
   .cardTitle {
     font-size: 14px;
@@ -218,38 +224,93 @@
 
   .lists span {
     font-size: 11px;
+  } */
+}
+
+@media screen and (max-width:1024px) {
+  .maindiv {
+    max-width: 300px;
   }
 }
 
 @media screen and (max-width:968px) {
 
-  .maindiv{
-    max-width: 300px;
+  .maindiv {
+    max-width: 270px;
   }
 
   .sectionTitle {
     text-align: center;
   }
 
-  .lists span,.brochurebtn,.viewDetailsButton{
+  .cardTitle {
+    font-size: 17px;
+  }
+
+  .lists span {
     font-size: 13px;
   }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  .brochurebtn,
+  .viewDetailsButton {
+    font-size: 14px;
+  }
+
+  /* .lists span,
+  .brochurebtn,
+  .viewDetailsButton {
+    font-size: 13px;
+  } */
 }
 
 @media (max-width: 841px) {
-  .maindiv{
-    max-width: 250px;
+  .maindiv {
+    max-width: 260px;
+  }
+
+  /* .cardTitle {
+    font-size: 17px;
+  } */
+
+  /* .lists span {
+    font-size: 13px;
+  } */
+
+  .brochurebtn,
+  .viewDetailsButton {
+    /* font-size: 14px; */
+    padding: 9px 12px;
+  }
+
+  .sectionTitle {
+    font-size: 22px;
   }
 }
 
 /* Media Queries for Mobile View */
 @media (max-width: 761px) {
+  /* .maindiv {
+    padding: 0 20px;
+  } */
 
-  .cardContainer{
+  .maindiv {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+  .cardContainer {
     margin: 0;
   }
 
-  .cardContainer{
+  .cardContainer {
     gap: 10px;
   }
 
@@ -259,26 +320,26 @@
   }
 
   .swiperContainer {
-    padding: 16px 0;
+    padding: 16px 20px;
+  }
+
+  .buttons {
+    justify-content: space-around;
   }
 }
 
 @media (min-width: 769px) {
   .swiperContainer {
-    display: none;
+    /* display: none; */
     /* Hide swiper on desktop */
   }
-
-
-
-
 }
 
 @media screen and (max-width:641px) {
 
-  .maindiv {
-    padding: 0 20px;
-  }
+  /* .maindiv {
+    margin-bottom: 20px;
+  } */
 
   .mainImage {
     width: 100%;
@@ -300,36 +361,72 @@
     font-size: 16px;
   } */
 
-  .viewDetailsButton,.brochurebtn {
-    font-size: 13px;
+  .viewDetailsButton,
+  .brochurebtn {
+    font-size: 12px;
     padding: 7px 19px;
   }
 
-  .maindiv {
+  /* .maindiv {
     max-width: 100%;
-  }
+  } */
 
-  .card {
+  /* .card {
     margin-bottom: 40px;
-  }
+  } */
 
-  .swiperContainer {
-
+  /* .swiperContainer {
     padding: 0px;
-  }
+  } */
 
   .lists span {
     font-size: 14px;
   }
+
+  /* .cardContainer {
+    gap: 0;
+  } */
+
+  .swiperContainer {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (max-width:481px) {
-  
-}
-@media screen and (max-width:361px) {
-  .cardTitle {
-    font-size: 16px;
+  .sectionTitle {
+    font-size: 18px;
+    padding: 0 20px;
   }
 
+  .swiperContainer {
+    padding: 5px 20px 0;
+  }
 
+  .buttons {
+    justify-content: space-between;
+  }
 }
+
+@media screen and (max-width:401px) {
+  .sectionTitle {
+    font-size: 15px;
+  }
+
+  .cardTitle {
+    font-size: 15px;
+  }
+
+  .listicondiv img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .lists span {
+    font-size: 12px;
+  }
+}
+
+/* @media screen and (max-width:361px) {
+
+
+} */

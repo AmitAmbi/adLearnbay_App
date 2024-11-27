@@ -8,7 +8,8 @@ import dynamic from "next/dynamic";
 import DataScienceCard from "./DataScienceCard";
 import "swiper/css"; // Correct import for the CSS
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from 'swiper/modules'; // Import modules for Swiper
+import { Navigation, Pagination } from "swiper/modules"; // Import modules for Swiper
+
 import { MdOutlineFileDownloadSvg } from "@/Data/svgData/MDIcons";
 
 const Popup = dynamic(() => import("@/app/components/global/popup/Popup"));
@@ -18,7 +19,6 @@ const NewCourse = ({
   dataScience,
   radio,
   dataScienceCounselling,
-
   dataScienceGeneric,
   interstedInHide,
 }) => {
@@ -37,9 +37,9 @@ const NewCourse = ({
       if (window.innerWidth <= 761) {
         setIsMobile(true);
         setVisibleCount(0);
-      }
-      if (window.innerWidth <= 641) {
-        setIsMobileImage(true);
+        if (window.innerWidth <= 641) {
+          setIsMobileImage(true);
+        }
       } else {
         setIsMobile(false);
         setVisibleCount(0);
@@ -64,7 +64,8 @@ const NewCourse = ({
             slidesPerView={2}
             pagination={{ clickable: true }}
             breakpoints={{
-              481: { slidesPerView: 2, spaceBetween: 16 },
+              641: { slidesPerView: 2.2, spaceBetween: 10 },
+              481: { slidesPerView: 1.6, spaceBetween: 16 },
               0: { slidesPerView: 1.2, spaceBetween: 10 },
             }}
             className={styles.swiperContainer}
@@ -405,8 +406,9 @@ const NewCourse = ({
           <div className={styles.tabHead}>
             <div className={styles.tabMain} onWheel={handleWheel}>
               <div
-                className={`${styles.tabdiv} ${activeTab === "all" ? styles.active : ""
-                  }`}
+                className={`${styles.tabdiv} ${
+                  activeTab === "all" ? styles.active : ""
+                }`}
                 onClick={() => handleTabClick("all")}
               >
                 <div className={styles.sliders}>
@@ -424,10 +426,11 @@ const NewCourse = ({
 
                 <SvgArrow color={activeTab === "all" ? "white" : "black"} />
               </div>
-              { }
+              {}
               <div
-                className={`${styles.tabdiv} ${activeTab === "Certifications" ? styles.active : ""
-                  }`}
+                className={`${styles.tabdiv} ${
+                  activeTab === "Certifications" ? styles.active : ""
+                }`}
                 onClick={() => handleTabClick("Certifications")}
               >
                 <div className={styles.sliders}>
@@ -447,8 +450,9 @@ const NewCourse = ({
                 />
               </div>
               <div
-                className={`${styles.tabdiv} ${activeTab === "domainCourse" ? styles.active : ""
-                  }`}
+                className={`${styles.tabdiv} ${
+                  activeTab === "domainCourse" ? styles.active : ""
+                }`}
                 onClick={() => handleTabClick("domainCourse")}
               >
                 <div className={styles.sliders}>
@@ -469,8 +473,9 @@ const NewCourse = ({
               </div>
 
               <div
-                className={`${styles.tabdiv} ${activeTab === "CloudDevops" ? styles.active : ""
-                  }`}
+                className={`${styles.tabdiv} ${
+                  activeTab === "CloudDevops" ? styles.active : ""
+                }`}
                 onClick={() => handleTabClick("CloudDevops")}
               >
                 <div className={styles.sliders}>
@@ -512,8 +517,9 @@ const NewCourse = ({
               </div>
               </div> */}
               <div
-                className={`${styles.tabdiv} ${activeTab === "bfsi" ? styles.active : ""
-                  }`}
+                className={`${styles.tabdiv} ${
+                  activeTab === "bfsi" ? styles.active : ""
+                }`}
                 onClick={() => handleTabClick("bfsi")}
               >
                 <div className={styles.sliders}>
@@ -531,8 +537,9 @@ const NewCourse = ({
                 <SvgArrow color={activeTab === "bfsi" ? "white" : "black"} />
               </div>
               <div
-                className={`${styles.tabdiv} ${activeTab === "hr" ? styles.active : ""
-                  }`}
+                className={`${styles.tabdiv} ${
+                  activeTab === "hr" ? styles.active : ""
+                }`}
                 onClick={() => handleTabClick("hr")}
               >
                 <div className={styles.sliders}>
@@ -550,8 +557,9 @@ const NewCourse = ({
                 <SvgArrow color={activeTab === "hr" ? "white" : "black"} />
               </div>
               <div
-                className={`${styles.tabdiv} ${activeTab === "manager" ? styles.active : ""
-                  }`}
+                className={`${styles.tabdiv} ${
+                  activeTab === "manager" ? styles.active : ""
+                }`}
                 onClick={() => handleTabClick("manager")}
               >
                 <div className={styles.sliders}>

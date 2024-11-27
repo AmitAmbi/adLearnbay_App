@@ -19,7 +19,7 @@ function HeroSection({
     setPopups(true);
   };
 
-  const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 641px)" });
 
   const [typeLogo, setTypeLogo] = useState("");
 
@@ -47,7 +47,7 @@ function HeroSection({
         <div className={styles.gridConteiner}>
           <div className={styles.leftside}>
             <h1>
-              India’s #1 <span className={styles.spantitle}>Project-based</span>{" "}
+              India’s <span className={styles.spantitle}>#1 Project-based</span>{" "}
               Upskilling Platform for Professionals
             </h1>
 

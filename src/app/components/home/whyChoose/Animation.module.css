@@ -307,6 +307,12 @@
   margin-right: 20px;
 }
 
+@media screen and (max-width: 968px) {
+  .whyChooseContent {
+    padding-right: 40px;
+  }
+}
+
 /* Media Queries for smaller screens */
 
 @media screen and (max-width: 841px) {
@@ -447,5 +453,12 @@
 
   .svglogo svg {
     height: 150px;
+  }
+}
+
+
+@media screen and (max-width: 361px) {
+  .whyChooseContent {
+    padding-right: 0;
   }
 }
