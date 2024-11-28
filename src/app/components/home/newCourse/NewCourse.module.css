@@ -87,7 +87,7 @@
   gap: 20px;
   border-radius: 0 0 35px 35px;
   background: var(--white);
-  padding: 10px;
+  padding: 10px 10px 20px;
 }
 
 .cardContent h3 {
@@ -253,8 +253,8 @@
 }
 
 .MasterCard {
-  width: 100%;
-  max-width: 1200px;
+  width: 80%;
+  /* max-width: 1200px; */
   margin: 40px auto 0 auto;
   position: relative;
 }
@@ -320,10 +320,19 @@
   line-height: 155%;
 }
 
+.bgImageMaster {
+  width: 100%;
+  max-width: 1200px;
+}
+
 @media screen and (max-width: 1381px) {
 
+  .brochurebtn,
   .viewDetailsButton {
-    font-size: 12px;
+    font-size: 16px;
+  }
+
+  .viewDetailsButton {
     padding: 9px 23px;
   }
 
@@ -344,17 +353,20 @@
     width: 12px;
   }
 
-  .brochurebtn {
-    font-size: 12px;
-  }
-
   /* .MasterCard {
     max-width: 1280px;
   } */
 
-  .bgImageMaster {
-    width: 100%;
-    max-width: 1200px;
+  .cardContent h3 {
+    font-size: 19px;
+  }
+
+  .lists span {
+    font-size: 17px;
+  }
+
+  .tabdiv.active p {
+    font-size: 17px;
   }
 
 }
@@ -368,8 +380,20 @@
 
 @media screen and (max-width: 1181px) {
 
+  .section {
+    margin: 0 auto 80px auto;
+  }
+
+  .newSection {
+    grid-template-columns: 22% 70%;
+  }
+
+  .MasterCard {
+    width: 85%;
+  }
+
   .courseCard {
-    max-width: 250px;
+    max-width: 350px;
   }
 
   .CourseCardHead {
@@ -382,7 +406,7 @@
   }
 
   .lists span {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .viewDetailsButton {
@@ -397,27 +421,27 @@
 
 @media screen and (max-width: 1081px) {
 
-  .cardContent h3 {
+  /* .cardContent h3 {
     font-size: 14px;
-  }
+  } */
 
   .cardContent {
-    gap: 10px;
+    gap: 15px;
   }
 
   .section {
     padding: 0;
   }
 
-  .MasterCard {
+  /* .MasterCard {
     max-width: 960px;
-  }
+  } */
 
   .contentConteiner h2 {
     font-size: 33px;
   }
 
-  .courseCard {
+  /* .courseCard {
     max-width: 220px;
   }
 
@@ -430,7 +454,7 @@
   .brochurebtn {
     font-size: 10px;
 
-  }
+  } */
 
   .viewDetailsButton {
     padding: 9px 12px;
@@ -438,48 +462,83 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .MasterCard {
+  /* .MasterCard {
     max-width: 904px;
+  } */
+
+  .courseCard {
+    max-width: 300px;
   }
 }
 
 @media screen and (max-width: 968px) {
 
-  .MasterCard {
+  /* .MasterCard {
     max-width: 888px;
-  }
+  } */
 
   .newSection {
-    grid-template-columns: 22% 68%;
+    grid-template-columns: 25% 68%;
   }
 
-  .courseCard {
-    max-width: 300px;
+  .contentConteiner h2 {
+    font-size: 28px;
   }
 
-  .lists span,
-  .brochurebtn,
-  .viewDetailsButton {
+  .cardContent h3 {
+    font-size: 17px;
+  }
+
+  .lists span {
     font-size: 13px;
   }
 
+  .buttons {
+    gap: 10px;
+  }
+
+  .brochurebtn,
+  .viewDetailsButton {
+    font-size: 14px;
+  }
+
+  .courseCard {
+    max-width: 270px;
+  }
+
+  .absloute {
+    right: 25px;
+  }
+
+  /* .lists span,
+  .brochurebtn,
+  .viewDetailsButton {
+    font-size: 13px;
+  } */
+
   .bgImageMaster {
-    max-width: 920px;
+    /* max-width: 920px; */
   }
 }
 
 @media screen and (max-width: 841px) {
 
+  .newSection {
+    grid-template-columns: 25% 65%;
+    gap: 10px;
+  }
+
   .section {
-    margin: 0 auto 60px auto;
+    margin: 0 auto 50px auto;
   }
 
   .MasterCard {
-    max-width: 761px;
+    /* max-width: 761px; */
+    width: 90%;
   }
 
   .bgImageMaster {
-    max-width: 800px;
+    /* max-width: 800px; */
   }
 
   .contentConteiner h2 {
@@ -487,15 +546,41 @@
   }
 
   .courseCard {
-    max-width: 250px;
+    max-width: 260px;
   }
 
   .absloute {
     right: 40px;
   }
 
+  .brochurebtn,
+  .viewDetailsButton {
+    font-size: 14px;
+    padding: 9px 12px;
+  }
+
+  .viewMoreButton {
+    font-size: 20px;
+  }
+
   .viewMoreContainer {
     margin: 0px auto 20px;
+  }
+
+  .tabMain p {
+    font-size: 14px;
+  }
+
+  .tabdiv.active p {
+    font-size: 15px;
+  }
+
+  .cardContent h3 {
+    font-size: 17px;
+  }
+
+  .lists span {
+    font-size: 13px;
   }
 }
 
@@ -513,12 +598,12 @@
     margin: 0;
   }
 
-  .CourseCardHead {
+  /* .CourseCardHead {
     margin: 20px 0;
-  }
+  } */
 
   .MasterCard {
-    max-width: 680px;
+    /* max-width: 680px; */
   }
 
   .contentConteiner h2 {
@@ -536,20 +621,140 @@
   .absloute h4 {
     font-size: 24px;
   }
+
+  .bgImageMaster {
+    height: 180px;
+  }
+
+  .newSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .CourseCardHead {
+    width: 100%;
+    gap: 50px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .tabMain {
+    width: 100%;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scrollbar-color: #0072bc black;
+  }
+
+  .tabHead {
+    background: linear-gradient(180deg,
+        #fff 1.26%,
+        #eff3f6 17.6%,
+        #eff3f6 90.85%,
+        #fff 100%);
+
+    padding: 0 20px;
+  }
+
+  .tabMain::-webkit-scrollbar {
+    height: 1px;
+  }
+
+  .tabMain::-webkit-scrollbar-track {
+    background: var(--black);
+    border-radius: 10px;
+  }
+
+  .tabMain::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+    border: 10px solidvar(--black);
+  }
+
+  .tabMain::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue)
+  }
+
+  .tabdiv {
+    flex: 0 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 150px;
+    padding: 10px 20px;
+    background-color: var(--white);
+  }
+
+
+
+  .tabMain p {
+    font-size: var(--desktop_p-font-size);
+    font-weight: 600;
+    margin-right: 10px;
+  }
+
+  .tabMain p :nth-child(2) {
+    background-color: var(--red-official);
+    color: var(--primary-color);
+  }
+
+  .courseCard {
+    /* width: 100%; */
+    max-width: 100%;
+    /* padding: 0 20px; */
+    margin-bottom: 40px;
+  }
+
+  .swiperContainer {
+    padding: 0px 20px 0;
+  }
+
+  .buttons {
+    justify-content: space-around;
+  }
+
+  .buttonsMaster {
+    justify-content: flex-start;
+  }
+
+  /* .courseCard img {
+    width: 100%;
+  } */
+
 }
 
 @media screen and (max-width: 641px) {
 
   .MasterCard {
-    width: 600px;
+    /* width: 600px; */
+    width: 85%;
   }
 
   .bgImageMaster {
-    width: 100%;
-    height: 400px;
+    /* width: 100%; */
+    height: 320px;
   }
 
-  .newSection {
+  .courseCard {
+    margin-bottom: 20px;
+  }
+
+  .section {
+    margin: 40px auto 50px auto;
+  }
+
+  .buttonsMaster {
+    justify-content: space-around;
+    font-size: 18px;
+  }
+
+  /* .newSection {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -626,7 +831,7 @@
 
   .courseCard img {
     width: 100%;
-  }
+  } */
 
   .lists span {
     font-size: 14px;
@@ -634,7 +839,7 @@
 
   .viewDetailsButton,
   .brochurebtn {
-    font-size: 13px;
+    font-size: 12px;
     padding: 7px 19px;
   }
 
@@ -649,21 +854,21 @@
   }
 
   .viewMoreContainer {
-    margin: 50px 0 30px;
+    margin: 30px 0;
     /* margin-bottom: 30px;
     margin-top: -50px; */
   }
 
-  .section {
+  /* .section {
     padding: 0;
-  }
+  } */
 
   .listicondiv img {
     width: 30px;
     height: auto;
   }
 
-  .tabHead {
+  /* .tabHead {
     background: linear-gradient(180deg,
         #fff 1.26%,
         #eff3f6 17.6%,
@@ -671,7 +876,7 @@
         #fff 100%);
 
     padding: 0 20px;
-  }
+  } */
 
   .container {
     padding-bottom: 0;
@@ -689,9 +894,9 @@
   }
 
   .contentConteiner {
-    top: 70px;
+    top: 50px;
     padding: 10px 20px;
-    gap: 25px;
+    gap: 20px;
   }
 
   .contentConteiner img {
@@ -700,8 +905,9 @@
   }
 
   .absloute {
-    top: 148px;
+    top: 115px;
     left: 30px;
+    height: fit-content;
   }
 
   .absloute h4 {
@@ -724,7 +930,7 @@
   }
 
   .mastericon {
-    margin-top: 120px;
+    margin-top: 80px;
     align-items: center;
 
   }
@@ -776,28 +982,51 @@
   }
 
   .buttons {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .MasterCard {
-    max-width: 441px;
+    /* max-width: 441px; */
   }
 
   .mastericon {
     margin-top: 80px;
   }
 
+  .contentConteiner {
+    top: 70px;
+  }
+
   .contentConteiner h2 {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .absloute {
     top: 125px;
     bottom: 0;
+    left: 0;
+    right: 95px;
+    gap: 0;
+  }
+
+  .absloute h4 {
+    font-size: 20px;
+  }
+
+  .absloute span {
+    line-height: 1.2;
+  }
+
+  .contentConteiner img {
+    width: 22px;
+  }
+
+  .contentConteiner p {
+    font-size: 13px;
   }
 
   .bgImageMaster {
-    height: 350px;
+    height: 320px;
   }
 }
 
@@ -809,7 +1038,7 @@
   }
 
   .MasterCard {
-    max-width: 380px;
+    /* max-width: 380px; */
   }
 
   .absloute span {
@@ -817,14 +1046,13 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 361px) {
+  .section {
+    margin: 0 auto 20px auto;
+  }
 
   .contentConteiner {
     top: 55px;
-  }
-
-  .MasterCard {
-    max-width: 320px;
   }
 
   .buttons button {
@@ -833,17 +1061,10 @@
 
   .absloute {
     top: 110px;
-    left: 8px;
-    width: 100%;
-    height: fit-content;
   }
 
   .mastericon {
     margin-top: 45px;
-  }
-
-  .contentConteiner p {
-    font-size: 14px;
   }
 
   .contentConteiner {
@@ -860,5 +1081,18 @@
 
   .buttonsMaster {
     top: -20px;
+  }
+
+  .cardContent h3 {
+    font-size: 15px;
+  }
+
+  .listicondiv img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .lists span {
+    font-size: 12px;
   }
 }

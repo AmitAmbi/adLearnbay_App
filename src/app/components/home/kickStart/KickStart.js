@@ -104,7 +104,9 @@ const KickStart = () => {
   return (
     <div className="containerWidth">
       <div className={styles.continer}>
-        <h3>Kickstart your career with our programs</h3>
+        <h3>
+          Kickstart your career with <span>our programs</span>
+        </h3>
         <p className={styles.desktopText}>
           Our programs have helped thousands launch careers in tech
         </p>

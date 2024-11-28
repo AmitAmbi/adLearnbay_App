@@ -2,7 +2,7 @@
   width: 100%;
   border-radius: 40px;
   background: var(--cyan);
-  margin: 100px auto;
+  margin: 70px auto;
   padding: 36px 0;
 }
 
@@ -129,13 +129,24 @@
 @media screen and (max-width: 1181px) {
 
   .container h2 {
-    font-size: 34px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .container h2 {
+    font-size: 28px;
+  }
+
+  .topDiv,
+  .DownDiv {
+    margin-top: 20px;
   }
 }
 
 @media screen and (max-width: 841px) {
   .container {
-    margin: 60px auto;
+    margin: 50px auto;
   }
 
   .container h2 {
@@ -158,10 +169,16 @@
   }
 }
 
+@media screen and (max-width: 761px) {
+  .container {
+    padding: 25px 0;
+  }
+}
+
 @media screen and (max-width: 641px) {
   .container {
     padding: 20px 0 40px 0;
-    margin: 60px 0;
+    margin: 40px 0;
   }
 
   .Desktoponly {
@@ -171,7 +188,7 @@
   .mblonly {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -181,7 +198,7 @@
   .mblonly h2 {
     color: var(--stone-color);
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: 126.5%;
@@ -217,12 +234,25 @@
 
 @media screen and (max-width: 481px) {
   .container {
-    margin: 40px auto;
     padding: 20px 0;
   }
 
-  .mblonly {
-    padding: 15px;
+  /* .mblonly {
+    padding: 5px;
+  } */
+
+  .mblonly h2{
+    color: var(--light-black);
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .mblonly h2 span{
+    font-weight: 600;
+  }
+
+  .mblonly p{
+    font-size: 14px;
   }
 
   .topDiv,
@@ -237,13 +267,17 @@
 
 }
 
-@media screen and (max-width: 401px) {
+/* @media screen and (max-width: 401px) {
   .mblonly h2 {
     font-size: 24px;
   }
-}
+} */
 
 @media screen and (max-width: 361px) {
+
+  .container{
+    margin: 20px 0;
+  }
 
   .mblonly {
     padding: 10px;

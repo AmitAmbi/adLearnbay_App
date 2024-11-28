@@ -110,6 +110,7 @@
 @media screen and (max-width:1181px) {
     .NewSevenSection {
         padding: 50px;
+        margin: 80px auto;
     }
 }
 
@@ -146,8 +147,8 @@
 
 @media screen and (max-width: 841px) {
     .NewSevenSection {
-        margin: 60px auto;
-        padding: 25px 40px;
+        margin: 50px auto;
+        padding: 25px;
     }
 
     .rytImgWrapper {
@@ -179,7 +180,7 @@
         border-radius: 30px;
         background: var(--light-black);
         padding: 20px;
-        margin: 60px auto;
+        margin: 40px auto;
     }
 
     .griContiner {
@@ -246,8 +247,12 @@
 
 @media screen and (max-width:481px) {
 
-    .NewSevenSectionM {
-        margin: 40px auto;
+    .NewSevenSectionM h4 {
+        font-size: 20px;
+    }
+
+    .NewSevenSectionM h3 {
+        font-size: 22px;
     }
 
     .blue,
@@ -271,6 +276,10 @@
 }
 
 @media screen and (max-width:361px) {
+
+    .NewSevenSectionM {
+        margin: 20px auto;
+    }
 
     .blue,
     .green {

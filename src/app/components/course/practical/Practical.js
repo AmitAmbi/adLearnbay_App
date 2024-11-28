@@ -39,7 +39,7 @@ const Practical = () => {
                       width="38px"
                       height="25px"
                       viewBox="0 0 1024 1024"
-                      class="icon"
+                      className="icon"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path

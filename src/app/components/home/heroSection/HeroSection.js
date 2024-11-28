@@ -1,4 +1,5 @@
 "use client";
+"use client";
 
 import React, { useState, useEffect } from "react";
 import styles from "./HeroSection.module.css";
@@ -6,6 +7,15 @@ import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import PopupContent from "../../global/popup/PopupContent";
 
+// function HeroSection({
+//   dataScience,
+//   radio,
+//   dataScienceCounselling,
+//   interstedInHide,
+//   idss,
+//   btnHide,
+//   dataScienceGeneric,
+// }) {
 function HeroSection({
   dataScience,
   radio,
@@ -19,7 +29,7 @@ function HeroSection({
     setPopups(true);
   };
 
-  const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 641px)" });
 
   const [typeLogo, setTypeLogo] = useState("");
 
@@ -47,7 +57,7 @@ function HeroSection({
         <div className={styles.gridConteiner}>
           <div className={styles.leftside}>
             <h1>
-              India’s #1 <span className={styles.spantitle}>Project-based</span>{" "}
+              India’s <span className={styles.spantitle}>#1 Project-based</span>{" "}
               Upskilling Platform for Professionals
             </h1>
 

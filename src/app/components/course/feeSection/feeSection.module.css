@@ -252,8 +252,9 @@
   align-items: center;
   text-align: right;
   /* margin-left: 300px; */
-  height: 450px;
-  margin: 150px 220px 20px 220px;
+  height: 65%;
+  width: 60%;
+  margin: auto;
 }
 .clostbtn span {
   color: #767676;
@@ -587,6 +588,9 @@
   .innerContainer {
     gap: 20px;
   }
+  .Emipopup {
+    padding: 10px 15px;
+  }
 }
 @media (max-width: 1024px) {
   /* .ThreeCard {
@@ -624,6 +628,12 @@
   .feeContentContainer h4 {
     font-size: 24px;
   }
+  .feesmain h2 {
+    font-size: 34px;
+  }
+  .border {
+    padding: 18px 0 25px 0;
+  }
   .firstContainer,
   .secondContainer {
     gap: 10px;
@@ -647,6 +657,9 @@
   .headOrange {
     font-size: 21px;
   }
+  .border p {
+    font-size: 15px;
+  }
 }
 @media (max-width: 641px) {
   /* .ThreeCard {
@@ -658,11 +671,8 @@
   } */
 
   .feesmain h2 {
-    text-align: center;
     margin-top: 50px;
     font-size: 28px;
-    color: var(--light-black);
-    font-weight: 400;
   }
 
   .iconDiv {
@@ -687,8 +697,8 @@
   }
 
   .Emipopup {
-    margin: -25px;
-    margin-top: 200px;
+    /* margin: -25px;
+    margin-top: 200px; */
     padding: 1px 9px;
     height: 300px;
   }
@@ -712,11 +722,7 @@
     flex-direction: column;
   }
   .firstContainer .iconDiv {
-    margin-top: 20px;
-    gap: 12px;
     grid-template-columns: 100%;
-    margin-bottom: 20px;
-    padding-bottom: 24px;
   }
   .feesmain {
     margin-top: 50px;
@@ -724,18 +730,13 @@
   .border {
     padding: 0px 0px 20px 0px;
   }
-  .firstContainer,
-  .secondContainer {
-    padding: 20px 16px;
-    border-radius: 20px;
-  }
+
   .feeContentContainer h4 {
-    padding: 0px;
     font-size: 32px;
   }
-  .emiButton {
-    margin: auto;
-    margin-top: 20px;
+  .firstContainer,
+  .secondContainer {
+    padding: 30px;
   }
   /* .divHeadIcon h4 {
     margin: 0;
@@ -753,7 +754,6 @@
   .headOrange,
   .headBlue {
     font-size: 26px;
-    margin-bottom: 20px;
   }
   /* .headContent img,
   .headContentBlue img {
@@ -771,30 +771,16 @@
     width: 84px;
     height: 80px;
   } */
-  .secondContainer {
-    margin-top: 40px;
-  }
+
   .firstP {
     font-size: 18px;
   }
   .innerIconDiv img {
     height: 20px;
   }
-  .pImp {
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  .pImp span {
-    color: var(--light-orange);
-  }
-
   .iconDiv {
     gap: 12px;
     margin-bottom: 20px;
-  }
-  .innerIconDiv {
-    gap: 14px;
   }
   .border p {
     font-size: 18px;
@@ -807,23 +793,18 @@
   .emiButton {
     margin-top: 10px;
   }
-  .emiButton button {
-    margin-top: 0;
-    padding: 10px 20px;
-  }
   /* .headContentBlue {
     margin-top: 40px;
   } */
-  .starRight {
-    margin-top: -20px;
-    margin-left: 23px;
-  }
+
   .divTop {
     gap: 10px;
-
     position: relative;
   }
-  .divTop span {
-    margin-bottom: 20px;
+}
+@media (max-width: 481px) {
+  .headBlue,
+  .headOrange {
+    font-size: 19px;
   }
 }

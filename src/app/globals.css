@@ -118,7 +118,8 @@ html,
 }
 
 .containerWidth {
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  width: 80%;
   margin: auto;
 }
 
@@ -382,7 +383,7 @@ body {
   }
 
   .containerWidth {
-    max-width: 1120px;
+    /* max-width: 1120px; */
   }
 
 }
@@ -390,13 +391,13 @@ body {
 
 @media (max-width: 1181px) {
   .containerWidth {
-    max-width: 1020px;
+    width: 85%;
   }
 }
 
 @media (max-width: 1081px) {
   .containerWidth {
-    max-width: 960px;
+    /* max-width: 960px; */
   }
 }
 
@@ -404,7 +405,7 @@ body {
 @media (max-width: 1024px) {
 
   .containerWidth {
-    max-width: 904px;
+    /* max-width: 904px; */
   }
 
   h2 {
@@ -416,7 +417,7 @@ body {
 @media (max-width: 968px) {
 
   .containerWidth {
-    max-width: 888px;
+    /* max-width: 888px; */
   }
 
   h2 {
@@ -426,7 +427,12 @@ body {
 
 @media (max-width: 841px) {
   .containerWidth {
-    max-width: 761px;
+    width: 90%;
+  }
+
+  .OrangeButton {
+    font-size: 16px;
+    padding: 10px 15px;
   }
 }
 
@@ -437,7 +443,7 @@ body {
   }
 
   .containerWidth {
-    max-width: 680px;
+    /* max-width: 680px; */
   }
 
   .button {
@@ -450,14 +456,15 @@ body {
 @media (max-width: 641px) {
   .containerWidth {
     /* width: 600px; */
-    width: 510px;
+    /* width: 510px; */
+    width: 85%;
   }
 }
 
 @media (max-width: 481px) {
 
   .containerWidth {
-    max-width: 441px;
+    /* max-width: 441px; */
   }
 
   .bannerButton {
@@ -476,7 +483,7 @@ body {
 @media (max-width: 431px) {
 
   .containerWidth {
-    max-width: 380px;
+    /* max-width: 380px; */
   }
 }
 
@@ -487,13 +494,13 @@ body {
   }
 
   .containerWidth {
-    max-width: 360px;
+    /* max-width: 360px; */
   }
 }
 
 @media (max-width: 361px) {
   .containerWidth {
-    max-width: 320px;
+    /* max-width: 320px; */
   }
 
   .button {

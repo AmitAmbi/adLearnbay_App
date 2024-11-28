@@ -1,14 +1,14 @@
 .section {
   display: grid;
-  grid-template-columns: 66% 32%;
+  grid-template-columns: 66% 35%;
   border-radius: 30px;
-  margin: 50px 130px;
-  padding: 50px 50px 0px 50px;
+  /* margin: 50px 130px; */
+  padding: 50px 50px 0px;
   align-items: center;
   border-radius: 50px;
   background: var(--cyan);
-  max-width: 1200px;
-  margin: auto;
+  width: 80%;
+  margin: 100px auto auto;
 }
 
 .FirstDiv {
@@ -19,7 +19,7 @@
 
 .FirstDiv h4 {
   color: var(--black);
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 600;
 }
 
@@ -27,6 +27,10 @@
 
   background-clip: text;
   color: var(--black);
+}
+
+.btnWrapper{
+  text-align: center;
 }
 
 .btnWrapper button {
@@ -85,15 +89,16 @@
 
 @media (max-width: 1281px) {
 
-  .section {
-    max-width: 1120px;
+  .FirstDiv h4 {
+    font-size: 36px;
   }
 }
 
 @media (max-width: 1181px) {
 
   .section {
-    max-width: 1020px;
+    width: 85%;
+    margin: 80px auto auto;
   }
 
   .MobileReviewImageContainer img {
@@ -104,21 +109,26 @@
     font-size: 32px;
   }
 
+  .imgBorder {
+    width: 70px;
+    height: 70px;
+  }
+
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1081px) {
   .section {
-    max-width: 960px;
+    /* max-width: 960px; */
     grid-template-columns: 64% 35%;
     padding: 50px 30px 0 30px;
+  }
+
+  .FirstDiv h4 {
+    font-size: 30px;
   }
 }
 
 @media (max-width: 1024px) {
-  .section {
-    padding: 50px 30px 0px 30px;
-    max-width: 904px;
-  }
 
   .FirstDiv h4 {
     font-size: 30px;
@@ -133,23 +143,12 @@
 
 @media (max-width: 968px) {
 
-  .section {
-    max-width: 888px;
-  }
-
   .MobileReviewImageContainer img {
     width: 100%;
   }
 
   .FirstDiv h4 {
-    font-size: 28px;
-  }
-}
-
-
-@media (max-width: 841px) {
-  .section {
-    max-width: 761px;
+    font-size: 24px;
   }
 
   .imgBorder {
@@ -157,16 +156,26 @@
     height: 60px;
   }
 
-  .FirstDiv h4 {
-    font-size: 27px;
+  .leftSlide svg {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+
+@media (max-width: 841px) {
+  .section {
+    width: 90%;
+    margin: 50px auto auto;
+  }
+
+  .Btn {
+    padding: 10px 15px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 761px) {
-
-  .section {
-    max-width: 680px;
-  }
 
   .FirstDiv h4 {
     font-size: 23px;
@@ -179,7 +188,7 @@
 
 @media (max-width: 641px) {
   .section {
-    margin: 0px;
+    margin: 40px auto auto;
     display: block;
     border-radius: 0px;
     width: 100%;
@@ -207,17 +216,17 @@
   }
 
   .leftSlide {
-    width: 70%;
+    width: 85%;
   }
 
   .icons {
     font-size: 30px;
   }
 
-  .imgBorder {
+  /* .imgBorder {
     width: 50px;
     height: 50px;
-  }
+  } */
 
   .sliderUser {
     gap: 10px;
@@ -247,17 +256,34 @@
 }
 
 @media(max-width:481px) {
+
+  .section {
+    padding: 30px 30px 0;
+  }
+
   .leftSlide {
     width: 90%;
   }
 
   .FirstDiv h4 {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .FirstDiv span {
+    font-size: 24px;
   }
 
   .leftSlide svg {
     width: 40px;
     height: 40px;
+  }
+
+  .MobileReviewImageContainer {
+    width: 100%;
+  }
+
+  .MobileReviewImageContainer img {
+    width: 90%;
   }
 }
 
@@ -273,6 +299,11 @@
 }
 
 @media(max-width:361px) {
+
+  .section {
+    margin: 20px auto auto;
+  }
+
   .FirstDiv h4 {
     font-size: 18px;
     font-weight: 400;

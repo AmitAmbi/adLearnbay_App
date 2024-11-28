@@ -6,12 +6,8 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
-import "swiper/css"; // Swiper core styles
-import "swiper/css/navigation"; // Navigation styles (if used)
-import "swiper/css/pagination"; // Pagination styles (if used)
+import { EffectCoverflow } from "swiper/modules";
 import PopupContent from "../../global/popup/PopupContent";
-import "swiper/css/effect-coverflow"; // Coverflow effect styles (if used)
 
 const SyllabusSection = ({
   sections = [],

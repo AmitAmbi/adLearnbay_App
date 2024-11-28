@@ -68,7 +68,7 @@ function Animation() {
                   {item.svg && item.svg}
                 </div>
                 <div className={styles.downArrow}></div>
-                <div>
+                <div className={styles.whyChooseContent}>
                   <h4>{item.title}</h4>
                   <p>{item.description}</p>
                 </div>
