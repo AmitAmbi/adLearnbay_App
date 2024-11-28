@@ -46,9 +46,9 @@
     align-items: center;
   }
   
-  .middleLine {
+  /* .middleLine {
   margin: 0px auto 30px auto;
-  }
+  } */
   
   
   .iconDivMain {
@@ -202,10 +202,10 @@
   .upskillHeading{
     font-size: 24px;
   }
-  .middleLine {
+  /* .middleLine {
     width: 0px;
    
-  }
+  } */
   .spanHead {
     text-underline-offset: 14px;
   }
@@ -284,7 +284,7 @@
     }
     .certBoxWrapperTop{
       gap: 20px;
-      padding:20px;
+      padding:16% 16%;
 }
 .iconDivMain p {
   font-size: 14px;
@@ -292,4 +292,17 @@
   .certBoxDemo{
     padding:10px;
   }
+}
+@media only screen and (max-width: 361px){
+.certBoxDemo img {
+  height: auto;
+  width:95%;
+}
+.certBox img {
+  height: auto;
+  width:100%;
+}
+.certBoxWrapperTop{
+  padding:5%;
+}
 }
