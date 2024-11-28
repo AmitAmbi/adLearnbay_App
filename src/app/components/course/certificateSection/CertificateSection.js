@@ -32,9 +32,9 @@ function CertificateSection() {
                 />
                 <div className={styles.iconDivMain}>
                   <h4>{certificate.title}</h4>
-                  <div className={styles.iconDiv}>
                     <p>{certificate.description}</p>
-                  </div>
+                  {/* <div className={styles.iconDiv}>
+                  </div> */}
                 </div>
               </div>
             ))}
