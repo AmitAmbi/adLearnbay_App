@@ -40,7 +40,7 @@
     grid-template-columns: 42% 42%; */
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 20px;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -52,15 +52,15 @@
   
   
   .iconDivMain {
-    margin-top: 20px;
-    margin-left: 16px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
   }
   
   .iconDivMain h4 {
     color: #FFF;
     font-size: 22px;
     font-weight: 500;
-    margin-bottom: 26px;
     }
   
     .iconDiv {
@@ -70,35 +70,35 @@
         align-items: flex-start;
     }
   
-    .iconDiv p {
+    .iconDivMain p {
         margin: 0;
         color: #FFF;
         font-size: 16px;
         font-weight: 400;
-        line-height: 28px;
-        margin-bottom: 20px;
-        margin-top: -5px;
-        width: 100%;
-        max-width: 400px;
     }
   
     .iconDiv svg {
         fill: #20A898;
         font-size: 22px;
     }
+    .certBox{
+      display: flex;
+      flex-flow: column;
+      gap: 10px;
+    }
   
     .certBoxWrapperTop{
       display: grid;
-      grid-template-columns: 61% 48%;
+      grid-template-columns: 35% 35%;
       justify-content: center;
-      grid-gap: 80px;
-      gap: 34px;
+      gap: 160px;
     }
+    
     .certBoxDemo{
       display: grid;
-      grid-template-columns: 36% 49%;
-      justify-content: flex-start;
-      gap:120px;
+      grid-template-columns: 49% 49%;
+      justify-content: center;
+      gap:15px;
       align-items: center;
   
     }
@@ -124,47 +124,72 @@
     .AddonMbl{
       display: none;
     }
-    @media only screen and (max-width:1280px){
-      .certBoxWrapperTop{
-        grid-template-columns: 53% 43%;
+    @media only screen and (max-width:1281px){
+            .certBoxDemo{
+        grid-template-columns: 36% 49%;
+        gap:56px;
       }
-      .certBoxDemo{
-        grid-template-columns: 43% 49%;
-        gap:100px;
+      .iconDivMain h4{
+        font-size: 20px;
       }
     }
 
-  @media only screen and (max-width:1024px){
+  @media only screen and (max-width:1081px){
     .certBoxWrapperTop{
-      grid-template-columns: 50% 46%;
+      gap: 140px;
     }
-    .certBoxDemo{
-      grid-template-columns: 46% 44%;
-      gap:75px;
+    .certBox img{
+      width: 330px;
+      height: 220px;
     }
     .upskillHeading{
-      font-size: 40px;
+      font-size: 34px;
     }
   }
-  @media only screen and (max-width: 841px) {
+  
+  @media only screen and (max-width:1024px){
+    .certBoxDemo {
+      grid-template-columns: 24% 45%;
+      gap: 179px;
+    } 
+  }
+  @media only screen and (max-width: 967px) {
     .containerWidth{
       width:100%;
     }
     .certBox img{
       width:100%;
+      color: transparent;
+      height: auto;
     }
     .certBoxWrapperTop{
-      gap: 20px;
+      gap: 120px;
+      grid-template-columns: 37% 37%;
   }
   .certBoxDemo{
-    gap: 60px
+    gap: 80px;
+   
+}
+.toolIcon{
+  width:100%;
+  height:auto;
+}
+.certBoxDemo {
+  grid-template-columns: 36% 40%;
 }
 }
-
+@media only screen and (max-width: 841px){
+.upskillHeading{
+  font-size: 28px;
+}
+.iconDivMain h4{
+  font-size: 15px;
+}
+}
 @media only screen and (max-width: 761px){
   .certBoxDemo{
-  grid-template-columns: 45% 45%;
-
+  grid-template-columns: 40% 43%;
+  gap:60px;
 }
 }
   @media only screen and (max-width: 641px) {
@@ -172,14 +197,14 @@
     width: 100%;
     margin-top: 0px;
     border-radius: 0px;
-    padding: 40px 24px;
+    padding: 40px 5px;
   }
   .upskillHeading{
-    font-size: 28px;
+    font-size: 24px;
   }
   .middleLine {
     width: 0px;
-    margin: 10px 0px;
+   
   }
   .spanHead {
     text-underline-offset: 14px;
@@ -196,13 +221,11 @@
     height: auto;
     width:320px;
   }
-  .iconDiv {
-    grid-template-columns: 7% 90%;
-  }
+  
   .iconDivMain h4 {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 20px;
+    
   }
   .iconDivMain {
     margin-left: 8px;
@@ -210,9 +233,8 @@
   .iconDiv svg {
     font-size: 20px;
   }
-  .iconDiv p {
+  .iconDivMain p {
     font-size: 16px;
-    line-height: 24px;
   }
   .mHead {
     margin-top: -24px;
@@ -260,4 +282,14 @@
     .upskillHeading{
       font-size: 22px;
     }
+    .certBoxWrapperTop{
+      gap: 20px;
+      padding:20px;
+}
+.iconDivMain p {
+  font-size: 14px;
+  }
+  .certBoxDemo{
+    padding:10px;
+  }
 }
