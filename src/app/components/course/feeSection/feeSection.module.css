@@ -252,7 +252,7 @@
   align-items: center;
   text-align: right;
   /* margin-left: 300px; */
-  height: 65%;
+  height: 40%;
   width: 60%;
   margin: auto;
 }
@@ -703,7 +703,7 @@
     /* margin: -25px;
     margin-top: 200px; */
     padding: 1px 9px;
-    height: 300px;
+    /* height: 300px; */
   }
 
   /* new css */
@@ -809,5 +809,16 @@
   .headBlue,
   .headOrange {
     font-size: 19px;
+  }
+  .firstContainer,
+  .secondContainer {
+    padding: 25px 21px;
+  }
+  .headBlue,
+  .headOrange {
+    font-size: 18px;
+  }
+  .mainContainer {
+    padding: 0 13px 40px 13px;
   }
 }

@@ -1,392 +1,384 @@
-/* .projectSection {
-    margin-top: 4rem;
-    width: 100%;
-    background: linear-gradient(180deg, #fff 8.58%, #eff3f6 69.44%, #fff 99.96%);
-    position: relative;
-    margin-bottom: 110px;
-  }
-  
-  .headline {
-    margin-bottom: 20px;
-    color: #000;
-    font-size: 40px;
-    font-style: normal;
-    text-align: center;
-    font-weight: 400;
-    line-height: 126.5%; 
-  }
-  
-  .headline span {
-    font-weight: 600;
-  }
-  
-  .projectHeading {
-    text-align: center;
-    color: #000;
-    padding: 1.5rem 0;
-    font-size: 55px;
-    font-weight: 400;
-  }
-  
-  .boldHeading {
-    font-size: 55px;
-    font-weight: 700;
-    border-bottom: 4px solid #fe7a36;
-  }
-  
-  .botDiv img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .botDiv {
-    width: 100%;
-    max-width: 1150px;
-    margin: auto;
-  }
-  
-  .botDiv h4 {
-    color: #fff;
-    margin-top: -90px;
-    margin-left: 40px;
-    position: absolute;
-  }
-  
-  .botDiv p {
-    font-size: 14px;
-    margin-left: 10px;
-    margin-top: 30px;
-  }
-  
-  .spanOrange {
-    color: #fe7a36;
-    font-weight: 700;
-  }
-  
-  .orangeLine {
-    height: 5px;
-    width: 212px;
-    background: #fe7a36;
-    margin: auto;
-  }
-  
-  .subheadingContainer {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .orangeBox,
-  .blueBox,
-  .greenBox {
-    border-radius: 40.486px;
-    padding: 8px 30px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-  }
-  
-  .orangeBox {
-    color: #fe7a36;
-    background: #fff2eb;
-  }
-  
-  .blueBox {
-    background: #e5f2f8;
-    color: #0072bc;
-  }
-  
-  .greenBox {
-    background: #e6faf3;
-    color: #04c988;
-  }
-  
-  .mySwiper {
-    width: 1150px;
-    margin: auto;
-    margin-top: 60px;
-  }
-  
-  .sliderWrapper {
-    margin-bottom: 2.6rem;
-  }
-  
-  .projectsContainer {
-    margin-top: 3.5rem;
-  }
-  
-  .projectCard {
-    border-radius: 40px;
-    background: #fff;
-    padding: 1.5rem 1.4rem;
-    height: 370px;
-  }
-  
-  .upperPart {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .upperRight {
-    display: flex;
-    gap: 1rem;
-    margin-top: -1.5rem;
-  }
-  
-  .boxNum {
-    color: rgba(0, 0, 0, 0.4);
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 6px;
-  }
-  
-  .hrsBox {
-    border-radius: 0px 40px 0px 10px;
-    background: #022646;
-    height: 40px;
-    padding: 0px 35px;
-    margin-right: -1.4rem;
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.6);
-    text-align: center;
-    font-size: 30px;
-  }
-  
-  .cardTitle {
-    color: #0072bc;
-    font-size: 15px;
-    font-weight: 600;
-    margin: 14px auto;
-  }
-  
-  .cardText {
-    color: #616161;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 21px;
-  }
-  
-  .lowerBox {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.6rem;
-    border-radius: 12px;
-    background: rgba(254, 122, 54, 0.1);
-    padding: 0.8rem 1rem;
-    margin: 1rem 0;
-  }
-  
-  .projectIcon {
-    width: auto;
-    height: 35px;
-    mix-blend-mode: multiply;
-  }
-  
-  .tableauIcon {
-    width: 120px;
-    height: 30px;
-  }
-  
-  .sqlIcon {
-    width: 80px;
-    height: 25px;
-  }
-  
-  .ctaText {
-    color: #0072bc;
-    font-weight: 400;
-  }
-  
-  .blueSpan {
-    color: #0072bc;
-    font-weight: 600;
-    text-decoration-line: underline;
-    font-style: italic;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  .blueSpan:hover {
-    color: #fe7a36;
-  }
-  
-  .botDivMobile {
-      display: none;
-  }
-  
-  .imgesIconDiv{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .MainDown{
-    width: 1100px;
-    margin: auto;
-  
-  } 
-  .downDiv{
-    display: grid;
-    grid-template-columns: 34% 48%;
-    justify-content: space-around;
-    grid-gap: 100px;
-    grid-gap: 100px;
-    gap: 51px;
-    border-radius: 22px;
-    padding: 20px;
-    width: 960px;
-  
+.projectSection {
+  margin-top: 4rem;
+  width: 100%;
+  background: linear-gradient(180deg, #fff 8.58%, #eff3f6 69.44%, #fff 99.96%);
+  position: relative;
+  margin-bottom: 110px;
+}
+
+.headline {
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  line-height: 126.5%;
+}
+
+.headline span {
+  font-weight: 600;
+}
+
+.projectHeading {
+  text-align: center;
+  color: #000;
+  padding: 1.5rem 0;
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.boldHeading {
+  font-size: 55px;
+  font-weight: 700;
+  border-bottom: 4px solid #fe7a36;
+}
+
+.botDiv img {
+  width: 100%;
+  height: auto;
+}
+
+.botDiv {
+  width: 100%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.botDiv h4 {
+  color: #fff;
+  margin-top: -90px;
+  margin-left: 40px;
+  position: absolute;
+}
+
+.botDiv p {
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.spanOrange {
+  color: #fe7a36;
+  font-weight: 700;
+}
+
+.orangeLine {
+  height: 5px;
+  width: 212px;
+  background: #fe7a36;
+  margin: auto;
+}
+
+.subheadingContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.orangeBox,
+.blueBox,
+.greenBox {
+  border-radius: 40.486px;
+  padding: 8px 30px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.orangeBox {
+  color: #fe7a36;
+  background: #fff2eb;
+}
+
+.blueBox {
+  background: #e5f2f8;
+  color: #0072bc;
+}
+
+.greenBox {
+  background: #e6faf3;
+  color: #04c988;
+}
+
+.mySwiper {
+  width: 1150px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.sliderWrapper {
+  margin-bottom: 2.6rem;
+}
+
+.projectsContainer {
+  margin-top: 3.5rem;
+}
+
+.projectCard {
+  border-radius: 40px;
+  background: #fff;
+  padding: 1.5rem 1.4rem;
+  height: 370px;
+}
+
+.upperPart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upperRight {
+  display: flex;
+  gap: 1rem;
+  margin-top: -1.5rem;
+}
+
+.boxNum {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.hrsBox {
+  border-radius: 0px 40px 0px 10px;
+  background: #022646;
+  height: 40px;
+  padding: 0px 35px;
+  margin-right: -1.4rem;
+  display: flex;
   align-items: center;
-    background: radial-gradient(
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 30px;
+}
+
+.cardTitle {
+  color: #0072bc;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 14px auto;
+}
+
+.cardText {
+  color: #616161;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.lowerBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  border-radius: 12px;
+  background: rgba(254, 122, 54, 0.1);
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+}
+
+.projectIcon {
+  width: auto;
+  height: 35px;
+  mix-blend-mode: multiply;
+}
+
+.tableauIcon {
+  width: 120px;
+  height: 30px;
+}
+
+.sqlIcon {
+  width: 80px;
+  height: 25px;
+}
+
+.ctaText {
+  color: #0072bc;
+  font-weight: 400;
+}
+
+.blueSpan {
+  color: #0072bc;
+  font-weight: 600;
+  text-decoration-line: underline;
+  font-style: italic;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.blueSpan:hover {
+  color: #fe7a36;
+}
+
+.botDivMobile {
+  display: none;
+}
+
+.imgesIconDiv {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.MainDown {
+  width: 1100px;
+  margin: auto;
+}
+.downDiv {
+  display: grid;
+  grid-template-columns: 34% 48%;
+  justify-content: space-around;
+  grid-gap: 100px;
+  grid-gap: 100px;
+  gap: 51px;
+  border-radius: 22px;
+  padding: 20px;
+  width: 960px;
+
+  align-items: center;
+  background: radial-gradient(
       circle at 10% 10%,
-      rgba(218, 105, 44, 0.4) 4%, 
-       transparent 40% 
+      rgba(218, 105, 44, 0.4) 4%,
+      transparent 40%
     ),
-    radial-gradient(
-      circle at 90% 80%,
-      rgba(2, 54, 92, 0.9) 1%,
-       transparent 30% 
-    ),
+    radial-gradient(circle at 90% 80%, rgba(2, 54, 92, 0.9) 1%, transparent 30%),
     #212121;
-  }
-  .downDiv h6 {
-    color: #FFF;
+}
+.downDiv h6 {
+  color: #fff;
   font-style: normal;
   font-weight: 600;
-  line-height: 126.5%; 
-  }
-  .ryticons{
-    display: flex;
-    gap: 20px;
-  }
-  .imgesIconDiv span {
-    color: #FFF;
+  line-height: 126.5%;
+}
+.ryticons {
+  display: flex;
+  gap: 20px;
+}
+.imgesIconDiv span {
+  color: #fff;
   text-align: center;
   font-size: 14.594px;
   font-weight: 400;
   line-height: normal;
-  }
-  
-  .boxDiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    gap: 20px;
-  }
-  
-  .imgside{
-    position: relative;
+}
+
+.boxDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.imgside {
+  position: relative;
   top: -70px;
+}
+
+@media screen and (max-width: 1208px) {
+  .mySwiper {
+    width: 1000px;
   }
-  
-  @media screen and (max-width: 1208px) {
-    .mySwiper {
-      width: 1000px;
-    }
+}
+
+@media screen and (max-width: 1200px) {
+  .projectHeading {
+    font-size: 45px;
   }
-  
-  @media screen and (max-width: 1200px) {
-    .projectHeading {
-      font-size: 45px;
-    }
-    .boldHeading {
-      font-size: 45px;
-    }
-    .botDiv {
-      width: 90%;
-    }
+  .boldHeading {
+    font-size: 45px;
   }
-  
-  @media screen and (max-width: 768px) {
-    .projectHeading {
-      font-size: 35px;
-    }
-    .boldHeading {
-      font-size: 35px;
-    }
-    .subheadingContainer {
-      gap: 0.5rem;
-    }
-    .projectCard {
-      height: auto;
-      padding: 1rem;
-    }
-    .lowerBox {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  .botDiv {
+    width: 90%;
   }
-  
-  @media screen and (max-width: 641px) {
-      .projectSection {
-          margin-bottom: 50px;
-      }
-  
-  
-    .headline {
-      margin: 0;
-      font-size: 28px;
-      line-height: 38px;
-    }
-    .headline span {
-      text-underline-offset: 10px;
-    }
-    .subheadingContainer {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-  
-    .hrsBox {
-      margin-right: auto;
-      font-size: 30px;
-  height: 40px;
-    }
-  
-    .botDiv {
-      display: none;
-    }
-  
-    .mySwiper {
-      width: 100%;
-      margin-top: 40px;
-      padding: 0px 20px !important;
-    }
-  
-    .botDivMobile {
-      padding: 30px 24px 0px 24px;
-      display: block;
-    }
-  
-    .projectCard {
-      padding: 14px 10px 20px 14px;
-      height: 350px;
-    }
-    .cardText {
-      font-size: 14px;
-      line-height: 20px;
-    }
-  
-    .cardTitle {
-      font-size: 14px;
-      margin: 14px 0px;
-    }
-  
-  
-    .botDivMobile img {
-      width: 100%;
-      height: auto;
-  
-    }
-  
-    .orangeBox,
+}
+
+@media screen and (max-width: 768px) {
+  .projectHeading {
+    font-size: 35px;
+  }
+  .boldHeading {
+    font-size: 35px;
+  }
+  .subheadingContainer {
+    gap: 0.5rem;
+  }
+  .projectCard {
+    height: auto;
+    padding: 1rem;
+  }
+  .lowerBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 641px) {
+  .projectSection {
+    margin-bottom: 50px;
+  }
+
+  .headline {
+    margin: 0;
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .headline span {
+    text-underline-offset: 10px;
+  }
+  .subheadingContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .hrsBox {
+    margin-right: auto;
+    font-size: 30px;
+    height: 40px;
+  }
+
+  .botDiv {
+    display: none;
+  }
+
+  .mySwiper {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0px 20px !important;
+  }
+
+  .botDivMobile {
+    padding: 30px 24px 0px 24px;
+    display: block;
+  }
+
+  .projectCard {
+    padding: 14px 10px 20px 14px;
+    height: 350px;
+  }
+  .cardText {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .cardTitle {
+    font-size: 14px;
+    margin: 14px 0px;
+  }
+
+  .botDivMobile img {
+    width: 100%;
+    height: auto;
+  }
+
+  .orangeBox,
   .blueBox,
   .greenBox {
     padding: 8px 16px;
@@ -395,37 +387,34 @@
     font-weight: 500;
     border-radius: 25.962px;
   }
-  
-  .MainDown{
+
+  .MainDown {
     width: 100%;
     padding: 10px 30px;
   }
-  .imgside{
+  .imgside {
     display: none;
   }
-  .downDiv{
+  .downDiv {
     width: 100%;
     display: flex;
     gap: 20px;
-      flex-direction: column;
+    flex-direction: column;
   }
-  
-  .pBot{
+
+  .pBot {
     font-size: 12px;
   }
-  
-  
+}
+
+@media screen and (max-width: 480px) {
+  .projectHeading {
+    font-size: 25px;
   }
-  
-  @media screen and (max-width: 480px) {
-    .projectHeading {
-      font-size: 25px;
-    }
-    .boldHeading {
-      font-size: 25px;
-    }
-    .subheadingContainer {
-      font-size: 14px;
-    }
+  .boldHeading {
+    font-size: 25px;
   }
-   */
+  .subheadingContainer {
+    font-size: 14px;
+  }
+}

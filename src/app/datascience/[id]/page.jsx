@@ -17,7 +17,7 @@ import SyllabusSection from "@/app/components/course/syllabus/Syllabus";
 import ToolsSection from "@/app/components/course/toolsSection/ToolsSection";
 import FeeContent from "@/app/components/course/feeSection/FeeSection";
 import UpskillMbl from "@/app/components/course/upskill/UpskillMbl";
-// import ProjectSection from "@/app/components/course/projectSection/ProjectSection";
+import ProjectSection from "@/app/components/course/projectSection/ProjectSection";
 import CertificateSection from "@/app/components/course/certificateSection/CertificateSection";
 
 const Page = async ({ params }) => {
@@ -62,7 +62,7 @@ const Page = async ({ params }) => {
       <MentorsSection />
       {/* <UpskillingSection upskillingData={pageData.upskillingData} /> */}
       {/* <UpskillMbl upskillMbl={pageData.upskillMbl} /> */}
-      {/* <ProjectSection/> */}
+      {/* <ProjectSection /> */}
       <SyllabusSection
         sections={pageData.sections} // Assuming 'syllabusSections' is part of your page data
         brochureLink={pageData.brochureLink} // Assuming this exists
