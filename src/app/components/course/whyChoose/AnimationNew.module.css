@@ -20,7 +20,7 @@
   padding: 60px 0;
 }
 
-.containerMain{
+.containerMain {
   width: 100%;
 }
 
@@ -174,6 +174,30 @@
   align-items: center;
 }
 
+
+
+.insideBoxDesign1 .insideBoxImgWrapper,
+.insideBoxDesign2 .insideBoxImgWrapper {
+
+  position: relative;
+}
+
+.insideBoxDesign1 .insideBoxImgWrapper {
+  width: 75px;
+  height: 50px;
+}
+
+.insideBoxDesign2 .insideBoxImgWrapper {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.insideBoxDesign1 .insideBoxImgWrapper img,
+.insideBoxDesign2 .insideBoxImgWrapper img {
+  position: absolute;
+}
+
 .insideBox p {
   color: var(--white);
   font-size: var(--desktop_p-font-size);
@@ -305,22 +329,28 @@
 }
 
 .imageSection {
-  width: 50%;
+  position: relative;
+  width: 90px;
+  height: 50px;
   /* Adjust as per your layout */
+}
+
+.imageSection img {
+  position: absolute;
 }
 
 .leftText p {
   font-size: var(--desktop_p-font-size);
   /* Adjust text size */
   line-height: 1.5;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 /* Media Queries for smaller screens */
 
 
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1024px) {
   .downBoxDesign2 {
     gap: 18px;
     flex-wrap: wrap;
@@ -328,22 +358,39 @@
   }
 }
 
+@media screen and (max-width: 968px) {
+  .imageSection {
+    width: 70px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 841px) {
+  .divContainerANI {
+    padding-right: 30px;
+  }
+}
+
 @media screen and (max-width: 761px) {
-  .Contents{
+  .Contents {
     padding-right: 40px;
+  }
+
+  .insideBox {
+    gap: 0.5rem;
   }
 }
 
 @media screen and (max-width: 641px) {
   .whyChooseSection {
     background: radial-gradient(circle at 10% 10%,
-    rgba(6, 59, 92, 0.8) 1%,
-    transparent 30%),
-    radial-gradient(circle at 90% 80%,
-    rgba(254, 122, 54, 0.2) 1%,
+        rgba(6, 59, 92, 0.8) 1%,
+        transparent 30%),
+      radial-gradient(circle at 90% 80%,
+        rgba(254, 122, 54, 0.2) 1%,
         transparent 40%),
       var(--light-black);
-      margin-bottom: 60px;
+    margin-bottom: 60px;
   }
 
   .header p {
@@ -354,12 +401,12 @@
   .header h2 {
     font-size: var(--desktop_h2-font-size);
   }
-  
+
   .divContainer {
     margin-left: 15px;
     gap: 10px;
   }
-  
+
   .divContainer h4 {
     font-size: var(--desktop_h4-font-size);
   }
@@ -367,7 +414,7 @@
   .Contents h5 {
     font-size: var(--desktop_h5-font-size);
   }
-  
+
   .divContainer p {
     font-size: var(--desktop_p-font-size);
     line-height: 1.5;
@@ -381,11 +428,15 @@
     width: 50px;
     height: auto;
   }
-  
+
   .downBoxDesign1 {
     width: 100%;
     height: fit-content;
     padding: 4px;
+  }
+
+  .insideBoxDesign1 .insideBoxImgWrapper {
+    width: 60px;
   }
 
   .downBoxDesign2 {
@@ -396,61 +447,83 @@
     font-size: var(--desktop_p-font-size);
   }
 
-  .downBoxDesign1 img {
-
+  /* .downBoxDesign1 img {
     height: auto;
-  }
-  
-  .insideBoxDesign1 {
+  } */
+
+  /* .insideBoxDesign1 {
     gap: 4px;
-  }
+  } */
 
   .insideBoxDesign1 p {
     font-size: var(--desktop_p-font-size);
   }
-  
-  .insideBoxDesign2 {
+
+  /* .insideBoxDesign2 {
     gap: 4px;
-  }
+  } */
 
   .customSection {
     width: 100%;
     padding: 10px 3px;
     gap: 10px;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .customSection p {
     width: 100%;
   }
-  
-  .imageSection {
+
+  /* .imageSection {
     width: auto;
-  }
-  
-  .Contents{
+  } */
+
+  .Contents {
     padding-right: 0px;
   }
 }
+
 @media screen and (max-width: 481px) {
-  .columnDiv{
+  .whyChooseSection {
+    padding: 30px 0;
+  }
+
+  .columnDiv {
     margin: 80px auto;
   }
-  
-  .downBox{
+
+  .downBox {
     grid-template-columns: 50% 45%;
+    gap: 15px;
   }
-  .insideBoxDesign1 p{
+
+  /* .insideBoxDesign1 p,
+  .noteP {
+    font-size: 12px;
+  } */
+
+  .header h2,
+  .header span {
+    font-size: 28px;
+  }
+
+  .Contents h5 {
+    font-size: 18px;
+  }
+
+  .divContainer p,
+  .noteP {
     font-size: 12px;
   }
 
-  .header h2,.header span{
-    font-size: 30px;
+  .imageSection {
+    width: 50px;
+    height: 30px;
   }
 }
 
-@media screen and (max-width: 401px) {
-  .downBox{
-    grid-template-columns: 50% 50%;
+@media screen and (max-width: 361px) {
+  .insideBoxDesign1 .insideBoxImgWrapper {
+    height: 35px;
   }
 }

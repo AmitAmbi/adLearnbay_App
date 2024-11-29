@@ -3,12 +3,13 @@
 }
 
 .container h4 {
-  color:#000;
+  color: #000;
   font-size: 32px;
 }
-.container p{
+
+.container p {
   font-size: 15px;
-  margin: 10px  0;
+  margin: 10px 0;
 }
 
 .SliderDiv {
@@ -67,7 +68,7 @@
   padding: 8px;
   text-align: center;
   margin: 20px;
-  gap: 16px;                 
+  gap: 16px;
 }
 
 .mentorImg img {
@@ -95,53 +96,69 @@
   /* margin-top: 10px; */
 }
 
-  .sliderTrack {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-  }
-  
-  .slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100%; /* This can adjust dynamically based on `slidesPerView` */
-  }
-  
-  @media (max-width: 768px) {
-    /* .slide {
+.sliderTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  /* This can adjust dynamically based on `slidesPerView` */
+}
+
+@media (max-width: 768px) {
+
+  /* .slide {
       flex: 1 0 100%;
     } */
-    .container {
-      margin: 50px 20px;
-    }
-    .prevBtn, .nextBtn {
-      width: 30px;
-      height: 30px;
-    }
-    .hrLine {
-      width: 126px;
-      left:52%;
-    }
-   
-    
-    
+  .container {
+    margin: 50px 20px;
   }
-  @media (max-width: 481px) {
-    .container p{
-      margin-top: 15px;
-    }
-    .hrLine{
+
+  .prevBtn,
+  .nextBtn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hrLine {
+    width: 126px;
+    left: 52%;
+  }
+
+
+
+}
+
+@media (max-width: 481px) {
+  .container p {
+    margin-top: 15px;
+  }
+
+  /* .hrLine{
       left: 53%;
       width: 130px;
-    }
-    .container h4{
-      font-weight: 400;
-    }
-    .spans{
-      font-weight: bold !important;
-    }
+    } */
+
+  .hrLine {
+    display: none;
   }
-  
-  
+
+  .container h4 {
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  .spans {
+    font-weight: bold !important;
+  }
+
+  .container p {
+    font-size: 13px;
+  }
+}

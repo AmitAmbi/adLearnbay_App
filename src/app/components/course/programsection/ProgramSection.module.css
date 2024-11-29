@@ -26,7 +26,7 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 150.5%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .green {
@@ -44,7 +44,7 @@
 .innerBoxDiv {
   display: flex;
   gap: 130px;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .innerBox {
@@ -88,6 +88,9 @@
 }
 
 .firstSection {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
   border-radius: 40px;
   padding: 30px 60px 30px 35px;
   background: var(--white);
@@ -101,11 +104,11 @@
 
 .twoSection {
   display: grid;
-  grid-template-columns: 60% 27%;
-  gap: 48px;
+  grid-template-columns: 60% 30%;
+  /* gap: 10px; */
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .blackSpan {
@@ -127,15 +130,31 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 45px;
+  font-size: var(--desktop_h1-font-size);
   font-weight: 600;
   line-height: 114%;
+}
+
+@media only screen and (max-width: 1281px) {
+  .hrline {
+    left: 33%;
+  }
+
+  .twoSection {
+    grid-template-columns: 64% 32%;
+  }
+}
+
+@media only screen and (max-width: 1181px) {
+  .firstSection {
+    padding: 30px 30px 35px;
+  }
 }
 
 @media only screen and (max-width: 1081px) {
 
   .hrline {
-    left: 32%;
+    left: 30%;
   }
 
   .twoSection {
@@ -164,17 +183,24 @@
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .twoSection {
+    grid-template-columns: 65% 32%;
+    gap: 30px;
+  }
+}
+
 @media only screen and (max-width: 968px) {
   .hrline {
-    left: 30%;
+    left: 25%;
   }
 
   .twoSection {
-    grid-template-columns: 55% 37%;
+    grid-template-columns: 56% 38%;
   }
 
   .firstSection {
-    padding: 30px 20px 30px 35px;
+    padding: 30px 20px;
   }
 
   .H3 {
@@ -187,11 +213,12 @@
 
   .blackSpan,
   .colors {
-    font-size: 36px;
+    font-size: 27px;
   }
 
   .innerBoxDiv {
-    margin: 25px 0;
+    gap: 50px;
+    /* margin: 25px 0; */
   }
 
   .pBot {
@@ -205,12 +232,17 @@
 }
 
 @media only screen and (max-width: 841px) {
+  .twoSection {
+    grid-template-columns: 61% 38%;
+    gap: 10px;
+  }
+
   .container {
     padding: 60px 0;
   }
 
   .hrline {
-    left: 27%;
+    left: 25%;
   }
 
   .firstSection {
@@ -222,12 +254,13 @@
     font-size: 30px;
   }
 
-  .pTop {
+  /* .pTop {
     margin-top: 10px;
-  }
+  } */
 
   .innerBoxDiv {
     gap: 80px;
+    margin: 15px 0;
   }
 }
 
@@ -237,7 +270,7 @@
   }
 
   .pHead {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .hrline {
@@ -280,7 +313,7 @@
 
   .hrline {
     width: 128px;
-    left: 26%;
+    left: 18%;
   }
 
   .twoSection {
@@ -290,7 +323,7 @@
 
   .firstSection {
     border-radius: 17px;
-    padding: 25px 35px;
+    padding: 25px;
   }
 
   .innerBoxDiv {
@@ -314,32 +347,27 @@
 
   .blackSpan,
   .colors {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .H3 {
-    font-size: 26px;
+    font-size: 24px;
   }
-
-  /* .colors {
-    font-size: 36px;
-    text-wrap: pretty;
-    } */
 
   .pHead {
     margin-bottom: 0;
   }
 
   .innerDiv h2 {
-    font-size: 32px;
+    /* font-size: 32px; */
     font-style: normal;
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 144.5%;
     /* 40.46px */
   }
 
   .innerBox h3 {
-    font-size: 22px;
+    font-size: 19px;
   }
 }
 
@@ -350,7 +378,7 @@
   }
 
   .innerDiv h2 {
-    font-size: 30px;
+    font-size: 25px;
     color: var(--light-deep-blue);
     font-weight: 400;
   }
@@ -364,8 +392,20 @@
     display: none;
   }
 
+  .pHead {
+    font-size: 14px;
+  }
+
+  .pTop {
+    font-size: 14px;
+  }
+
+  .H3 {
+    font-size: 18px;
+  }
+
   .firstSection {
-    padding: 25px 28px;
+    padding: 25px 14px;
   }
 
   .secondSection {
@@ -377,51 +417,57 @@
   }
 
   .innerBoxDiv {
-    gap: 25px;
+    gap: 15px;
+  }
+
+  .innerBox {
+    gap: 5px;
   }
 
   .blackSpan,
   .colors {
-    font-size: 32px;
-  }
-}
-
-@media only screen and (max-width: 401px) {
-
-  .blackSpan,
-  .colors {
-    font-size: 30px;
+    font-size: 22px;
   }
 
-  .innerBoxDiv {
-    gap: 40px;
-  }
-
-  .firstSection {
-    padding: 25px 14px;
+  .imgWrapper {
+    width: 30px;
+    height: 30px;
   }
 }
 
 @media only screen and (max-width: 361px) {
-  .innerDiv h2 {
+  .H3 {
+    font-size: 20px;
+  }
+
+  .blackSpan,
+  .colors {
+    font-size: 23px;
+  }
+
+  /* .innerDiv h2 {
     font-size: 27px;
+  } */
+
+  .twoSection{
+    margin-top: 15px;
   }
 
   .firstSection {
     padding: 25px 10px;
   }
 
-  .H3 {
-    font-size: 22px;
+  .pTop {
+    font-size: 12px;
   }
 
-
-  .pTop {
-    font-size: 14px;
+  .pBot {
+    font-size: 12px;
   }
 
   .innerBoxDiv {
     gap: 21px;
+    margin: 10px 0;
   }
 
   .innerBox h3 {

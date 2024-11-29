@@ -1,3 +1,4 @@
+
 "use client";
 
 import { lazy, Suspense, memo, useCallback } from "react";
@@ -128,7 +129,7 @@ const Header = memo(
         <div className="containerWidth">
           <div className={styles.botDiv}>
             <div className={styles.innerBotDiv}>
-              <div className={styles.wrrapper}>
+              <div className={styles.botWrapper}>
                 <Image
                   src={applicationIcon}
                   alt="Application Closes"
@@ -144,7 +145,7 @@ const Header = memo(
               </div>
             </div>
             <div className={styles.innerBotDiv}>
-              <div className={styles.wrrapper}>
+              <div className={styles.botWrapper}>
                 <Image
                   src={ProgramIcon}
                   alt="Program Duration"
@@ -160,7 +161,7 @@ const Header = memo(
               </div>
             </div>
             <div className={styles.innerBotDiv}>
-              <div className={styles.wrrapper}>
+              <div className={styles.botWrapper}>
                 <Image
                   src={trainingIcon}
                   alt="Training Format"

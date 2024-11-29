@@ -23,12 +23,10 @@ import CertificateSection from "@/app/components/course/certificateSection/Certi
 const Page = async ({ params }) => {
   const { id } = params;
   const pageData = await getPageData(id);
-  
 
   if (pageData.error) {
     return <div>{pageData.error}</div>;
   }
-  
 
   return (
     <div>
@@ -62,9 +60,9 @@ const Page = async ({ params }) => {
       <AnimationNew />
       <ReviewSlider />
       <MentorsSection />
-      <UpskillingSection upskillingData={pageData.upskillingData} />
-      <UpskillMbl upskillMbl={pageData.upskillMbl} />
-<ProjectSection/>
+      {/* <UpskillingSection upskillingData={pageData.upskillingData} /> */}
+      {/* <UpskillMbl upskillMbl={pageData.upskillMbl} /> */}
+      {/* <ProjectSection /> */}
       <SyllabusSection
         sections={pageData.sections} // Assuming 'syllabusSections' is part of your page data
         brochureLink={pageData.brochureLink} // Assuming this exists
@@ -72,8 +70,8 @@ const Page = async ({ params }) => {
         interstedInHide={pageData.interstedInHide} // Assuming this exists
         radio={pageData.radio} // Assuming this exists
       />
-      <ToolsSection/>
-      <CertificateSection/>
+      <ToolsSection />
+      {/* <CertificateSection /> */}
       <FeeContent
         Fee={pageData.FeeSection?.Fee}
         hybridFee={pageData.FeeSection?.hybridFee}
@@ -85,6 +83,7 @@ const Page = async ({ params }) => {
         WeekendTime={pageData.FeeSection?.WeekendTime}
         CutFee={pageData.FeeSection?.CutFee}
         FeeEmi={pageData.FeeSection?.FeeEmi}
+        hybridEmi={pageData.FeeSection?.hybridEmi}
         weekday={pageData.FeeSection?.weekday}
         weekend={pageData.FeeSection?.weekend}
         weekdaybatch={pageData.FeeSection?.weekdaybatch}
@@ -102,7 +101,7 @@ const Page = async ({ params }) => {
         monthlyPayment2={pageData.FeeSection?.monthlyPayment2}
         greenDown2={pageData.FeeSection?.greenDown2}
       />
-  
+
       <StructuredSection />
       <JobReadySection />
       <NewSevenSection />

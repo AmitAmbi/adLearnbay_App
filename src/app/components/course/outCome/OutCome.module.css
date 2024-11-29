@@ -155,7 +155,7 @@
   }
 
   .hrline {
-    width: 234px;
+    width: 290px;
   }
 
   .innerDiv h2 {
@@ -228,14 +228,9 @@
   }
 
   .hrline {
-    width: 179px;
-    align-items: center;
-    position: relative;
-    left: 50%;
-    background: #FE7A36;
-    height: 2px;
-    border: none;
-    top: 0px;
+    width: 270px;
+    left: 3%;
+    top: -37px;
   }
 
 
@@ -259,7 +254,7 @@
   }
 
   .innerDiv h2 {
-    font-size: 27px;
+    font-size: 32px;
     line-height: 38px;
   }
 
@@ -301,5 +296,13 @@
 
   .innerBoxDiv {
     margin: 20px 0 40px 0;
+  }
+
+  .innerDiv h2 {
+    font-size: 24px;
+  }
+
+  .pHead {
+    font-size: 14px;
   }
 }
