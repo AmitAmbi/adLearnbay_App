@@ -8,7 +8,7 @@ import dynamic from "next/dynamic";
 import DataScienceCard from "./DataScienceCard";
 import "swiper/css"; // Correct import for the CSS
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules"; // Import modules for Swiper
+// import { Navigation, Pagination } from "swiper/modules"; // Import modules for Swiper
 
 // import { Navigation, Pagination } from 'swiper/modules'; // Import modules for Swiper
 import { Navigation, Pagination } from "swiper/modules";

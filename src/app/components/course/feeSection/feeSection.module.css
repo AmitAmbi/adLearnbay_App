@@ -602,11 +602,14 @@
   .headBlue {
     font-size: 27px;
   }
+  .secondContainer {
+    padding: 24px;
+  }
 }
 @media (max-width: 968px) {
   .headBlue,
   .headOrange {
-    font-size: 29px;
+    font-size: 28px;
   }
   .iconDiv p {
     font-size: 12px;
