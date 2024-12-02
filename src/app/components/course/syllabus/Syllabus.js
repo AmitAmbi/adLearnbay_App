@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import styles from "./Syllabus.module.css";
+import styles from "./syllabus.module.css";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -210,8 +210,8 @@ const SyllabusSection = ({
                       onSlideChange={updateActiveSlides}
                       breakpoints={{
                         320: { slidesPerView: 1, spaceBetween: 10 },
-                        480: { slidesPerView: 1.5, spaceBetween: 15 },
-                        768: { slidesPerView: 3, spaceBetween: 20 },
+                        481: { slidesPerView: 1.5, spaceBetween: 15 },
+                        761: { slidesPerView: 2, spaceBetween: 10 },
                         1024: { slidesPerView: 2.4, spaceBetween: 30 },
                         1440: { slidesPerView: 3, spaceBetween: 30 },
                       }}
