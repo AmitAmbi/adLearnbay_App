@@ -73,8 +73,6 @@ const Page = async ({ params }) => {
       />
       <ToolsSection />
       <CertificateSection />
-      <ToolsSection />
-      <CertificateSection />
       <FeeContent
         Fee={pageData.FeeSection?.Fee}
         hybridFee={pageData.FeeSection?.hybridFee}
