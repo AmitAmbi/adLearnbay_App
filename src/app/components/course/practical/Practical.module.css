@@ -122,6 +122,32 @@
   .box h5 {
     line-height: 105.5%;
   }
+
+  .boxMain {
+    grid-template-columns: 34% 34% 33%;
+    margin: 0;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .box {
+    padding: 20px 10px;
+    max-width: 92%;
+    max-height: 215px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .box h5 {
+    font-size: 18px;
+  }
+
+  .box p {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 968px) {
@@ -150,30 +176,14 @@
   .box {
     max-width: 95%;
   }
+
+  .pointItem {
+    flex-flow: column;
+    gap: 0;
+  }
 }
 
-@media only screen and (max-width: 1024px) {
 
-  .box {
-    padding: 20px 10px;
-    max-width: 92%;
-    max-height: 215px;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .box h5 {
-    font-size: 18px;
-  }
-
-  .box p {
-    font-size: 15px;
-  }
-
-
-
-
-}
 
 
 
@@ -216,19 +226,16 @@
   }
 
 
-  .boxMain {
+  /* .boxMain {
     grid-template-columns: 35% 35% 35%;
     margin: 6px 10px 15px 10px;
-  }
+  } */
 
   .box {
     padding: 0 13px 13px 13px;
   }
 
-  .pointItem {
-    flex-flow: column;
-    gap: 0;
-  }
+  
 }
 
 @media only screen and (max-width: 761px) {
@@ -299,11 +306,11 @@
     max-width: 600px;
   }
 
-  .pointItem{
+  .pointItem {
     align-items: center;
   }
 
-  .practicalSvgWrapper{
+  .practicalSvgWrapper {
     left: -15px;
   }
 

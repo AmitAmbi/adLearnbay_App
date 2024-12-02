@@ -156,6 +156,10 @@
         height: 320px;
         bottom: -25px;
     }
+
+    .blue {
+        padding: 10px 20px;
+    }
 }
 
 @media screen and (max-width:761px) {

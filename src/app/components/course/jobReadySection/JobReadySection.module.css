@@ -114,7 +114,8 @@
   .container {
     margin: 60px auto;
   }
-  .innerdiv{
+
+  .innerdiv {
     grid-template-columns: 47.5% 48.5%;
   }
 }
@@ -127,9 +128,11 @@
   .headH2 {
     font-size: 24px;
   }
-  .innerdiv{
+
+  .innerdiv {
     grid-template-columns: 46.5% 47.5%;
   }
+
   .innerdiv div h4 {
     font-size: 22px;
   }
@@ -140,13 +143,16 @@
     font-size: 12px;
     line-height: 21px;
   }
+
   .headH4 {
     font-size: 18px;
   }
-  .innerdiv{
+
+  .innerdiv {
     grid-template-columns: 50.5% 50.5%;
-    gap:30px 30px;
+    gap: 30px 30px;
   }
+
   .innerdiv div h4 {
     font-size: 17px;
   }
@@ -176,11 +182,8 @@
     right: 20px;
   }
 
-  .innerdiv div:nth-child(1),
-  .innerdiv div:nth-child(2),
-  .innerdiv div:nth-child(3),
-  .innerdiv div:nth-child(4) {
-    top: 1%;
+  .imgWrapper {
+    height: 50px;
+    width: 50px;
   }
 }
-

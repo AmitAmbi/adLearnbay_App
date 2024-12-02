@@ -19,7 +19,6 @@ const ProgramSection = memo(
     }
 
     const { ProgramSection } = programSectionData;
-
     return (
       <section
         className={`${styles.container} ${designOverrides?.container || ""}`}
@@ -47,8 +46,9 @@ const ProgramSection = memo(
         <div className="containerWidth">
           <div className={styles.innerDiv}>
             <h2>
-              Who is this <span>Program for?</span>
-              <hr className={styles.hrline} />
+              <span className={styles.innerDivH2Span}>Who is this</span>
+              <span> Program for?</span>
+              {/* <hr className={styles.hrline} /> */}
             </h2>
             <p className={styles.pHead}>
               Work on projects based on real-world scenarios
@@ -115,7 +115,7 @@ const ProgramSection = memo(
                   src={ProgramSection[0]?.rightImg}
                   alt="Learnbay"
                   quality={100}
-                  layout="responsive"
+                  // layout="responsive"
                   width={611}
                   height={506}
                   loading="lazy"

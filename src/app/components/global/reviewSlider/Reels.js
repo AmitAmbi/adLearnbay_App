@@ -79,12 +79,12 @@ const Reels = () => {
                 slidesPerView: 3.5,
                 spaceBetween: 20,
               },
-              768: {
-                slidesPerView: 4.2,
-                spaceBetween: 20,
-              },
+              // 761: {
+              //   slidesPerView: 4.2,
+              //   spaceBetween: 20,
+              // },
               841: {
-                slidesPerView: 3.5,
+                slidesPerView: 3.3,
                 spaceBetween: 20,
               },
               1024: {

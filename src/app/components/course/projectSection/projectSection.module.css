@@ -7,17 +7,19 @@
 }
 
 .headline {
-  margin-bottom: 20px;
+  /* margin-bottom: 30px; */
   color: #000;
-  font-size: 40px;
+  font-size: 36px;
   font-style: normal;
   text-align: center;
   font-weight: 400;
   line-height: 126.5%;
+  /* 69.575px */
 }
 
 .headline span {
   font-weight: 600;
+  border-bottom: 4px solid #fe7a36;
 }
 
 .projectHeading {
@@ -28,11 +30,11 @@
   font-weight: 400;
 }
 
-.boldHeading {
+/* .boldHeading {
   font-size: 55px;
   font-weight: 700;
   border-bottom: 4px solid #fe7a36;
-}
+} */
 
 .botDiv img {
   width: 100%;
@@ -74,6 +76,7 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 30px;
 }
 
 .orangeBox,
@@ -83,7 +86,7 @@
   padding: 8px 30px;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .orangeBox {
@@ -102,7 +105,7 @@
 }
 
 .mySwiper {
-  width: 1150px;
+  width: 100%;
   margin: auto;
   margin-top: 60px;
 }
@@ -116,10 +119,13 @@
 }
 
 .projectCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   border-radius: 40px;
   background: #fff;
   padding: 1.5rem 1.4rem;
-  height: 370px;
+  height: 385px;
 }
 
 .upperPart {
@@ -158,7 +164,7 @@
   color: #0072bc;
   font-size: 15px;
   font-weight: 600;
-  margin: 14px auto;
+  /* margin: 14px auto; */
 }
 
 .cardText {
@@ -168,31 +174,68 @@
   line-height: 21px;
 }
 
-.lowerBox {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.6rem;
-  border-radius: 12px;
-  background: rgba(254, 122, 54, 0.1);
-  padding: 0.8rem 1rem;
-  margin: 1rem 0;
-}
 
-.projectIcon {
+
+.upperPart .projectIcon {
   width: auto;
   height: 35px;
   mix-blend-mode: multiply;
 }
 
-.tableauIcon {
-  width: 120px;
-  height: 30px;
+/* tesla icon */
+.sliderWrapper:nth-child(1) .projectCard .upperPart .projectIcon {
+  height: 50px;
 }
 
-.sqlIcon {
+/* google icon */
+.sliderWrapper:nth-child(9) .projectCard .upperPart .projectIcon {
+  height: 28px;
+}
+
+/* netflix, jp morgan,  uber, meta*/
+.sliderWrapper:nth-child(6) .projectCard .upperPart .projectIcon,
+.sliderWrapper:nth-child(7) .projectCard .upperPart .projectIcon,
+.sliderWrapper:nth-child(8) .projectCard .upperPart .projectIcon,
+.sliderWrapper:nth-child(10) .projectCard .upperPart .projectIcon {
+  height: 23px;
+}
+
+.lowerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 0.6rem; */
+  border-radius: 12px;
+  background: rgba(254, 122, 54, 0.1);
+  padding: 0.7rem;
+  /* margin: 1rem 0; */
+}
+
+.lowerBox .projectIcon {
+  width: -webkit-fill-available;
+  /* height: 47px; */
+  height: -webkit-fill-available;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+/* .sliderWrapper:nth-child(5) .projectCard .lowerBox .projectIcon, .sliderWrapper:nth-child(12) .projectCard .lowerBox .projectIcon{
+  width: 300px;
+} */
+
+.sliderWrapper:nth-child(12) .projectCard .lowerBox .projectIcon {
+  height: 40px;
+}
+
+/* .tableauIcon {
+  width: 120px;
+  height: 30px;
+} */
+
+/* .sqlIcon {
   width: 80px;
   height: 25px;
-}
+} */
 
 .ctaText {
   color: #0072bc;
@@ -216,7 +259,7 @@
   display: none;
 }
 
-.imgesIconDiv {
+.imagesIconDiv {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -226,96 +269,236 @@
 }
 
 .MainDown {
-  width: 1100px;
-  margin: auto;
+  width: 100%;
+  margin-top: 35px;
+
 }
+
 .downDiv {
   display: grid;
-  grid-template-columns: 34% 48%;
+  grid-template-columns: 34% 40%;
   justify-content: space-around;
-  grid-gap: 100px;
-  grid-gap: 100px;
   gap: 51px;
   border-radius: 22px;
   padding: 20px;
-  width: 960px;
+  /* width: 960px; */
 
   align-items: center;
-  background: radial-gradient(
-      circle at 10% 10%,
+  background: radial-gradient(circle at 10% 10%,
+      /* Blue circle positioned at the top left */
       rgba(218, 105, 44, 0.4) 4%,
+      /* Larger blue circle */
       transparent 40%
+      /* Smoother transition */
     ),
-    radial-gradient(circle at 90% 80%, rgba(2, 54, 92, 0.9) 1%, transparent 30%),
+    radial-gradient(circle at 90% 80%,
+      /* Orange circle positioned at the bottom right */
+      rgba(2, 54, 92, 0.9) 1%,
+      /* Glowing orange circle */
+      transparent 30%
+      /* Smoother transition */
+    ),
     #212121;
 }
+
 .downDiv h6 {
-  color: #fff;
+  font-size: 22px;
+  color: #FFF;
   font-style: normal;
   font-weight: 600;
   line-height: 126.5%;
+  /* 44.275px */
 }
+
 .ryticons {
   display: flex;
   gap: 20px;
 }
-.imgesIconDiv span {
-  color: #fff;
+
+.imagesIconDiv span {
+  color: #FFF;
   text-align: center;
   font-size: 14.594px;
   font-weight: 400;
   line-height: normal;
 }
 
+.downDivIconWrapper {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
 .boxDiv {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
-  gap: 20px;
+  /* margin-top: 50px; */
+  gap: 10px;
 }
 
-.imgside {
+.connectorSvg {
+
   position: relative;
   top: -70px;
 }
 
-@media screen and (max-width: 1208px) {
-  .mySwiper {
-    width: 1000px;
+.connectorSvg svg {
+  width: 120px;
+  height: 150px;
+}
+
+/* .imgside {
+  position: relative;
+  top: -70px;
+} */
+
+.pBot {
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1381px) {
+
+  .pBot {
+    width: 89%;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1281px) {
+  .cardText {
+    line-height: 19px;
+  }
+
+  /* .lowerBox .projectIcon {
+    width: 235px;
+    height: 40px;
+  } */
+
   .projectHeading {
     font-size: 45px;
   }
-  .boldHeading {
+
+  /* .boldHeading {
     font-size: 45px;
-  }
+  } */
+
   .botDiv {
     width: 90%;
   }
+
+  .lowerBox {
+    padding: 0.7rem 2rem;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1081px) {
+  .downDiv {
+    grid-template-columns: 41% 48%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .pBot {
+    width: 87%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .pBot {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 841px) {
+
+  .orangeBox,
+  .blueBox,
+  .greenBox {
+    padding: 8px 20px;
+  }
+
+  .headline {
+    font-size: 32px;
+  }
+
+  .downDiv {
+    grid-template-columns: 41% 51%;
+    padding: 20px 10px;
+  }
+
+  .downDiv h6 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 761px) {
   .projectHeading {
     font-size: 35px;
   }
-  .boldHeading {
+
+  /* .boldHeading {
     font-size: 35px;
-  }
-  .subheadingContainer {
+  } */
+
+  /* .subheadingContainer {
     gap: 0.5rem;
+  } */
+
+  .orangeBox,
+  .blueBox,
+  .greenBox {
+    padding: 8px 15px;
   }
-  .projectCard {
+
+  .lowerBox {
+    height: 60px;
+    padding: 0.7rem 1rem;
+  }
+
+  .downDiv {
+    grid-template-columns: 36% 58%;
+    gap: 35px;
+  }
+
+  .downDiv h6 {
+    font-size: 16px;
+  }
+
+  .imagesIconDiv span {
+    font-size: 12px;
+  }
+
+  .downDivIconWrapper {
+    width: 35px;
+  }
+
+  .pBot {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .MainDown {
+    margin-top: 20px;
+  }
+
+  .connectorSvg {
+    top: -55px;
+  }
+
+  /* .imgside {
+    top: -55px;
+  } */
+
+  /* .projectCard {
     height: auto;
     padding: 1rem;
   }
+
   .lowerBox {
     flex-direction: column;
     align-items: flex-start;
-  }
+  } */
 }
 
 @media screen and (max-width: 641px) {
@@ -323,14 +506,21 @@
     margin-bottom: 50px;
   }
 
-  .headline {
+  /* .downDiv h6 {
+    font-size: 18px;
+  } */
+
+
+  /* .headline {
     margin: 0;
     font-size: 28px;
     line-height: 38px;
-  }
-  .headline span {
+  } */
+
+  /* .headline span {
     text-underline-offset: 10px;
-  }
+  } */
+
   .subheadingContainer {
     display: flex;
     flex-direction: row;
@@ -338,11 +528,11 @@
     margin-top: 30px;
   }
 
-  .hrsBox {
+  /* .hrsBox {
     margin-right: auto;
     font-size: 30px;
     height: 40px;
-  }
+  } */
 
   .botDiv {
     display: none;
@@ -351,7 +541,7 @@
   .mySwiper {
     width: 100%;
     margin-top: 40px;
-    padding: 0px 20px !important;
+    /* padding: 0px 20px !important; */
   }
 
   .botDivMobile {
@@ -359,23 +549,26 @@
     display: block;
   }
 
-  .projectCard {
+  /* .projectCard {
     padding: 14px 10px 20px 14px;
     height: 350px;
-  }
-  .cardText {
+  } */
+
+  /* .cardText {
     font-size: 14px;
     line-height: 20px;
-  }
+  } */
 
-  .cardTitle {
+  /* .cardTitle {
     font-size: 14px;
     margin: 14px 0px;
-  }
+  } */
+
 
   .botDivMobile img {
     width: 100%;
     height: auto;
+
   }
 
   .orangeBox,
@@ -383,18 +576,22 @@
   .greenBox {
     padding: 8px 16px;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
     border-radius: 25.962px;
   }
 
   .MainDown {
     width: 100%;
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
   }
-  .imgside {
+
+  /* .imgside {
+    display: none;
+  } */
+
+  .connectorSvg svg {
     display: none;
   }
+
   .downDiv {
     width: 100%;
     display: flex;
@@ -403,18 +600,91 @@
   }
 
   .pBot {
-    font-size: 12px;
+    width: 100%;
+    margin-top: 10px;
+    /* font-size: 12px; */
   }
+
+
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
+  .headline {
+    text-align: left;
+    font-size: 26px;
+  }
+
+  .headline span {
+    border: none;
+  }
+
+  .orangeBox,
+  .blueBox,
+  .greenBox {
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  .lowerBox {
+    padding: 0.7rem 2rem;
+  }
+
   .projectHeading {
     font-size: 25px;
   }
-  .boldHeading {
-    font-size: 25px;
-  }
+
+  /* .boldHeading {
+      font-size: 25px;
+      } */
+
   .subheadingContainer {
     font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .downDiv {
+    align-items: flex-start;
+  }
+
+  .downDiv h6 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .headline {
+    font-size: 23px;
+  }
+
+
+
+  .projectCard {
+    gap: 10px;
+    padding: 1.5rem 0.5rem;
+  }
+
+  .hrsBox {
+    margin-right: -0.4rem;
+  }
+
+  .cardText {
+    font-size: 13px;
+  }
+
+  .projectCard {
+    height: 355px;
+  }
+
+  .mySwiper {
+    margin-top: 25px;
+  }
+
+  .imagesIconDiv {
+    gap: 5px;
+  }
+
+  .downDivIconWrapper {
+    width: 25px;
+    height: 30px;
   }
 }

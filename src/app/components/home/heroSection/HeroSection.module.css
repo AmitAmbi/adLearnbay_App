@@ -46,7 +46,7 @@
   grid-template-columns: 60% 30%;
   width: 100%;
   padding: 90px 0 50px 0;
-  grid-gap: 10px;
+  gap: 10px;
   justify-content: space-between;
 }
 
@@ -285,9 +285,9 @@
     font-size: 38px;
   }
 
-  .rytConteiner h2 {
-    /* font-size: 30px; */
-  }
+  /* .rytConteiner h2 {
+    font-size: 30px;
+  } */
 
   /* .listDown{
     padding: 20px;
@@ -297,10 +297,10 @@
     margin-top: 6px;
   }
 
-  .typelogo img {
-    /* width: 620px; */
-    /* height: auto; */
-  }
+  /* .typelogo img {
+    width: 620px;
+    height: auto;
+  } */
 
   .spandiv {
     margin-top: 5px;
