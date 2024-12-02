@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, memo, useCallback, useEffect } from "react";
 import Image from "next/image";
-import styles from "./Psummary.module.css"; 
+import styles from "./Psummary.module.css";
 
 const PSummaryAD = ({ summaryData = [], customClassName = "" }) => {
   // Default to an empty array
@@ -16,7 +16,6 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => {
         try {
           const response = await fetch("/summaryData.json"); // Adjust path if necessary
           const data = await response.json();
-
         } catch (error) {
           console.error("Error fetching data:", error);
         }
@@ -27,12 +26,11 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => {
 
     const contentContainer = contentContainerRef.current;
 
-
     const handleResize = () => {
       if (window.innerWidth <= 768) {
         contentContainer.style.overflowX = "auto";
       } else {
-        contentContainer.style.overflowX = "hidden"; 
+        contentContainer.style.overflowX = "hidden";
       }
     };
 
@@ -42,7 +40,11 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => {
 
       sections.forEach((section, index) => {
         const rect = section.getBoundingClientRect();
-        if (rect.left >= 0 && rect.left < window.innerWidth / 2 && activeDot !== index) {
+        if (
+          rect.left >= 0 &&
+          rect.left < window.innerWidth / 2 &&
+          activeDot !== index
+        ) {
           updatedDot = index;
         }
       });
@@ -55,7 +57,6 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => {
     window.addEventListener("resize", handleResize);
     contentContainer.addEventListener("scroll", handleScroll);
 
-
     handleResize();
 
     return () => {
@@ -64,13 +65,12 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => {
     };
   }, [summaryData, activeDot]);
 
-
   const scrollToSection = useCallback((index) => {
     const section = document.querySelectorAll(`.${styles.Box}`)[index];
     if (section) {
       section.scrollIntoView({
         behavior: "smooth",
-        block: "nearest", 
+        block: "nearest",
         inline: "start",
       });
       setActiveDot(index);
@@ -81,10 +81,7 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => {
     // <div className="containerWidth">
     <div className={`${styles.Container} ${customClassName}`}>
       <h2>
-        Program{" "}
-        <span className={styles.spans}>
-          Summary <hr className={styles.hrline} />
-        </span>
+        Program <span className={styles.spans}>Summary</span>
       </h2>
       <div className={styles.contentConteiner} ref={contentContainerRef}>
         {summaryData.map((item) => (
@@ -117,15 +114,15 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => {
         ))}
       </div>
 
-
       <div className={styles.customScrollbar}>
         <div className={styles.dotContainer}>
           {summaryData.map((_, index) => (
             <span
               key={index}
               onClick={() => scrollToSection(index)}
-              className={`${styles.dot} ${activeDot === index ? styles.active : ""
-                }`}
+              className={`${styles.dot} ${
+                activeDot === index ? styles.active : ""
+              }`}
             />
           ))}
         </div>

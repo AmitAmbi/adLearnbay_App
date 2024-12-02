@@ -11,7 +11,11 @@
   font-weight: 600;
 }
 
-.hrline {
+.innerDivH2Span {
+  border-bottom: 4px solid var(--light-orange);
+}
+
+/* .hrline {
   width: 150px;
   align-items: center;
   position: relative;
@@ -19,14 +23,14 @@
   background: var(--light-orange);
   height: 2px;
   border: none;
-}
+} */
 
 .pHead {
   text-align: center;
   font-size: 18px;
   font-weight: 300;
   line-height: 150.5%;
-  margin-bottom: 30px;
+  margin: 10px 0 30px;
 }
 
 .green {
@@ -388,12 +392,22 @@
     font-weight: 600;
   }
 
-  .hrline {
-    display: none;
+  .innerDiv h2,
+  .pHead {
+    text-align: left;
   }
+
+  .innerDivH2Span {
+    border: none;
+  }
+
+  /* .hrline {
+    display: none;
+  } */
 
   .pHead {
     font-size: 14px;
+    margin: 0;
   }
 
   .pTop {
@@ -449,7 +463,7 @@
     font-size: 27px;
   } */
 
-  .twoSection{
+  .twoSection {
     margin-top: 15px;
   }
 

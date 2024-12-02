@@ -60,9 +60,9 @@ const Page = async ({ params }) => {
       <AnimationNew />
       <ReviewSlider />
       <MentorsSection />
-      {/* <UpskillingSection upskillingData={pageData.upskillingData} /> */}
-      {/* <UpskillMbl upskillMbl={pageData.upskillMbl} /> */}
-      {/* <ProjectSection /> */}
+      <UpskillingSection upskillingData={pageData.upskillingData} />
+      <UpskillMbl upskillMbl={pageData.upskillMbl} />
+      <ProjectSection />
       <SyllabusSection
         sections={pageData.sections} // Assuming 'syllabusSections' is part of your page data
         brochureLink={pageData.brochureLink} // Assuming this exists
@@ -71,7 +71,7 @@ const Page = async ({ params }) => {
         radio={pageData.radio} // Assuming this exists
       />
       <ToolsSection />
-      {/* <CertificateSection /> */}
+      <CertificateSection />
       <FeeContent
         Fee={pageData.FeeSection?.Fee}
         hybridFee={pageData.FeeSection?.hybridFee}

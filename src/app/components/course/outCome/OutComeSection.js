@@ -68,10 +68,7 @@ const OutcomeSection = () => {
         <div className={styles.innerDiv}>
           <h2>
             Program Outcome:
-            <span className={styles.borderBot}>
-              {" "}
-              What’s in it for you? <hr className={styles.hrline} />
-            </span>
+            <span className={styles.borderBot}>What’s in it for you?</span>
           </h2>
 
           <p className={styles.pHead}>

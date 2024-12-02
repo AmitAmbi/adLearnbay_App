@@ -8,7 +8,11 @@
   font-weight: 600;
 }
 
-.hrline {
+.spans {
+  border-bottom: 4px solid var(--light-orange);
+}
+
+/* .hrline {
   background: var(--light-orange);
   border: none;
   width: 140px;
@@ -16,7 +20,7 @@
   position: relative;
   left: 50%;
   margin: 6px 0;
-}
+} */
 
 .contentConteiner {
   display: flex;
@@ -42,7 +46,7 @@
   font-weight: 300;
   line-height: 146.5%;
   width: 100%;
-  max-width: 195px;
+  /* max-width: 195px; */
 }
 
 .Box {
@@ -245,14 +249,14 @@
     display: none;
   }
 
-  .hrline {
+  /* .hrline {
     width: 120px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 641px) {
   .contentConteiner {
-    width: 85%;
+    width: 100%;
   }
 
   .extraImgWrapper {
@@ -264,21 +268,51 @@
 @media only screen and (max-width: 481px) {
   .Container {
     margin: 40px auto;
+    padding: 0 40px;
   }
 
   .Container h2 {
+    text-align: left;
     font-size: 26px;
+    font-weight: 400;
+  }
+
+  .contentConteiner {
+    padding: 0;
+    margin: 35px 0 30px;
+  }
+
+  .spans {
+    font-weight: 600;
+    border: none;
   }
 
   .contentConteiner h4 {
-    font-size: 20px;
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .contentConteiner h4,
+  .contentConteiner p {
+    text-align: left;
+  }
+
+  .Box,
+  .boxContent {
+    /* min-width: 195px; */
+    align-items: flex-start;
   }
 
   .Box {
-    min-width: 195px;
+    min-width: 230px;
   }
 
-  .hrline {
-    width: 90px;
+  .boxContent {
+    gap: 5px;
   }
+
+
+  /* .hrline {
+    width: 90px;
+  } */
 }

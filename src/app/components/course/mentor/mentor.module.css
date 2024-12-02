@@ -77,9 +77,10 @@
 
 .spans {
   font-weight: 600;
+  border-bottom: 4px solid var(--light-orange);
 }
 
-.hrLine {
+/* .hrLine {
   background: #FE7A36;
   width: 125px;
   height: 3px;
@@ -87,7 +88,7 @@
   border-radius: 20px;
   position: relative;
   left: 51%;
-}
+} */
 
 .Name {
   color: #000;
@@ -126,10 +127,10 @@
     height: 30px;
   }
 
-  .hrLine {
+  /* .hrLine {
     width: 126px;
     left: 52%;
-  }
+  } */
 
 
 
@@ -145,9 +146,9 @@
       width: 130px;
     } */
 
-  .hrLine {
+  /* .hrLine {
     display: none;
-  }
+  } */
 
   .container h4 {
     font-size: 26px;
@@ -156,6 +157,7 @@
 
   .spans {
     font-weight: bold !important;
+    border: none;
   }
 
   .container p {

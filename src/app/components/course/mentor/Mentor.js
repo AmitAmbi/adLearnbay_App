@@ -83,7 +83,7 @@ function MentorsSection() {
   <div className="containerWidth">
     <section className={styles.container}>
       <h4>
-        Meet Our <span className={styles.spans}>Mentors <hr className={styles.hrLine} /></span>
+        Meet Our <span className={styles.spans}>Mentors</span>
       </h4>
       <p>Guiding You Every Step of the Way Towards Professional Excellence</p>
       <div className={styles.SliderDiv}>
