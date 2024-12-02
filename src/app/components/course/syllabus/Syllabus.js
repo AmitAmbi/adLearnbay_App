@@ -7,10 +7,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-
-// import PopupContent from "@/components/Global/PopupContent/PopupContent";
+import PopupContent from "../../global/popup/PopupContent";
 
 const SyllabusSection = ({
   sections = [],
@@ -108,17 +105,17 @@ const SyllabusSection = ({
   return (
     <div className="containerWidth">
       <div className={styles.mainConteiner}>
-        {/* <PopupContent
-        popups={popups}
-        setPopups={setPopups}
-        heading="Download Syllabus"
-        downloadBrochure
-        dataScience={true}
-        interstedInHide={interstedInHide}
-        brochureLink={brochureLink}
-        brochurePdf={brochurePdf}
-        radio={radio}
-      /> */}
+        <PopupContent
+          popups={popups}
+          setPopups={setPopups}
+          heading="Download Syllabus"
+          downloadBrochure
+          dataScience={true}
+          interstedInHide={interstedInHide}
+          brochureLink={brochureLink}
+          brochurePdf={brochurePdf}
+          radio={radio}
+        />
         <h2 className={styles.headline}>
           Explore Our <span>Syllabus</span>
         </h2>
@@ -136,7 +133,7 @@ const SyllabusSection = ({
                   height={section.height}
                   alt="trackIcon"
                 />
-                <h3>{section.title}</h3>
+                <h3 className={styles.leftInsideH3}>{section.title}</h3>
               </div>
               {index !== sections.length - 1 && (
                 <div className={styles.verticalLine}></div>
@@ -213,9 +210,9 @@ const SyllabusSection = ({
                       onSlideChange={updateActiveSlides}
                       breakpoints={{
                         320: { slidesPerView: 1, spaceBetween: 10 },
-                        480: { slidesPerView: 1.5, spaceBetween: 15 },
-                        768: { slidesPerView: 2, spaceBetween: 20 },
-                        1024: { slidesPerView: 3, spaceBetween: 30 },
+                        481: { slidesPerView: 1.5, spaceBetween: 15 },
+                        761: { slidesPerView: 2, spaceBetween: 10 },
+                        1024: { slidesPerView: 2.4, spaceBetween: 30 },
                         1440: { slidesPerView: 3, spaceBetween: 30 },
                       }}
                     >

@@ -19,7 +19,6 @@ const ProgramSection = memo(
     }
 
     const { ProgramSection } = programSectionData;
-
     return (
       <section
         className={`${styles.container} ${designOverrides?.container || ""}`}

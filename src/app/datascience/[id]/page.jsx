@@ -24,6 +24,7 @@ const Page = async ({ params }) => {
   const { id } = params;
   const pageData = await getPageData(id);
 
+
   if (pageData.error) {
     return <div>{pageData.error}</div>;
   }
@@ -72,6 +73,8 @@ const Page = async ({ params }) => {
       />
       <ToolsSection />
       <CertificateSection />
+      <ToolsSection />
+      <CertificateSection />
       <FeeContent
         Fee={pageData.FeeSection?.Fee}
         hybridFee={pageData.FeeSection?.hybridFee}
@@ -101,6 +104,7 @@ const Page = async ({ params }) => {
         monthlyPayment2={pageData.FeeSection?.monthlyPayment2}
         greenDown2={pageData.FeeSection?.greenDown2}
       />
+
 
       <StructuredSection />
       <JobReadySection />

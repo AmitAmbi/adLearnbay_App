@@ -26,7 +26,7 @@
   /* padding-top: 15px; */
   display: flex;
   flex-flow: column;
-  gap: 32px;
+  gap: 30px;
 }
 
 .firstSection h5 {
@@ -142,6 +142,7 @@
   position: relative;
   height: 61px;
   width: 270px;
+  margin-top: 6%;
 }
 
 .content h3 {
@@ -289,7 +290,7 @@
   }
 }
 
-@media only screen and (max-width: 1081px) {
+@media only screen and (max-width: 1180px) {
   .innerDiv {
     grid-template-columns: 60% 33%;
   }
@@ -331,9 +332,10 @@
   .content h3 {
     font-size: 26px;
   }
+  
 }
 
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 967px) {
 
   .innerDiv {
     grid-template-columns: 60% 36%;
@@ -400,6 +402,10 @@
   .innerBotDiv {
     gap: 2px;
   }
+  .firstSection h1 {
+    font-size: 32px;
+    line-height: 126.6%;
+  }
 }
 
 @media only screen and (max-width: 761px) {
@@ -411,7 +417,6 @@
   .formdiv h3{
     font-size: 21px;
   }
-
   .content p {
     font-size: 14px;
   }
@@ -427,6 +432,9 @@
 
   .btnDiv {
     gap: 45px;
+  }
+  .formdiv h3 {
+    font-size: 20px;
   }
 }
 
@@ -527,4 +535,9 @@
   .btnDiv {
     gap: 35px;
   }
+  .starDiv p{
+    font-size: 14px;
+  }
+ 
+ 
 }

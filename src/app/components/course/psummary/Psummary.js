@@ -1,6 +1,7 @@
+// PSummaryAD.jsx
 "use client"; // Must be at the top
 
-import React, { useState, useRef, memo, useCallback, useEffect } from "react";
+import React, { useEffect, useState, useRef, memo, useCallback } from "react";
 import Image from "next/image";
 import styles from "./Psummary.module.css";
 
@@ -16,6 +17,7 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => {
         try {
           const response = await fetch("/summaryData.json"); // Adjust path if necessary
           const data = await response.json();
+          // Handle fetched data here if you choose to fetch again
         } catch (error) {
           console.error("Error fetching data:", error);
         }
