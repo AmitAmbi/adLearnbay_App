@@ -17,7 +17,6 @@ const PSummaryAD = ({ summaryData = [], customClassName = "" }) => {
         try {
           const response = await fetch("/summaryData.json"); // Adjust path if necessary
           const data = await response.json();
-          // Handle fetched data here if you choose to fetch again
         } catch (error) {
           console.error("Error fetching data:", error);
         }
