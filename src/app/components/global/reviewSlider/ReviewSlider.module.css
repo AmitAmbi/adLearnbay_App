@@ -496,7 +496,7 @@
     padding: 0;
   }
 
-  .topSpan{
+  .topSpan {
     border: none;
   }
 
@@ -525,6 +525,10 @@
 
   .mainHeading {
     font-size: 22px;
+  }
+
+  .reviewBotSection {
+    padding: 0;
   }
 }
 

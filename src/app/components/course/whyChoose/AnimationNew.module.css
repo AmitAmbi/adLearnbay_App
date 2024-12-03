@@ -1,4 +1,3 @@
-/* Updated radial gradient for smoother transitions */
 .whyChooseSection {
   background: radial-gradient(circle at 10% 10%,
       /* Blue circle positioned at the top left */
@@ -28,7 +27,6 @@
   color: var(--deep-cyann);
   text-align: center;
   font-size: var(--desktop_p-font-size);
-  /* Use rem for responsive font size */
   font-style: normal;
   font-weight: 500;
 }
@@ -37,20 +35,16 @@
   color: rgba(255, 241, 234, 1);
   text-align: center;
   font-size: var(--desktop_h2-font-size);
-  /* Responsive typography with clamp */
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  /* Flexible line height */
 }
 
 .header span {
   font-size: var(--desktop_h2-font-size);
-  /* Responsive typography with clamp */
   font-weight: bold;
   color: transparent;
   -webkit-text-stroke: 1px rgba(255, 241, 234, 1);
-  /* Stroke width and color */
 }
 
 .columnDiv {
@@ -61,7 +55,6 @@
 .divContainer {
   display: flex;
   gap: 1rem;
-  /* Use rem instead of px */
   margin-bottom: 2rem;
   /* Rem-based margin for better scaling */
   opacity: 0.1;
@@ -525,5 +518,18 @@
 @media screen and (max-width: 361px) {
   .insideBoxDesign1 .insideBoxImgWrapper {
     height: 35px;
+  }
+
+  .divContainer {
+    margin: 0;
+  }
+
+  .divContainerANI {
+    padding-right: 0;
+    margin-top: 25px;
+  }
+
+  .columnDiv {
+    margin: 60px auto;
   }
 }

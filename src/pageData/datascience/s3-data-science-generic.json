@@ -2346,6 +2346,7 @@
       ]
     }
   ],
+
   "upskillingData": [
     {
       "term": "Term 1",
@@ -2450,6 +2451,7 @@
       "height": "20"
     }
   ],
+  
   "FeeSection": {
     "Fee": "₹50,000",
     "FeeEmi": "₹4,500/month",

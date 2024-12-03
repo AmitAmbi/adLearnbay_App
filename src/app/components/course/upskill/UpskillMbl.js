@@ -41,19 +41,49 @@ const UpskillMbl = ({ upskillMbl }) => {
     };
   };
 
+  const scrollToSlide = useCallback(
+    (index) => {
+      const slider = sliderRef.current;
+      const slideWidth = slider.children[0].offsetWidth;
+      slider.scrollLeft = slideWidth * index;
+      setActiveIndex(index);
+    },
+    [totalSlides]
+  );
+  // Track the previous index
+  const previousIndexRef = useRef(activeIndex);
+
+  useEffect(() => {
+    if (activeIndex > previousIndexRef.current) {
+      setArrowDirection("right");
+    } else if (activeIndex < previousIndexRef.current) {
+      setArrowDirection("left");
+    }
+    previousIndexRef.current = activeIndex;
+  }, [activeIndex, totalSlides]);
+
   const handleScroll = useCallback(() => {
     const slider = sliderRef.current;
     const slideWidth = slider.children[0].offsetWidth;
-    const newActiveIndex = Math.round(slider.scrollLeft / slideWidth);
+    const newScrollLeft = slider.scrollLeft;
+    const tolerance = 10;
+
+    let newActiveIndex = Math.round((newScrollLeft + tolerance) / slideWidth);
+
+    //we scrolled to the very end or not
+    if (newScrollLeft + slider.clientWidth >= slider.scrollWidth - tolerance) {
+      newActiveIndex = totalSlides - 1;
+    }
+
     setActiveIndex(newActiveIndex);
 
-    if (newActiveIndex === totalSlides - 1) {
+    if (newActiveIndex > previousIndexRef.current) {
       setArrowDirection("right");
-    } else if (newActiveIndex === 0) {
+    } else if (newActiveIndex < previousIndexRef.current) {
       setArrowDirection("left");
-    } else {
-      setArrowDirection("neutral");
     }
+
+    previousIndexRef.current = newActiveIndex;
   }, [totalSlides]);
 
   useEffect(() => {
@@ -65,24 +95,6 @@ const UpskillMbl = ({ upskillMbl }) => {
       slider.removeEventListener("scroll", debouncedScroll);
     };
   }, [handleScroll]);
-
-  const scrollToSlide = useCallback(
-    (index) => {
-      const slider = sliderRef.current;
-      const slideWidth = slider.children[0].offsetWidth;
-      slider.scrollLeft = slideWidth * index;
-      setActiveIndex(index);
-
-      if (index === totalSlides - 1) {
-        setArrowDirection("right");
-      } else if (index === 0) {
-        setArrowDirection("left");
-      } else {
-        setArrowDirection("neutral");
-      }
-    },
-    [totalSlides]
-  );
 
   return (
     <div className="containerWidth">
@@ -140,8 +152,16 @@ const UpskillMbl = ({ upskillMbl }) => {
                     className={`${styles.arrow} ${
                       arrowDirection === "right" && index === totalSlides - 1
                         ? styles.rotate
+                        : arrowDirection === "left" && index === totalSlides - 1
+                        ? styles.rotate
+                        : arrowDirection === "right" &&
+                          index > 0 &&
+                          index < totalSlides - 1
+                        ? styles.rotateLeft
                         : arrowDirection === "left" && index === 0
                         ? styles.rotateLeft
+                        : arrowDirection === "left" && index > 0
+                        ? styles.rotate
                         : ""
                     }`}
                   >

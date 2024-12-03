@@ -2,10 +2,11 @@
   display: none;
 }
 
+
 @media screen and (max-width: 641px) {
   .section {
     display: block;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   .section h2 {
@@ -24,16 +25,12 @@
   }
 
   .Container {
-    background: radial-gradient(
-        circle at 90% 90%,
+    background: radial-gradient(circle at 90% 90%,
         rgba(6, 59, 92, 0.9) 1%,
-        transparent 30%
-      ),
-      radial-gradient(
-        circle at 10% 10%,
+        transparent 30%),
+      radial-gradient(circle at 10% 10%,
         rgba(254, 122, 54, 0.3) 1%,
-        transparent 40%
-      ),
+        transparent 40%),
       var(--light-black);
     border-radius: 30px;
     padding: 20px;
@@ -45,10 +42,10 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     position: relative;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     gap: 10px;
     align-items: baseline;
-    margin-top: 40px;
+    margin: 40px 0 40px;
   }
 
   .Box {
@@ -57,6 +54,7 @@
     margin: 0;
     display: flex;
     flex-direction: column;
+    gap: 20px;
   }
 
   .contentBox {
@@ -64,7 +62,7 @@
     max-width: 240px;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 25px;
   }
 
   .termBox {
@@ -75,7 +73,7 @@
     justify-content: space-between;
     padding: 6px 10px;
     width: 100%;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
   }
 
   .termBox h5 {
@@ -90,11 +88,16 @@
     font-weight: 400;
   }
 
+  .Box:nth-child(5) .svglineDiv .termBox {
+    max-width: 155px;
+  }
+
   .contentBox h4 {
     color: var(--white);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 0;
+    line-height: 1.2;
   }
 
   .contentBox p {
@@ -104,23 +107,32 @@
   }
 
   .ToolsBox {
+    width: 100%;
+    max-width: 250px;
+    height: 55px;
     border-radius: 6.137px;
     background: rgba(0, 114, 188, 0.15);
-    padding: 10px 20px;
-    margin: 28px 0;
+    padding: 10px;
+    /* margin: 28px 0; */
     display: flex;
-    justify-content: space-around;
-    max-width: 250px;
-    width: 100%;
+    justify-content: flex-start;
     align-items: center;
+    gap: 20px;
   }
+
   .ToolsBox p {
     color: var(--white);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 125%; /* 17.5px */
+    line-height: 125%;
+    /* 17.5px */
     margin: 0;
+  }
+
+  .ToolsBox img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
   }
 
   .svgLine {
@@ -138,7 +150,7 @@
   .pagination {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     align-items: center;
   }
 
@@ -167,28 +179,48 @@
   }
 
   .arrow {
-    font-size: 30px; /* Adjust size of the arrow */
-    color: var(--white); /* Arrow color */
+    font-size: 30px;
+    /* Adjust size of the arrow */
+    color: var(--white);
+    /* Arrow color */
     position: absolute;
-    top: 35%;
+    top: 44%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the arrow inside the dot */
-    transition: transform 0.3s; /* Smooth rotation transition */
+    transform: translate(-50%, -50%);
+    /* Center the arrow inside the dot */
+    transition: transform 0.3s;
+    /* Smooth rotation transition */
   }
 
   .rotate {
-    transform: translate(-50%, -50%) rotate(180deg); /* Rotate the arrow when scrolling right */
+    transform: translate(-50%, -50%) rotate(180deg);
+    /* Rotate the arrow when scrolling right */
     position: absolute;
     top: 60%;
     left: 50%;
   }
 
   .rotateLeft {
-    transform: translate(-50%, -50%) rotate(0deg); /* Keep it normal when scrolling left */
+    transform: translate(-50%, -50%) rotate(0deg);
+    /* Keep it normal when scrolling left */
   }
 
   /* Hide the scrollbar */
   .sliderMain::-webkit-scrollbar {
     display: none;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .section h2 {
+    padding: 0 20px;
+  }
+
+  .Box {
+    gap: 15px;
+  }
+
+  .sliderMain {
+    margin: 40px 0 25px;
   }
 }
