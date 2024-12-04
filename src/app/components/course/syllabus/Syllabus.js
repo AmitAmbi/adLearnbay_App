@@ -27,7 +27,7 @@ const SyllabusSection = ({
   // Detect screen size
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 761);
     };
 
     window.addEventListener("resize", handleResize);
@@ -175,6 +175,7 @@ const SyllabusSection = ({
                       height={section.toolheight}
                       alt="tools"
                       loading="lazy"
+                      // className={styles.toolsImg}
                     />
                   </div>
                 </div>
