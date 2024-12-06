@@ -10,6 +10,7 @@
   gap: 40px;
   position: relative;
 }
+
 .upskillHeading {
   font-size: 45px;
   color: var(--white);
@@ -18,6 +19,7 @@
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .spanHead {
   font-weight: 700;
   text-decoration: underline;
@@ -29,6 +31,7 @@
   margin: 0;
   color: var(--white);
 }
+
 .UpperBoxContainer {
   display: flex;
   justify-content: center;
@@ -37,6 +40,7 @@
   position: relative;
   flex-wrap: wrap;
 }
+
 .boxContainer {
   color: var(--white);
   width: 250px;
@@ -52,6 +56,7 @@
   border-radius: 5px;
   align-items: center;
 }
+
 .upperBox h5 {
   color: var(--light-orange);
   font-size: 16px;
@@ -62,22 +67,32 @@
   margin: 0;
   color: var(--white);
 }
+
 .boxTitle {
-  margin: 0.7rem 0;
-  line-height: 1.4;
-  font-weight: 500;
+  margin: -0.7rem 0 1rem;
+  line-height: 1.2;
+  font-weight: 600;
   font-size: 20px;
-  color: var(--white);
+  color: var(--white)
 }
+
+.boxContainer:nth-child(3) .boxTitle,
+.boxContainer:nth-child(6) .boxTitle {
+  margin: 0.7rem 0 1rem;
+
+}
+
 .textHead {
   font-weight: 400;
 }
+
 .boxText {
   font-size: 14px;
   font-weight: 300;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: var(--white);
 }
+
 .toolBox {
   display: flex;
   gap: 0.8rem;
@@ -89,21 +104,27 @@
 }
 
 .toolIcon {
-  width: auto;
-  height: auto;
-  color: var(--secondary-color);
+  width: 100%;
+  height: 100%;
+  /* color: var(--secondary-color); */
 }
 
-.toolPyIcon {
+.boxContainer:nth-child(1) .toolBox .toolIcon {
+  width: 50%;
+  height: 10%;
+}
+
+/* .toolPyIcon {
   width: 70px;
   height: 30px;
 }
+
 .toolIconsingle {
   width: 200px;
   height: auto;
-}
+} */
 
-.dashDiv {
+/* .dashDiv {
   width: 200px;
   height: 5px;
   border-radius: 34px;
@@ -115,7 +136,7 @@
   display: flex;
   justify-content: center;
   padding: 6px 4px;
-}
+} */
 
 .Dashline {
   border: 2px dashed white;
@@ -123,6 +144,7 @@
   height: 1px;
   border-radius: 10px;
 }
+
 .boxDown {
   display: flex;
   justify-content: space-evenly;
@@ -136,11 +158,13 @@
   border: 1px solid var(--secondary-color);
   background: rgba(255, 196, 54, 0.2);
 }
+
 .bonus h5 {
   color: var(--secondary-color);
   font-size: 16px;
   font-weight: 600;
-  line-height: 158%; /* 31.6px */
+  line-height: 158%;
+  /* 31.6px */
 }
 
 .boxdown h4 {
@@ -148,7 +172,8 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
-  line-height: 125%; /* 31.25px */
+  line-height: 125%;
+  /* 31.25px */
 }
 
 .svgLine {
@@ -157,18 +182,19 @@
   text-align: center;
   top: -27px;
 }
+
 .svgLinetwo {
   position: absolute;
-  right: 1px;
-  top: 226px;
+  right: -10px;
+  top: 160px;
 }
 
 .svgLinethree {
   text-align: center;
   z-index: 2;
   position: absolute;
-  left: -14px;
-  bottom: -130px;
+  left: 6px;
+  bottom: -120px;
 }
 
 .svgLinetfourth {
@@ -176,6 +202,7 @@
   right: 155px;
   top: 13px;
 }
+
 .svgLinetfourth img {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
@@ -194,20 +221,186 @@
   z-index: 2;
 }
 
-@media (max-width: 1280px) {
-  .boxTitle {
-    font-size: 16px;
+@media screen and (max-width: 1381px) {
+  .sectionWrapper {
+    gap: 20px;
   }
-}
-@media screen and (max-width: 1180px) {
-  .boxContainer {
-    width: 263px;
+
+  .UpperBoxContainer {
+    gap: 7rem 5rem;
+  }
+
+  .svgLine {
+    left: 111px;
+  }
+
+  .boxContainer:nth-child(4) .svgLine,
+  .boxContainer:nth-child(5) .svgLine {
+    width: 163px;
+    left: 163px;
+  }
+
+  .boxContainer:nth-child(4) .svgLine svg,
+  .boxContainer:nth-child(5) .svgLine svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .svgLinetwo {
+    right: -50px;
+    top: 166px;
+  }
+
+  .svgLinethree {
+    left: -100px;
+    bottom: -147px;
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1281px) {
+  .UpperBoxContainer {
+    margin: 0;
+  }
+
+  .boxTitle {
+    font-size: 16px;
+  }
+
+  .UpperBoxContainer {
+    gap: 5rem 3rem;
+  }
+
+
+  .svgLine {
+    width: 142px;
+    left: 148px;
+  }
+
+  .svgLine svg {
+    width: 100%;
+  }
+
+  .svgLinetwo {
+    top: 165px;
+  }
+
+  .svgLinetwo svg {
+    height: 370px;
+  }
+
+  .svgLinethree {
+    left: -82px;
+    bottom: -150px;
+  }
+
+  .svgLinethree svg {
+    height: 495px;
+    width: 390px;
+  }
+
+  .boxContainer:nth-child(4) .svgLine,
+  .boxContainer:nth-child(5) .svgLine {
+    width: 129px;
+    left: 163px;
+  }
+
+}
+
+@media screen and (max-width: 1181px) {
   .boxContainer {
     width: 263px;
+  }
+
+  .UpperBoxContainer {
+    gap: 3rem 2rem;
+  }
+
+  .svgLine {
+    width: 129px;
+    left: 150px;
+  }
+
+  .svgLinetwo {
+    right: -55px;
+
+  }
+
+  .svgLinetwo svg {
+    height: 340px;
+  }
+}
+
+@media screen and (max-width: 1081px) {
+
+  /* .boxContainer {
+    width: 235px;
+  }
+  
+  .boxText {
+    font-size: 12px;
+  }
+  .svgLine {
+    left: 160px;
+  }
+
+  .svgLinetwo {
+    right: -23px;
+  } */
+  .svgLine,
+  .boxContainer:nth-child(4) .svgLine,
+  .boxContainer:nth-child(5) .svgLine {
+    width: 100px;
+    left: 175px;
+  }
+
+  .svgLinetwo,
+  .svgLinethree {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* .svgLinetwo {
+    right: -95px;
+
+  } */
+}
+
+@media screen and (max-width: 968px) {
+  .UpperBoxContainer {
+    gap:2rem 1rem;
+  }
+
+  .svgLinetwo {
+    top: 170px;
+  }
+
+  .svgLinetwo svg {
+    height: 305px;
+  }
+
+  .svgLine {
+    left: 150px;
+  }
+
+  .svgLine,
+  .boxContainer:nth-child(4) .svgLine,
+  .boxContainer:nth-child(5) .svgLine {
+    width: 80px;
+  }
+
+  .boxContainer:nth-child(4) .svgLine,
+  .boxContainer:nth-child(5) .svgLine {
+    left: 165px;
+  }
+
+  .sectionWrapper {
+    padding: 50px 0 70px;
+  }
+
+  .upskillHeading {
+    font-size: 36px;
+    margin-bottom: 30px;
   }
 }
 

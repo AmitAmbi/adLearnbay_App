@@ -86,7 +86,7 @@
   box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 24px;
   transition: all 10s ease;
   height: 38px;
-  width: 34%;
+  width: max-content;
   bottom: -23px;
 }
 
@@ -316,10 +316,10 @@
     font-size: 30px;
   }
 
-  .btn {
+  /* .btn {
     gap: 15px;
     width: 36%;
-  }
+  } */
 }
 
 @media screen and (max-width: 1181px) {
@@ -384,9 +384,9 @@
     padding: 30px 20px 20px;
   }
 
-  .btn {
+  /* .btn {
     font-size: 14px;
-  }
+  } */
 
   .typelogo {
     width: 560px;
@@ -420,9 +420,9 @@
     /* gap: 14px; */
   }
 
-  .btn {
+  /* .btn {
     width: 39%;
-  }
+  } */
 
   .bookFreebtn button {
     font-size: 12px;
@@ -461,10 +461,10 @@
     padding: 13px 10px;
   }
 
-  .btn {
+  /* .btn {
     width: 43%;
     font-size: 12px;
-  }
+  } */
 
   /* .hr {
     width: 100%;
@@ -560,10 +560,10 @@
     padding: 23px 15px;
   } */
 
-  .btn {
+  /* .btn {
     gap: 10px;
     width: 47%;
-  }
+  } */
 
   .typelogo {
     width: 420px;
@@ -709,7 +709,7 @@
     box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 24px;
     margin-top: 20px;
     width: -moz-fit-content;
-    width: fit-content;
+    width: max-content;
     margin-bottom: 20px;
   }
 

@@ -39,14 +39,14 @@ export default function Home() {
     <main className={styles.main}>
       <NavbarHome />
       <HeroSection />
-      <InfinityLogo />
       <KickStart />
       <NewCourse />
+      <InfinityLogo />
       <Animation />
       <ReviewSlider />
       <ContactUs />
       <CLogo />
-      <Other />
+      {/* <Other /> */}
       <MobileTestimonial />
       <NewSevenSection />
     </main>

@@ -1,8 +1,9 @@
-"use client"
-import { useEffect, useState } from "react";
+"use client";
+import { lazy, Suspense, useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./ContactUs.module.css";
 import dynamic from "next/dynamic";
+const Form = lazy(() => import("../../global/form/Form"));
 
 function ContactUs({
   dataScience,
@@ -58,10 +59,10 @@ function ContactUs({
             <div className={styles.conpara}>
               <p>
                 <span className={styles.paraspan}>“</span>
-                <br />I had a great learning experience at Learnbay. The faculties
-                here are top notch. Right from enrollment to getting a good job,
-                they keep putting enormous efforts for each and every candidate.
-                Thanks to all the trainers, backend team.
+                <br />I had a great learning experience at Learnbay. The
+                faculties here are top notch. Right from enrollment to getting a
+                good job, they keep putting enormous efforts for each and every
+                candidate. Thanks to all the trainers, backend team.
               </p>
             </div>
 
@@ -180,14 +181,18 @@ function ContactUs({
               </div>
             </div>
           </div>
-          <div>
+          <Suspense fallback={<div>Loading Form...</div>}>
             <div className={styles.RightSide}>
               <p className={styles.NormalPForm}>
                 Check Your <span className={styles.span}>Eligibility </span>
               </p>
-
+              <Form
+                dataScienceCounselling={dataScienceCounselling}
+                upSkillingHide={upSkillingHide}
+                interstedInHide={interstedInHide}
+              />
             </div>
-          </div>
+          </Suspense>
         </div>
       </div>
     </section>

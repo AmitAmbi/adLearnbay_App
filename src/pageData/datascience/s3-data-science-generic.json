@@ -2449,9 +2449,18 @@
       "toolsImage": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/master_four+(1).webp",
       "width": "120",
       "height": "20"
+    },
+    {
+      "term": "Project",
+      "duration": "6 Weeks",
+      "title": "AI-Powered Customer Support Chatbot",
+      "description": "Build a chatbot using GPT-3 for query handling and RNN-based sentiment analysis",
+      "toolsImage": "https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/newimg6+(1).webp",
+      "width": 127,
+      "height": 60
     }
   ],
-  
+
   "FeeSection": {
     "Fee": "₹50,000",
     "FeeEmi": "₹4,500/month",

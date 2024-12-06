@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
@@ -11,7 +11,9 @@ import { menuItemHome } from "./NavbarData";
 // Dynamic imports for components
 const Popup = dynamic(() => import("../../global/popup/Popup"), { ssr: false });
 const Form = dynamic(() => import("../../global/form/Form"), { ssr: false });
-const Button = dynamic(() => import("../../global/button/Button"), { ssr: false });
+const Button = dynamic(() => import("../../global/button/Button"), {
+  ssr: false,
+});
 const Tabs = dynamic(() => import("../../global/tab/TabData"), { ssr: false });
 
 const NavbarHome = ({
@@ -28,59 +30,60 @@ const NavbarHome = ({
   const [Popups, setPopup] = useState(false);
   const [mobile, setMobile] = useState(false);
 
-  const dropdownRef = useRef(null); // Reference for dropdown container
-  const coursesButtonRef = useRef(null); // Reference for "Courses" button
+  // const dropdownRef = useRef(null); // Reference for dropdown container
+  // const coursesButtonRef = useRef(null); // Reference for "Courses" button
 
-  const showMenu = useCallback(() => {
-    setShow((prevShow) => !prevShow);
-  }, []);
+  // const showMenu = useCallback(() => {
+  //   setShow((prevShow) => !prevShow);
+  // }, []);
 
-  const handleIcon = useCallback((data) => {
-    setIcon(data);
-  }, []);
+  // const handleIcon = useCallback((data) => {
+  //   setIcon(data);
+  // }, []);
+
+  // const toggleMoreDropdown = useCallback(() => {
+  //   setShowMoreDropdown((prevShowMore) => !prevShowMore);
+  // }, []);
+
+  // const handleClickOutside = useCallback((event) => {
+  //   if (
+  //     dropdownRef.current &&
+  //     !dropdownRef.current.contains(event.target) &&
+  //     coursesButtonRef.current &&
+  //     !coursesButtonRef.current.contains(event.target)
+  //   ) {
+  //     setIcon(false); // Close the "Courses" dropdown when clicking outside
+  //   }
+  // }, []);
+
+  // useEffect(() => {
+  //   document.addEventListener("mousedown", handleClickOutside);
+
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, [handleClickOutside]);
+
+  // useEffect(() => {
+  //   const updateMobileView = () => {
+  //     setMobile(window.innerWidth < 481);
+  //   };
+
+  //   window.addEventListener("resize", updateMobileView);
+  //   updateMobileView();
+
+  //   return () => {
+  //     window.removeEventListener("resize", updateMobileView);
+  //   };
+  // }, []);
 
   const popupShow = useCallback(() => {
     setPopup(true);
   }, []);
-
-  const toggleMoreDropdown = useCallback(() => {
-    setShowMoreDropdown((prevShowMore) => !prevShowMore);
-  }, []);
-
-  const handleClickOutside = useCallback((event) => {
-    if (
-      dropdownRef.current &&
-      !dropdownRef.current.contains(event.target) &&
-      coursesButtonRef.current &&
-      !coursesButtonRef.current.contains(event.target)
-    ) {
-      setIcon(false); // Close the "Courses" dropdown when clicking outside
-    }
-  }, []);
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [handleClickOutside]);
-
-  useEffect(() => {
-    const updateMobileView = () => {
-      setMobile(window.innerWidth < 481);
-    };
-
-    window.addEventListener("resize", updateMobileView);
-    updateMobileView();
-
-    return () => {
-      window.removeEventListener("resize", updateMobileView);
-    };
-  }, []);
-
   return (
-    <nav className={`${styles.nav} flexBox flexJustSpaceBetween flexAlignCenter`}>
+    <nav
+      className={`${styles.nav} flexBox flexJustSpaceBetween flexAlignCenter`}
+    >
       {/* Popup Component */}
       <Popup trigger={Popups} setTrigger={setPopup} className="popupModal">
         <div className="leftPopup">
@@ -104,26 +107,32 @@ const NavbarHome = ({
 
       {/* Left Section */}
       <div className={`${styles.left} flexBox flexAlignCenter`}>
-        <FaBars
+        {/* <FaBars
           className={styles.ham}
           onClick={() => {
             showMenu();
             setIcon(false);
           }}
-        />
+        /> */}
 
-        <Image
-          src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/learnbay-logo.png"
-          alt="Learnbay"
-          quality={100}
-          priority
-          className={mobile ? styles.mobileLogo : styles.desktopLogo}
-          width={mobile ? 160 : 180}
-          height={40}
-        />
+        <div className={styles.logoWrapper}>
+          <Image
+            src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/learnbay-logo.png"
+            alt="Learnbay"
+            quality={100}
+            priority
+            // className={mobile ? styles.mobileLogo : styles.desktopLogo}
+            className={styles.logo}
+            fill
+          />
+        </div>
+
+        <div onClick={popupShow} className={styles.requestBtn}>
+          <button>Apply for Counselling</button>
+        </div>
 
         {/* Courses Button with Dropdown */}
-        <div
+        {/* <div
           ref={coursesButtonRef} // Add ref to "Courses" button
           onClick={() => {
             setIcon((prevIcon) => !prevIcon); // Toggle the dropdown on click
@@ -136,21 +145,21 @@ const NavbarHome = ({
             text="Courses"
             passIcon={icon ? <FaChevronUp /> : <FaChevronDown />}
           />
-        </div>
+        </div> */}
 
         {/* Mega Menu */}
-        {icon && (
+        {/* {icon && (
           <div
             className={styles.megaMenu}
             ref={dropdownRef} // Add ref to dropdown container
           >
             <Tabs handleIcon={handleIcon} />
           </div>
-        )}
+        )} */}
       </div>
 
       {/* Mobile Menu */}
-      <div className={show ? styles.mobileWrapper : styles.hide}>
+      {/* <div className={show ? styles.mobileWrapper : styles.hide}>
         <div className={styles.mobileMenu}>
           {menuItemHome.map((data) => {
             const { id, name, url } = data;
@@ -161,11 +170,13 @@ const NavbarHome = ({
             );
           })}
         </div>
-      </div>
+      </div> */}
 
       {/* Right Section */}
-      <div className={`${styles.right} flexBox flexAlignCenter flexJustSpaceBetween`}>
-        {menuItemHome.map((item) => {
+      <div
+        className={`${styles.right} flexBox flexAlignCenter flexJustSpaceBetween`}
+      >
+        {/* {menuItemHome.map((item) => {
           if (item.name === "More") {
             return (
               <div
@@ -179,8 +190,6 @@ const NavbarHome = ({
                 >
                   {item.name} <FaChevronDown />
                 </span>
-
-                {/* Dropdown for 'More' */}
                 {showMoreDropdown && (
                   <div className={styles.dropdown}>
                     {item.dropdown.map((dropdownItem) => (
@@ -209,11 +218,11 @@ const NavbarHome = ({
               </Link>
             </span>
           );
-        })}
+        })} */}
 
-        <div onClick={popupShow} className={styles.requestBtn}>
-          <button>Request a callback</button>
-        </div>
+        {/* <div onClick={popupShow} className={styles.requestBtn}>
+          <button>Apply for Counselling</button>
+        </div> */}
       </div>
     </nav>
   );

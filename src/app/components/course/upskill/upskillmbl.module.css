@@ -88,8 +88,8 @@
     font-weight: 400;
   }
 
-  .Box:nth-child(5) .svglineDiv .termBox {
-    max-width: 155px;
+  .Box:nth-child(6) .svglineDiv .termBox {
+    max-width: 215px;
   }
 
   .contentBox h4 {

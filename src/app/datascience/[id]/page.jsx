@@ -24,7 +24,6 @@ const Page = async ({ params }) => {
   const { id } = params;
   const pageData = await getPageData(id);
 
-
   if (pageData.error) {
     return <div>{pageData.error}</div>;
   }
@@ -65,11 +64,11 @@ const Page = async ({ params }) => {
       <UpskillMbl upskillMbl={pageData.upskillMbl} />
       <ProjectSection />
       <SyllabusSection
-        sections={pageData.sections} // Assuming 'syllabusSections' is part of your page data
-        brochureLink={pageData.brochureLink} // Assuming this exists
-        brochurePdf={pageData.brochurePdf} // Assuming this exists
-        interstedInHide={pageData.interstedInHide} // Assuming this exists
-        radio={pageData.radio} // Assuming this exists
+        sections={pageData.sections}
+        brochureLink={pageData.brochureLink}
+        brochurePdf={pageData.brochurePdf}
+        interstedInHide={true}
+        radio={pageData.radio}
       />
       <ToolsSection />
       <CertificateSection />
@@ -102,7 +101,6 @@ const Page = async ({ params }) => {
         monthlyPayment2={pageData.FeeSection?.monthlyPayment2}
         greenDown2={pageData.FeeSection?.greenDown2}
       />
-
 
       <StructuredSection />
       <JobReadySection />
