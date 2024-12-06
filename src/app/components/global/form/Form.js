@@ -170,7 +170,6 @@ const Form = ({
                   query: {
                     titleCourse: titleCourse,
                     brochureLink: brochureLink,
-                    
                   },
                 }
               : {
@@ -186,9 +185,9 @@ const Form = ({
   };
 
   const downloadFileAtUrl = (url) => {
-    const aTag = document.createElement('a');
+    const aTag = document.createElement("a");
     aTag.href = url;
-    aTag.download = url.split('/').pop();
+    aTag.download = url.split("/").pop();
     document.body.appendChild(aTag);
     aTag.click();
     document.body.removeChild(aTag);
@@ -247,6 +246,7 @@ const Form = ({
                           value={value}
                           onChange={(phone) => setValue(phone)}
                           required={field.required}
+                          className={styles.PhoneInput}
                         />
                       ) : field.type === "select" ? (
                         <select
@@ -301,6 +301,7 @@ const Form = ({
                           value={value}
                           onChange={(phone) => setValue(phone)}
                           required={field.required}
+                          className={styles.PhoneInput}
                         />
                       ) : field.type === "select" ? (
                         <select
@@ -340,7 +341,11 @@ const Form = ({
             </div>
           )}
           <div className={styles.submitContainer}>
-            <button type="submit" disabled={submitting} className={styles.submitButton}>
+            <button
+              type="submit"
+              disabled={submitting}
+              className={styles.requestBtn}
+            >
               {submitting ? "Submitting..." : btnText}
             </button>
           </div>

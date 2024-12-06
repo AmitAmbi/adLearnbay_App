@@ -133,7 +133,6 @@
   position: absolute;
 }
 
-
 /* Styles for the button inside the Navbar */
 .requestBtn {
   display: flex;
@@ -154,7 +153,6 @@
   transition: background-color 0.3s ease-in-out, transform 0.3s ease;
   outline: none;
   position: relative;
-
 }
 
 /* Add hover effect */
@@ -181,9 +179,9 @@
 }
 
 /* Dropdown container for 'More' */
-.dropdownContainer {
+/* .dropdownContainer {
   position: relative;
-}
+} */
 
 .moreLink {
   cursor: pointer;
@@ -230,7 +228,6 @@
   transition: opacity 0.3s ease;
 }
 
-
 @media only screen and (max-width: 1181px) {
   .nav {
     padding: 0 6.5% 0 6.5%;
@@ -259,7 +256,6 @@
 }
 
 @media only screen and (max-width: 1081px) {
-
   .right span {
     margin-right: 12px;
   }
@@ -314,7 +310,6 @@
 }
 
 @media only screen and (max-width: 968px) {
-
   .requestBtn {
     padding: 0;
   }
@@ -328,11 +323,12 @@
     font-size: 11px;
   }
 
-  .right{
+  .right {
     gap: 10px;
   }
 
-  .right a, .right span{
+  .right a,
+  .right span {
     font-size: 14px;
   }
   /* .nav {
@@ -341,7 +337,6 @@
 }
 
 @media only screen and (max-width: 841px) {
-
   .nav {
     padding: 0 5% 0 3%;
   }

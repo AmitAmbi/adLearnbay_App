@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./Popup.module.css";
 import { IoCloseSvg } from "@/Data/svgData/Io5";
-
+import Image from "next/image";
 
 const Popup = (props) => {
   if (props.price) color = "white";
@@ -19,6 +19,13 @@ const Popup = (props) => {
           props.downloadBrochure ? styles.popupInners : styles.popupInner
         }
       >
+        <div className="image">
+          <Image
+            src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/learnbayMain/popup-left.webp"
+            height={430}
+            width={330}
+          />
+        </div>
         {props.downloadBrochure ? (
           <IoCloseSvg
             className={styles.closeBtn}

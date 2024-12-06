@@ -220,14 +220,14 @@ const DataScienceCard = ({
         trigger={popups}
         setTrigger={setPopups}
         className="popupModal"
-        downloadBrochure
+        downloadBrochure={true}
       >
-        <div className="leftPopup">
+        {/* <div className="leftPopup">
           <div
             className="whiteP"
             style={{ width: "340px", height: "400px" }}
           ></div>
-        </div>
+        </div> */}
         <div className="RightPopup">
           <h5>Download Syllabus</h5>
           <Form
@@ -238,7 +238,7 @@ const DataScienceCard = ({
             dataScienceCounselling={dataScienceCounselling}
             dataScienceGeneric={dataScienceGeneric}
             radio={radio}
-            downloadBrochure
+            downloadBrochure={true}
             upSkillingHide={true}
             interstedInHide={interstedInHide}
           />

@@ -28,12 +28,12 @@ const PopupContent = ({
       className="popupModal"
       popup={true}
     >
-      <div className="leftPopup">
+      {/* <div className="leftPopup">
         <div
           className="whiteP"
           style={{ width: "340px", height: "400px" }}
         ></div>
-      </div>
+      </div> */}
       <div className="RightPopup">
         <h5>{heading}</h5>
         <Form

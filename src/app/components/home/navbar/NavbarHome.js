@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
@@ -11,7 +11,9 @@ import { menuItemHome } from "./NavbarData";
 // Dynamic imports for components
 const Popup = dynamic(() => import("../../global/popup/Popup"), { ssr: false });
 const Form = dynamic(() => import("../../global/form/Form"), { ssr: false });
-const Button = dynamic(() => import("../../global/button/Button"), { ssr: false });
+const Button = dynamic(() => import("../../global/button/Button"), {
+  ssr: false,
+});
 const Tabs = dynamic(() => import("../../global/tab/TabData"), { ssr: false });
 
 const NavbarHome = ({
@@ -80,12 +82,14 @@ const NavbarHome = ({
   }, []);
 
   return (
-    <nav className={`${styles.nav} flexBox flexJustSpaceBetween flexAlignCenter`}>
+    <nav
+      className={`${styles.nav} flexBox flexJustSpaceBetween flexAlignCenter`}
+    >
       {/* Popup Component */}
       <Popup trigger={Popups} setTrigger={setPopup} className="popupModal">
-        <div className="leftPopup">
+        {/* <div className="leftPopup">
           <div className="whiteP" />
-        </div>
+          </div> */}
         <div className="RightPopup">
           <h5>Apply For Counselling</h5>
           <Form
@@ -164,7 +168,9 @@ const NavbarHome = ({
       </div>
 
       {/* Right Section */}
-      <div className={`${styles.right} flexBox flexAlignCenter flexJustSpaceBetween`}>
+      <div
+        className={`${styles.right} flexBox flexAlignCenter flexJustSpaceBetween`}
+      >
         {menuItemHome.map((item) => {
           if (item.name === "More") {
             return (
@@ -173,10 +179,7 @@ const NavbarHome = ({
                 className={styles.dropdownContainer}
                 ref={dropdownRef} // Attach reference here
               >
-                <span
-                  className={styles.moreLink}
-                  onClick={toggleMoreDropdown}
-                >
+                <span className={styles.moreLink} onClick={toggleMoreDropdown}>
                   {item.name} <FaChevronDown />
                 </span>
 
