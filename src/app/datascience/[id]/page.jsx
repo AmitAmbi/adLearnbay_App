@@ -60,7 +60,10 @@ const Page = async ({ params }) => {
       <AnimationNew />
       <ReviewSlider />
       <MentorsSection />
-      <UpskillingSection upskillingData={pageData.upskillingData} />
+      <UpskillingSection
+        upskillingData1={pageData.upskillingData1}
+        upskillingData2={pageData.upskillingData2}
+      />
       <UpskillMbl upskillMbl={pageData.upskillMbl} />
       <ProjectSection />
       <SyllabusSection
