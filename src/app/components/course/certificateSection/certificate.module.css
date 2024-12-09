@@ -1,8 +1,8 @@
 .mainBg {
   max-width: 100%;
   display: flex;
-  margin: auto;
-  margin-top: 120px;
+  margin: 10% 0;
+  /* margin-top: 100px; */
   flex-direction: column;
   border-radius: 54px;
   background: radial-gradient(

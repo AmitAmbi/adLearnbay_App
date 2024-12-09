@@ -1,7 +1,7 @@
 .container {
   background: linear-gradient(180deg, var(--white) 1.29%, var(--senary-color) 98.18%);
   color: var(--black);
-  padding: 100px 0;
+  padding: 10% 0;
 }
 
 .innerDiv h2 {
@@ -242,7 +242,7 @@
   }
 
   .container {
-    padding: 60px 0;
+    padding: 7% 0;
   }
 
   .hrline {

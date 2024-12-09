@@ -1,5 +1,5 @@
 .container {
-  margin: 100px auto;
+  /* margin: 100px auto; */
   background: linear-gradient(
     180deg,
     var(--white) 0%,
@@ -19,10 +19,10 @@
   display: grid;
   grid-template-columns: 47.5% 47.5%;
   gap: 34px 34px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   /* padding: 0px 30px; */
   border-radius: 33px;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   /* background: #F8FCFF; */
 }
 
@@ -116,7 +116,7 @@
 
 @media screen and (max-width: 841px) {
   .container {
-    margin: 60px auto;
+    /* margin: 60px auto; */
   }
 
   .innerdiv {
