@@ -14,10 +14,13 @@ const ProgramSection = memo(
       console.log("Program Section Data:", programSectionData);
     }, [programSectionData]);
 
-    if (!programSectionData || !Array.isArray(programSectionData) || programSectionData.length === 0) {
+    if (
+      !programSectionData ||
+      !Array.isArray(programSectionData) ||
+      programSectionData.length === 0
+    ) {
       return <div>Error: Program section data is missing or empty</div>;
     }
-    
 
     return (
       <section
@@ -31,14 +34,16 @@ const ProgramSection = memo(
           className="popupModal"
           popup={true}
         >
-          <div className="leftPopup">
+          {/* <div className="leftPopup">
             <div
               className="whiteP"
               style={{ width: "340px", height: "400px" }}
             ></div>
-          </div>
+          </div> */}
           <div className="RightPopup">
-            <h5>{programSectionData[0]?.popupTitle || "Apply For Counselling"}</h5>
+            <h5>
+              {programSectionData[0]?.popupTitle || "Apply For Counselling"}
+            </h5>
             <Form popup={true} setTrigger={setPopups} />
           </div>
         </Popup>
