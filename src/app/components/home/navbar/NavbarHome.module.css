@@ -142,7 +142,6 @@
   position: absolute;
 } */
 
-
 /* Styles for the button inside the Navbar */
 /* .requestBtn {
   display: flex;
@@ -164,7 +163,6 @@
   transition: background-color 0.3s ease-in-out, transform 0.3s ease;
   outline: none;
   position: relative;
-
 }
 
 /* Add hover effect */
@@ -236,7 +234,6 @@
   transition: opacity 0.3s ease;
 } */
 
-
 @media only screen and (max-width: 1181px) {
   .nav {
     padding: 0 6.5% 0 6.5%;
@@ -265,7 +262,6 @@
 }
 
 @media only screen and (max-width: 1081px) {
-
   /* .right span {
     margin-right: 12px;
   }
@@ -320,7 +316,6 @@
 }
 
 @media only screen and (max-width: 968px) {
-
   /* .requestBtn {
     padding: 0;
   } */
@@ -349,7 +344,6 @@
 }
 
 @media only screen and (max-width: 841px) {
-
   .nav {
     padding: 0 5% 0 3%;
   }
@@ -485,7 +479,7 @@
   }
 }
 
-@media screen and (max-width:361px) {
+@media screen and (max-width: 361px) {
   .requestBtn button {
     padding: 0.6rem 0.5rem;
     font-size: 12px;

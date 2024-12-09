@@ -1,6 +1,6 @@
-.container {
-  color: #000;
-  background: #EFF3F6;
+color.container {
+  color: var(--black);
+  background: var(--senary-color);
 }
 
 .innerDiv {
@@ -9,9 +9,9 @@
 }
 
 .innerDiv h2 {
-  color: #022646;
+  color: var(--deep-blue);
   font-size: 42px;
-  line-height: 60px;
+  /* line-height: 60px; */
   font-weight: 600;
   text-align: center;
 }
@@ -40,7 +40,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
-  line-height: 150.5%;
+  /* line-height: 150.5%; */
   margin: 10px 0 50px;
 }
 
@@ -48,17 +48,14 @@
 .innerBoxDiv {
   display: grid;
   grid-template-columns: 28% 29% 28%;
-  background: #fff;
+  background: var(--white);
   border-radius: 30px;
   padding: 20px 26px 30px 26px;
   max-width: 1200px;
   margin: 40px 0 100px 0;
   gap: 20px;
   justify-content: space-around;
-
 }
-
-
 
 .innerBox div {
   margin: auto;
@@ -70,11 +67,11 @@
 
 .headCont h3 {
   font-size: 24px;
-  color: #484848;
+  color: var(--darkest-smoke);
   font-weight: 600;
-  line-height: 36px;
+  /* line-height: 36px; */
   margin-right: 60px;
-  line-height: 32px;
+  /* line-height: 32px; */
 }
 
 .pTop {
@@ -92,7 +89,7 @@
 }
 
 .innerBoxDiv::-webkit-scrollbar-thumb {
-  background-color: #d9d9d9;
+  background-color: var(--light-whitee);
   border-radius: 8px;
 }
 
@@ -126,13 +123,12 @@
 }
 
 .dot.active {
-  background-color: #0070f3;
+  background-color: var(--sky-blue);
   /* Change color when active */
 }
 
 /* Media queries */
 @media only screen and (max-width: 1281px) {
-
   .headContBlue,
   .headContGreen,
   .headContOrange {
@@ -141,14 +137,13 @@
 
   .headCont h3 {
     font-size: 20px;
-    line-height: 30px;
+    /* line-height: 30px; */
   }
 
   .innerBoxDiv {
     grid-template-columns: 27% 27% 23%;
     padding: 20px 0;
     gap: 20px;
-
   }
 }
 
@@ -181,13 +176,12 @@
     text-wrap: stable;
     font-size: 15px;
   }
-
 }
 
 @media only screen and (max-width: 968px) {
   .headCont h3 {
     font-size: 19px;
-    line-height: 1.2;
+    /* line-height: 1.2; */
   }
 
   .pTop {
@@ -214,15 +208,13 @@
   }
 }
 
-
 @media only screen and (max-width: 641px) {
-
   .innerBoxDiv {
     display: flex;
     flex-direction: column;
     /* Change direction to column for vertical stacking */
     margin-top: 70px;
-    background: #fff;
+    background: var(--white);
     border-radius: 30px;
     padding: 20px 26px 30px 26px;
     max-height: 500px;
@@ -236,8 +228,6 @@
     left: 3%;
     top: -37px;
   } */
-
-
 
   .innerBox {
     min-width: 200px;
@@ -258,8 +248,8 @@
   }
 
   .innerDiv h2 {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 26px;
+    /* line-height: 38px; */
   }
 
   /* .borderBot {
@@ -288,7 +278,6 @@
   }
 
   .pHead {
-
     margin-bottom: 0;
   }
 }
@@ -298,7 +287,7 @@
     display: none;
   } */
 
-  .borderBot{
+  .borderBot {
     border: none;
   }
 

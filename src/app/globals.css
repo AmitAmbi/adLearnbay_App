@@ -21,8 +21,8 @@ html,
   --septenary-color: #252525;
   --white: #ffffff;
   --black: #000000;
-  --cyan: #E5F1F8;
-  --brown: #FE7A3629;
+  --cyan: #e5f1f8;
+  --brown: #fe7a3629;
   --grey: #747272;
   --red: #ff3131;
   --orange: #ff9562;
@@ -35,24 +35,24 @@ html,
   --light-black: #212121;
   --light-green: #35d028;
   --deep-blue: #022646;
-  --light-deep-blue: #21415D;
+  --light-deep-blue: #21415d;
   --stone-color: #606060;
   --light-bluee: #0383ff;
-  --dark-black: #00090F;
+  --dark-black: #00090f;
   --red-official: #ff0000;
   --dark-blue: #005f8a;
   --dark-grey: #7a7a7a;
   --light-white: #f7f7f7;
   --medium-grey: #ccc;
-  --light-orange: #FE7A36;
+  --light-orange: #fe7a36;
   --deeep-grey: #666;
   --bluee: #007bff;
   --light-blueee: #0056b3;
   --deep-cyan: #36ddfe;
   --white-deep: #fff1ea;
-  --greyy: #D3D3D3;
+  --greyy: #d3d3d3;
   --deeep-grey: #727272;
-  --medium-greyy: #6C6C6C;
+  --medium-greyy: #6c6c6c;
   --medium-greey: #616161;
   --light-whitee: #d9d9d9;
   --daark-black: #141414;
@@ -64,7 +64,7 @@ html,
   --gogreen: #454545;
   --stonee: #454545;
   --cement: #555555;
-  --wwhite: #DFDADA;
+  --wwhite: #dfdada;
   --black-diamond: #383838;
   --greyyy: #787878;
   --whiteee: #f4f4f4;
@@ -72,7 +72,7 @@ html,
   --ggrrey: #5f5d5d;
   --light-ggrey: #525050;
   --mint-green: #03b877;
-  --parrot-green: #04C988;
+  --parrot-green: #04c988;
   --royale-blue: #005a9b;
   --light-greyy: #aeaeae;
   --lightt-grey: #dedede;
@@ -84,18 +84,17 @@ html,
   --carbon: #414141;
   --cementt: #b3b3b3;
   --green: #008000;
-  --carbon-black: #2E2E2E;
+  --carbon-black: #2e2e2e;
   --deep-cyann: #36ddfe;
-  --cementtt: #D3D3D3;
+  --cementtt: #d3d3d3;
   --deepblack: #121212;
-  --ceementt:#d9e9f4;
-  --peacock-blue:#336ca8;
-  --kashmiri-stone:#555;
-  --kashmiri-blackstone:#f0f0f0;
+  --ceementt: #d9e9f4;
+  --peacock-blue: #336ca8;
+  --kashmiri-stone: #555;
+  --kashmiri-blackstone: #f0f0f0;
   --kashmiri-whitestone: #8a8a8a;
-  --blue-eyes:#16a0fb;
-  --kashmiri-diamond:#fefefe;
-  
+  --blue-eyes: #16a0fb;
+  --kashmiri-diamond: #fefefe;
 
   /* Define font sizes for desktop */
   --desktop_h1-font-size: 42px;
@@ -165,26 +164,29 @@ h3 {
 .flexAlignCenter {
   align-items: center;
 }
-
+.RightPopup h5 {
+  margin-bottom: 3.5%;
+}
 .popupModal {
   display: grid;
   grid-template-columns: 49% 49%;
   background-color: white;
 }
 
-.whiteP {
+/* .whiteP {
   background-color: transparent;
   height: 600px;
   width: 600px;
-}
-
-
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
+  background: linear-gradient(
+      to bottom,
       transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 
   h5 {
     /* Use variable for font size */
@@ -218,7 +220,7 @@ body {
 }
 
 .greenButton {
-  background-color: #72BC00;
+  background-color: #72bc00;
   color: white;
   border: none;
   border-radius: 4px;
@@ -241,7 +243,7 @@ body {
 
 .OrangeButton {
   border-radius: 8px;
-  background: #F99600;
+  background: #f99600;
   color: #fff;
   font-size: 18px;
   padding: 10px 25px;
@@ -268,7 +270,7 @@ body {
 }
 
 .blackButton:hover {
-  background-color: #72BC00;
+  background-color: #72bc00;
   border: none;
 }
 
@@ -370,7 +372,6 @@ body {
 }
 
 @media (max-width: 1281px) {
-
   .button,
   .outLineBtn {
     padding: 10px 20px;
@@ -385,9 +386,7 @@ body {
   .containerWidth {
     /* max-width: 1120px; */
   }
-
 }
-
 
 @media (max-width: 1181px) {
   .containerWidth {
@@ -401,14 +400,12 @@ body {
   }
 }
 
-
 @media (max-width: 1024px) {
-
   .button,
   .outLineBtn {
     font-size: 14px;
   }
-  
+
   .containerWidth {
     /* max-width: 904px; */
   }
@@ -416,15 +413,15 @@ body {
   h2 {
     font-size: 32px;
   }
-  
 }
 
 @media (max-width: 968px) {
-  
   .containerWidth {
     /* max-width: 888px; */
   }
-  
+  .RightPopup h5 {
+    font-size: 17px;
+  }
   h2 {
     font-size: 32px;
   }
@@ -462,7 +459,6 @@ body {
   }
 }
 
-
 @media (max-width: 641px) {
   .containerWidth {
     /* width: 600px; */
@@ -472,9 +468,11 @@ body {
 }
 
 @media (max-width: 481px) {
-
   .containerWidth {
     /* max-width: 441px; */
+  }
+  .RightPopup h5 {
+    font-size: 20px;
   }
 
   .bannerButton {
@@ -491,7 +489,6 @@ body {
 }
 
 @media (max-width: 431px) {
-
   .containerWidth {
     /* max-width: 380px; */
   }

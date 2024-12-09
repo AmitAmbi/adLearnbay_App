@@ -1,4 +1,5 @@
 "use client";
+"use client";
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
@@ -86,9 +87,9 @@ const NavbarHome = ({
     >
       {/* Popup Component */}
       <Popup trigger={Popups} setTrigger={setPopup} className="popupModal">
-        <div className="leftPopup">
+        {/* <div className="leftPopup">
           <div className="whiteP" />
-        </div>
+          </div> */}
         <div className="RightPopup">
           <h5>Apply For Counselling</h5>
           <Form
@@ -184,10 +185,7 @@ const NavbarHome = ({
                 className={styles.dropdownContainer}
                 ref={dropdownRef} // Attach reference here
               >
-                <span
-                  className={styles.moreLink}
-                  onClick={toggleMoreDropdown}
-                >
+                <span className={styles.moreLink} onClick={toggleMoreDropdown}>
                   {item.name} <FaChevronDown />
                 </span>
                 {showMoreDropdown && (

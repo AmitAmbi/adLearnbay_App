@@ -1,6 +1,11 @@
 .container {
   margin: 100px auto;
-  background: linear-gradient(180deg, var(--white) 0%, #eff3f6 49.89%, var(--white) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--white) 0%,
+    var(--senary-color) 49.89%,
+    var(--white) 100%
+  );
 }
 
 .headH2 {
@@ -87,7 +92,6 @@
   bottom: 0px;
 }
 
-
 @media only screen and (max-width: 1024px) {
   .innerdiv div h4 {
     font-size: 24px;
@@ -110,7 +114,7 @@
   }
 }
 
-@media screen and (max-width:841px) {
+@media screen and (max-width: 841px) {
   .container {
     margin: 60px auto;
   }
@@ -120,7 +124,7 @@
   }
 }
 
-@media screen and (max-width:761px) {
+@media screen and (max-width: 761px) {
   .innerbox {
     padding: 30px 30px 0 30px;
   }
@@ -156,10 +160,13 @@
   .innerdiv div h4 {
     font-size: 17px;
   }
+  .imgWrapper {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 @media only screen and (max-width: 481px) {
-
   .container {
     margin: 40px auto;
   }
@@ -180,10 +187,5 @@
     position: absolute;
     top: 15px;
     right: 20px;
-  }
-
-  .imgWrapper {
-    height: 50px;
-    width: 50px;
   }
 }

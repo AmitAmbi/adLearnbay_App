@@ -7,7 +7,7 @@
   text-align: center;
   margin-bottom: 50px;
   color: var(--black);
-  font-size: 40px;
+  font-size: 36px;
   /* font-style: normal; */
   font-weight: 400;
 }
@@ -540,8 +540,15 @@
   .leftinside h3 {
     font-size: 23px;
   }
+  .termGreen {
+    font-size: 17.487px;
+  }
   .headline {
     font-size: 35px;
+  }
+  .leftinside img {
+    height: 70px;
+    width: 70px;
   }
 }
 @media (max-width: 968px) {
@@ -561,7 +568,7 @@
     font-size: 20px;
   }
   .date p {
-    font-size: 13px;
+    font-size: 12px;
   }
   .leftinside {
     gap: 7px;
@@ -587,6 +594,13 @@
   .rytdiv p {
     font-size: 16.716px;
   }
+  .leftinside img {
+    height: 55px;
+    width: 55px;
+  }
+  .verticalLine {
+    left: 27px;
+  }
 }
 @media screen and (max-width: 761px) {
   .cardContainer {
@@ -596,9 +610,14 @@
     /* padding: 10px; */
     /* Add some padding for aesthetics */
   }
-  .date span {
+  /* .tools img:nth-child(2) {
+    width: 50px;
+    height: 20px;
+  } */
+  .gridConteiner :nth-child(2) .date span {
     font-size: 9.125px;
   }
+
   .termGreen {
     font-size: 11.487px;
   }
@@ -634,7 +653,6 @@
   }
 
   .leftinside img {
-    width: 60px;
     height: auto;
   }
   .rytmain {
@@ -647,6 +665,7 @@
     /* font-weight: 600; */
     /* line-height: 126.5%;  */
   }
+
   .date {
     border-radius: 16.804px;
     padding: 2px;
@@ -712,10 +731,10 @@
     width: 118px;
     height: 32px;
   } */
-  .tools img {
+  /* .tools img {
     width: 200px;
     height: auto;
-  }
+  } */
 
   .btnone {
     font-size: 16px;
@@ -724,6 +743,9 @@
   .btntwo {
     padding: 3px 18px 3px 10px;
     font-size: 16px;
+  }
+  .gridConteiner:nth-child(3) .gridleft .leftinside img {
+    height: 57px;
   }
 }
 
@@ -747,5 +769,14 @@
   .listItem,
   .rotateText {
     font-size: 10px;
+  }
+  .gridConteiner:nth-child(3) .gridryt .rytmain .content .tools img,
+  .gridConteiner:nth-child(5) .gridryt .rytmain .content .tools img,
+  .gridConteiner:nth-child(6) .gridryt .rytmain .content .tools img {
+    width: 75%;
+    height: 2%;
+  }
+  .card {
+    width: 85%;
   }
 }

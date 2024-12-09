@@ -27,7 +27,7 @@ const SyllabusSection = ({
   // Detect screen size
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 761);
     };
 
     window.addEventListener("resize", handleResize);
@@ -175,6 +175,7 @@ const SyllabusSection = ({
                       height={section.toolheight}
                       alt="tools"
                       loading="lazy"
+                      // className={styles.toolsImg}
                     />
                   </div>
                 </div>
@@ -211,8 +212,8 @@ const SyllabusSection = ({
                       breakpoints={{
                         320: { slidesPerView: 1, spaceBetween: 10 },
                         481: { slidesPerView: 1.5, spaceBetween: 15 },
-                        761: { slidesPerView: 2, spaceBetween: 10 },
-                        1024: { slidesPerView: 2.4, spaceBetween: 30 },
+                        761: { slidesPerView: 2.1, spaceBetween: 10 },
+                        1024: { slidesPerView: 2.2, spaceBetween: 30 },
                         1440: { slidesPerView: 3, spaceBetween: 30 },
                       }}
                     >

@@ -246,11 +246,11 @@ line-height: 158%;
     margin-left: 3px;
   }
   .firstrow {
-    gap: 16px;
+    gap: 49px;
   }
-  .para {
-    font-size: 9px;
-  }
+  /* .para {
+    font-size: 11px;
+  } */
 }
 @media (max-width: 481px) {
   .containers h2 {
@@ -270,13 +270,13 @@ line-height: 158%;
     font-size: 8px;
   }
   .gst {
-    font-size: 4px;
+    font-size: 6px;
   }
   .firstrow {
     margin-left: 61px;
     gap: 7px;
   }
   .para {
-    font-size: 7px;
+    font-size: 9px;
   }
 }
