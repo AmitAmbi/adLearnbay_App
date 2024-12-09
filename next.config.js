@@ -18,7 +18,6 @@ const nextConfig = {
     // nextScriptWorkers: true,
   },
 
-
   reactStrictMode: true,
   images: {
     remotePatterns: [
@@ -31,12 +30,11 @@ const nextConfig = {
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 2678400,
   },
-
 };
 
 // export default nextConfig;
 
-module.exports = nextConfig
+module.exports = nextConfig;
 
 // const withBundleAnalyzer = require('@next/bundle-analyzer')({
 //   enabled: process.env.ANALYZE === 'true',

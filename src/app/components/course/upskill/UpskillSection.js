@@ -12,7 +12,6 @@ const UpskillingSection = ({ upskillingData1, upskillingData2 }) => {
   const lineAdjustViewBox = () => {
     svgLineRefs.current.forEach((ref, index) => {
       if (ref) {
-        console.log(`Adjusting viewBox for SVG at index ${index}`);
         if (window.matchMedia("(max-width: 1024px)").matches) {
           ref.setAttribute("viewBox", "100 0 10 16");
         } else {

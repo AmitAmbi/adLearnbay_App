@@ -1,5 +1,5 @@
 // PSummaryAD.jsx
-"use client"; // Must be at the top
+"use client"; 
 
 import React, { useEffect, useState, useRef, memo, useCallback } from "react";
 import Image from "next/image";

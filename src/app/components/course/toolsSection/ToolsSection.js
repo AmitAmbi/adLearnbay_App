@@ -12,7 +12,8 @@ function ToolsSection() {
             src="https://d32and0ii3b8oy.cloudfront.net/web/V4/course_iit_guwahati/tools_cover.webp"
             alt="Learnbay"
             quality={100}
-            priority
+            // priority
+            loading="lazy"
             // width="2006"
             // height="389"
             fill
@@ -24,7 +25,8 @@ function ToolsSection() {
             src="https://d32and0ii3b8oy.cloudfront.net/web/s3_main/Course-home/mbl_tools.webp" // Replace with your mobile image URL
             alt="Learnbay Mobile"
             quality={100}
-            priority
+            loading="lazy"
+            // priority
             fill
             className={styles.mobileImage}
           />

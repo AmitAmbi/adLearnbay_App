@@ -14,22 +14,22 @@ const ProgramSection = memo(
       console.log("Program Section Data:", programSectionData);
     }, [programSectionData]);
 
-    if (!programSectionData || !programSectionData.ProgramSection) {
-      return <div>Error: Program section data is missing or incorrect</div>;
+    if (!programSectionData || !Array.isArray(programSectionData) || programSectionData.length === 0) {
+      return <div>Error: Program section data is missing or empty</div>;
     }
+    
 
-    const { ProgramSection } = programSectionData;
     return (
       <section
         className={`${styles.container} ${designOverrides?.container || ""}`}
         style={designOverrides?.containerStyle}
       >
+        {/* Popup Section */}
         <Popup
           trigger={popups}
           setTrigger={setPopups}
           className="popupModal"
           popup={true}
-          {...popupProps}
         >
           <div className="leftPopup">
             <div
@@ -38,24 +38,24 @@ const ProgramSection = memo(
             ></div>
           </div>
           <div className="RightPopup">
-            <h5>{ProgramSection[0]?.popupTitle || "Apply For Counselling"}</h5>
+            <h5>{programSectionData[0]?.popupTitle || "Apply For Counselling"}</h5>
             <Form popup={true} setTrigger={setPopups} />
           </div>
         </Popup>
 
+        {/* Main Content */}
         <div className="containerWidth">
           <div className={styles.innerDiv}>
             <h2>
               <span className={styles.innerDivH2Span}>Who is this</span>
               <span> Program for?</span>
-              {/* <hr className={styles.hrline} /> */}
             </h2>
             <p className={styles.pHead}>
               Work on projects based on real-world scenarios
             </p>
             <div className={styles.twoSection}>
-              {ProgramSection.map((section, index) => {
-                const { content } = section;
+              {programSectionData.map((section, index) => {
+                const { content, rightImg } = section;
 
                 return (
                   <div key={index} className={styles.firstSection}>
@@ -69,10 +69,10 @@ const ProgramSection = memo(
                     <p className={styles.pTop}>
                       {content?.description
                         ?.split("not mandatory")
-                        ?.map((segment, index, array) => (
-                          <span key={index}>
+                        ?.map((segment, idx, array) => (
+                          <span key={idx}>
                             {segment}
-                            {index < array.length - 1 && (
+                            {idx < array.length - 1 && (
                               <span className={styles.green}>
                                 not mandatory
                               </span>
@@ -82,14 +82,13 @@ const ProgramSection = memo(
                     </p>
 
                     <div className={styles.innerBoxDiv}>
-                      {content?.points?.map((point, index) => (
-                        <div key={index} className={styles.innerBox}>
+                      {content?.points?.map((point, idx) => (
+                        <div key={idx} className={styles.innerBox}>
                           <div className={styles.imgWrapper}>
                             <Image
                               src={point.icon}
                               alt={point.title}
                               quality={100}
-                              // layout="responsive"
                               fill
                               loading="lazy"
                             />
@@ -112,10 +111,9 @@ const ProgramSection = memo(
 
               <div className={styles.secondSection}>
                 <Image
-                  src={ProgramSection[0]?.rightImg}
+                  src={programSectionData[0]?.rightImg}
                   alt="Learnbay"
                   quality={100}
-                  // layout="responsive"
                   width={611}
                   height={506}
                   loading="lazy"
