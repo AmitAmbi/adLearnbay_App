@@ -1,11 +1,13 @@
 /* Updated radial gradient for smoother transitions */
 .whyChooseSection {
+  
   background: radial-gradient(circle at 10% 10%,
       /* Blue circle positioned at the top left */
       rgba(2, 49, 82, 0.9) 1%,
       /* Larger blue circle */
       transparent 40%
       /* Smoother transition */
+      
     ),
     radial-gradient(circle at 90% 80%,
       /* Orange circle positioned at the bottom right */
@@ -15,6 +17,8 @@
       /* Smoother transition */
     ),
     #212121;
+    
+  margin: 7% 0;
 }
 
 .containerMain {
@@ -93,6 +97,7 @@
   position: relative;
   overflow: hidden;
   padding: 60px 0;
+ 
   /* margin-top: 100px; */
 }
 

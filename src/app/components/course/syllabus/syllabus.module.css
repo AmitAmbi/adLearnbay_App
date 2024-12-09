@@ -1,11 +1,11 @@
 .mainConteiner {
   max-width: 1100px;
   /* background-color: red; */
-  margin: 100px auto;
+ 
 }
 .headline {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   color: var(--black);
   font-size: 36px;
   /* font-style: normal; */
