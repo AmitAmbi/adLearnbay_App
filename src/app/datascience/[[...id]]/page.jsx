@@ -1,28 +1,71 @@
-// src/app/datascience/[id]/page.jsx
 import React from "react";
+import dynamic from "next/dynamic";
 import { getPageData, generateStaticParams } from "@/utils/getDSPageData";
+
 import Header from "@/app/components/course/hero/Header";
-import Psummary from "@/app/components/course/psummary/Psummary";
-import Practical from "@/app/components/course/practical/Practical";
-import ProgramSection from "@/app/components/course/programsection/programSection";
-import OutComeSection from "@/app/components/course/outCome/OutComeSection";
-import AnimationNew from "@/app/components/course/whyChoose/AnimationNew";
-import ReviewSlider from "@/app/components/global/reviewSlider/ReviewSlider";
-import NewSevenSection from "@/app/components/global/newSevenSection/NewSevenSection";
-import StructuredSection from "@/app/components/course/structured/StructuredSection";
-import JobReadySection from "@/app/components/course/jobReadySection/JobReadySection";
-import MentorsSection from "@/app/components/course/mentor/Mentor";
-import UpskillingSection from "@/app/components/course/upskill/UpskillSection";
-import SyllabusSection from "@/app/components/course/syllabus/Syllabus";
-import ToolsSection from "@/app/components/course/toolsSection/ToolsSection";
-import FeeContent from "@/app/components/course/feeSection/FeeSection";
-import UpskillMbl from "@/app/components/course/upskill/UpskillMbl";
-import ProjectSection from "@/app/components/course/projectSection/ProjectSection";
-import CertificateSection from "@/app/components/course/certificateSection/CertificateSection";
+const Psummary = dynamic(
+  () => import("@/app/components/course/psummary/Psummary"),
+  { ssr: false }
+);
+const Practical = dynamic(() =>
+  import("@/app/components/course/practical/Practical")
+);
+const ProgramSection = dynamic(
+  () => import("@/app/components/course/programsection/programSection"),
+  { ssr: false }
+);
+const OutComeSection = dynamic(
+  () => import("@/app/components/course/outCome/OutComeSection"),
+  { ssr: false }
+);
+const AnimationNew = dynamic(() =>
+  import("@/app/components/course/whyChoose/AnimationNew")
+);
+const ReviewSlider = dynamic(() =>
+  import("@/app/components/global/reviewSlider/ReviewSlider")
+);
+const NewSevenSection = dynamic(() =>
+  import("@/app/components/global/newSevenSection/NewSevenSection")
+);
+const StructuredSection = dynamic(() =>
+  import("@/app/components/course/structured/StructuredSection")
+);
+const JobReadySection = dynamic(() =>
+  import("@/app/components/course/jobReadySection/JobReadySection")
+);
+const MentorsSection = dynamic(
+  () => import("@/app/components/course/mentor/Mentor"),
+  { ssr: false }
+);
+const UpskillingSection = dynamic(() =>
+  import("@/app/components/course/upskill/UpskillSection")
+);
+const SyllabusSection = dynamic(
+  () => import("@/app/components/course/syllabus/Syllabus"),
+  { ssr: false }
+);
+const ToolsSection = dynamic(() =>
+  import("@/app/components/course/toolsSection/ToolsSection")
+);
+const FeeContent = dynamic(() =>
+  import("@/app/components/course/feeSection/FeeSection")
+);
+const UpskillMbl = dynamic(() =>
+  import("@/app/components/course/upskill/UpskillMbl")
+);
+const ProjectSection = dynamic(
+  () => import("@/app/components/course/projectSection/ProjectSection"),
+  { ssr: false }
+);
+const CertificateSection = dynamic(() =>
+  import("@/app/components/course/certificateSection/CertificateSection")
+);
 
 const Page = async ({ params }) => {
-  const { id } = params;
-  const pageData = await getPageData(id);
+  const id = Array.isArray(params.id) ? params.id : [params.id]; // Ensure `id` is always an array
+  const pageData = await getPageData(id.join("/"));
+  // const { id } = params;
+  // const pageData = await getPageData(Array.isArray(id) ? id.join("/") : id);
 
   if (pageData.error) {
     return <div>{pageData.error}</div>;
@@ -48,21 +91,10 @@ const Page = async ({ params }) => {
         TrainingBot={pageData.header?.TrainingBot}
         TrainingBotFormat={pageData.header?.TrainingBotFormat}
       />
-      <Psummary summaryData={pageData.summary} />
-
-      {/* Conditional Rendering for Practical Component */}
-
+      <ProgramSection programSectionData={pageData.ProgramSection} />
       <Practical />
-
-      <ProgramSection programSectionData={pageData} />
-
-      <OutComeSection />
       <AnimationNew />
-      <ReviewSlider />
-      <MentorsSection />
-      <UpskillingSection upskillingData={pageData.upskillingData} />
-      <UpskillMbl upskillMbl={pageData.upskillMbl} />
-      <ProjectSection />
+      <JobReadySection />
       <SyllabusSection
         sections={pageData.sections}
         brochureLink={pageData.brochureLink}
@@ -70,7 +102,6 @@ const Page = async ({ params }) => {
         interstedInHide={true}
         radio={pageData.radio}
       />
-      <ToolsSection />
       <CertificateSection />
       <FeeContent
         Fee={pageData.FeeSection?.Fee}
@@ -101,10 +132,22 @@ const Page = async ({ params }) => {
         monthlyPayment2={pageData.FeeSection?.monthlyPayment2}
         greenDown2={pageData.FeeSection?.greenDown2}
       />
-
-      <StructuredSection />
-      <JobReadySection />
+      <ReviewSlider />
+      <MentorsSection />
+      <ProjectSection />
       <NewSevenSection />
+      <Psummary summaryData={pageData.summary} />
+
+      {/* <OutComeSection /> */}
+      {/* <UpskillingSection
+        upskillingData1={pageData.upskillingData1}
+        upskillingData2={pageData.upskillingData2}
+      />
+      <UpskillMbl upskillMbl={pageData.upskillMbl} /> */}
+
+      {/* <ToolsSection /> */}
+
+      {/* <StructuredSection /> */}
     </div>
   );
 };

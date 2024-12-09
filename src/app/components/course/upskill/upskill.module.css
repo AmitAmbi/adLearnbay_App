@@ -34,17 +34,26 @@
 
 .UpperBoxContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
   gap: 7rem;
-  margin: 2rem 4rem;
-  position: relative;
-  flex-wrap: wrap;
+  margin: 2rem 5rem 2rem 7rem;
+  /* position: relative; */
+  /* flex-wrap: wrap; */
+}
+
+.upskillingData1Wrapper,
+.upskillingData2Wrapper {
+  width: 100%;
+  display: flex;
+  gap: 7rem;
 }
 
 .boxContainer {
   color: var(--white);
-  width: 250px;
+  width: 265px;
   height: 250px;
+  position: relative;
 }
 
 .upperBox {
@@ -94,6 +103,7 @@
 }
 
 .toolBox {
+  position: absolute;
   display: flex;
   gap: 0.8rem;
   justify-content: flex-start;
@@ -101,17 +111,15 @@
   padding: 0.6rem 0.8rem;
   background: rgba(0, 114, 188, 0.15);
   border-radius: 8px;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }
 
 .toolIcon {
   width: 100%;
-  height: 100%;
+  height: auto;
   /* color: var(--secondary-color); */
-}
-
-.boxContainer:nth-child(1) .toolBox .toolIcon {
-  width: 50%;
-  height: 10%;
 }
 
 /* .toolPyIcon {
@@ -197,7 +205,7 @@
   bottom: -120px;
 }
 
-.svgLinetfourth {
+/* .svgLinetfourth {
   position: absolute;
   right: 155px;
   top: 13px;
@@ -219,7 +227,7 @@
   right: 79px;
   top: -33px;
   z-index: 2;
-}
+} */
 
 @media screen and (max-width: 1381px) {
   .sectionWrapper {
@@ -227,28 +235,33 @@
   }
 
   .UpperBoxContainer {
-    gap: 7rem 5rem;
+    margin: 2rem 4rem 2rem 5.5rem;
+  }
+
+  .upskillingData1Wrapper,
+  .upskillingData2Wrapper {
+    gap: 5rem;
   }
 
   .svgLine {
     left: 111px;
   }
 
-  .boxContainer:nth-child(4) .svgLine,
-  .boxContainer:nth-child(5) .svgLine {
+  .boxContainer .svgLine,
+  .boxContainer .svgLine {
     width: 163px;
-    left: 163px;
+    left: 173px;
   }
 
-  .boxContainer:nth-child(4) .svgLine svg,
-  .boxContainer:nth-child(5) .svgLine svg {
+  .boxContainer .svgLine svg,
+  .boxContainer .svgLine svg {
     width: 100%;
     height: 100%;
   }
 
   .svgLinetwo {
     right: -50px;
-    top: 166px;
+    top: 160px;
   }
 
   .svgLinethree {
@@ -258,34 +271,30 @@
 }
 
 @media screen and (max-width: 1281px) {
-  .UpperBoxContainer {
-    margin: 0;
-  }
-
   .boxTitle {
     font-size: 16px;
   }
 
-  .UpperBoxContainer {
-    gap: 5rem 3rem;
-  }
-
-
-  .svgLine {
+  .upskillingData1Wrapper .boxContainer .svgLine,
+  .upskillingData2Wrapper .boxContainer .svgLine {
     width: 142px;
-    left: 148px;
   }
 
-  .svgLine svg {
-    width: 100%;
+  .upskillingData1Wrapper .boxContainer .svgLine {
+    left: 152px;
+  }
+
+  .upskillingData2Wrapper .boxContainer .svgLine {
+    left: 162px;
   }
 
   .svgLinetwo {
+    right: -90px;
     top: 165px;
   }
 
   .svgLinetwo svg {
-    height: 370px;
+    height: 400px;
   }
 
   .svgLinethree {
@@ -294,21 +303,19 @@
   }
 
   .svgLinethree svg {
-    height: 495px;
+    height: 525px;
     width: 390px;
   }
 
-  .boxContainer:nth-child(4) .svgLine,
-  .boxContainer:nth-child(5) .svgLine {
-    width: 129px;
-    left: 163px;
+  .boxContainer {
+    width: 237px;
   }
 
 }
 
 @media screen and (max-width: 1181px) {
   .boxContainer {
-    width: 263px;
+    width: 230px;
   }
 
   .UpperBoxContainer {
@@ -321,7 +328,7 @@
   }
 
   .svgLinetwo {
-    right: -55px;
+    right: -90px;
 
   }
 
@@ -332,66 +339,96 @@
 
 @media screen and (max-width: 1081px) {
 
-  /* .boxContainer {
-    width: 235px;
+  .upskillingData1Wrapper,
+  .upskillingData2Wrapper {
+    gap: 3rem;
   }
-  
+
   .boxText {
     font-size: 12px;
   }
-  .svgLine {
-    left: 160px;
-  }
 
-  .svgLinetwo {
-    right: -23px;
-  } */
-  .svgLine,
-  .boxContainer:nth-child(4) .svgLine,
-  .boxContainer:nth-child(5) .svgLine {
-    width: 100px;
-    left: 175px;
-  }
-
-  .svgLinetwo,
-  .svgLinethree {
-    display: none;
+  .upskillingData1Wrapper .boxContainer .svgLine,
+  .upskillingData2Wrapper .boxContainer .svgLine {
+    width: 110px;
+    left: 165px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  /* .svgLinetwo {
-    right: -95px;
+  .upskillHeading {
+    font-size: 36px;
+  }
 
-  } */
-}
+  .upskillingData1Wrapper,
+  .upskillingData2Wrapper {
+    gap: 2rem;
+  }
 
-@media screen and (max-width: 968px) {
-  .UpperBoxContainer {
-    gap:2rem 1rem;
+  .upskillingData1Wrapper .boxContainer .svgLine,
+  .upskillingData2Wrapper .boxContainer .svgLine {
+    width: 80px;
+  }
+
+  .upskillingData1Wrapper .boxContainer .svgLine {
+    left: 155px;
   }
 
   .svgLinetwo {
-    top: 170px;
+    right: -70px;
   }
 
   .svgLinetwo svg {
-    height: 305px;
+    width: 145px;
   }
+
+  .svgLinethree {
+    left: -116px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  
+  .UpperBoxContainer {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: visible ;
+    position: relative;
+    padding-left: 100px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .upskillingData1Wrapper,
+  .upskillingData2Wrapper {
+    overflow-y: visible;
+    width: max-content;
+    gap: 5rem;
+  }
+
+  .svgLinetwo {
+    top: 0;
+    right: -390px;
+  }
+
+  .svgLinetwo svg {
+    height: 347px;
+    width: 145px;
+  }
+
 
   .svgLine {
     left: 150px;
   }
 
-  .svgLine,
-  .boxContainer:nth-child(4) .svgLine,
-  .boxContainer:nth-child(5) .svgLine {
-    width: 80px;
+  .boxContainer {
+    width: 265px;
   }
 
-  .boxContainer:nth-child(4) .svgLine,
-  .boxContainer:nth-child(5) .svgLine {
-    left: 165px;
+  .upskillingData1Wrapper .boxContainer .svgLine,
+  .upskillingData2Wrapper .boxContainer .svgLine {
+    width: 140px;
+    left: 175px;
   }
 
   .sectionWrapper {
@@ -401,6 +438,20 @@
   .upskillHeading {
     font-size: 36px;
     margin-bottom: 30px;
+  }
+
+  .svgLinethree svg {
+    overflow-y: visible;
+    height: 491px;
+    width: 285px;
+  }
+
+  .svgLinethree {
+    left: -55px;
+    bottom: -247px;
+    overflow: visible !important;
+    z-index: 100;
+
   }
 }
 

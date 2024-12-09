@@ -2,7 +2,7 @@
 "use client";
 
 import { lazy, Suspense, memo, useCallback } from "react";
-import Image from "next/image"; // Import Next.js Image component
+import Image from "next/image";
 import styles from "./Header.module.css";
 import Button from "@/app/components/global/button/Button";
 
