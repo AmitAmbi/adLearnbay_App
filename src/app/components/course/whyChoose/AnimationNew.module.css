@@ -384,7 +384,7 @@
         rgba(254, 122, 54, 0.2) 1%,
         transparent 40%),
       var(--light-black);
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
   }
 
   .header p {

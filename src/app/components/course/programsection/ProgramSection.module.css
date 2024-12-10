@@ -5,7 +5,7 @@
     var(--senary-color) 98.18%
   );
   color: var(--black);
-  padding: 10% 0;
+  padding: 8% 0;
 }
 
 .innerDiv h2 {
@@ -34,7 +34,7 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 150.5%;
-  margin: 10px 0 30px;
+  margin: 1% 0 2%;
 }
 
 .green {
@@ -371,7 +371,7 @@
   }
 
   .pHead {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
   }
 
   .innerDiv h2 {

@@ -156,7 +156,7 @@
   }
 
   .innerContainer {
-    padding: 50px 10px 30px 10px;
+    /* padding: 50px 10px 30px 10px; */
   }
 
   .box p {
@@ -241,7 +241,7 @@
 @media only screen and (max-width: 761px) {
 
   .container {
-    margin-top: 70px;
+    margin-top: 15%;
   }
 
   .boxMain {

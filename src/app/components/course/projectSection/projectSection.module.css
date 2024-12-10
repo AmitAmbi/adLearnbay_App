@@ -1,9 +1,9 @@
 .projectSection {
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   width: 100%;
   background: linear-gradient(180deg, #fff 8.58%, #eff3f6 69.44%, #fff 99.96%);
   position: relative;
-  margin-bottom: 110px;
+  margin-bottom: 10%;
 }
 
 .headline {
@@ -503,7 +503,7 @@
 
 @media screen and (max-width: 641px) {
   .projectSection {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
 
   /* .downDiv h6 {

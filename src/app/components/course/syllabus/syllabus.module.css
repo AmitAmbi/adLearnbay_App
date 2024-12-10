@@ -1,14 +1,12 @@
 .mainConteiner {
   max-width: 1100px;
   /* background-color: red; */
- 
 }
 .headline {
   text-align: center;
-  margin-bottom: 60px;
+  margin: 10%;
   color: var(--black);
   font-size: 36px;
-  /* font-style: normal; */
   font-weight: 400;
 }
 
@@ -16,7 +14,6 @@
   display: grid;
   grid-template-columns: 22% 74%;
   gap: 40px;
-  /* margin: 50px 0; */
   /* background-color: #e5ecf3; */
 }
 .headline span {
@@ -638,7 +635,7 @@
   .gridConteiner {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 4%;
     gap: 20px;
   }
   .verticalLine {
@@ -646,7 +643,7 @@
   }
   .headline {
     font-size: 30px;
-    margin: 20px;
+    /* margin: 20px; */
   }
   .leftinside h3 {
     font-size: 30px;
