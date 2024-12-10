@@ -1,18 +1,21 @@
 /* Additional styling for container */
 .section {
-  background: linear-gradient(180deg,
-      #fff 1.26%,
-      #eff3f6 17.6%,
-      #eff3f6 90.85%,
-      #fff 100%);
-  padding: 0 20px 20px;
+  background: linear-gradient(
+    180deg,
+    #fff 1.26%,
+    #eff3f6 17.6%,
+    #eff3f6 90.85%,
+    #fff 100%
+  );
+  /* padding: 0 20px 20px; */
   /* margin-top: 0; */
   /* Add some margin to avoid overlap */
   /* padding-top: 0; */
-  margin: 0 auto 100px auto;
+  margin: 0 auto 10% auto;
 }
 
-.container {}
+.container {
+}
 
 .newSection {
   display: grid;
@@ -21,11 +24,9 @@
   gap: 20px;
 }
 
-
 .tabdiv.active {
   border-radius: 8.984px;
   background: var(--deep-blue);
-
 }
 
 .tabdiv.active p {
@@ -218,7 +219,6 @@
   cursor: pointer;
 }
 
-
 .tabMain {
   padding: 10px 0;
   display: flex;
@@ -249,7 +249,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
-
 }
 
 .MasterCard {
@@ -305,7 +304,6 @@
   color: var(--white);
   text-align: center;
   font-size: var(--desktop_h4-font-size);
-  ;
   font-style: normal;
   font-weight: 800;
   display: flex;
@@ -326,7 +324,6 @@
 }
 
 @media screen and (max-width: 1381px) {
-
   .brochurebtn,
   .viewDetailsButton {
     font-size: 16px;
@@ -368,21 +365,18 @@
   .tabdiv.active p {
     font-size: 17px;
   }
-
 }
 
 @media screen and (max-width: 1281px) {
-
   /* .viewDetailsButton {
     font-size: 12px;
   } */
 }
 
 @media screen and (max-width: 1181px) {
-
-  .section {
+  /* .section {
     margin: 0 auto 80px auto;
-  }
+  } */
 
   .newSection {
     grid-template-columns: 22% 70%;
@@ -420,7 +414,6 @@
 }
 
 @media screen and (max-width: 1081px) {
-
   /* .cardContent h3 {
     font-size: 14px;
   } */
@@ -429,9 +422,9 @@
     gap: 15px;
   }
 
-  .section {
+  /* .section {
     padding: 0;
-  }
+  } */
 
   /* .MasterCard {
     max-width: 960px;
@@ -472,7 +465,6 @@
 }
 
 @media screen and (max-width: 968px) {
-
   /* .MasterCard {
     max-width: 888px;
   } */
@@ -522,15 +514,14 @@
 }
 
 @media screen and (max-width: 841px) {
-
   .newSection {
     grid-template-columns: 25% 65%;
     gap: 10px;
   }
 
-  .section {
+  /* .section {
     margin: 0 auto 50px auto;
-  }
+  } */
 
   .MasterCard {
     /* max-width: 761px; */
@@ -585,14 +576,13 @@
 }
 
 @media screen and (max-width: 761px) {
-
   .newSection {
     grid-template-columns: 25% 68%;
   }
 
-  .section {
+  /* .section {
     margin-top: 30px;
-  }
+  } */
 
   .tabMain {
     margin: 0;
@@ -638,7 +628,6 @@
     display: flex;
     padding: 0;
     margin: 0;
-
   }
 
   .tabMain {
@@ -654,11 +643,13 @@
   }
 
   .tabHead {
-    background: linear-gradient(180deg,
-        #fff 1.26%,
-        #eff3f6 17.6%,
-        #eff3f6 90.85%,
-        #fff 100%);
+    background: linear-gradient(
+      180deg,
+      #fff 1.26%,
+      #eff3f6 17.6%,
+      #eff3f6 90.85%,
+      #fff 100%
+    );
 
     padding: 0 20px;
   }
@@ -679,7 +670,7 @@
   }
 
   .tabMain::-webkit-scrollbar-thumb:hover {
-    background: var(--dark-blue)
+    background: var(--dark-blue);
   }
 
   .tabdiv {
@@ -690,8 +681,6 @@
     padding: 10px 20px;
     background-color: var(--white);
   }
-
-
 
   .tabMain p {
     font-size: var(--desktop_p-font-size);
@@ -726,11 +715,9 @@
   /* .courseCard img {
     width: 100%;
   } */
-
 }
 
 @media screen and (max-width: 641px) {
-
   .MasterCard {
     /* width: 600px; */
     width: 85%;
@@ -745,9 +732,9 @@
     margin-bottom: 20px;
   }
 
-  .section {
+  /* .section {
     margin: 40px auto 50px auto;
-  }
+  } */
 
   .buttonsMaster {
     justify-content: space-around;
@@ -843,7 +830,6 @@
     padding: 7px 19px;
   }
 
-
   /* .buttons button {
     font-size: 17px;
     padding: 7px 19px;
@@ -914,7 +900,6 @@
     color: var(--dark-grey);
     text-align: center;
     font-size: var(--desktop_h4-font-size);
-    ;
     font-style: normal;
     font-weight: 700;
     line-height: 155%;
@@ -932,7 +917,6 @@
   .mastericon {
     margin-top: 80px;
     align-items: center;
-
   }
 
   .contentConteiner p {
@@ -972,14 +956,12 @@
   .expanded .accordionContent {
     display: block;
   }
-
 }
 
 @media screen and (max-width: 481px) {
-
-  .section {
+  /* .section {
     margin: 0 auto 40px auto;
-  }
+  } */
 
   .buttons {
     justify-content: space-between;
@@ -1031,14 +1013,9 @@
 }
 
 @media screen and (max-width: 431px) {
-
   .contentConteiner {
     font-size: 20px;
     padding: 0 20px;
-  }
-
-  .MasterCard {
-    /* max-width: 380px; */
   }
 
   .absloute span {
@@ -1047,9 +1024,9 @@
 }
 
 @media screen and (max-width: 361px) {
-  .section {
+  /* .section {
     margin: 0 auto 20px auto;
-  }
+  } */
 
   .contentConteiner {
     top: 55px;

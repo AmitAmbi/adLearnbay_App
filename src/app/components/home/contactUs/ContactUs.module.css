@@ -4,10 +4,9 @@
   height: 100%;
   overflow: hidden;
   background-color: rgba(15, 14, 14, 0.954);
-  padding: 60px 0 60px;
-  /* margin: 100px 0; */
+  padding: 5% 0;
+  margin: 10% 0;
   /* margin-bottom: 60px; */
-
 }
 
 .ContactUs {
@@ -18,7 +17,6 @@
   /* margin: auto; */
   gap: 110px;
   z-index: 1;
-
 }
 
 .LeftSide {
@@ -86,7 +84,6 @@
   padding-bottom: 0px;
 }
 
-
 .leftpaerson img {
   border-radius: 50%;
 }
@@ -115,7 +112,6 @@
   overflow: hidden;
   /* Hide overflowing content */
   width: 100%;
-
 }
 
 .swiperslider {
@@ -154,7 +150,7 @@
   gap: 10px;
   border-radius: 20px;
   border: 1px solid var(--primary-color);
-  background: rgba(3, 131, 255, 0.20);
+  background: rgba(3, 131, 255, 0.2);
   padding: 10px;
   flex: 0 0 auto;
 }
@@ -164,10 +160,6 @@
   content: attr(data-repeat);
   display: flex;
 }
-
-
-
-
 
 /* .NormalPForm {} */
 
@@ -186,7 +178,6 @@
   opacity: 1;
 }
 
-
 .RightSide form input::placeholder {
   opacity: 1;
   color: var(--grayy);
@@ -202,7 +193,6 @@
   color: var(--white);
   font-weight: 400;
   border: none;
-
 }
 
 .RightSide form select {
@@ -210,7 +200,7 @@
 
   color: var(--grayy);
   border-radius: 8.775px;
-  border: 0.607px solid rgba(0, 0, 0, 0.20);
+  border: 0.607px solid rgba(0, 0, 0, 0.2);
   padding: 10px;
   font-weight: 400;
   appearance: none;
@@ -222,22 +212,15 @@
   color: var(--grayy);
 }
 
-
 .span {
   color: var(--light-orange);
   font-weight: 700;
-
 }
 
 @media (max-width: 1281px) {
-
   .ContactUs {
-    /* width: 100%; */
-    /* max-width: 1117px; */
     grid-template-columns: 55% 40%;
     gap: 50px;
-    /* justify-content: space-between; */
-
   }
 
   .leftpaerson {
@@ -249,7 +232,6 @@
     overflow: hidden;
   }
 }
-
 
 @media (max-width: 1081px) {
   .ContactUs {
@@ -273,7 +255,6 @@
 }
 
 @media (max-width: 1024px) {
-
   .slider {
     overflow: -moz-hidden-unscrollable;
   }
@@ -292,17 +273,12 @@
 }
 
 @media (max-width: 968px) {
-  .section {
-    padding: 40px 0 40px;
-  }
-
   .ContactUs {
     grid-template-columns: 56% 37%;
   }
 }
 
 @media (max-width: 841px) {
-
   .cardBox img {
     width: 90px;
     height: 110px;
@@ -312,15 +288,9 @@
     height: 135px;
   }
 
-  .section {
-    padding-bottom: 0;
-    /* margin: 60px 0; */
-  }
-
   .ContactUs {
     grid-template-columns: 56% 38%;
     gap: 42px;
-    padding: 50px 0 0 0;
   }
 
   .leftSideH2 {
@@ -341,7 +311,6 @@
 }
 
 @media (max-width: 761px) {
-
   .leftSideH2 {
     font-size: 24px;
   }
@@ -358,10 +327,6 @@
     line-height: 0;
     font-size: 36px;
   }
-
-  .ContactUs {
-    padding: 30px 0 0 0;
-  }
 }
 
 @media (max-width: 641px) {
@@ -373,16 +338,11 @@
     gap: 25px;
   }
 
-  .ContactUs {
-    padding: 30px 0 30px 0;
-  }
-
   .leftpaerson {
     /* margin: 30px 0px; */
     grid-template-columns: 13% 40%;
     gap: 20px;
     align-items: center;
-
   }
 
   .LeftSide p {
@@ -416,21 +376,10 @@
     flex-direction: column;
     width: 100%;
     gap: 40px;
-
-  }
-
-  .section {
-    padding: 0;
   }
 }
 
-
 @media (max-width: 481px) {
-
-  .section {
-    /* margin: 20px 0; */
-  }
-
   .swiperslider {
     margin-top: 10px;
   }
