@@ -168,7 +168,7 @@
 
 @media only screen and (max-width: 481px) {
   .container {
-    margin: 40px auto;
+    /* margin: 40px auto; */
   }
 
   .headH2 {
