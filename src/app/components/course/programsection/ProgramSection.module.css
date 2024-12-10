@@ -1,7 +1,11 @@
 .container {
-  background: linear-gradient(180deg, var(--white) 1.29%, var(--senary-color) 98.18%);
+  background: linear-gradient(
+    180deg,
+    var(--white) 1.29%,
+    var(--senary-color) 98.18%
+  );
   color: var(--black);
-  padding: 100px 0;
+  padding: 8% 0;
 }
 
 .innerDiv h2 {
@@ -30,7 +34,7 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 150.5%;
-  margin: 10px 0 30px;
+  margin: 1% 0 2%;
 }
 
 .green {
@@ -102,8 +106,8 @@
 
 .pBot {
   font-size: 14px;
-  line-height: 22px;
-  margin-right: 60px;
+  /* line-height: 22px;
+  margin-right: 60px; */
 }
 
 .twoSection {
@@ -130,7 +134,11 @@
 }
 
 .colors {
-  background: linear-gradient(91deg, var(--primary-color) 19.08%, var(--light-orange) 93.87%);
+  background: linear-gradient(
+    91deg,
+    var(--primary-color) 19.08%,
+    var(--light-orange) 93.87%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -156,7 +164,6 @@
 }
 
 @media only screen and (max-width: 1081px) {
-
   .hrline {
     left: 30%;
   }
@@ -171,11 +178,11 @@
   }
 
   .H3 {
-    font-size: 22px
+    font-size: 22px;
   }
 
   .blackSpan {
-    font-size: 38px
+    font-size: 38px;
   }
 
   .colors {
@@ -183,7 +190,7 @@
   }
 
   .innerBox h3 {
-    font-size: 18px
+    font-size: 18px;
   }
 }
 
@@ -232,7 +239,6 @@
   .pTop {
     font-size: 14px;
   }
-
 }
 
 @media only screen and (max-width: 841px) {
@@ -242,7 +248,7 @@
   }
 
   .container {
-    padding: 60px 0;
+    padding: 7% 0;
   }
 
   .hrline {
@@ -312,7 +318,13 @@
 @media only screen and (max-width: 641px) {
   .container {
     /* padding: 40px 0; */
-    background: linear-gradient(180deg, var(--white) 0.4%, var(--senary-color) 14%, var(--white) 44.68%, var(--senary-color) 66.17%);
+    background: linear-gradient(
+      180deg,
+      var(--white) 0.4%,
+      var(--senary-color) 14%,
+      var(--white) 44.68%,
+      var(--senary-color) 66.17%
+    );
   }
 
   .hrline {
@@ -359,7 +371,7 @@
   }
 
   .pHead {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
   }
 
   .innerDiv h2 {
@@ -376,7 +388,6 @@
 }
 
 @media only screen and (max-width: 481px) {
-
   .container {
     padding: 40px 0;
   }

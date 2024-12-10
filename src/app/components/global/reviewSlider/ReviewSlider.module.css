@@ -1,5 +1,4 @@
 .keyContainer {
-  margin: 100px auto;
   width: 100%;
 }
 
@@ -83,10 +82,8 @@
   width: 80px;
   height: 26px;
   border: 0.1px solid var(--black);
-  ;
   flex-shrink: 0;
   color: var(--black);
-  ;
   background: var(--light-whitee);
   border-radius: 100px;
   cursor: pointer;
@@ -160,7 +157,7 @@
 .subHeading {
   color: var(--deeep-grey);
   font-size: 20px;
-  margin: 10px 0 50px;
+  margin: 1% 0px 5%;
   font-weight: 600;
 }
 
@@ -210,7 +207,7 @@
 .reviewBotSection {
   display: grid;
   grid-template-columns: 55% 36%;
-  margin-top: 60px;
+  margin-top: 7%;
   align-items: center;
   gap: 70px;
   justify-content: center;
@@ -237,14 +234,13 @@
   height: auto;
 }
 
-
 .firstBotImgWrapper {
   position: relative;
   width: 565px;
   height: 200px;
 }
 
-@media screen and (max-width:1381px) {
+@media screen and (max-width: 1381px) {
   /* .reviewBotSection{
     gap: 70px;
   } */
@@ -255,8 +251,7 @@
   } */
 }
 
-@media screen and (max-width:1281px) {
-
+@media screen and (max-width: 1281px) {
   /* .keyContainer {
     width: 1120px;
   } */
@@ -269,18 +264,12 @@
     width: 23%;
     left: 22%;
   } */
-
 }
 
 @media screen and (max-width: 1181px) {
-  .keyContainer {
-    margin: 80px auto;
-  }
 }
 
 @media screen and (max-width: 1081px) {
-
-
   keyContainer .mySwiper {
     width: 1000px;
   }
@@ -294,7 +283,6 @@
     width: 26%;
     left: 24%;
   } */
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -312,11 +300,7 @@
   .mySwiper {
     width: 860px;
     }
-    
-    .keyContainer {
-      width: 100%;
-      max-width: 860px;
-      }
+   
       } */
 
 @media screen and (max-width: 968px) {
@@ -326,7 +310,6 @@
 
   .firstBotReview p {
     font-size: 15px;
-
   }
 
   .firstBotImgWrapper {
@@ -360,7 +343,6 @@
 
   .reviewBotSection {
     grid-template-columns: 55% 43%;
-
   }
 
   /* .topSpanHrLine {
@@ -380,14 +362,9 @@
     left: 27%;
   } */
 
-  .keyContainer {
-    margin: 50px auto;
-  }
-
   .reviewBotSection {
     grid-template-columns: 55% 40%;
     gap: 10px;
-
   }
 
   .videoImage {
@@ -411,7 +388,7 @@
     flex-direction: column;
     padding: 0 20px;
     gap: 40px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 
   .firstBotReview {
@@ -426,11 +403,6 @@
   .firstBotImgWrapper {
     width: 410px;
     height: 150px;
-  }
-
-  .keyContainer {
-    /* width: 100%; */
-    margin: 40px auto;
   }
 
   .videoImage {
@@ -487,7 +459,6 @@
 }
 
 @media screen and (max-width: 481px) {
-
   .headingContainer h2 {
     font-size: 26px;
   }
@@ -543,11 +514,6 @@
 }
 
 @media screen and (max-width: 361px) {
-
-  .keyContainer {
-    margin: 20px auto;
-  }
-
   .firstBotImgWrapper {
     width: 290px;
     height: 115px;

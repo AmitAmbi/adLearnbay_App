@@ -1,20 +1,21 @@
 /* Updated radial gradient for smoother transitions */
 .whyChooseSection {
-  background: radial-gradient(circle at 10% 10%,
-      /* Blue circle positioned at the top left */
-      rgba(2, 49, 82, 0.9) 1%,
-      /* Larger blue circle */
-      transparent 40%
-      /* Smoother transition */
+  background: radial-gradient(
+      circle at 10% 10%,
+      /* Blue circle positioned at the top left */ rgba(2, 49, 82, 0.9) 1%,
+      /* Larger blue circle */ transparent 40% /* Smoother transition */
     ),
-    radial-gradient(circle at 90% 80%,
-      /* Orange circle positioned at the bottom right */
-      rgba(142, 54, 7, 0.3) 2%,
-      /* Glowing orange circle */
-      transparent 30%
-      /* Smoother transition */
+    radial-gradient(
+      circle at 90% 80%,
+      /* Orange circle positioned at the bottom right */ rgba(142, 54, 7, 0.3)
+        2%,
+      /* Glowing orange circle */ transparent 30% /* Smoother transition */
     ),
     #212121;
+  position: relative;
+  overflow: hidden;
+  padding: 10% 0;
+  margin: 10% 0;
 }
 
 .containerMain {
@@ -50,13 +51,13 @@
 
 .columnDiv {
   width: 760px;
-  margin: 115px auto;
+  /* margin: 115px auto; */
 }
 
 .divContainer {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: 4%;
+  margin: 9% 3%;
   opacity: 0.1;
   transition: opacity 0.5s ease, transform 0.5s ease;
   will-change: opacity, transform;
@@ -87,13 +88,6 @@
 .highlight {
   opacity: 1;
   transform: scale(1.05);
-}
-
-.whyChooseSection {
-  position: relative;
-  overflow: hidden;
-  padding: 60px 0;
-  /* margin-top: 100px; */
 }
 
 .domains {
@@ -246,7 +240,6 @@
   display: none;
 }
 
-
 .insideBoxDesign2 {
   border-radius: 63px;
   background: rgba(3, 131, 255, 0.2);
@@ -308,27 +301,22 @@
 }
 
 @media screen and (max-width: 968px) {
-  .whyChooseContent {
-    padding-right: 40px;
-  }
 }
 
 /* Media Queries for smaller screens */
 
 @media screen and (max-width: 841px) {
   .columnDiv {
-    padding: 20px;
     width: 100%;
-    margin: 90px auto;
+    /* margin: 90px auto; */
   }
 
-  .whyChooseSection {
+  /* .whyChooseSection {
     padding: 60px 0 30px 0;
-  }
+  } */
 }
 
 @media screen and (max-width: 761px) {
-
   .divContainer h4 {
     font-size: 22px;
   }
@@ -339,20 +327,9 @@
 }
 
 @media screen and (max-width: 641px) {
-  .whyChooseSection {
-    background: radial-gradient(circle at 10% 10%,
-        rgba(6, 59, 92, 0.8) 1%,
-        transparent 30%),
-      radial-gradient(circle at 90% 80%,
-        rgba(254, 122, 54, 0.2) 1%,
-        transparent 40%),
-      #212121;
-    padding: 30px 0;
-  }
-
-  .columnDiv {
+  /* .columnDiv {
     margin: 60px auto;
-  }
+  } */
 
   .header p {
     font-size: 20px;
@@ -360,13 +337,7 @@
   }
 
   .header h2 {
-    font-size: 2.0rem;
-  }
-
-
-  .divContainer {
-    margin: 30px;
-    gap: 10px;
+    font-size: 2rem;
   }
 
   .Contents h5 {
@@ -394,8 +365,6 @@
     gap: 8px;
     flex-wrap: wrap;
     justify-content: left;
-
-
   }
 
   .downBoxDesign2 p {
@@ -435,10 +404,6 @@
 }
 
 @media screen and (max-width: 481px) {
-  .divContainer {
-    margin: 30px 0;
-  }
-
   .divContainer p {
     font-size: 14px;
   }
@@ -447,18 +412,14 @@
     font-size: 18px;
   }
 
-  .columnDiv {
+  /* .columnDiv {
     margin: 20px auto;
-  }
+  } */
 
   .svglogo svg {
     height: 150px;
   }
 }
 
-
 @media screen and (max-width: 361px) {
-  .whyChooseContent {
-    padding-right: 0;
-  }
 }

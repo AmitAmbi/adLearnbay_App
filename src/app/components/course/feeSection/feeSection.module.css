@@ -230,7 +230,7 @@
     #eff3f6 66.46%,
     var(--white) 98.82%
   );
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 
 .feesmain span {
@@ -270,8 +270,8 @@
 
 .mainContainer {
   border-radius: 38.262px;
-  padding: 60px 0 0 0;
-  margin: auto;
+  padding: 5% 0 0 0;
+  /* margin: auto; */
 }
 
 .innerContainer {
@@ -674,7 +674,7 @@
   } */
 
   .feesmain h2 {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     font-size: 28px;
   }
 

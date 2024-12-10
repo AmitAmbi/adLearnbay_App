@@ -2,13 +2,12 @@
   display: grid;
   grid-template-columns: 66% 35%;
   border-radius: 30px;
-  /* margin: 50px 130px; */
   padding: 50px 50px 0px;
   align-items: center;
   border-radius: 50px;
   background: var(--cyan);
   width: 80%;
-  margin: 100px auto auto;
+  margin: 10% auto 10% auto;
 }
 
 .FirstDiv {
@@ -24,12 +23,11 @@
 }
 
 .FirstDiv span {
-
   background-clip: text;
   color: var(--black);
 }
 
-.btnWrapper{
+.btnWrapper {
   text-align: center;
 }
 
@@ -47,7 +45,6 @@
 .MobileReviewImageContainer img {
   width: 100%;
 }
-
 
 .leftSlide {
   display: flex;
@@ -88,17 +85,14 @@
 }
 
 @media (max-width: 1281px) {
-
   .FirstDiv h4 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 1181px) {
-
   .section {
     width: 85%;
-    margin: 80px auto auto;
   }
 
   .MobileReviewImageContainer img {
@@ -113,7 +107,6 @@
     width: 70px;
     height: 70px;
   }
-
 }
 
 @media (max-width: 1081px) {
@@ -129,7 +122,6 @@
 }
 
 @media (max-width: 1024px) {
-
   .FirstDiv h4 {
     font-size: 30px;
   }
@@ -137,12 +129,9 @@
   .btnWrapper {
     margin-top: 20px;
   }
-
-
 }
 
 @media (max-width: 968px) {
-
   .MobileReviewImageContainer img {
     width: 100%;
   }
@@ -162,11 +151,9 @@
   }
 }
 
-
 @media (max-width: 841px) {
   .section {
     width: 90%;
-    margin: 50px auto auto;
   }
 
   .Btn {
@@ -176,7 +163,6 @@
 }
 
 @media (max-width: 761px) {
-
   .FirstDiv h4 {
     font-size: 23px;
   }
@@ -188,7 +174,6 @@
 
 @media (max-width: 641px) {
   .section {
-    margin: 40px auto auto;
     display: block;
     border-radius: 0px;
     width: 100%;
@@ -200,7 +185,7 @@
   }
 
   .FirstDiv span::after {
-    content: '\A';
+    content: "\A";
     white-space: pre;
   }
 
@@ -255,8 +240,7 @@
   }
 }
 
-@media(max-width:481px) {
-
+@media (max-width: 481px) {
   .section {
     padding: 30px 30px 0;
   }
@@ -287,7 +271,7 @@
   }
 }
 
-@media(max-width:441px) {
+@media (max-width: 441px) {
   .FirstDiv h4 {
     font-size: 20px;
     font-weight: 400;
@@ -298,12 +282,7 @@
   }
 }
 
-@media(max-width:361px) {
-
-  .section {
-    margin: 20px auto auto;
-  }
-
+@media (max-width: 361px) {
   .FirstDiv h4 {
     font-size: 18px;
     font-weight: 400;

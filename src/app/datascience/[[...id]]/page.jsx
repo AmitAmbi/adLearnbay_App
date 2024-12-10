@@ -94,13 +94,13 @@ const Page = async ({ params }) => {
       <Practical />
       <AnimationNew />
       <JobReadySection />
-      {/* <SyllabusSection
+      <SyllabusSection
         sections={pageData.sections}
         brochureLink={pageData.brochureLink}
         brochurePdf={pageData.brochurePdf}
         interstedInHide={true}
         radio={pageData.radio}
-      /> */}
+      />
       <CertificateSection />
       <FeeContent
         Fee={pageData.FeeSection?.Fee}

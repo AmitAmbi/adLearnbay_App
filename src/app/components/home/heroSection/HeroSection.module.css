@@ -1,18 +1,16 @@
 .container {
-  margin-top: 70px;
-  background: radial-gradient(circle at 10% 10%,
-      /* Blue circle positioned at the top left */
-      rgba(6, 59, 92, 0.9) 1%,
-      /* Smaller blue circle */
-      transparent 30%
-      /* Smooth transition to black */
+  margin-top: 4%;
+  background: radial-gradient(
+      circle at 10% 10%,
+      /* Blue circle positioned at the top left */ rgba(6, 59, 92, 0.9) 1%,
+      /* Smaller blue circle */ transparent 30% /* Smooth transition to black */
     ),
-    radial-gradient(circle at 90% 80%,
+    radial-gradient(
+      circle at 90% 80%,
       /* Orange circle positioned at the bottom right */
-      rgba(254, 122, 54, 000.3) 1%,
-      /* Glowing orange circle */
-      transparent 40%
-      /* Smooth transition to black */
+        rgba(254, 122, 54, 000.3) 1%,
+      /* Glowing orange circle */ transparent 40%
+        /* Smooth transition to black */
     ),
     #212121;
   background-color: rgba(15, 14, 14, 0.954);
@@ -359,9 +357,8 @@
 }
 
 @media screen and (max-width: 1081px) {
-
   .container {
-    margin-top: 61px;
+    margin-top: 8%;
   }
 
   .gridConteiner h1 {
@@ -398,7 +395,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-
   .rytConteiner {
     padding: 30px 25px 25px;
   }
@@ -439,7 +435,6 @@
 }
 
 @media screen and (max-width: 968px) {
-
   .typelogo {
     width: 430px;
   }
@@ -504,14 +499,10 @@
   }
 }
 
-
 @media screen and (max-width: 841px) {
-
   .desktopImg {
     width: 70px;
   }
-
-
 
   .bookFreebtn p {
     font-size: 10px;
@@ -572,7 +563,6 @@
 }
 
 @media screen and (max-width: 761px) {
-
   .gridConteiner {
     /* grid-template-columns: 53% 40%; */
     padding: 50px 0 30px;
@@ -640,7 +630,7 @@
 
 @media screen and (max-width: 641px) {
   .container {
-    margin-top: 64px;
+    margin-top: 12%;
   }
 
   .bookFreebtn {
@@ -761,7 +751,6 @@
     margin-top: 10px;
   }
 
-  
   .bookFreebtn img {
     width: 75px;
   }
