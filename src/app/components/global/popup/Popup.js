@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React, { memo } from "react";
+// import React, { useEffect } from "react";
 import styles from "./Popup.module.css";
 import { IoCloseSvg } from "@/Data/svgData/Io5";
 import Image from "next/image";
 
-const Popup = (props) => {
+const Popup = memo((props) => {
   if (props.price) color = "white";
   // useEffect(() => {
   //   if (props.trigger) {
@@ -26,7 +27,13 @@ const Popup = (props) => {
             width={330}
           />
         </div>
-        {props.downloadBrochure ? (
+        <IoCloseSvg
+          className={styles.closeBtn}
+          onClick={() => {
+            props.setTrigger(false);
+          }}
+        />
+        {/* {props.downloadBrochure ? (
           <IoCloseSvg
             className={styles.closeBtn}
             onClick={() => {
@@ -40,7 +47,7 @@ const Popup = (props) => {
               props.setTrigger(false);
             }}
           />
-        )}
+        )} */}
 
         {props.children}
       </div>
@@ -48,6 +55,6 @@ const Popup = (props) => {
   ) : (
     ""
   );
-};
+});
 
 export default Popup;

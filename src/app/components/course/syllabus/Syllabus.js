@@ -24,7 +24,6 @@ const SyllabusSection = ({
   const [popups, setPopups] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Detect screen size
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 761);
@@ -42,7 +41,6 @@ const SyllabusSection = ({
     setInitialSlide(index);
     setOpenSliderIndex(openSliderIndex === index ? null : index);
 
-    // Scroll to the first card when opening the popup
     if (gridContainerRef.current) {
       const firstCard = gridContainerRef.current.querySelector(".card");
       if (firstCard) {

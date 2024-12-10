@@ -1,13 +1,13 @@
 "use client";
-"use client";
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect, useState, useCallback, useRef } from "react";
-import { FaBars, FaChevronDown, FaChevronUp } from "react-icons/fa";
+// import Link from "next/link";
+import React, { useState, useCallback } from "react";
+// import React, { useEffect, useState, useCallback, useRef } from "react";
+// import { FaBars, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import styles from "./NavbarHome.module.css";
-import { menuItemHome } from "./NavbarData";
+// import { menuItemHome } from "./NavbarData";
 
 // Dynamic imports for components
 const Popup = dynamic(() => import("../../global/popup/Popup"), { ssr: false });
@@ -15,7 +15,7 @@ const Form = dynamic(() => import("../../global/form/Form"), { ssr: false });
 const Button = dynamic(() => import("../../global/button/Button"), {
   ssr: false,
 });
-const Tabs = dynamic(() => import("../../global/tab/TabData"), { ssr: false });
+// const Tabs = dynamic(() => import("../../global/tab/TabData"), { ssr: false });
 
 const NavbarHome = ({
   radio,
@@ -25,11 +25,11 @@ const NavbarHome = ({
   dataScienceCounselling,
   interstedInHide,
 }) => {
-  const [icon, setIcon] = useState(false);
-  const [showMoreDropdown, setShowMoreDropdown] = useState(false);
-  const [show, setShow] = useState(false);
+  // const [icon, setIcon] = useState(false);
+  // const [showMoreDropdown, setShowMoreDropdown] = useState(false);
+  // const [show, setShow] = useState(false);
   const [Popups, setPopup] = useState(false);
-  const [mobile, setMobile] = useState(false);
+  // const [mobile, setMobile] = useState(false);
 
   // const dropdownRef = useRef(null); // Reference for dropdown container
   // const coursesButtonRef = useRef(null); // Reference for "Courses" button
@@ -85,7 +85,6 @@ const NavbarHome = ({
     <nav
       className={`${styles.nav} flexBox flexJustSpaceBetween flexAlignCenter`}
     >
-      {/* Popup Component */}
       <Popup trigger={Popups} setTrigger={setPopup} className="popupModal">
         {/* <div className="leftPopup">
           <div className="whiteP" />

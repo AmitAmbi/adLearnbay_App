@@ -116,12 +116,20 @@ const DataScienceCard = ({
                     Brochure <MdOutlineFileDownloadSvg />
                   </button>
                   {course.link ? (
-                    <Link href={course.link} passHref>
-                      <button className={styles.viewDetailsButton}>
-                        View Details
-                      </button>
-                    </Link>
+                    // <Link href={course.link} passHref>
+                    <button
+                      className={styles.viewDetailsButton}
+                      onClick={() => {
+                        setTitleCourse(course.titleCourse);
+                        setBrochureLinks(course.brochureLinks);
+                        setBrochurePdf(course.brochurePdfs);
+                        popupShow();
+                      }}
+                    >
+                      View Details
+                    </button>
                   ) : (
+                    // </Link>
                     <button disabled className={styles.viewDetailsButton}>
                       No Details Available
                     </button>
@@ -196,12 +204,20 @@ const DataScienceCard = ({
                   Brochure <MdOutlineFileDownloadSvg />
                 </button>
                 {course.link ? (
-                  <Link href={course.link} passHref>
-                    <button className={styles.viewDetailsButton}>
-                      View Details
-                    </button>
-                  </Link>
+                  // <Link href={course.link} passHref>
+                  <button
+                    className={styles.viewDetailsButton}
+                    onClick={() => {
+                      setTitleCourse(course.titleCourse);
+                      setBrochureLinks(course.brochureLinks);
+                      setBrochurePdf(course.brochurePdfs);
+                      popupShow();
+                    }}
+                  >
+                    View Details
+                  </button>
                 ) : (
+                  // </Link>
                   <button disabled className={styles.viewDetailsButton}>
                     No Details Available
                   </button>
@@ -241,6 +257,7 @@ const DataScienceCard = ({
             downloadBrochure={true}
             upSkillingHide={true}
             interstedInHide={interstedInHide}
+            learning={true}
           />
         </div>
       </Popup>

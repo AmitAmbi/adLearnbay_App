@@ -228,22 +228,64 @@ const getFormFields = (radio, google, referrals, Domain, interstedInHide) => {
       showField: referrals, // Conditionally render the field
     },
     {
-      name: "interstedIn",
-      label: "Interested In",
-      type: "select",
-      options: [
-        { value: "Interested In", label: "Interested In", hidden: true },
-        {
-          value: "Master Degree Program",
-          label: "Master Degree Program",
-        },
-        {
-          value: "Certification Program",
-          label: "Certification Program",
-        },
-      ],
+      name: "currentDesignation",
+      label: "Job Title",
+      type: "text",
+      placeholder: "Current Designation",
       required: interstedInHide, // Conditionally required
       showField: interstedInHide, // Conditionally render the field
+    },
+    // {
+    //   name: "interstedIn",
+    //   label: "Interested In",
+    //   type: "select",
+    //   options: [
+    //     { value: "Interested In", label: "Interested In", hidden: true },
+    //     {
+    //       value: "Master Degree Program",
+    //       label: "Master Degree Program",
+    //     },
+    //     {
+    //       value: "Certification Program",
+    //       label: "Certification Program",
+    //     },
+    //   ],
+    //   required: interstedInHide,
+    //   showField: interstedInHide,
+    // },
+    {
+      name: "WorkExperience",
+      label: "Select Work Experience ",
+      type: "select",
+      options: [
+        {
+          value: "Select Work Experience",
+          label: "Select Work Experience",
+          hidden: true,
+        },
+        {
+          value: "Freshers",
+          label: "Freshers",
+        },
+        {
+          value: "1-3 years",
+          label: "1-3 years",
+        },
+        {
+          value: "3-5 years",
+          label: "3-5 years",
+        },
+        {
+          value: "5-7 years",
+          label: "5-7 years",
+        },
+        {
+          value: "7+ years",
+          label: "7+ years",
+        },
+      ],
+      required: interstedInHide,
+      showField: interstedInHide,
     },
 
     {

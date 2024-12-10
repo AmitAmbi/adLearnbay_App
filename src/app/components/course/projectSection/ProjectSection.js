@@ -45,7 +45,7 @@ const ProjectSection = ({
         <PopupContent
           popups={popups}
           setPopups={setPopups}
-          heading="Download Syllabus"
+          heading="Apply for Counselling"
           downloadBrochure
           dataScience={true}
           interstedInHide={interstedInHide}

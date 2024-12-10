@@ -37,18 +37,18 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <NavbarHome />
-      <HeroSection />
+      <NavbarHome radio={true} interstedInHide={true} />
+      <HeroSection radio={true} interstedInHide={true} />
       <KickStart />
-      <NewCourse />
+      <NewCourse radio={true} interstedInHide={true} />
       <InfinityLogo />
       <Animation />
-      <ReviewSlider />
-      <ContactUs />
+      <ReviewSlider showVideoYt={true}/>
+      <ContactUs radio={false} interstedInHide={true} />
       <CLogo />
       {/* <Other /> */}
-      <MobileTestimonial />
-      <NewSevenSection />
+      <MobileTestimonial radio={true} interstedInHide={true} />
+      <NewSevenSection radio={true} interstedInHide={true} />
     </main>
   );
 }

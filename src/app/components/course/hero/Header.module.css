@@ -156,7 +156,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   border: 0.6px solid var(--wwhite);
   border-radius: 24.338px;
   background: var(--senary-color);
@@ -236,7 +236,7 @@
   margin: 0px 30px;
 }
 
-.formdiv form button {
+/* .formdiv form button {
   border-radius: 10.492px;
   background: var(--primary-color);
   margin-bottom: 10px;
@@ -244,9 +244,11 @@
   color: var(--white);
   font-weight: 600;
   border: none;
-}
+} */
 
 .formdiv form>div {
+  display: flex;
+  justify-content: center;
   margin-bottom: 10px;
   width: 90%;
 }

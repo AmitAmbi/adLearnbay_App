@@ -176,6 +176,7 @@ const NewCourse = ({
                       downloadBrochure
                       upSkillingHide={true}
                       interstedInHide={interstedInHide}
+                      learning={true}
                     />
                   </div>
                 </Popup>
@@ -236,12 +237,20 @@ const NewCourse = ({
                     </button>
 
                     {course.link ? (
-                      <Link href={course.link} passHref>
-                        <button className={styles.viewDetailsButton}>
-                          View Details
-                        </button>
-                      </Link>
+                      // <Link href={course.link} passHref>
+                      <button
+                        className={styles.viewDetailsButton}
+                        onClick={() => {
+                          setTitleCourse(course.titleCourse);
+                          setBrochureLinks(course.brochureLinks);
+                          setBrochurePdfs(course.brochurePdfs);
+                          setPopups(true);
+                        }}
+                      >
+                        View Details
+                      </button>
                     ) : (
+                      // </Link>
                       <button disabled className={styles.viewDetailsButton}>
                         No Details Available
                       </button>
@@ -283,6 +292,7 @@ const NewCourse = ({
             downloadBrochure
             upSkillingHide={true}
             interstedInHide={interstedInHide}
+            learning={true}
           />
         </div>
       </Popup>
@@ -324,13 +334,18 @@ const NewCourse = ({
             </button>
 
             {masterCourse.link ? (
-              <Link href={masterCourse.link} passHref>
+              // <Link href={masterCourse.link} passHref>
                 <button
                   className={`${styles.viewDetailsButton} ${styles.viewDetailsButtonmaster}`}
-                >
+                  onClick={() => {
+                    setTitleCourse(masterCourse.title);
+                    setBrochureLinks(masterCourse.brochureLinks);
+                    setBrochurePdfs(masterCourse.brochurePdfs);
+                    setPopups(true);
+                  }}>
                   View Details
                 </button>
-              </Link>
+              // </Link>
             ) : (
               <button disabled className={styles.viewDetailsButton}>
                 No Details Available
@@ -583,7 +598,11 @@ const NewCourse = ({
 
           <div>
             {activeTab === "all" && (
-              <DataScienceCard dataScience={true} radio={true} />
+              <DataScienceCard
+                dataScience={true}
+                radio={true}
+                interstedInHide={true}
+              />
             )}
 
             <div className={styles.CourseCardHead}>{renderCourses()}</div>

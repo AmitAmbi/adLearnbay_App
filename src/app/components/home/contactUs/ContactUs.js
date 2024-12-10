@@ -190,6 +190,7 @@ function ContactUs({
                 dataScienceCounselling={dataScienceCounselling}
                 upSkillingHide={upSkillingHide}
                 interstedInHide={interstedInHide}
+                radio={radio}
               />
             </div>
           </Suspense>

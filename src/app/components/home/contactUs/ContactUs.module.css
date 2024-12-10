@@ -51,6 +51,9 @@
 }
 
 .RightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   background: var(--white);
   padding: 30px 20px 30px 20px;
   /* border-radius: 10px; */
@@ -169,13 +172,16 @@
 
 
 
-/* .NormalPForm {} */
+/* .NormalPForm */
 
 .RightSide form label {
   display: none;
 }
 
-.RightSide form input {
+.RightSide form input,
+.RightSide form select,
+.RightSide form select option,
+.RightSide form input[type="tel"] {
   background-color: var(--light-black);
   color: var(--grayy);
   border: none;
@@ -193,35 +199,19 @@
   font-weight: 300;
 }
 
-.RightSide form label {
-  display: none;
-}
-
 .RightSide form input[type="tel"] {
-  background: var(--light-black);
-  color: var(--white);
   font-weight: 400;
-  border: none;
-
 }
 
 .RightSide form select {
-  background-color: var(--light-black);
-
-  color: var(--grayy);
   border-radius: 8.775px;
   border: 0.607px solid rgba(0, 0, 0, 0.20);
   padding: 10px;
   font-weight: 400;
-  appearance: none;
-  -webkit-appearance: none;
 }
-
-.RightSide form select option {
-  background-color: var(--light-black);
-  color: var(--grayy);
+.RightSide form>div {
+  margin-bottom: 10px;
 }
-
 
 .span {
   color: var(--light-orange);

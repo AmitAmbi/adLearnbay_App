@@ -29,6 +29,7 @@ function CertificateSection() {
                   height={certificate.imageHeight}
                   className={styles.toolIcon}
                   loading="lazy"
+                  quality={60}
                 />
                 <div className={styles.iconDivMain}>
                   <h4>{certificate.title}</h4>
@@ -52,6 +53,7 @@ function CertificateSection() {
                   height={certificate.imageHeight}
                   className={`${styles.toolIcon} ${styles.toolIconThree}`}
                   loading="lazy"
+                  quality={60}
                 />
                 <div className={styles.iconDivMain}>
                   <div className={styles.Addon}><p>Add on</p></div>

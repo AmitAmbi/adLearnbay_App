@@ -1,30 +1,30 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { memo, useEffect, useRef } from "react";
 import styles from "./AnimationNew.module.css";
 import Image from "next/image";
-import whyChooseData from "./AnimationNewData"; // Import the data
+import whyChooseData from "./AnimationNewData"; 
 
 function AnimationNew() {
   const divRefs = useRef([]);
 
   useEffect(() => {
     const options = {
-      threshold: 0.7, // Trigger when 70% of the element is in view
+      threshold: 0.7, 
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add(styles.highlight); // Add highlight class when in view
+          entry.target.classList.add(styles.highlight); 
         } else {
-          entry.target.classList.remove(styles.highlight); // Remove highlight class when out of view
+          entry.target.classList.remove(styles.highlight); 
         }
       });
     }, options);
 
     divRefs.current.forEach((div) => {
-      if (div) observer.observe(div); // Observe each div
+      if (div) observer.observe(div); 
     });
 
     return () => {
@@ -34,27 +34,26 @@ function AnimationNew() {
     };
   }, []);
 
-  // Function to return downBox class names based on index
   const getDownBoxClassName = (index) => {
     switch (index) {
       case 0:
-        return styles.downBoxDesign1; // Class for the first section
+        return styles.downBoxDesign1; 
       case 1:
-        return styles.downBoxDesign2; // Class for the second section
+        return styles.downBoxDesign2; 
       case 2:
-        return styles.downBoxDesign3; // Class for the third section
+        return styles.downBoxDesign3; 
       default:
-        return styles.downBoxDefault; // Default class for other sections
+        return styles.downBoxDefault; 
     }
   };
 
   const getInsideBoxClassName = (sectionIndex, insideIndex) => {
     if (sectionIndex === 0) {
-      return styles.insideBoxDesign1; // Class for insideBox in the first section
+      return styles.insideBoxDesign1; 
     } else if (sectionIndex === 1) {
-      return styles.insideBoxDesign2; // Class for insideBox in the second section
+      return styles.insideBoxDesign2; 
     }
-    return styles.insideBoxDefault; // Default class for other inside boxes
+    return styles.insideBoxDefault; 
   };
 
   return (
@@ -70,14 +69,14 @@ function AnimationNew() {
             {whyChooseData.map((item, index) => (
               <div
                 key={index}
-                ref={(el) => (divRefs.current[index] = el)} // Assigning the ref to each div
+                ref={(el) => (divRefs.current[index] = el)} 
                 className={`${styles.divContainer} ${styles.divContainerANI}`}
               >
                 <div className={styles.svglogo}>
                   <Image
                     src={item.image}
                     alt="Learnbay"
-                    quality={100}
+                    quality={50}
                     loading="lazy"
                     width={70}
                     height={70}
@@ -115,12 +114,9 @@ function AnimationNew() {
                   <h5>{item.title}</h5>
                   <p className={styles.pTag}>{item.description}</p>
 
-                  {/* Conditionally rendering for the third section */}
+                  
                   {index === 2 ? (
                     <div className={styles.customSection}>
-                      {/* First, the image */}
-
-                      {/* Then the text */}
                       <div className={styles.leftText}>
                         <p>{item.subItems[0].text}</p>
                       </div>
@@ -130,6 +126,7 @@ function AnimationNew() {
                           alt="IBM Logo"
                           fill
                           loading="lazy"
+                          quality={50}
                         />
                       </div>
                     </div>
@@ -152,6 +149,7 @@ function AnimationNew() {
                               alt="icon"
                               fill
                               loading="lazy"
+                              quality={50}
                             />
                           </div>
                           <p>{subItem.text}</p>
@@ -178,4 +176,4 @@ function AnimationNew() {
   );
 }
 
-export default AnimationNew;
+export default memo(AnimationNew);

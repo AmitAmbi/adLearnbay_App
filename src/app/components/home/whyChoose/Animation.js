@@ -1,37 +1,38 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { memo, useCallback, useEffect, useRef } from "react";
 import styles from "./Animation.module.css";
 import Image from "next/image";
-import whyChooseData from "./Whychoosedata"; // Import the data
+import whyChooseData from "./Whychoosedata";
 
 function Animation() {
-  const divRefs = useRef([]); // Reference for all divs
+  const divRefs = useRef([]);
+
+  const setDivRef = useCallback((index, el) => {
+    divRefs.current[index] = el;
+  }, []);
 
   useEffect(() => {
     const options = {
-      threshold: 0.7, // Trigger when 70% of the element is in view
+      threshold: 0.7,
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-          // Introduce a delay based on the index to stagger the effect
           setTimeout(() => {
-            entry.target.classList.add(styles.highlight); // Add highlight class when in view
-          }, index * 200); // 200ms delay per div
+            entry.target.classList.add(styles.highlight);
+          }, index * 200);
         } else {
-          // Immediately remove the highlight class when out of view
           entry.target.classList.remove(styles.highlight);
         }
       });
     }, options);
 
     divRefs.current.forEach((div) => {
-      if (div) observer.observe(div); // Observe each div
+      if (div) observer.observe(div);
     });
 
-    // Cleanup observer on component unmount
     return () => {
       divRefs.current.forEach((div) => {
         if (div) observer.unobserve(div);
@@ -54,13 +55,13 @@ function Animation() {
               <div
                 className={styles.divContainer}
                 key={index}
-                ref={(el) => (divRefs.current[index] = el)} // Assign the ref
+                ref={(el) => setDivRef(index, el)}
               >
                 <div className={styles.svglogo}>
                   <Image
                     src={item.image}
                     alt="Learnbay"
-                    quality={100}
+                    quality={50}
                     loading="lazy"
                     width={70}
                     height={70}
@@ -81,4 +82,4 @@ function Animation() {
   );
 }
 
-export default Animation;
+export default memo(Animation);

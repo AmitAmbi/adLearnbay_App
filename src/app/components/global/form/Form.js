@@ -1,8 +1,8 @@
-"use client"; // This ensures the component runs on the client-side
+"use client";
 
 import jsCookie from "js-cookie";
-import { useRouter } from "next/navigation"; // Use the App Router version of useRouter
-import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { memo, useEffect, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import styles from "./Form.module.css";
@@ -13,346 +13,353 @@ import {
   redirectionThankYou,
 } from "./FormFunction";
 
-const Form = ({
-  popup,
-  setTrigger,
-  downloadBrochure,
-  radio,
-  event,
-  dataScience,
-  fullStack,
-  google,
-  referrals,
-  syllabus,
-  learning,
-  titleCourse,
-  brochureLink,
-  dataScienceCounselling,
-  dataScienceGeneric,
-  interstedInHide,
-  Domain,
-  DomainInput,
-  brochurePdf,
-}) => {
-  const router = useRouter(); // Correct import for useRouter
-  const [formFields, setFormFields] = useState(
-    getFormFields(radio, google, referrals, Domain, interstedInHide)
-  );
-  const [formField, setFormField] = useState(
-    getFormFields(radio, google, referrals, interstedInHide)
-  );
+const Form = memo(
+  ({
+    popup,
+    setTrigger,
+    downloadBrochure,
+    radio,
+    event,
+    dataScience,
+    fullStack,
+    google,
+    referrals,
+    syllabus,
+    learning,
+    titleCourse,
+    brochureLink,
+    dataScienceCounselling,
+    dataScienceGeneric,
+    interstedInHide,
+    Domain,
+    DomainInput,
+    brochurePdf,
+  }) => {
+    const router = useRouter();
 
-  const [value, setValue] = useState();
-  const [error, setError] = useState();
-  const [alertMSG, setAlertMSG] = useState("");
-  const [toggle, setToggle] = useState(true);
-  const [query, setQuery] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    upskillPlanning: "",
-    upskillingObjective: "",
-    platform: "",
-    workExperience: "",
-    Brief: "",
-    dateTime: "",
-    WAdropdown: "",
-    currentOrganization: "",
-    currentDesignation: "",
-    interstedIn: "",
-    url: router.asPath,
-    Domain: "",
-  });
-  const [submitting, setSubmitting] = useState(false); // State to track form submission
+    const [formFields, setFormFields] = useState(
+      getFormFields(radio, google, referrals, Domain, interstedInHide)
+    );
+    const [formField, setFormField] = useState(
+      getFormFields(radio, google, referrals, interstedInHide)
+    );
 
-  useEffect(() => {
-    setQuery({ ...query, phone: value });
-    jsCookie.set("CARD", query.email, { expires: 14, secure: true });
-  }, [value]);
-
-  useEffect(() => {
-    if (value) {
-      const formattedPhone = value;
-      const phoneWithPlus = `+${formattedPhone}`;
-      setQuery({ ...query, phone: phoneWithPlus });
-
-      jsCookie.set("CARDPHONE", phoneWithPlus, { expires: 14, secure: true });
-    }
-  }, [value]);
-
-  const handleParam = () => (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setQuery((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  let btnText = "Apply For Counselling";
-  if (event) {
-    btnText = "Register Now";
-  }
-  if (learning) {
-    btnText = "Download Resources";
-  }
-
-  const formSubmit = async (e) => {
-    e.preventDefault();
-    setSubmitting(true); // Set submitting state to true
-    const formData = new FormData();
-    Object.entries(query).forEach(([key, value]) => {
-      formData.append(key, value);
+    const [value, setValue] = useState();
+    const [error, setError] = useState();
+    const [alertMSG, setAlertMSG] = useState("");
+    const [toggle, setToggle] = useState(true);
+    const [query, setQuery] = useState({
+      name: "",
+      email: "",
+      phone: "",
+      upskillPlanning: "",
+      upskillingObjective: "",
+      platform: "",
+      workExperience: "",
+      Brief: "",
+      dateTime: "",
+      WAdropdown: "",
+      currentOrganization: "",
+      currentDesignation: "",
+      interstedIn: "",
+      url: router.asPath,
+      Domain: "",
     });
+    const [submitting, setSubmitting] = useState(false); // State to track form submission
 
-    try {
-      const locationData = await fetchLocation();
-      formData.append("country", locationData.country);
-      formData.append("city", locationData.city);
-      formData.append("region", locationData.region);
-    } catch (error) {
-      console.error("Error fetching location:", error.message);
+    useEffect(() => {
+      setQuery({ ...query, phone: value });
+      jsCookie.set("CARD", query.email, { expires: 14, secure: true });
+    }, [value]);
+
+    useEffect(() => {
+      if (value) {
+        const formattedPhone = value;
+        const phoneWithPlus = `+${formattedPhone}`;
+        setQuery({ ...query, phone: phoneWithPlus });
+
+        jsCookie.set("CARDPHONE", phoneWithPlus, { expires: 14, secure: true });
+      }
+    }, [value]);
+
+    const handleParam = () => (e) => {
+      const name = e.target.name;
+      const value = e.target.value;
+      setQuery((prevState) => ({
+        ...prevState,
+        [name]: value,
+      }));
+    };
+
+    let btnText = "Apply For Counselling";
+    if (event) {
+      btnText = "Register Now";
+    }
+    if (learning) {
+      btnText = "Download Now";
     }
 
-    try {
-      const endPoint = getEndPoint(router.pathname, event);
-      const pushPath = redirectionThankYou(
-        router.pathname,
-        fullStack,
-        event,
-        dataScience,
-        dataScienceGeneric,
-        dataScienceCounselling
-      );
+    const formSubmit = async (e) => {
+      e.preventDefault();
+      setSubmitting(true); // Set submitting state to true
+      const formData = new FormData();
+      Object.entries(query).forEach(([key, value]) => {
+        formData.append(key, value);
+      });
 
-      setError(getValidation(radio, Domain, interstedInHide, query));
-      const validation = getValidation(radio, Domain, interstedInHide, query);
+      try {
+        const locationData = await fetchLocation();
+        formData.append("country", locationData.country);
+        formData.append("city", locationData.city);
+        formData.append("region", locationData.region);
+      } catch (error) {
+        console.error("Error fetching location:", error.message);
+      }
 
-      if (!validation) {
-        const sendData = await fetch(endPoint, {
-          method: "POST",
-          body: formData,
-        });
+      try {
+        const endPoint = getEndPoint(router.pathname, event);
+        const pushPath = redirectionThankYou(
+          router.pathname,
+          fullStack,
+          event,
+          dataScience,
+          dataScienceGeneric,
+          dataScienceCounselling
+        );
 
-        setQuery({
-          name: "",
-          email: "",
-          phone: "",
-          upskillPlanning: "",
-          upskillingObjective: "",
-          jobDescription: "",
-          platform: "",
-          workExperience: "",
-          dateTime: "",
-          WAdropdown: "",
-          currentOrganization: "",
-          currentDesignation: "",
-          interstedIn: "",
-          country: "",
-          region: "",
-          city: "",
-          url: router.asPath,
-        });
+        setError(getValidation(radio, Domain, interstedInHide, query));
+        const validation = getValidation(radio, Domain, interstedInHide, query);
 
-        if (popup) {
-          setTrigger(false);
-        }
+        if (!validation) {
+          const sendData = await fetch(endPoint, {
+            method: "POST",
+            body: formData,
+          });
 
-        if (sendData.status === 200) {
-          if (downloadBrochure) {
-            downloadFileAtUrl(brochurePdf); // Download the brochure only after a successful submission
+          setQuery({
+            name: "",
+            email: "",
+            phone: "",
+            upskillPlanning: "",
+            upskillingObjective: "",
+            jobDescription: "",
+            platform: "",
+            workExperience: "",
+            dateTime: "",
+            WAdropdown: "",
+            currentOrganization: "",
+            currentDesignation: "",
+            interstedIn: "",
+            country: "",
+            region: "",
+            city: "",
+            url: router.asPath,
+          });
+
+          if (popup) {
+            setTrigger(false);
           }
-          router.push(
-            pushPath,
-            dataScience
-              ? {
-                  pathname: "/Thank-you",
-                  query: {
-                    titleCourse: titleCourse,
-                    brochureLink: brochureLink,
-                  },
-                }
-              : {
-                  pathname: pushPath,
-                }
+
+          if (sendData.status === 200) {
+            if (downloadBrochure) {
+              downloadFileAtUrl(brochurePdf); // Download the brochure only after a successful submission
+            }
+            router.push(
+              pushPath,
+              dataScience
+                ? {
+                    pathname: "/Thank-you",
+                    query: {
+                      titleCourse: titleCourse,
+                      brochureLink: brochureLink,
+                    },
+                  }
+                : {
+                    pathname: pushPath,
+                  }
+            );
+          }
+        }
+        setSubmitting(false); // Set submitting state to false after form submission
+      } catch (error) {
+        console.error("Error submitting form:", error.message);
+      }
+    };
+
+    const downloadFileAtUrl = (url) => {
+      const aTag = document.createElement("a");
+      aTag.href = url;
+      aTag.download = url.split("/").pop();
+      document.body.appendChild(aTag);
+      aTag.click();
+      document.body.removeChild(aTag);
+    };
+
+    const fetchLocation = async () => {
+      try {
+        const response = await fetch(
+          "https://ipinfo.io/json?token=bc89c2010abac0"
+        );
+        if (!response.ok) {
+          throw new Error(
+            `Failed to fetch location: ${response.status} ${response.statusText}`
           );
         }
+        const data = await response.json();
+        console.log("API Response:", data);
+        const { country, region, city } = data;
+        // If city is not available, provide a default value or placeholder
+        const finalCity = city ? city : "Unknown";
+        return { country, region, city: finalCity };
+      } catch (error) {
+        console.error("Error fetching location:", error.message);
+        // If there's an error fetching location data, return default or placeholder values
+        return {
+          country: "Country Undefined",
+          region: "Region Undefined",
+          city: "City Undefined",
+        };
       }
-      setSubmitting(false); // Set submitting state to false after form submission
-    } catch (error) {
-      console.error("Error submitting form:", error.message);
-    }
-  };
+    };
 
-  const downloadFileAtUrl = (url) => {
-    const aTag = document.createElement("a");
-    aTag.href = url;
-    aTag.download = url.split("/").pop();
-    document.body.appendChild(aTag);
-    aTag.click();
-    document.body.removeChild(aTag);
-  };
-
-  const fetchLocation = async () => {
-    try {
-      const response = await fetch(
-        "https://ipinfo.io/json?token=bc89c2010abac0"
-      );
-      if (!response.ok) {
-        throw new Error(
-          `Failed to fetch location: ${response.status} ${response.statusText}`
-        );
-      }
-      const data = await response.json();
-      console.log("API Response:", data);
-      const { country, region, city } = data;
-      // If city is not available, provide a default value or placeholder
-      const finalCity = city ? city : "Unknown";
-      return { country, region, city: finalCity };
-    } catch (error) {
-      console.error("Error fetching location:", error.message);
-      // If there's an error fetching location data, return default or placeholder values
-      return {
-        country: "Country Undefined",
-        region: "Region Undefined",
-        city: "City Undefined",
-      };
-    }
-  };
-
-  return (
-    <div className={styles.App}>
-      <form onSubmit={formSubmit}>
-        <>
-          {DomainInput
-            ? formField.map(
-                (field) =>
-                  field.showField && (
-                    <div key={field.name} className={styles.formWrapper}>
-                      <label htmlFor={field.name}>
-                        {field.label}
-                        {field.required && (
-                          <span className={styles.spanLabel}>*</span>
+    return (
+      <div className={styles.App}>
+        <form onSubmit={formSubmit}>
+          <>
+            {DomainInput
+              ? formField.map(
+                  (field) =>
+                    field.showField && (
+                      <div key={field.name} className={styles.formWrapper}>
+                        <label htmlFor={field.name}>
+                          {field.label}
+                          {field.required && (
+                            <span className={styles.spanLabel}>*</span>
+                          )}
+                        </label>
+                        {field.type === "phone" ? (
+                          <PhoneInput
+                            inputStyle={field.inputStyle}
+                            containerStyle={field.containerStyle}
+                            name={field.name}
+                            inputProps={field.inputProps}
+                            country="in"
+                            placeholder={field.placeholder}
+                            value={value}
+                            onChange={(phone) => setValue(phone)}
+                            required={field.required}
+                            className={styles.PhoneInput}
+                          />
+                        ) : field.type === "select" ? (
+                          <select
+                            name={field.name}
+                            required={field.required}
+                            value={query[field.name]}
+                            className=""
+                            onChange={handleParam(field.name)}
+                          >
+                            {field.options.map((option) => (
+                              <option
+                                key={option.value}
+                                value={option.value}
+                                hidden={option.hidden}
+                              >
+                                {option.label}
+                              </option>
+                            ))}
+                          </select>
+                        ) : (
+                          <input
+                            type={field.type}
+                            name={field.name}
+                            className={styles.EmailInputs}
+                            required={field.required}
+                            placeholder={field.placeholder}
+                            value={query[field.name]}
+                            onChange={handleParam(field.name)}
+                          />
                         )}
-                      </label>
-                      {field.type === "phone" ? (
-                        <PhoneInput
-                          inputStyle={field.inputStyle}
-                          containerStyle={field.containerStyle}
-                          name={field.name}
-                          inputProps={field.inputProps}
-                          country="in"
-                          placeholder={field.placeholder}
-                          value={value}
-                          onChange={(phone) => setValue(phone)}
-                          required={field.required}
-                          className={styles.PhoneInput}
-                        />
-                      ) : field.type === "select" ? (
-                        <select
-                          name={field.name}
-                          required={field.required}
-                          value={query[field.name]}
-                          className=""
-                          onChange={handleParam(field.name)}
-                        >
-                          {field.options.map((option) => (
-                            <option
-                              key={option.value}
-                              value={option.value}
-                              hidden={option.hidden}
-                            >
-                              {option.label}
-                            </option>
-                          ))}
-                        </select>
-                      ) : (
-                        <input
-                          type={field.type}
-                          name={field.name}
-                          className={styles.EmailInputs}
-                          required={field.required}
-                          placeholder={field.placeholder}
-                          value={query[field.name]}
-                          onChange={handleParam(field.name)}
-                        />
-                      )}
-                    </div>
-                  )
-              )
-            : formFields.map(
-                (field) =>
-                  field.showField && (
-                    <div key={field.name} className={styles.formWrapper}>
-                      <label htmlFor={field.name}>
-                        {field.label}
-                        {field.required && (
-                          <span className={styles.spanLabel}>*</span>
+                      </div>
+                    )
+                )
+              : formFields.map(
+                  (field) =>
+                    field.showField && (
+                      <div key={field.name} className={styles.formWrapper}>
+                        <label htmlFor={field.name}>
+                          {field.label}
+                          {field.required && (
+                            <span className={styles.spanLabel}>*</span>
+                          )}
+                        </label>
+                        {field.type === "phone" ? (
+                          <PhoneInput
+                            inputStyle={field.inputStyle}
+                            containerStyle={field.containerStyle}
+                            name={field.name}
+                            inputProps={field.inputProps}
+                            country="in"
+                            placeholder={field.placeholder}
+                            value={value}
+                            onChange={(phone) => setValue(phone)}
+                            required={field.required}
+                            className={styles.PhoneInput}
+                          />
+                        ) : field.type === "select" ? (
+                          <select
+                            name={field.name}
+                            required={field.required}
+                            value={query[field.name]}
+                            className=""
+                            onChange={handleParam(field.name)}
+                          >
+                            {field.options.map((option) => (
+                              <option
+                                key={option.value}
+                                value={option.value}
+                                hidden={option.hidden}
+                              >
+                                {option.label}
+                              </option>
+                            ))}
+                          </select>
+                        ) : (
+                          <input
+                            type={field.type}
+                            name={field.name}
+                            className={styles.EmailInputs}
+                            required={field.required}
+                            placeholder={field.placeholder}
+                            value={query[field.name]}
+                            onChange={handleParam(field.name)}
+                          />
                         )}
-                      </label>
-                      {field.type === "phone" ? (
-                        <PhoneInput
-                          inputStyle={field.inputStyle}
-                          containerStyle={field.containerStyle}
-                          name={field.name}
-                          inputProps={field.inputProps}
-                          country="in"
-                          placeholder={field.placeholder}
-                          value={value}
-                          onChange={(phone) => setValue(phone)}
-                          required={field.required}
-                          className={styles.PhoneInput}
-                        />
-                      ) : field.type === "select" ? (
-                        <select
-                          name={field.name}
-                          required={field.required}
-                          value={query[field.name]}
-                          className=""
-                          onChange={handleParam(field.name)}
-                        >
-                          {field.options.map((option) => (
-                            <option
-                              key={option.value}
-                              value={option.value}
-                              hidden={option.hidden}
-                            >
-                              {option.label}
-                            </option>
-                          ))}
-                        </select>
-                      ) : (
-                        <input
-                          type={field.type}
-                          name={field.name}
-                          className={styles.EmailInputs}
-                          required={field.required}
-                          placeholder={field.placeholder}
-                          value={query[field.name]}
-                          onChange={handleParam(field.name)}
-                        />
-                      )}
-                    </div>
-                  )
-              )}
-          {error && (
-            <div className={styles.errorContainer}>
-              <p>{error}</p>
+                      </div>
+                    )
+                )}
+            {error && (
+              <div className={styles.errorContainer}>
+                <p>{error}</p>
+              </div>
+            )}
+            <p className={styles.FormText}>
+              By submitting the form, you agree to our Terms and Conditions and
+              our Privacy Policy.
+            </p>
+            <div className={styles.submitContainer}>
+              <button
+                type="submit"
+                disabled={submitting}
+                className={styles.requestBtn}
+              >
+                {submitting ? "Submitting..." : btnText}
+              </button>
             </div>
-          )}
-          <div className={styles.submitContainer}>
-            <button
-              type="submit"
-              disabled={submitting}
-              className={styles.requestBtn}
-            >
-              {submitting ? "Submitting..." : btnText}
-            </button>
-          </div>
-        </>
-      </form>
-    </div>
-  );
-};
+          </>
+        </form>
+      </div>
+    );
+  }
+);
 
 export default Form;

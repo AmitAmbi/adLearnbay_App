@@ -62,10 +62,8 @@ const CertificateSection = dynamic(() =>
 );
 
 const Page = async ({ params }) => {
-  const id = Array.isArray(params.id) ? params.id : [params.id]; // Ensure `id` is always an array
+  const id = Array.isArray(params.id) ? params.id : [params.id];
   const pageData = await getPageData(id.join("/"));
-  // const { id } = params;
-  // const pageData = await getPageData(Array.isArray(id) ? id.join("/") : id);
 
   if (pageData.error) {
     return <div>{pageData.error}</div>;
@@ -90,18 +88,19 @@ const Page = async ({ params }) => {
         DurationBotDate={pageData.header?.DurationBotDate}
         TrainingBot={pageData.header?.TrainingBot}
         TrainingBotFormat={pageData.header?.TrainingBotFormat}
+        interstedInHide={true}
       />
       <ProgramSection programSectionData={pageData.ProgramSection} />
       <Practical />
       <AnimationNew />
       <JobReadySection />
-      <SyllabusSection
+      {/* <SyllabusSection
         sections={pageData.sections}
         brochureLink={pageData.brochureLink}
         brochurePdf={pageData.brochurePdf}
         interstedInHide={true}
         radio={pageData.radio}
-      />
+      /> */}
       <CertificateSection />
       <FeeContent
         Fee={pageData.FeeSection?.Fee}
@@ -131,12 +130,13 @@ const Page = async ({ params }) => {
         totalAmount2={pageData.FeeSection?.totalAmount2}
         monthlyPayment2={pageData.FeeSection?.monthlyPayment2}
         greenDown2={pageData.FeeSection?.greenDown2}
+        interstedInHide={true}
       />
-      <ReviewSlider />
+      {/* <ReviewSlider showVideoYt={false}/> */}
       <MentorsSection />
-      <ProjectSection />
-      <NewSevenSection />
-      <Psummary summaryData={pageData.summary} />
+      {/* <ProjectSection interstedInHide={true} /> */}
+      <NewSevenSection interstedInHide={true} radio={true} />
+      {/* <Psummary summaryData={pageData.summary} /> */}
 
       {/* <OutComeSection /> */}
       {/* <UpskillingSection

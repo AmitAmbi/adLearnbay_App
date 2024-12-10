@@ -6,13 +6,14 @@ export default function CourseLayout({ children }) {
     <div>
       <header>
         <nav>
-          <NavbarHome />
+          <NavbarHome radio={true} interstedInHide={true} />
         </nav>
       </header>
 
       <main>
         <div className="content">
-          {children}  {/* This will render the dynamic content from the child pages like [id]/page.js */}
+          {children}{" "}
+          {/* This will render the dynamic content from the child pages like [id]/page.js */}
         </div>
       </main>
 
