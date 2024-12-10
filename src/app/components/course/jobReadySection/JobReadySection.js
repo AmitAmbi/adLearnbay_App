@@ -15,10 +15,10 @@ function JobReadySection() {
         </h2>
         <div className={styles.innerdiv}>
           {JobReadySectionData.map((item, index) => (
-            <article key={index} className={styles.innerbox}>
+            <div key={index} className={styles.innerbox}>
               <h4>{item.title}</h4>
               <p>{item.description}</p>
-              <figure className={styles.Wrapper}>
+              <div className={styles.Wrapper}>
                 <div className={styles.imgWrapper}>
                   <Image
                     src={item.imageSrc}
@@ -29,8 +29,8 @@ function JobReadySection() {
                     quality={50}
                   />
                 </div>
-              </figure>
-            </article>
+              </div>
+            </div>
           ))}
         </div>
       </div>
